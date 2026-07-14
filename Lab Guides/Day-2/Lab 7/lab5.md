@@ -116,15 +116,15 @@ include:
 
 Patricia logs into Copilot to review Festive Campaign readiness.
 
-1.  Navigate to +++https://m365copilot.com/+++ to open Microsoft 365
+1.  Navigate to `https://m365copilot.com/` to open Microsoft 365
     copilot page. 
 
-2.  Enter the **Username - +++@lab.CloudPortalCredential(User1).Username+++** in the field and then click on
+2.  Enter the **Email/Username:** <inject key="AzureAdUserEmail"></inject> in the field and then click on
     the **Next** button to proceed. 
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image1.png)
 
-3.  Enter **TAP Token - +++@lab.CloudPortalCredential(User1).AccessToken+++** in the field and then click on the **Sign
+3.  Enter **Temporary Acces Password:** <inject key="AzureAdUserPassword"></inject> in the field and then click on the **Sign
     in** button and click on the **Yes** to stay Signed in. 
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image2.png)
@@ -147,10 +147,10 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 8. When the **Agent creation panel** opens, paste the following details
     in respective fields to build the agent.
 
-    - **Name:** +++Frontline Operations Assistant+++
+    - **Name:** `Frontline Operations Assistant`
 
-    - **Description:** +++Supports store staff, field workers, frontline
-    teams with schedules, SOPs, customer help, daily operations.+++
+    - **Description:** `Supports store staff, field workers, frontline
+    teams with schedules, SOPs, customer help, daily operations.`
 
     - **Instructions:**
     
@@ -210,11 +210,11 @@ Patricia Gray (Regional operations manager) is seeking for an overview
 of the operational activities and get the key operations related queries
 of Zava Retail on Microsoft Teams for better visibility.
 
-1.  Navigate to Microsoft Teams +++https://teams.microsoft.com+++ and
+1.  Navigate to Microsoft Teams `https://teams.microsoft.com` and
     sign in with your credentials if needed.
     
-    - Username - +++@lab.CloudPortalCredential(User1).Username+++
-    - TAP Token - +++@lab.CloudPortalCredential(User1).AccessToken+++
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+    - **Temporary Acces Password:** <inject key="AzureAdUserPassword"></inject>
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image1.png)
 
@@ -242,7 +242,7 @@ take a specific action based on the data, findings, or situation.
 
 ### Task 1: Identify Startup Checklist
 
-1.  Navigate to +++https://m365copilot.com/+++ Microsoft 365 copilot
+1.  Navigate to `https://m365copilot.com/` Microsoft 365 copilot
     page. 
 
 2.  David Turner, Cashier at Zava Retail is starting the day and looking
