@@ -1,0 +1,79 @@
+[
+   {
+      "Name": "Tech Deal Ready - Position and specialize Microsoft Sentinel for Modern SOC",
+      "Language": "English",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel.git",
+      "Files": [
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/main/Day1/tdr-gettingstarted.md",
+            "Order": 1
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/main/Day1/Lab-1.md",
+            "Order": 2
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/main/Day1/lab-02.md",
+            "Order": 3
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/main/Day1/Lab-3.md",
+            "Order": 4
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/main/Day1/lab-04.md",
+            "Order": 5
+         }
+      ]
+   },
+   {
+      "Name": "Tech Deal Ready - Position and specialize Microsoft Sentinel for Modern SOC",
+      "Language": "Japanese",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel.git",
+      "Files": [
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/Japanese-Content/setup-guide.md",
+            "Order": 1
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/Japanese-Content/Day1/tdr-gettingstarted.md",
+            "Order": 2
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/Japanese-Content/Day1/Lab-1.md",
+            "Order": 3
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/Japanese-Content/Day1/Lab-2.md",
+            "Order": 4
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/Japanese-Content/Day1/Lab-3.md",
+            "Order": 5
+         }
+      ]
+   },
+   {
+      "Name": "Tech Deal Ready - Position and specialize Microsoft Sentinel for Modern SOC",
+      "Language": "Korean",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel.git",
+      "Files": [
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/Korean/Day1/tdr-gettingstarted-kr.md",
+            "Order": 1
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/Korean/Day1/Lab-1-kr.md",
+            "Order": 2
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/Korean/Day1/Lab-2-kr.md",
+            "Order": 3
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Modernize-your-SOC-with-Microsoft-Sentinel/refs/heads/Korean/Day1/Lab-3-kr.md",
+            "Order": 4
+         }
+      ]
+   }
+]

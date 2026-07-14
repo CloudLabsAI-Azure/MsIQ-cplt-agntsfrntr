@@ -1,0 +1,37 @@
+[
+   {
+      "Name": "MsIQ Copilot Agents Frontier - Day 1",
+      "Language": "English",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr.git",
+      "Files": [
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Day-1/Getting-Started.md",
+            "Order": 1
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Day-1/Lab%201/Lab-1.md",
+            "Order": 2
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Day-1/Lab%202/Lab-2.md",
+            "Order": 3
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Day-1/Lab%203/Lab-3.md",
+            "Order": 4
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Day-1/Lab%204/Lab-4.md",
+            "Order": 5
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Day-1/Lab%205/Lab-5.md",
+            "Order": 6
+         },
+         {
+            "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Day-1/Lab%206/Lab-6.md",
+            "Order": 7
+         }
+      ]
+   }
+]
