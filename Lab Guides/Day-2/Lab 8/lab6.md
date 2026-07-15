@@ -36,89 +36,80 @@ intelligent and trustworthy.
 
 ### Task 1: Access the Agent Creation Tool 
 
-1.  Navigate to +++https://m365.cloud.microsoft/+++ to open Microsoft
-    365 Copilot.
+1. Navigate to Microsoft 365 Copilot using the URL.
+     ```
+     https://m365.cloud.microsoft/
+     ```
 
-2.  Sign in with your Microsoft 365 Copilot account.
-   
-    - Username - +++@lab.CloudPortalCredential(User1).Username+++
-    - TAP Token - +++@lab.CloudPortalCredential(User1).AccessToken+++
+    ![](./media/n1.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%206/media/image1.png)
+1. From the left navigation bar, select **App Launcher (1)** and then select **SharePoint (2)**.
     
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%206/media/image101.png)
+    ![](./media/n2.png)
 
-3.  Click **Yes**, to stay signed in.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%206/media/image2.png)
-    ![](./media/a1.png)
-
-4.  From the left navigation bar, select **App Launcher** and then select
-    **SharePoint**.
+1. On the SharePoint home page, Click **Create site**.
     
-    ![](./media/a2.png)
+    ![](./media/n3.png)
 
-5.  On the SharePoint home page, create your organization’s site. Select
-    **Build** from the left navigation bar.
-    
-    ![](./media/a3.png)
-6. Select **Site** to create your organization’s site.
+1. Select **Team site** from the **Create a site** dialog.
 
-    ![](./media/a4.png)
-7. Select **Standard Team** as a Site template.
-   ![](./media/a5.png)
-   
-8. Select **Use template**.
-   ![](./media/a6.png)
-9. Paste the site name as +++**ZavaSite**+++ and then click **Create Site** button.
+    ![](./media/n4.png)
 
-    ![](./media/a7.png)
-   
-   **Note:** If you encounter any error in **site address** please add 3-digit unique number at the end of ZavaSite to make the address unique.
+1. On the **Select a template** screen, select the **Standard team** template.
 
-10. Select **Go to site** to open the newly created site.
-    ![](./media/a8.png)
-    ![](./media/a9.png)
+   ![](./media/n5.png)
 
-11. Under **Documents** Section, click **three dots(...)** and then select **Uploads -> Folder upload**.
-    ![](./media/a10.png)
-    
-12. Navigate to **C:\Labfiles\Lab6-Lab files** and select **HR Document** folder and then select **Open** to add this folder in the site.
+1. Review the **Standard Team** site preview, then click **Use template**.
+
+    ![](./media/n6.png)
+
+1. Enter the site **name (1)**, for example "ZavaSite1," confirming the **Group email address** and **Site address** auto-populate, then click **Next (2)**.
+
+   ![](./media/n7.png)
+
+    >**Note:** If you encounter any error in **site address** please add unique number at the end of ZavaSite to make the address unique.
+
+1. Configure the following and then click **Create site**.
+   | Setting | Value |
+   |---|---|
+   | Privacy settings | **Private - only members can access this site** |
+   | Select a language | **English** |
+
+   ![](./media/n8.png)
+
+1. Leave the **Add members** field empty, then click **Finish**.
+
+    ![](./media/n9.png)
+
+1. Click **Documents (1)** in the left navigation menu, click **Create or upload (2)**, then select **Folder upload (3)**.
+
+   ![](./media/n10.png)
+
+1. Navigate to **C:\Labfiles\Lab6-Lab files** and select **HR Document** folder and then select **Open** to add this folder in the site.
+
     ![](./media/a11.png)
-    
-13. Select **Upload** to upload the folder in the site.
+
+1. Select **Upload** to upload the folder in the site.
+
     ![](./media/a12.png)
     
-14. Similarly add the remaining folders individaully in the site.
+1. Similarly add the remaining folders individaully in the site.
     - Product Specs Folder
     - Project Updates
     - Shift Handover notes
     - SOP library
 
-    ![](./media/q13.png)
+    ![](./media/n11.png)
 
->[!Note] Before testing your Copilot Agent, ensure that all
-required source documents (such as project updates, SOP files, product
-specifications, shift handover notes, or any other referenced materials)
-are uploaded to the appropriate SharePoint site libraries and folders.
-The agent can only generate accurate, grounded responses from content
-that exists in the site and is accessible through its configured
-knowledge sources.
-
-### Task 2: Create a New Agent 
-
-With your SharePoint site open and your frontline scenario selected, you
-will now build the agent.  
+### Task 2: Create a New Agent  
   
 1. Navigate back to M365 Copilot window.
    
-2. In the **left navigation**, select **New Agent.**
-   ![](./media/a14.png)
+1. Click **New agent (1)** in the left navigation menu, then click **Skip to configure (2)**.
 
-3. Select **Skip** to move to agnet configure page.
-   ![](./media/a15.png)
+   ![](./media/n12.png)
 
-4. When the **Create new agent panel** opens, paste the following
+1. When the **Create new agent panel** opens, paste the following
 information in the respective fields:
 
     - **Agent Name**: `Project Knowledge Assistant`
@@ -127,25 +118,29 @@ information in the respective fields:
 
     - **Instructions**: `Provide concise answers using only verified information from included SharePoint sources` 
 
-    ![](./media/a16.png)
+      ![](./media/n13.png)
    
-5. Navigate back to SharePoint window and copy the **HR Document** folder URL.
-   ![](./media/a17.png)
-   
-6.  Navigate back to the M365 Copilot window and under **Knowledge tab** paste the copied URL to add the folder in the agent. 
+1. Navigate back to SharePoint window and copy the **HR Document** folder URL.
 
-    ![](./media/a18.png)
-    ![](./media/a19.png)
+   ![](./media/n14.png)
+   
+1. Navigate back to the M365 Copilot window and under **Knowledge tab** **paste** the copied URL and press **enter** to add the folder in the agent. 
+
+    ![](./media/n15.png)
 
 7. Similarly add the remaining folders.
-   ![](./media/a20.png)
-   
-8.  Click **Create** to finalize your agent configuration.  
 
-    ![](./media/a21.png)
+   ![](./media/n16.png)
+   
+1. Click **Create** to finalize your agent configuration.  
+
+    ![](./media/n17.png)
+
 9. Select **Got to agent** to open newly created agent.
-   ![](./media/a22.png)
-   ![](./media/a23.png)
+
+   ![](./media/n18.png)
+
+   ![](./media/n19.png)
 
 ### Task 3: Test Your Agent 
 
@@ -155,17 +150,19 @@ agents should only surface verified, relevant information.
 
 1.  Navigate back to SharePoint window. Open **Agent Chat** on the right side of the ZavaSite page.
 
-    ![](./media/a24.png)
+    ![](./media/n20.png)
 
-2.  In the chat field, paste the following prompt and select **Send button**.
+1. In the chat field, paste the following prompt and select **Send button**.
 
-    +++"Summarize the project plan”+++
+     ```
+     Summarize the project plan
+     ```
     
-    ![](./media/a25.png)
+    ![](./media/n21.png)
 
-3.  Review the output:  
+1. Review the output:  
       
-    ![](./media/a26.png)
+    ![](./media/n22.png)
     
 ## Exercise 2: Advanced Instruction Authoring in Copilot Studio
 
@@ -177,51 +174,43 @@ responds.
 
 ### Task 1: Open Your Agent in Copilot Studio
 
-1.  Navigate back to M365 Copilot window.
-2.  Click on ellipsis icon(...) and select **Edit.**
+1. Navigate back to M365 Copilot window.
+
+1. Click the **... (1)** menu next to **Project Knowledge Assistant**, then select **Edit (2)**.
+
+    ![](./media/n24.png)
+
+3. Select the **ellipsis icon (1)** on the upper left corner. Select **Copy to Copilot studio (2)**.
     
-    ![](./media/a27.png)
+    ![](./media/n25.png)
 
-3.  Select the ellipsis icon on the upper left corner. Select **Copy to
-    Copilot studio**.
-    
-    ![](./media/a28.png)
-
-4.  A confirmation prompt window will pop-up. Select **Get Started.**
+4. A confirmation prompt window will pop-up. Select **Get Started.**
    
-    ![](./media/a29.png)
+    ![](./media/n26.png)
 
-5.  Select your **Environment** and Click **Continue**.
+5. Select your **Default Environment** and Click **Continue**.
    
-    ![](./media/a30.png)
+    ![](./media/n27.png)
 
-6. You will be redirected to the Copilot Studio page. Here you can edit
-    the instructions, and paste the below given instructions:  
+6. You will be redirected to the Copilot Studio page. In Copilot Studio, confirm the **Name (1)** field shows **Project Knowledge Assistant**, then review or update the **Instructions (2)**. 
 
     ```
-    You are the Store Operations Assistant for a retail
-    organization. Only answer questions using content from the connected
-    SharePoint sources. Always cite the document name and section. If a
-    question falls outside your knowledge sources, respond: "I don't
-    have that information — please check with your shift manager or
-    visit the intranet." Keep responses to 3–5 bullet points. Do not
-    speculate or summarize information that is not present in a
-    source
+    You are the Store Operations Assistant for a retail organization. Only answer questions using content from the connected SharePoint sources. Always cite the document name and section. If a question falls outside your knowledge sources, respond: "I don't have that information — please check with your shift manager or visit the intranet." Keep responses to 3–5 bullet points. Do not speculate or summarize information that is not present in a source
     ```
-    Also remove copy from the agent's name.
     
-    ![](./media/a31.png)
+    ![](./media/n28.png)
     
-7. Click **Create**.
+7. Click **Create** to ceate the agent.
     
-    ![](./media/a32.png)
+    ![](./media/n29.png)
 
 8. After reviewing your agent, Click **Publish**.
 
-    ![](./media/a33.png)
+    ![](./media/n30.png)
     
 9. Click **Publish** again
-    ![](./media/a34.png)
+
+    ![](./media/n31.png)
 
 ### Task 2: Add a Topic: Out-of-Scope Redirect
 
@@ -230,20 +219,20 @@ when specific phrases or conditions are detected. You will create a
 short topic that politely redirects users who ask questions outside the
 agent's domain.
 
-1.  In Copilot Studio, navigate to **Topics** in the upper menu bar.
+1. In Copilot Studio, navigate to **Topics** in the upper menu bar.
    
-    ![](./media/a35.png)
+    ![](./media/n32.png)
 
-2.  Select + **Add a topic \> From blank.**
+1. On the **Topics** tab, click **Add a topic (1)**, then select **From blank (2)**.
    
-    ![](./media/a36.png)
+    ![](./media/n33.png)
 
-3.  Paste the name of the topic: +++Out-of-Scope Redirect.+++
+1. Rename the new topic to **Out-of-Scope Redirect**.
     
-    ![](./media/a37.png)
+    ![](./media/n35.png)
     
-4.  In the Trigger section, paste the following phrases as trigger
-    phrases (one per line):
+1. In the Trigger section, paste the following phrases as trigger
+    phrases and click **+ icon** to add new node
 
     ```
     - I need help with something else
@@ -255,42 +244,44 @@ agent's domain.
     - I have a different question
     ```
 
-    ![](./media/a38.png)
+    ![](./media/n36.png)
 
-5.  Click **+ icon** below the trigger node to add a Message node.
-    Select **Send a Message**.
+1. Select **Send a Message**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%206/media/image27.png)  
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%206/media/image28.png)
+    ![](./media/n37.png)
 
-6.  Paste the following text in the message description box:
+1. Paste the following text in the message description box:
 
     ```
-    I am specialized for HR & Payroll Assistant questions. For other
-    topics, please contact your team lead or visit the company intranet. Is
+    I am specialized for HR & Payroll Assistant questions. For other topics, please contact your team lead or visit the company intranet. Is
     there anything else I can help you with in my area?
     ```
-    
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%206/media/image29.png)
 
-7. Click **Save** to save the topic and then, select **Publish(2 times)** to publish the agent again.
+    ![](./media/n38.png)
+
+1. Click **Save** to save the topic and then, select **Publish (2 times)** to publish the agent again.
     
-   ![](./media/a39.png)
-   ![](./media/a40.png)
+   ![](./media/n39.png)
+
+   ![](./media/n40.png)
 
 ### Task 3: Test the agent
 
-1.  Select **Test** from the upper navigation bar.
+1. Select **Test** from the upper navigation bar.
    
-    ![](./media/a41.png)
+    ![](./media/n41.png)
 
-2.  Paste the following prompt, and select the **Send** button:  
-    +++Can you help me with HR?+++
+2. Paste the following **prompt (1)**, and select the **Send (2)** button:  
+
+     ```
+     Can you help me with HR?
+     ```
     
-    ![](./media/a42.png)
+    ![](./media/n42.png)
 
 3.  Review the output:  
-    ![](./media/a43.png)
+
+    ![](./media/n43.png)
 
 ## Exercise 3: Designing a Multi-Agent Orchestration Pattern
 
@@ -309,136 +300,133 @@ whenever a user asks a question outside the primary scope. This topic
 will surface a handoff message and when the license supports, it
 redirects the user to the second agent.
 
-1.  In Copilot Studio, navigate to **Topics**. Select **+Add a New topic > From blank**.  
-    ![](./media/a44.png)
+1. In Copilot Studio, navigate to **Topics**, **Add a topic (2)**, and **From blank (3)** to create another topic.
 
-2.  Paste the following information in the topic:  
+    ![](./media/n44.png)
 
-    **Name**- `Handoff to Secondary Agent`
+1. Paste the following information in the topic and Click **+** to add a new node.
 
-    **Trigger phrases**: `"payroll", "leave request", "HR policy", "annual leave", "employee record"`
+     - **Name**: Handoff to Secondary Agent
 
-    ![](./media/a45.png)
+     - **Trigger phrases**: "payroll", "leave request", "HR policy", "annual leave", "employee record"
 
-3.  Click **+** to add a new node.
+    ![](./media/n45.png)
+
+1. Select **Send a Message** to add a message node.
    
-    ![](./media/a46.png)
+    ![](./media/n46.png)
 
-4.  Select **Send a Message** to add a message node.
+1. In the Message description box, paste the following information:
    
-    ![](./media/a47.png)
+     ```
+     That question is outside my area. I'm connecting you to the HR &Payroll Agent who can help with that — one moment please
+     ```
 
-5.  In the Message description box, paste the following information:
-   
-    `That question is outside my area. I'm connecting you to the HR &
-    Payroll Agent who can help with that — one moment please`
-
-    ![](./media/a48.png)
+    ![](./media/n47.png)
     
-6. Click Save and **Publish** to save the node and publish the setting
-    again.
+1. Click **Save (1)** and **Publish (2)** to save the node and publish.
 
-    ![](./media/a49.png)
-    ![](./media/a50.png)
+    ![](./media/n48.png)
+
+1. Click **Publish** on the confirmation pop-up to publish.
+
+    ![](./media/n49.png)
     
 ### Task 2: Configure the Secondary Agent
 
 Now, we will create a lightweight secondary agent to handles the
 out-of-scope queries using multi-agent connections.
 
-1.  In Copilot Studio, select **Agents** from the left navigation
-    bar and then select **+Create blank agent**.
+1. In Copilot Studio home page, select **Agents (1)** from the left navigation bar and then select **+ Create blank agent (2)**.
     
-    ![](./media/a51.png)
+    ![](./media/n50.png)
 
-2.  Enter the agent name: +++HR & Payroll Assistant+++. Click **Create**
+1. Enter the agent name **HR & Payroll Assistant (1)** and click **Create (2)**
     
-    ![](./media/a52.png)
+    ![](./media/n51.png)
 
-3.  In the **Instructions** field, click **Edit** and then paste the following instructions:
+1. In the **Instructions** field, click **Edit (1)** and then paste the following instructions and click **Save** to save the instruction.
 
-    `You are the HR & Payroll Assistant. You handle queries specifically
-    related to store operations. Use only verified content from your
-    connected sources. Always cite source and section. If a query falls
-    outside your scope, say: "That's outside my remit. Please contact the
-    appropriate team`
+     ```
+     You are the HR & Payroll Assistant. You handle queries specifically related to store operations. Use only verified content from your connected sources. Always cite source and section. If a query falls outside your scope, say: "That's outside my remit. Please contact the appropriate team
+     ```
+
+    ![](./media/n52.png)
+
+1. In the Knowledge section, Click **+ Add Knowledge** to add knowledge to the agent.
+
+    ![](./media/n53.png)
+
+1. Select **SharePoint** as the knowledge source.
+
+    ![](./media/n54.png)
+
+1. Paste the SharePoint folder URL **(1)** into the field, click **Add (2)**, then click **Add to agent (3)**.
+
+    ![](./media/n56.png)
+
+    - **Note**: Navigate back to SharePoint window and copy the **HR Document** folder URL.
+
+      ![](./media/n14.png)
     
-    Click **Save** to save the instruction.
-    
-    ![](./media/a53.png)
+1. Confirm the **HR Document** knowledge source shows a **ready (1)** status, then click **Publish (2)**.
 
-4.  In the Knowledge section, Click **+Add Knowledge** to add knowledge to the agent. add the relevant HR
-    document form C:\Labfiles\Lab6-Lab files\HR Document
-    You save it on your **SharePoint** site, and
-    paste the **URL** here. Or you can also
-    upload the file by using “**Add knowledge**” section.
-
-    ![](./media/a54.png)
-    
-5. Here we are using **SharePoint** to add knowledge.
-   ![](./media/a55.png)
+   ![](./media/n57.png)
    
-6. Select **Browse items->More places->ZavaSite**
-   ![](./media/a56.png)
-   ![](./media/a57.png)
-7. Select **HR Document** and then select **Confirm selection**
-    ![](./media/a58.png)
-8. Click **Add to agent**.
-    ![](./media/a59.png)
-    ![](./media/a60.png)
-9. Select **Publish** to publish the secondary
-    agent.
-    ![](./media/a61.png)
-    ![](./media/a62.png)
+1. Click **Publish** on the confirmation pop-up to publish.
+
+    ![](./media/n58.png)
     
 ### Task 3: Add the Secondary Agent to the Primary Agent. 
 
-1. Go to the **Project Knowledge Assistant** Agent.
+1. Click **Agents (1)** in the left navigation menu, then select **Project Knowledge Assistant (2)** from the **My agents** list.
    
-    ![](./media/a63.png)
+    ![](./media/n59.png)
 
-2. In the **Agent section**, select **+Add**.
+1. Click the **Agents (1)** tab, then click **Add (2)**.
    
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%206/media/image45.png)
+    ![](./media/n60.png)
 
-3. Select the **HR & Payroll Assistant** from the list.
-   
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%206/media/image46.png)
+1. Confirm the **Connected agents (1)** filter is selected, then select **HR & Payroll Assistant (2)** from the list.
 
-4. Paste the following description in the description box and then **disable** pass the converstion history to the agent:
+    ![](./media/n61.png)
+
+1. Add the following in the **Description (1)** and  leave **Pass conversation history to this agent (2)** checked, then click **Add and configure (3)**.
    
-    ```
-    Use this agent when users ask about HR or payroll matters, including
-    payslips, leave balances, salary deductions, attendance, tax forms,
-    employee benefits, or HR policy questions. Routes employee-related
-    workforce support queries to the HR & Payroll Assistant for accurate
-    resolution
-    ```
-    Click **Add and configure**.
-    ![](./media/a64.png)
-5. Scroll down and move to the completion step, paste the following message to display:  
+     ```
+     Use this agent when users ask about HR or payroll matters, including payslips, leave balances, salary deductions, attendance, tax forms,employee benefits, or HR policy questions. Routes employee-related workforce support queries to the HR & Payroll Assistant for accurate resolution
+     ```
+
+    ![](./media/n62.png)
+
+1. Click **Completion (1)** in the left panel, set **After running (2)** to **Send specific response (specify below)**, then paste the following message to display:  
   
-    `Your request relates to HR and payroll support. Transferring you now to the HR & Payroll Assistant for accurate assistance`
+     ```
+     Your request relates to HR and payroll support. Transferring you now to the HR & Payroll Assistant for accurate assistance
+     ```
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%206/media/image48.png)
+    ![](./media/n63.png)
 
-6. Select **Publish**(twice) to publish the agent.
+1. Click **Save (1)** and **Publish (2)** to save the node and publish.
+
+    ![](./media/n64.png)
+
+1. Click **Publish** on the confirmation pop-up to publish.
+
+    ![](./media/n65.png)
     
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%206/media/image49.png)
-
 ### Task 4: Test the End-to-End Orchestration
 
 With both agents published, validate the complete handoff flow using the
 test scenarios below.
 
-1.  Paste the following prompt in the chat interface:  
+1. Click **Test (1)**, enter the **prompt (2)** in the message field, then click the **Send (3)** button.
       
-    `What is my leave balance?`
-   
-    ![](./media/a65.png)
+    ![](./media/n66.png)
 
 2.  Review the output:  
-    ![](./media/a66.png)
+
+    ![](./media/n67.png)
     
 ## Summary 
 
