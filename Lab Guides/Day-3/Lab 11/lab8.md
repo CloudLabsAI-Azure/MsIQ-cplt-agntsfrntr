@@ -1,4 +1,4 @@
-# Lab 08: Transform After-Sales Repair Operations at Zava Retail with an AI-Powered Declarative Agent
+# Lab 10: Transform After-Sales Repair Operations at Zava Retail with an AI-Powered Declarative Agent
 
 ## Estimated Duration: 60 Minutes
 
