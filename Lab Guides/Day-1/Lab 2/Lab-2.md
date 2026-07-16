@@ -137,13 +137,13 @@ Patricia Gray needs clear next steps and decisions. This exercise will help the 
 
     `List all action items related to the Zava Festive Campaign.`
 
-    ![](./media/image18.png)
+    ![](./media/l2e3t1s1.png)
 
 2. Review the output. Action items such as **Pending approval**, **Pending confirmation**, and **Under review** are identified as **Action Items**.
 
-    ![](./media/image19.png)
+    ![](./media/l2e3t1s2.png)
 
-    ![](./media/image20.png)
+    ![](./media/l2e3t1s3.png)
 
 ### Task 2: Key Decisions
 
@@ -151,13 +151,13 @@ Patricia Gray needs clear next steps and decisions. This exercise will help the 
 
     `Summarize key decisions made across emails and Teams discussions for the campaign.`
 
-    ![](./media/image21.png)
+    ![](./media/l2e3t2s1.png)
 
 2. Review the output. The key decisions related to multiple action items and teams are summarized in the output.
 
-    ![](./media/image22.png)
+    ![](./media/l2e3t2s2.png)
 
-    ![](./media/image23.png)
+    ![](./media/l2e3t2s3.png)
 
 ### Task 3: Draft Leadership Email
 
@@ -167,19 +167,19 @@ Patricia Gray needs clear next steps and decisions. This exercise will help the 
 
     `Draft an email to the leadership team summarizing campaign readiness and participation.`
 
-    ![](./media/b7.png)
+    ![](./media/l2e3t3s1.png)
 
 3. Wait for the **Researcher Agent** to gather and summarize the data. The Researcher Agent may ask clarifying questions. Select the report length as **Short** and select/enter **"Go ahead with your best judgement"** and select the **Send** button.
 
-    ![](./media/image25.png)
+    ![](./media/l2e3t3s2.png)
 
 4. Review the output:
 
-    ![](./media/image26.png)
+    ![](./media/l2e3t3s3.png)
 
-    ![](./media/image27.png)
+    ![](./media/l2e3t3s4.png)
 
-    ![](./media/image28.png)
+    ![](./media/l2e3t3s5.png)
 
 ### Task 4: Meeting Preparation (Executive Readiness)
 
@@ -189,33 +189,33 @@ Meeting preparation prompts help you gather background information, summarize ke
 
     `Help me prepare for an upcoming meeting by summarizing recent communication and shared files about.`
 
-    ![](./media/image29.png)
+    ![](./media/l2e3t4s1.png)
 
 2. Wait for the **Researcher Agent** to gather and summarize the data. The Researcher Agent may ask clarifying questions. Select the report length as **Short** and select/enter **"Meeting is the Q2 Sales Review on April 10"** and select the **Send** button.
 
-    ![](./media/image30.png)
+    ![](./media/l2e3t4s2.png)
 
 3. Review the output:
 
-    ![](./media/image31.png)
+    ![](./media/l2e3t4s3.png)
 
-    ![](./media/image32.png)
+    ![](./media/l2e3t4s4.png)
 
-    ![](./media/image33.png)
+    ![](./media/l2e3t4s5.png)
 
 4. Paste the below prompt in the field and then click the **Send** button.
 
     `What topics have been discussed in past weekly team syncs?`
 
-    ![](./media/b8.png)
+    ![](./media/l2e3t4s6.png)
 
 5. Review the output:
 
-    ![](./media/image35.png)
+    ![](./media/l2e3t4s7.png)
 
-    ![](./media/image36.png)
+    ![](./media/l2e3t4s8.png)
 
-    ![](./media/image37.png)
+    ![](./media/l2e3t4s9.png)
 
 ### Task 5: Progress and Status Analysis
 
@@ -225,15 +225,13 @@ Progress and status updates help you review achievements, identify gaps, and pla
 
     `Summarize the current status and blockers for the Zava Festive Campaign.`
 
-    ![](./media/b9.png)
+     ![](./media/l2e3t5s1.png)
 
 2. Review the output:
 
-    ![](./media/image39.png)
+    ![](./media/l2e3t5s2.png)
 
-    ![](./media/image40.png)
-
-    ![](./media/image41.png)
+    ![](./media/l2e3t5s3.png)
 
 ### Task 6: Identify Gaps and Risks
 
@@ -241,21 +239,19 @@ This section helps identify missing information, unclear points, or areas needin
 
 1. Start a new conversation.
 
-    ![](./media/b10.png)
-
 2. Under the Researcher agent window, paste the below prompt in the field and then click the **Send** button.
 
     `What open questions or gaps remain in the Zava Festive Campaign?`
 
-    ![](./media/b11.png)
+    ![](./media/l2e3t6s1.png)
 
 3. Wait for the **Researcher Agent** to gather and summarize the data. The Researcher Agent may ask clarifying questions. Select the report length as **Short** and select/enter **"Analyze sales data and customer feedback for gaps"** and select the **Send** button.
 
-    ![](./media/image43.png)
+    ![](./media/l2e3t6s2.png)
 
 4. Review the output:
 
-    ![](./media/image44.png)
+    ![](./media/l2e3t6s3.png)
 
 ### Task 7: Document Discovery and Insights
 
@@ -265,23 +261,23 @@ This section helps users or AI tools explore, analyze, and extract valuable info
 
     `Find the latest version of Zava Festive Campaign plan and summarize key updates.`
 
-    ![](./media/image45.png)
+    ![](./media/l2e3t7s1.png)
 
 2. Review the output:
 
-    ![](./media/image46.png)
+    ![](./media/l2e3t7s2.png)
 
-    ![](./media/image47.png)
+    ![](./media/l2e3t7s3.png)
 
 3. Enter the below prompt in the field and then click the **Send** button.
 
     `Summarize contents of shared documents related to campaign planning.`
 
-    ![](./media/image48.png)
+    ![](./media/l2e3t7s4.png)
 
 4. Review the output:
 
-    ![](./media/image49.png)
+    ![](./media/l2e3t7s5.png)
 
 ### Task 8: Generate Executive Communication
 
@@ -297,17 +293,13 @@ Use the Researcher Agent to help communicate findings to your team. Patricia nee
     - Next steps
     ```
 
-    ![](./media/image50.png)
+   ![](./media/l2e3t8s1.png)
 
 2. Review the output:
 
-    ![](./media/image51.png)
+    ![](./media/l2e3t8s2.png)
 
-    ![](./media/image52.png)
-
-    ![](./media/image53.png)
-
-    ![](./media/image54.png)
+    ![](./media/l2e3t8s3.png)
 
 3. Evaluate whether the Researcher Agent's summary meets your expectations. If results are too broad or missing key details, refine your prompt.
 
@@ -315,7 +307,7 @@ Use the Researcher Agent to help communicate findings to your team. Patricia nee
 
 4. Export or copy the summary for documentation, reports, or meeting notes.
 
-    ![](./media/image55.png)
+    ![](./media/l2e3t8s3.png)
 
     > **Note:** Here is a brief overview of the tasks associated with each icon shown in the screenshot:
 
@@ -324,7 +316,7 @@ Use the Researcher Agent to help communicate findings to your team. Patricia nee
     3. **Thumbs-Down Icon** – Used to **dislike or disapprove** something.
     4. **Speaker Icon** – Represents **audio settings or volume control**.
     5. **Pencil Icon** – Used for **editing or writing** tasks.
-    6. **Clock with Arrow Icon** – **"Add to recent page"**, which adds the current item to your recently accessed pages.
+    6. **Clock Icon** – **"Schedule this prompt"**, Schedules the selected prompt to run automatically at a specified time and deliver the generated results on a recurring basis.
 
 ## Summary
 
