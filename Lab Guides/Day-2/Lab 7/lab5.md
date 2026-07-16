@@ -116,60 +116,55 @@ include:
 
 Patricia logs into Copilot to review Festive Campaign readiness.
 
-1.  Navigate to +++https://m365copilot.com/+++ to open Microsoft 365
-    copilot page. 
+1. Navigate to Microsoft 365 Copilot using the URL.
+     ```
+     https://m365.cloud.microsoft/
+     ```
+1. Sign in with following  credentials:
 
-2.  Enter the **Username - +++@lab.CloudPortalCredential(User1).Username+++** in the field and then click on
-    the **Next** button to proceed. 
+	- **Email/Username:** **<inject key="AzureAdUserEmail"></inject>**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image1.png)
+    ![](./media/img1.png)
 
-3.  Enter **TAP Token - +++@lab.CloudPortalCredential(User1).AccessToken+++** in the field and then click on the **Sign
-    in** button and click on the **Yes** to stay Signed in. 
+	- **Temporary Acces Password:** **<inject key="AzureAdUserPassword"></inject>**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image2.png)
+    ![](./media/img2.png)
 
-4.  Explore the Copilot chat environment.
+1. If **Action required** pop-up window appears, click on **Ask later**.
+
+1. If prompted to **stay signed in**, you can click **No**.
+
+    ![](./media/img3.png)
+
+1. Explore the Copilot chat environment.
 
     ![](./media/q1.png)
 
-5.  Expand **navigation pane**, and look for **More agents**.
+1. Expand **navigation pane** and click **New agent (1)** in the left navigation menu, then click **Skip to configure (2)**.
 
-    ![](./media/q2.png)
-
-6.  Select **+ Create Agent** to start building a new agent.
-
-    ![](./media/q3.png)
-    
-7. Click **Skip** to move to configure page.
-   ![](./media/q3.png)
+   ![](./media/new12.png)
    
-8. When the **Agent creation panel** opens, paste the following details
+1. When the **Agent creation panel** opens, paste the following details
     in respective fields to build the agent.
 
-    - **Name:** +++Frontline Operations Assistant+++
+    - **Name:** Frontline Operations Assistant
 
-    - **Description:** +++Supports store staff, field workers, frontline
-    teams with schedules, SOPs, customer help, daily operations.+++
+    - **Description:** Supports store staff, field workers, frontline teams with schedules, SOPs, customer help, daily operations.
 
     - **Instructions:**
     
-    ```
-    You are a frontline operations assistant for employees.  
-    Help workers with shift guidance, store procedures, customer service
-    responses, escalation steps, daily checklists, safety reminders, and
-    quick answers.  
-    Keep responses concise and mobile-friendly.
-    ```
+        ```
+        You are a frontline operations assistant for employees. Help workers with shift guidance, store procedures, customer service responses , escalation steps, daily checklists, safety reminders, and quick answers.Keep responses concise and mobile-friendly.
+        ```
 
-    ![](./media/q5.png)
+    ![](./media/n16.png)
 
-9. Navigate to **Knowledge** section to add knowledge sources.
+1. Navigate to **Knowledge** section to add knowledge sources.
     Select **Upload from device**.
 
     ![](./media/q6.png)
 
-10. Select the below files from **C:\Labfiles\Lab5-Lab files** and select **Open**.
+1. Select the below files from **C:\Labfiles\Lab5-Lab files** and select **Open**.
 
     - SOP PDFs
 
@@ -185,24 +180,22 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 
     ![](./media/q7.png)
 
-11. Verify that all the selected files are uploaded in the Knowledge
+1. Verify that all the selected files are uploaded in the Knowledge
     sources.
 
     ![](./media/q8.png)
 
-12. Click **Create** to publish the agent.
-
-    >[!Note] Wait for 5-10 minutes for the agent building process
-    completion.
+1. Click **Create** to publish the agent.
 
     ![](./media/q9.png)
-    ![](./media/q10.png)
+
+     >**Note**:Wait for 5-10 minutes for the agent building process
+    completion.
     
-13. Once the agent is created successfully, click **Go to agent** to
+1. Once the agent is created successfully, click **Go to agent** to
     start using the agent.
 
     ![](./media/q11.png)
-    ![](./media/a12.png)
     
 ## Exercise 2: Access Frontline Operations Agent in Microsoft Teams
 
@@ -210,187 +203,160 @@ Patricia Gray (Regional operations manager) is seeking for an overview
 of the operational activities and get the key operations related queries
 of Zava Retail on Microsoft Teams for better visibility.
 
-1.  Navigate to Microsoft Teams +++https://teams.microsoft.com+++ and
-    sign in with your credentials if needed.
-    
-    - Username - +++@lab.CloudPortalCredential(User1).Username+++
-    - TAP Token - +++@lab.CloudPortalCredential(User1).AccessToken+++
+1. Navigate to Microsoft Teams using the URL and sign in with your credentials if needed.
+     
+     ```
+     https://teams.microsoft.com
+     ```
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image1.png)
+	- **Email/Username:** **<inject key="AzureAdUserEmail"></inject>**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image2.png)
+    ![](./media/img1.png)
 
-2.  Open Microsoft Teams. Select **Copilot** icon from the left
-    navigation pane.
+	- **Temporary Acces Password:** **<inject key="AzureAdUserPassword"></inject>**
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image13.png)
+    ![](./media/img2.png)
 
-3.  Go to **Expand Navigation** icon to open the menu.
-    Select **Frontline Operations Agent** to open and access the agent.
+1. Click the **Copilot (1)** icon in the left navigation bar, expand the panel using the **sidebar (2)** toggle, then select **Frontline Operations ... (3)** under **Agents**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image14.png)
+    ![](./media/n1.png)
 
-4.  Now, Patricia can use the agent directly inside Teams. **Frontline
-    Operations Agent** can be accessed under Microsoft Teams.
+4. Now, Patricia can use the agent directly inside Teams. **Frontline Operations Agent** can be accessed under Microsoft Teams.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image15.png)
     
 ## Exercise 3: Action and Decision Intelligence
 
-This exercise will help Frontline Operations Agent perform a task or
-take a specific action based on the data, findings, or situation.
-
 ### Task 1: Identify Startup Checklist
 
-1.  Navigate to +++https://m365copilot.com/+++ Microsoft 365 copilot
-    page. 
+1. Navigate to `https://m365.cloud.microsoft/` Microsoft 365 copilot page.
 
-2.  David Turner, Cashier at Zava Retail is starting the day and looking
-    for a quick checklist. To execute this step, go to the Frontline
-    Operations agent, paste the below given prompt in the field, and
-    then click on the **Send** button. 
+     ```
+     https://m365.cloud.microsoft/
+     ```
 
-    `I am opening cashier. Give me first 20-minute startup checklist.`
+2. Cashier at Zava Retail is starting the day and looking for a quick checklist. To execute this step, go to the Frontline Operations agent, paste the below given prompt in the field, and then click on the **Send** button.
 
-    ![](./media/q13.png)
+     ```
+     I am opening cashier. Give me first 20-minute startup checklist
+     ```
 
-3.  Review the output:
+    ![](./media/n2.png)
+
+1. Review the output:
 
     ![](./media/q14.png)
+    
     ![](./media/q15.png)
-    > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
+
+     > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
     
 ### Task 2: Resolve Customer Issues
 
-1.  Marie Brown, Store Associate wants to resolve recurring issues faced
-    by customers at the Zava Retail store. To execute this step, go to
-    the Frontline Operations Agent, paste the below given prompt in the
-    field and then click on the **Execute** button. 
+1. Store Associate wants to resolve recurring issues faced by customers at the Zava Retail store. To execute this step, go to the Frontline Operations Agent, paste the below given prompt in the field and then click on the **Execute** button.
 
-    `Customer says wrong discount applied. What should I do?`
+     ```
+     Customer says wrong discount applied. What should I do?
+     ```
 
-    ![](./media/q16.png)
+    ![](./media/n3.png)
     
-2.  Review the output:
+1. Review the output:
 
     - The agent will fetch the official policies and SOPs from knowledge
     source and provide the response.
 
-    ![](./media/q17.png)
+    ![](./media/n4.png)
 
-    ![](./media/q18.png)
-    > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
+     > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
 
-4.  Paste the below given prompt in the field and then click on
-    the **Send** button. 
+4. Paste the below given prompt in the field and then click on the **Send** button.
 
-    `Product out of stock during sale. What are the next steps?`
+     ```
+     Product out of stock during sale. What are the next steps?
+     ```
 
-    ![](./media/q19.png)
+    ![](./media/n5.png)
 
-5.  Review the output:
+5. Review the output:
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image32.png)
+    ![](./media/n7.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image33.png)
-    > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
+     > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
 
 ### Task 3: Store Manager Scenario
 
-1.  Fratini Greens, Store Manager wants to understand the top priorities
-    during weekend rush at retail store, retrieve new hires onboarding
-    checklist, and resolve other managerial concerns. To execute this
-    step, go to the Frontline Operations Agent, paste the below given
-    prompt in the field, and then click on the **Send** button. 
+1. Store Manager wants to understand the top priorities during weekend rush at retail store, retrieve new hires onboarding checklist, and resolve other managerial concerns. To execute this step, go to the Frontline Operations Agent, paste the below given prompt in the field, and then click on the **Send** button. 
 
-    `Create my top 5 priorities for Store \#118 during weekend rush.`
+     ```
+     Create my top 5 priorities for Store \#118 during weekend rush
+     ```
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image34.png)
+    ![](./media/n14.png)
 
-2.  Review the output:
+1. Review the output:
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image35.png)
+    ![](./media/n8.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image36.png)
+     > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
 
-3.  Paste the below given prompt in the field, and then click on
+1. Paste the below given prompt in the field, and then click on
     the **Send** button. 
 
-    `A new hire joined today as sales associate. Give Day 1 onboarding
-    checklist.`
+     ```
+     A new hire joined today as sales associate. Give Day 1 onboarding checklist.
+    ```
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image37.png)
+    ![](./media/n9.png)
 
-4.  Review the output:
+1. Review the output:
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image38.png)
+    ![](./media/n10.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image39.png)
+     > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
 
 ### Task 4: Multi-persona Role Testing
 
-1.  Patricia Gray, Operations Head is looking for query resolution from
-    multiple roles including cashier, store associate, and new hire. To
-    execute this step, go to the Frontline Operations Agent, paste the
-    below given prompt in the field and then click on
-    the **Send** button. 
+1. Operations Head is looking for query resolution from multiple roles including cashier, store associate, and new hire. To execute this step, go to the Frontline Operations Agent, paste the below given prompt in the field and then click on the **Send** button.
 
-    ```
-    As a regional operations manager, identify top recurring operational
-    issues likely across 250 Zava stores and recommend fixes.
+     ```
+     As a regional operations manager, identify top recurring operational issues likely across 250 Zava stores and recommend fixes.
 
-    Cashier: Help with queue rush handling  
-    Supervisor: Closing checklist  
-    Manager: Weekly priorities  
-    New Hire: First shift guidance  
-    Regional Lead: Store risk summary
-    ```
+     Cashier: Help with queue rush handling  
+     Supervisor: Closing checklist  
+     Manager: Weekly priorities  
+     New Hire: First shift guidance  
+     Regional Lead: Store risk summary
+     ```
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image40.png)
+    ![](./media/n11.png)
 
-2.  Review the output:
+2. Review the output:
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image41.png)
+    ![](./media/n12.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image42.png)
+     > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image43.png)
+### Task 5: Review and Refine the Output
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image44.png)
+1. Evaluate whether the Frontline Operations Agent's summary meets your expectations.
 
-### Task 5: Review and Refine the Output 
+2. If results are too broad or missing key details, refine your prompt.
 
-1.  Evaluate whether the Frontline Operations Agent’s summary meets your
-    expectations. 
+    - **Example**: Narrow this summary to focus only on critical risks and
+    delivery blockers.
 
-2.  If results are too broad or missing key details, refine your
-    prompt. 
+    ![](./media/n15.png)
 
-    **Example**: “Narrow this summary to focus only on critical risks and
-    delivery blockers.”
+1. Review the actions available for the generated response.
 
-3.  Export or copy the summary for documentation, reports, or meeting
-    notes. 
+     - **Clipboard Icon** – Used for **copying** the response text.
+     - **Thumbs-Up Icon** – Used to **like or approve** the response.
+     - **Thumbs-Down Icon** – Used to **dislike or flag** the response.
+     - **Pencil Icon** – Used to **rewrite or modify** the response.
+     - **... (More) Icon** – Opens additional options: **Schedule this prompt** to run the prompt automatically on a recurring basis, **Read aloud** to have the response read out loud, and **Export to Word** to save the response as a Word document.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image45.png)
-
-    >[!Note] Here is a brief overview of the tasks associated with each
-    icon shown in the screenshot: 
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image46.png)
-
-    1.  **Clipboard Icon** – Likely used for **copying or
-        pasting** content. 
-    2.  **Thumbs-Up Icon** – Typically indicates **liking or approving** an
-        item or action. 
-    3.  **Thumbs-Down Icon** – Generally used to **dislike or
-        disapprove** something. 
-    4.  **Speaker Icon** – Represents **audio settings or volume control**. 
-    5.  **Pencil Icon** – Commonly used for **editing or writing** tasks. 
-    6.  **Clock with Arrow Icon** – Tooltip says **"Add to recent page"**,
-        which means it adds the current item to your **recently accessed
-        pages** for quick reference. 
+    ![](./media/n13.png)
 
 **Summary**
 
