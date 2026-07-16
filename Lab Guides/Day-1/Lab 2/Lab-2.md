@@ -39,22 +39,9 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 1. Navigate to the following URL to open Microsoft 365 Copilot.
 
     ```
-    https://m365copilot.com/
+    https://m365.cloud.microsoft/chat/
     ```
-
-2. Enter the **Email/Username** - <inject key="AzureAdUserEmail"></inject> **(1)** in the field and then click on the **Next (2)** button to proceed.
-
-    ![](./media/image1.png)
-
-3. Enter the following password - <inject key="AzureAdUserPassword"></inject> **(1)** in the field and then click on the **Sign in (2)** button and click on **Yes** to stay Signed in.
-
-    ![](./media/image2.png)
-    ![](./media/b1.png)
-
-4. Explore the Copilot chat environment.
-
-    ![](./media/b2.png)
-
+    
 5. In the left **navigation pane**, look for **Agents**.
 
     - If **Researcher** appears directly under the **Agents** section, select **Researcher**.
@@ -77,7 +64,7 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 
 Patricia wants a complete overview of campaign progress for Zava Retail.
 
-1. Before interacting with the agent, send some demo campaign emails to the current lab user from your own email so the Researcher Agent can access relevant data and produce meaningful insights and summaries. You can find the demo campaign emails at **C:\Labfiles\Lab 2 - Lab files**.
+1. Before interacting with the agent, send some demo campaign emails to the current lab user from your own email so the Researcher Agent can access relevant data and produce meaningful insights and summaries. You can find the demo campaign emails at `C:\Labfiles\Lab 2 - Lab files`.
 
     ![](./media/image71.png)
 
@@ -148,7 +135,7 @@ Patricia Gray needs clear next steps and decisions. This exercise will help the 
 
 1. In the Researcher agent, paste the below prompt in the field and then click the **Send** button.
 
-    +++List all action items related to the Zava Festive Campaign.+++
+    `List all action items related to the Zava Festive Campaign.`
 
     ![](./media/image18.png)
 
@@ -162,7 +149,7 @@ Patricia Gray needs clear next steps and decisions. This exercise will help the 
 
 1. Under the Researcher agent, paste the below prompt in the field and then click the **Send** button.
 
-    +++Summarize key decisions made across emails and Teams discussions for the campaign.+++
+    `Summarize key decisions made across emails and Teams discussions for the campaign.`
 
     ![](./media/image21.png)
 
@@ -178,7 +165,7 @@ Patricia Gray needs clear next steps and decisions. This exercise will help the 
 
 2. Under the Researcher agent, paste the below prompt in the chat panel and then click the **Send** button.
 
-    +++Draft an email to the leadership team summarizing campaign readiness and participation.+++
+    `Draft an email to the leadership team summarizing campaign readiness and participation.`
 
     ![](./media/b7.png)
 
@@ -200,7 +187,7 @@ Meeting preparation prompts help you gather background information, summarize ke
 
 1. Under the Researcher agent, paste the below prompt in the field and then click the **Send** button.
 
-    +++Help me prepare for an upcoming meeting by summarizing recent communication and shared files about.+++
+    `Help me prepare for an upcoming meeting by summarizing recent communication and shared files about.`
 
     ![](./media/image29.png)
 
@@ -218,7 +205,7 @@ Meeting preparation prompts help you gather background information, summarize ke
 
 4. Paste the below prompt in the field and then click the **Send** button.
 
-    +++What topics have been discussed in past weekly team syncs?+++
+    `What topics have been discussed in past weekly team syncs?`
 
     ![](./media/b8.png)
 
@@ -236,7 +223,7 @@ Progress and status updates help you review achievements, identify gaps, and pla
 
 1. Under the Researcher agent, paste the below prompt in the field and then click the **Send** button.
 
-    +++Summarize the current status and blockers for the Zava Festive Campaign.+++
+    `Summarize the current status and blockers for the Zava Festive Campaign.`
 
     ![](./media/b9.png)
 
@@ -258,7 +245,7 @@ This section helps identify missing information, unclear points, or areas needin
 
 2. Under the Researcher agent window, paste the below prompt in the field and then click the **Send** button.
 
-    +++What open questions or gaps remain in the Zava Festive Campaign?+++
+    `What open questions or gaps remain in the Zava Festive Campaign?`
 
     ![](./media/b11.png)
 
@@ -276,7 +263,7 @@ This section helps users or AI tools explore, analyze, and extract valuable info
 
 1. Under the Researcher agent, paste the below prompt in the field and then click the **Send** button.
 
-    +++Find the latest version of Zava Festive Campaign plan and summarize key updates.+++
+    `Find the latest version of Zava Festive Campaign plan and summarize key updates.`
 
     ![](./media/image45.png)
 
@@ -288,7 +275,7 @@ This section helps users or AI tools explore, analyze, and extract valuable info
 
 3. Enter the below prompt in the field and then click the **Send** button.
 
-    +++Summarize contents of shared documents related to campaign planning.+++
+    `Summarize contents of shared documents related to campaign planning.`
 
     ![](./media/image48.png)
 

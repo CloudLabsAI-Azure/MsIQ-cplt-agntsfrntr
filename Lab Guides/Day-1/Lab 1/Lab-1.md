@@ -56,16 +56,15 @@ You are Marie (Customer Support Manager) logging into Microsoft 365 Copilot to a
 
     ![](./media/b1.png)
 
-5. In the **left navigation**, select **More agents** and explore the Agent Store.
+5. In the **left navigation**, select **Agents** and explore the Agent Store.
 
     ![](./media/b2.png)
-    ![](./media/b3.png)
 
 6. Scroll down and look for the **Workflows (Frontier)** option under the **Built by Microsoft** header.
 
     ![](./media/b4.png)
 
-7. Select **Add** to add the **Workflows Agent (Frontier)**.
+7. Select **Add** to add the **Workflows  (Frontier)**.
 
     ![](./media/b5.png)
 
@@ -79,15 +78,36 @@ You are Marie (Customer Support Manager) logging into Microsoft 365 Copilot to a
 
 Populate the Outlook inbox with realistic unread sample emails so the Zava Email Triage Agent can analyze, categorize, and generate actionable insights from them during workflow execution.
 
-1. Navigate to **C:\Lab Files\Lab 1 - Lab files** and open the **Sample Emails for Lab1** file. Here you will find all the sample emails that will be used in this lab.
+1. Navigate to `C:\Lab Files\Lab 1-Lab files` and open the **Sample Emails for Lab1** file. Here you will find all the sample emails that will be used in this lab.
 
     ![](./media/b7.png)
 
-2. Send the first 6 emails to the current user: **Username** - <inject key="AzureAdUserEmail"></inject> using your own email account.
+1. Open a new tab in your browser and navigate to the following Outlook URL:
+   ```
+   https://outlook.office365.com/mail/
+   ```
+
+1. Select the ODL user account
+
+    ![](./media/image15aa.png)
+
+1. Click on the **New mail** button in the top left corner.
+
+    ![](./media/image15a.png)
+
+1. Copy the subject and body of the first sample email from the `Sample Emails for Lab1` file and paste them into the email editor.
+
+1. In the **To** field, enter the current lab user's email address: **Username** - <inject key="AzureAdUserEmail"></inject>
+
+1. Click **Send** to send the email to yourself.
+
+    ![](./media/image15b.png)
+
+1. Repeat the same steps for the remaining 5 sample emails in the file so that there are at least 6 unread sample emails in your inbox.
 
 ### Task 2: Describe the Workflow in Natural Language
 
-1. Define Business Logic (Prompt). Paste the below prompt and click **Send**.
+1. Define Business Logic (Prompt) in the Workflow (Frontier) chat. Paste the below prompt and click **Send**.
 
     ```
     Each weekday morning, review unread emails from the last 24 hours.
