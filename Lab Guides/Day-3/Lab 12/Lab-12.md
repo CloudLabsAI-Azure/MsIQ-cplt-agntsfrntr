@@ -1,6 +1,6 @@
 # Lab 12: Develop a Cross-Channel HR Support Agent for Zava Retail using Microsoft 365 Agents SDK and Semantic Kernel
 
-## Estimated Duration: 80 Minutes
+### Estimated Duration: 80 Minutes
 
 ## Overview
 
@@ -61,11 +61,15 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image2.png)
 
-6. Enter **proj-@lab.labinstance.ID** as the project name, select the Resource group that starts with **ResourceGroup1**, and select **Create**.
+6. Enter **proj-<DID> (1)** as the project name, select the Resource group that starts with **Copilot-Studio (2)**, and select **Create (3)**.
 
     ![](./media/b8.png)
 
 7. This will scaffold a new project for you in Microsoft Foundry. It usually takes 3-5 minutes.
+
+1. Click on the **Cancel** option on model deploy page
+
+    ![](./media/b9a.png)
 
 8. When your project is created, you'll land in the **Agents Playground**.
 
