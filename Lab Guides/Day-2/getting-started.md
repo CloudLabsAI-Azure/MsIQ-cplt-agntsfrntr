@@ -42,7 +42,7 @@ The Copilot Agent Builder lets you configure and deploy knowledge-grounded front
 
 ## Architecture Diagram
 
-![Image](./images/ArcDay2.png)
+![Image](./media/arch.png)
 
 ## Explanation of Components
 
@@ -76,7 +76,7 @@ The architecture for this lab involves the following key components:
 
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-![Image](./media/GettingStarted-00.png)
+![Image](./media/gs1.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
