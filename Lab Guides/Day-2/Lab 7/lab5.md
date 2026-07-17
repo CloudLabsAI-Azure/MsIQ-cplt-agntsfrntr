@@ -139,8 +139,8 @@ Patricia Gray (Regional operations manager) is seeking for an overview of the op
 
 4. Now, Patricia can use the agent directly inside Teams. **Frontline Operations Agent** can be accessed under Microsoft Teams.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image15.png)
-    
+    ![](./media/image15.png)
+
 ## Exercise 3: Action and Decision Intelligence
 
 ### Task 1: Identify Startup Checklist
