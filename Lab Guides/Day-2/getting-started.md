@@ -1,43 +1,82 @@
-# Enterprise AI Automation with Microsoft 365 Copilot Cowork
+# Day 2: Build, Extend, and Govern Copilot Agents for Retail Operations with Microsoft 365 Copilot
 
-## Overall Estimated Duration: 8 Hours
+### Overall Estimated Duration: 3 Hours
 
 ## Overview
 
-In this hands-on lab, you will explore Copilot Cowork, the agentic workspace inside Microsoft 365 Copilot, and learn how it automates multi-step enterprise work across Outlook, Calendar, Teams, OneDrive, SharePoint, and Excel. Across eight progressive labs, you will move from getting oriented with Cowork to building a daily workday assistant, optimizing your calendar, coordinating the full meeting lifecycle, governing enterprise files, building custom Cowork skills, assembling a personal work dashboard, and finally building and publishing your own Copilot Cowork plugin.
+In this lab, you will get hands-on experience building, extending, and governing intelligent Copilot agents using **Microsoft 365 Copilot**, **SharePoint**, **Copilot Studio**, and **Agent 365**. Participants will learn how to use Copilot Agent Builder, SharePoint-grounded agents, Copilot Studio orchestration, Copilot in Excel, Teams, and Chat, and Agent 365 governance to transform real-world retail operations scenarios for Zava Retail, a growing omnichannel retailer.
 
->**Disclaimer:** Copilot Cowork is AI-powered, so generated outputs may differ across users and sessions. The results you see in this lab may not exactly match the examples shown here. Follow the workflow and expected outcome in the guide rather than expecting identical content.
+By completing this lab, learners will be equipped to create knowledge-grounded frontline agents, build trusted SharePoint-based assistants with multi-agent handoff, accelerate financial analysis and reporting with AI assistance, and govern the enterprise agent ecosystem with centralized visibility, lifecycle control, and compliance.
 
-## Objectives
+## Objective
 
-In this lab, you will perform the following:
+By the end of this lab, participants will be able to:
 
-- Get oriented with Copilot Cowork, seed your Outlook, OneDrive, and Teams environment, and run your first agentic tasks
-- Build a personalized daily workday assistant that briefs you from your calendar, inbox, and Teams activity
-- Detect and resolve calendar conflicts, apply executive-style standing rules, and automate an out-of-office vacation handoff
-- Automate the full lifecycle of an executive meeting — AI-generated preparation, cross-app content collection, and grounded post-meeting follow-up
-- Classify, rename, and govern a shared OneDrive environment with human-in-the-loop approval gates
-- Design and build custom, reusable Cowork skills using the conversational Skill Builder
-- Build and schedule a self-refreshing personal work dashboard powered by Microsoft Graph data
-- Build, validate, and publish a custom Copilot Cowork plugin connected to an external data source through the Model Context Protocol (MCP)
+- **Build and deploy a Frontline Operations Agent** using Copilot Agent Builder in Microsoft 365 Copilot, grounded in operational knowledge sources such as SOPs, employee handbooks, and store checklists, and test it across real-world retail scenarios in Microsoft Teams.
+
+- **Create a SharePoint-grounded Store Operations Assistant** and enhance it in Copilot Studio with advanced instructions, topic-based conversation routing, and multi-agent orchestration to a specialized HR & Payroll Assistant.
+
+- **Optimize financial analysis and reporting** using Microsoft 365 Copilot across Excel, Teams, and Copilot Chat to analyze Cost of Goods Sold (COGS) data, summarize finance meetings, and evaluate a potential acquisition.
+
+- **Govern and monitor the agent ecosystem** with Agent 365 by publishing a Holiday Returns Helper agent, reviewing tenant-wide governance metrics, managing agent lifecycle actions, exporting the agent inventory, and identifying ownerless agents.
 
 ## Pre-requisites
 
 Participants should have:
 
-- Access to Microsoft 365 Copilot with Copilot Cowork enabled
-- A Microsoft account with permissions to use Outlook, Calendar, Teams, OneDrive, SharePoint, Word, Excel, and Microsoft To Do
-- Access to the Microsoft 365 Admin Center, with permissions to upload, deploy, and assign a custom app (required for the plugin-publishing lab)
-- Access to the provisioned lab virtual machine and its local file system, for downloading and uploading generated files such as skill definitions and plugin packages
-- Basic familiarity with Microsoft 365 applications and everyday business scenarios
+- A Microsoft 365 account with a Copilot license (Microsoft 365 Copilot or Copilot for Microsoft 365).
 
-## Getting Started with the Lab
+- Access to Microsoft Teams, Microsoft Excel, SharePoint, Copilot Studio, the Microsoft 365 Copilot portal, and the Microsoft 365 admin center.
 
-Welcome to the Enterprise AI Automation with Microsoft 365 Copilot Cowork workshop. In this workshop, you will explore how Copilot Cowork enhances productivity by planning and executing multi-step tasks on your behalf directly within Microsoft 365. Through a series of guided labs, you will learn how to triage email and calendars, coordinate meetings, govern files, build custom skills, assemble dashboards, and extend Cowork with your own plugins.
+- Basic familiarity with Microsoft 365 applications (Teams, Excel, SharePoint).
 
-This workshop provides a hands-on experience with modern agentic AI workflows, helping you understand how Copilot Cowork can transform everyday enterprise tasks and improve productivity across the Microsoft 365 ecosystem.
+- Understanding of basic business processes such as retail operations, financial analysis, and AI agent governance.
 
-![Image](./media/gsd1.png)
+## Architecture
+
+In this lab, you will use the Microsoft 365 Copilot platform, SharePoint, Copilot Studio, and Agent 365 to build, extend, and govern AI agents that support retail operations at Zava Retail. The workflow begins by creating and grounding purpose-built Microsoft Copilot agents through the Microsoft 365 Copilot portal, SharePoint, and Copilot Studio, and then managing them centrally through the Microsoft 365 admin center.
+
+Each agent is grounded in organizational data — SOPs, employee handbooks, store checklists, SharePoint document libraries, HR and payroll content, and finance workbooks — and uses AI reasoning to plan, execute, and generate outputs across different functional areas including frontline operations, store management, HR, finance, and governance.
+
+The Copilot Agent Builder lets you configure and deploy knowledge-grounded frontline agents. SharePoint-grounded agents deliver trusted, boundary-aware responses, while Copilot Studio adds advanced instruction authoring, topic-based routing, and multi-agent orchestration. Copilot in Excel, Teams, and Chat accelerates financial analysis, meeting summarization, and acquisition evaluation. Agent 365 provides centralized governance, monitoring, lifecycle management, and compliance across the entire agent ecosystem.
+
+## Architecture Diagram
+
+![Image](./images/ArcDay2.png)
+
+## Explanation of Components
+
+The architecture for this lab involves the following key components:
+
+1. **Microsoft 365 Copilot Portal (m365.cloud.microsoft):** The primary interface for accessing and creating Copilot agents, including Copilot Agent Builder and Copilot Chat.
+   - Acts as the entry point for agent creation, testing, and interaction across Microsoft 365.
+   - Provides access to custom agents that can be surfaced and used directly in Microsoft Teams.
+
+1. **Copilot Agent Builder:** A no-code tool for building custom frontline agents with defined names, instructions, and knowledge sources.
+   - Supports uploading enterprise documents such as SOPs, employee handbooks, store checklists, FAQs, and shift guides as grounding knowledge.
+   - Allows agents to be published and accessed directly within Microsoft Teams for frontline employees.
+
+1. **Microsoft SharePoint:** A trusted content platform used to store and organize verified organizational knowledge.
+   - Hosts team sites and document libraries containing HR documents, product specifications, project updates, shift handover notes, and SOP libraries.
+   - Grounds Copilot agents so responses remain accurate and within approved knowledge boundaries.
+
+1. **Microsoft Copilot Studio:** An advanced authoring environment for customizing and orchestrating Copilot agents.
+   - Enables system prompt composition, topic-based conversation routing, and fallback handling for precise control over agent behavior.
+   - Supports multi-agent orchestration, allowing a primary agent to hand off requests to specialized agents such as an HR & Payroll Assistant.
+
+1. **Microsoft 365 Copilot in Excel, Teams, and Chat:** AI assistance embedded directly into finance and collaboration workflows.
+   - Analyzes datasets such as Cost of Goods Sold (COGS), summarizes meetings, and generates task lists and follow-up communications.
+   - Evaluates business scenarios such as acquisitions by producing executive summaries and comprehensive reports with visuals.
+
+1. **Agent 365 (Microsoft 365 admin center):** A centralized governance layer for managing the organization's AI agent ecosystem.
+   - Provides tenant-wide dashboards, an Agent Registry, and metrics for active users, pending requests, and ownerless agents.
+   - Supports lifecycle actions such as blocking and unblocking agents, exporting the agent inventory, and reviewing governance gaps.
+
+## Getting Started with Lab
+
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
+
+![Image](./media/GettingStarted-00.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
@@ -46,24 +85,58 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 ![Image](./media/GettingStarted-01.png)
 
 ## Virtual Machine & Lab Guide
+
 Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
 
 ## Exploring Your Lab Resources
+
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
 ![Image](./media/GettingStarted-02.png)
 
 ## Utilizing the Split Window Feature
+
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
 ![Image](./media/GettingStarted-03.png)
 
 ## Managing Your Virtual Machine
+
 Feel free to **start, restart, or stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![Image](./media/GettingStarted-04.png)
 
+## Let's Get Started with Microsoft 365 Copilot
 
+1. On your virtual machine, open a web browser and navigate to the Microsoft 365 Copilot portal.
+     ```
+     https://m365.cloud.microsoft/
+     ```
+    ![](./media/img0.png)
+
+1. On the **Sign in** page, enter the following email/username and click **Next (2)**.
+
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+   
+    ![](./media/img1.png)
+     
+1. Now enter the following password and click on **Sign in (2)**.
+   
+   * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
+   
+    ![](./media/img2.png)
+
+      > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
+
+      ![](./images/GS-0.png) 
+     
+1. If you see the pop-up **Stay Signed in?**, select **No**.
+
+    ![](./media/img3.png)
+
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+
+1. If a **Welcome to Microsoft 365** popup window appears, select **Maybe Later** to skip the tour.
 
 ## Support Contact
 

@@ -1,4 +1,4 @@
-# Govern and Monitor the Zava Retail Agent Ecosystem with Agent 365
+# Lab 10 Govern and Monitor the Zava Retail Agent Ecosystem with Agent 365
 
 ## Estimated Duration: 60 minutes
 
