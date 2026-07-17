@@ -1,6 +1,6 @@
 # Govern and Monitor the Zava Retail Agent Ecosystem with Agent 365
 
-## Estimated Duration: 40 minutes
+## Estimated Duration: 60 minutes
 
 ## Overview
 

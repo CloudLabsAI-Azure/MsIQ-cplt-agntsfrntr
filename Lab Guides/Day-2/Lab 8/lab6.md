@@ -1,6 +1,6 @@
-# Lab 6 – Build a Store Operations Assistant Copilot Agent for trusted customer success at Zava Retail
+# Lab 6 - Build a Store Operations Assistant Copilot Agent for trusted customer success at Zava Retail
 
-## Estimated Duration:** 40 minutes
+## Estimated Duration: 40 minutes
 
 ## Overview
 

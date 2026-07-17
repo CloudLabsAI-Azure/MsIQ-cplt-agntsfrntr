@@ -145,7 +145,7 @@ Patricia Gray (Regional operations manager) is seeking for an overview of the op
 
 ### Task 1: Identify Startup Checklist
 
-1. Navigate to `https://m365.cloud.microsoft/` Microsoft 365 copilot page.
+1. Navigate to Microsoft 365 copilot page using the URL.
 
      ```
      https://m365.cloud.microsoft/
