@@ -1,0 +1,18 @@
+[
+  {
+        "Name": "Build Frontier Firm productivity with Work IQ, Copilot & agents",
+        "Language": "English",
+        "Files": [
+            {   "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/post-build-SPLabs/Lab%20Guides/Day-3/getting-started.md",
+                "Order": 1
+            },
+            {   "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/post-build-SPLabs/Lab%20Guides/Day-3/Lab%2011/Lab-11.md",
+                "Order": 2
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/post-build-SPLabs/Lab%20Guides/Day-3/Lab%2012/Lab-12.md",
+                "Order": 3
+            }      
+        ]
+    }
+]
