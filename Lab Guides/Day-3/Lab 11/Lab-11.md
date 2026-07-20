@@ -1,18 +1,20 @@
-# Lab 10: Transform After-Sales Repair Operations at Zava Retail with an AI-Powered Declarative Agent
+# Lab 11: Transform After-Sales Repair Operations at Zava Retail with an AI-Powered Declarative Agent
 
-## Estimated Duration: 60 Minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
 In this lab, you will build a **Declarative Agent** using a **TypeSpec** definition with the **Microsoft 365 Agents Toolkit**. You will create an agent called **RepairServiceAgent** that connects to an existing Repair Service API, enabling users to create, update, retrieve, and delete car repair records conversationally within Microsoft 365 Copilot.
 
-Zava Retail is a global retail and service organization that provides after-sales support for automotive accessories and consumer electronics across multiple regional service centers. As the business scales, the After-Sales Operations team faces increasing complexity in managing repair requests, tracking service status, and coordinating across technicians and service locations. Repair operations today rely on a legacy tracking system and manual API interactions, causing delays and inconsistent data updates. The RepairServiceAgent modernizes this workflow by giving service agents, technicians, and managers a single conversational interface — backed by TypeSpec-defined API actions and Adaptive Card responses — for managing repair data inside Microsoft 365 Copilot.
+Zava Retail is a global retail and service organization that provides after-sales support for automotive accessories and consumer electronics across multiple regional service centers. As the business scales, the After-Sales Operations team faces increasing complexity in managing repair requests, tracking service status, and coordinating across technicians and service locations. Repair operations today rely on a legacy tracking system and manual API interactions, causing delays and inconsistent data updates. The RepairServiceAgent modernizes this workflow by giving service agents, technicians, and managers a single conversational interface - backed by TypeSpec-defined API actions and Adaptive Card responses - for managing repair data inside Microsoft 365 Copilot.
 
 **Declarative agents** are a type of agent for Microsoft 365, built by extending Microsoft 365 Copilot. You define custom knowledge and custom actions to create agents tailored to a specific scenario. Declarative agents use the same infrastructure, orchestrator, foundation model, and security controls as Microsoft 365 Copilot, ensuring a consistent and familiar user experience.
 
-![Declarative agent architecture diagram. At the very basis there is the foundational model of Microsoft 365 Copilot, as well as the same orchestrator. The agent provides also custom knowledge and grounding data, and custom skills as actions, triggers, and workflows.. The user experience is available in Microsoft 365 Copilot.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image1.png)
+Declarative agent architecture diagram. At the very basis there is the foundational model of Microsoft 365 Copilot, as well as the same orchestrator. The agent provides also custom knowledge and grounding data, and custom skills as actions, triggers, and workflows.. The user experience is available in Microsoft 365 Copilot.
 
-**TypeSpec** is a language developed by Microsoft for designing and describing API contracts in a structured and type-safe way — a blueprint for how an API should look and behave, including what data it accepts, returns, and how its parts connect. TypeSpec brings the same structure to agents and their API actions that TypeScript brings to frontend/backend code, fitting naturally into design-first workflows with tools like Visual Studio Code. It provides a single source of truth for agent behavior, keeps actions and capabilities consistent, auto-generates OpenAPI specs and manifests, and catches design issues (mismatched types, unclear definitions) before implementation begins.
+![](./media/image1.png)
+
+**TypeSpec** is a language developed by Microsoft for designing and describing API contracts in a structured and type-safe way - a blueprint for how an API should look and behave, including what data it accepts, returns, and how its parts connect. TypeSpec brings the same structure to agents and their API actions that TypeScript brings to frontend/backend code, fitting naturally into design-first workflows with tools like Visual Studio Code. It provides a single source of truth for agent behavior, keeps actions and capabilities consistent, auto-generates OpenAPI specs and manifests, and catches design issues (mismatched types, unclear definitions) before implementation begins.
 
 ## Lab Objectives
 
@@ -38,25 +40,11 @@ In this exercise, you will build a **Declarative Agent**, define it, update the 
 
 In this task, you will scaffold a new Declarative Agent project using the Microsoft 365 Agents Toolkit in Visual Studio Code.
 
-1. Create a new folder named **ServiceAgent** in your Desktop.
+1. Right click and create a new folder named **ServiceAgent** in your Desktop.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image5.png)
+    ![](./media/t1a.png)
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image6.png)
-
-2. Open Visual Studio Code. When the Foundry MCP pop-up appears, click **Allow**, then select **Work or School Account** and sign in using the following credentials:
-
-    - Username - **@lab.CloudPortalCredential(User1).Username**
-    - TAP Token - **@lab.CloudPortalCredential(User1).AccessToken**
-
-    ![](./media/t1.png)
-    ![](./media/t2.png)
-    ![](./media/t3.png)
-    ![](./media/t4.png)
-
-3. Select **Yes** to Sign in to all apps and website on this device.
-
-    ![](./media/t5.png)
+    ![](./media/t1b.png)
 
 4. Locate the **Microsoft 365 Agents Toolkit icon** from the menu on the left and select it. An activity bar will open. Select the **Create a New Agent/App** button in the activity bar, which will open the palette with a list of app templates available on Microsoft 365 Agents Toolkit.
 
@@ -82,14 +70,17 @@ In this task, you will scaffold a new Declarative Agent project using the Micros
 
     ![](./media/t10.png)
 
+<!---
 9. Select **Yes, I trust the authors** option in the confirmation dialog.
 
     ![](./media/t11.png)
+
 
     >**Note:** If you get the Foundry MCP pop-up again, click **Allow** and then select your current username.
 
     ![](./media/t12.png)
     ![](./media/t13.png)
+--->
 
 10. You'll need to sign into the **Microsoft 365 Agents Toolkit** in order to upload and test your agent from within it.
 
@@ -99,23 +90,34 @@ In this task, you will scaffold a new Declarative Agent project using the Micros
 
 12. Under **Accounts** section, select **Sign in to Microsoft 365**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image14.png)
+    ![](./media/t13a.png)
 
 13. This will open a dialog from the editor to sign in, create a Microsoft 365 developer sandbox, or Cancel. Select **Sign in**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image15.png)
+<!---
 
 14. Click **Allow** if you get a pop-up stating - Do you want to allow public and private networks to access this app?
 
     ![](./media/t14.png)
 
-15. Login with the following credentials:
+--->
 
-    - Username - **@lab.CloudPortalCredential(User1).Username**
-    - TAP Token - **@lab.CloudPortalCredential(User1).AccessToken**
+1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next (2)**. 
 
-    ![](./media/t15.png)
-    ![](./media/t16.png)
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+   
+      ![Image](./media/GettingStarted-05.png "Enter Email")
+     
+1. Now enter the following Temporary Access Pass and click on **Sign in (2)**.
+   
+   * **Temporary Access Pass**: <inject key="AzureAdUserPassword"></inject> **(1)**
+
+      ![](./media/GS-0.png) 
+     
+1. If you see the pop-up **Stay Signed in?**, select **Yes**.
+
+   ![Image](./media/GettingStarted-06.png)
 
 16. Once signed in, **close** the browser and go back to the project window.
 
@@ -123,6 +125,10 @@ In this task, you will scaffold a new Declarative Agent project using the Micros
     ![](./media/t17.png)
 
     >**Note:** If there is a message on Custom App Upload Disabled, safely ignore it.
+
+1. Click on the Refresh option few times if its not connected.
+
+    ![](./media/t14a.png)
 
 ### Task 2: Define your agent
 
@@ -136,7 +142,7 @@ The **main.tsp** file serves as the primary definition point for your agent, con
 
 The **env.tsp** file is used by the toolkit to process environment variables during compilation. This file is generated from **env/.env.\*** files and offers variables for other TypeSpec files, so manual updates are not required.
 
-You'll also find an **actions** folder containing template files — initially including **github.tsp**, which demonstrates GitHub API integration. For this lab, you'll replace this template with your own action definitions to establish connectivity with the Repairs API service.
+You'll also find an **actions** folder containing template files - initially including **github.tsp**, which demonstrates GitHub API integration. For this lab, you'll replace this template with your own action definitions to establish connectivity with the Repairs API service.
 
 Additionally, there's a **prompts** folder housing the **instructions.tsp** file, which allows you to define detailed behavioral instructions and guidance for your agent.
 
@@ -163,7 +169,7 @@ Additionally, there's a **prompts** folder housing the **instructions.tsp** file
 
     ![](./media/t20.png)
 
-3. Next, configure a conversation starter — the initial prompt that begins user-agent interaction. Uncomment the default template section and update the title and text fields to match the agent scenario:
+3. Next, configure a conversation starter - the initial prompt that begins user-agent interaction. Uncomment the default template section and update the title and text fields to match the agent scenario:
 
     ```
     // Uncomment this part to add a conversation starter to the agent.
@@ -191,11 +197,11 @@ Additionally, there's a **prompts** folder housing the **instructions.tsp** file
 
     ![](./media/t22.png)
 
-5. Save the changes to both files using **CTRL+S**.
+5. Save the changes to **both** files using **CTRL+S**.
 
 ### Task 3: Update the action for the agent
 
-1. Next, you will define the action for your agent by opening the **actions/github.tsp** file. Rename this file to **actions.tsp**.
+1. Next, you will define the action for your agent by opening the **src/agent/actions/github.tsp** file. Rename this file to **actions.tsp**.
 
     ![](./media/t23.png)
     ![](./media/t24.png)
@@ -273,12 +279,12 @@ This is a task to understand what we have defined in the TypeSpec file. Just rea
 
 Check the below details to understand some of the decorators used in these files:
 
-- **@agent** — Defines the namespace (name) and description of the agent
-- **@instructions** — Defines the instructions that prescribe the behavior of the agent. 8,000 characters or less
-- **@conversationStarter** — Defines conversation starters for the agent
-- **op** — Defines any operation. Either it can be an operation to define agent's capabilities like op GraphicArt, op CodeInterpreter etc., or define API operations like op listRepairs
-- **@server** — Defines the server endpoint of the API and its name
-- **@capabilities** — When used inside a function, it defines simple adaptive cards with small definitions like a confirmation card for the operation
+- **@agent** - Defines the namespace (name) and description of the agent
+- **@instructions** - Defines the instructions that prescribe the behavior of the agent. 8,000 characters or less
+- **@conversationStarter** - Defines conversation starters for the agent
+- **op** - Defines any operation. Either it can be an operation to define agent's capabilities like op GraphicArt, op CodeInterpreter etc., or define API operations like op listRepairs
+- **@server** - Defines the server endpoint of the API and its name
+- **@capabilities** - When used inside a function, it defines simple adaptive cards with small definitions like a confirmation card for the operation
 
 ### Task 5: Test your agent
 
@@ -296,7 +302,35 @@ In this task, you will test the Repair Service Agent that you just created.
 
     ![](./media/t30.png)
 
-4. Open your web browser and navigate to **https://m365.cloud.microsoft/chat** to open the Copilot app and click on **Expand Navigation**.
+1. On your virtual machine, open a web browser and navigate to the Microsoft 365 Copilot portal.
+
+     ```
+     https://m365.cloud.microsoft/
+     ```
+
+    ![](../../Day-2/media/img0.png)
+
+1. On the **Sign in** page, enter the following email/username and click **Next (2)**.
+
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+   
+    ![](../../Day-2/media/img1.png)
+     
+1. Now enter the following password and click on **Sign in (2)**.
+   
+   * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
+   
+    ![](../../Day-2/media/img2.png)
+
+      > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
+     
+1. If you see the pop-up **Stay Signed in?**, select **No**.
+
+    ![](../../Day-2/media/img3.png)
+
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+
+1. If a **Welcome to Microsoft 365** popup window appears, select **Maybe Later** to skip the tour.
 
     ![](./media/t31.png)
 
@@ -392,6 +426,7 @@ In this task, you will modify the agent and add operations like **createRepair**
     */
     @format("uri")
     image?: string;
+    }
     }
     ```
 
@@ -496,9 +531,10 @@ In this task, you will enhance the reference cards or response cards using Adapt
 
 ### Task 3: Update agent instruction for new operations
 
-1. In the **prompts/instructions.tsp** file, update the instructions definition to have additional directives for the agent. Replace the **INSTRUCTIONS** constant with the below code:
+1. In the **src/agent/prompts/instructions.tsp** file, update the instructions definition to have additional directives for the agent. Replace the **INSTRUCTIONS** constant with the below code:
 
     ```
+    namespace Prompts {
     const INSTRUCTIONS ="""  
         ## Purpose
         You will assist the user in finding car repair records based on the information provided by the user.
@@ -509,13 +545,14 @@ In this task, you will enhance the reference cards or response cards using Adapt
         - When creating a repair item, if the user did not provide a description or date, use the title as the description and put today's date in the format YYYY-MM-DD.
         - Do not use any technical jargon or complex terms.
     """;
+    }
     ```
 
     ![](./media/t43.png)
 
 ### Task 4: Provision and Test the Agent
 
-In this task, you will take the updated agent — now also a repairs analyst — to test.
+In this task, you will take the updated agent - now also a repairs analyst - to test.
 
 1. Select the Agents Toolkit's extension icon to open its activity bar from within your project.
 
@@ -539,6 +576,8 @@ In this task, you will take the updated agent — now also a repairs analyst —
 
 5. Go back to the **M365 Copilot page** and do a **refresh** to view the changes.
 
+    >**Note:** It may take up to 10 mins to reflect the changes.
+
     ![](./media/t47.png)
 
 6. In the **RepairServiceAgent**, start by using the conversation starter **Create repair**.
@@ -553,7 +592,7 @@ In this task, you will take the updated agent — now also a repairs analyst —
 
     ![](./media/t50.png)
 
-9. Review the output.
+9. Review the output and click on the **View Image**.
 
     ![](./media/t51.png)
     ![](./media/t52.png)
@@ -587,6 +626,10 @@ In this task, you will take the updated agent — now also a repairs analyst —
 16. Scroll to the right, click on the **3 dots**, and select **Delete**. This needs to be done in order to provision another agent. Since you will be creating another agent in the next lab, this step needs to be done.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image60.png)
+
+17. Enter the name of the application as **RepairServiceAgentdev** and click on **Confirm**.
+
+    ![](./media/t57a.png)
 
 ## Summary
 

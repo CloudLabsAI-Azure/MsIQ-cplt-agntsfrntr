@@ -1,456 +1,308 @@
-# Govern and Monitor the Zava Retail Agent Ecosystem with Agent 365
+# Lab 10 Govern and Monitor the Zava Retail Agent Ecosystem with Agent 365
+
+## Estimated Duration: 60 minutes
+
+## Overview
+
+In this lab, you will explore how Agent 365 enables organizations to govern, monitor, and manage AI agents deployed across Microsoft 365. As AI adoption grows, administrators must ensure that every agent is visible, properly governed, assigned to a business owner, and managed throughout its lifecycle. Agent 365 provides centralized capabilities to monitor agent activity, review governance metrics, manage approvals, control agent availability, and maintain compliance across the organization.
+
+You will create and publish a new Holiday Returns Helper agent using Microsoft Copilot Studio, review tenant-wide insights through the Agent 365 Overview dashboard, manage agents using the Agent Registry, install and validate agents in Microsoft Teams, perform lifecycle actions such as blocking and unblocking agents, export the agent inventory for audit purposes, and identify governance gaps related to agent ownership. By the end of the lab, you will understand how Agent 365 supports enterprise AI governance while maintaining visibility, accountability, and operational control across the AI agent ecosystem.
+
+## Lab Objectives
+
+In this lab, you will perform the following:
+
+- Exercise 1: Create and publish the Holiday Returns Helper agent using Microsoft Copilot Studio.
+- Exercise 2: Explore the Agent 365 Overview dashboard and review tenant-wide governance metrics.
+- Exercise 3: Publish, install, and validate the Holiday Returns Helper agent in Microsoft Teams.
+- Exercise 4: Manage the lifecycle of an existing agent by blocking and unblocking it through the Agent Registry.
+- Exercise 5: Export the complete agent inventory for governance, reporting, and audit purposes.
+- Exercise 6: Identify ownerless agents and evaluate governance gaps within the organization.
 
 ## Scenario
 
-Zava Retail's frontline and project teams are already using two live
-agents: the Frontline Operations Assistant, which supports store staff
-with schedules, SOPs, and daily operations, and the Project Knowledge
-Assistant, which helps employees find project documents and summaries.
-With the holiday season approaching, Jordan Blake, VP of Store
-Operations, has asked IT to stand up a third agent — a Holiday Returns
-Helper — that gives frontline employees short, mobile-friendly answers
-about the holiday return window, exchange policy, and refund methods.
-Priya Nair, the Store Operations Manager, has written the return-policy
-content the agent will rely on and is expected to be named its business
-owner once it goes live.
+Zava Retail has adopted **Microsoft 365 Copilot** agents to support multiple business functions across its retail operations. Frontline employees use the Frontline Operations Assistant for operational guidance, while project teams rely on the Project Knowledge Assistant to quickly access project documentation and organizational knowledge. As the holiday shopping season approaches, leadership has requested a new Holiday Returns Helper agent to assist store associates with customer questions related to holiday returns, exchanges, and refund policies.
 
-You are Maya Chen, the AI Administrator for Zava Retail. You are
-responsible for more than just building this new agent. You need to make
-sure it — and every other agent already running in the tenant — is
-visible in a single inventory, routed through proper approval before it
-goes live, installed where frontline staff will actually use it
-(Microsoft Teams), and covered by the same governance controls
-(ownership, blocking, risk review, and exportable reporting) that Zava
-Retail already applies to its other agents. Partway through your review,
-Riley Osei from Compliance & Risk flags a concern about Sam Torres's
-Frontline Operations Assistant and asks you to pause it while the
-wording of one of its SOP responses is reviewed. In this lab, you will
-build the Holiday Returns Helper in Copilot Studio, publish and install
-it, then use the Agent 365 Overview and Registry in the Microsoft 365
-admin center to inspect, approve, block/unblock, export, and audit
-ownership across Zava Retail's full agent ecosystem.
+As the organization's AI Administrator, your responsibility extends beyond creating new agents. You must ensure that every AI agent is properly governed throughout its lifecycle by maintaining centralized visibility, enforcing approval processes, monitoring ownership, validating deployments, and supporting compliance requirements. Using Agent 365, you will publish and validate the new Holiday Returns Helper agent, monitor organization-wide agent activity, manage agent lifecycle actions such as blocking and restoring agents, export governance reports, and identify ownership gaps to ensure that Zava Retail's AI ecosystem remains secure, compliant, and ready for enterprise-scale adoption.
 
-## Personas:
+**Key Personas**
 
-- Maya Chen(AI Administrator, Zava Retail IT)-owns the Agent 365
-  Registry and is responsible for approving, publishing, blocking, and
-  auditing every agent in the tenant.
+1. **Maya Chen - AI Administrator** : Manages the organization's AI agent ecosystem by publishing, governing, monitoring, and maintaining lifecycle controls for all Microsoft 365 Copilot agents.
 
-- Jordan Blake(VP, Store Operations)- Sponsored the Holiday Returns
-  Helper project and requested it be available to all store staff ahead
-  of the holiday season.
+1. **Jordan Blake - Vice President, Store Operations** : Sponsors the Holiday Returns Helper initiative and ensures frontline employees have timely access to accurate return policy information during the holiday season.
 
-- Priya Nair(Store Operations Manager)- Day-to-day process owner for
-  returns and exchanges. Priya wrote the return-policy content used as
-  the agent's knowledge source and is the intended business owner for
-  Holiday Returns Helper.
+1. **Priya Nair - Store Operations Manager** : Owns the holiday returns process, authors operational guidance, and serves as the business owner responsible for the Holiday Returns Helper agent.
 
-- Riley Osei(Compliance & Risk Analyst)- Submitted the request to
-  temporarily block Frontline Operations Assistant pending a
-  policy-language review, and will confirm when it's safe to unblock.
+1. **Riley Osei - Compliance & Risk Analyst** : Monitors AI governance and compliance requirements, reviews agent behavior, and requests lifecycle actions such as temporarily blocking agents when policy reviews are required.
 
-## Lab objectives
+## Exercise 1: Create a New Agent - Holiday Returns Helper
 
-In this lab, you will:
+Build the Holiday Returns Helper agent from scratch in Copilot Studio,give it clear instructions and a knowledge source, and publish it so it is ready for governance review. You are building this on behalf of Jordan Blake's request, using the return-policy document supplied by Priya Nair as the knowledge source.
 
-1.  Create and publish a new agent, Holiday Returns Helper, in Copilot
-    Studio using an uploaded knowledge source.
+1. Open web browser and navigate to Excel using the URL provided and click **Sign in** button.
 
-2.  Review the Agent 365 Overview page to understand tenant-wide
-    metrics: agent count, active users, pending requests, and ownerless
-    agents.
+   ```
+   https://copilotstudio.preview.microsoft.com/
+   ```
+   ![](./media/n1.png)
 
-3.  Inspect pending agent requests in the Registry and publish the
-    Holiday Returns Helper agent to the store.
+1. Sign in with following  credentials:
 
-4.  Install the newly published agent in Microsoft Teams and verify it
-    responds correctly to real user prompts.
+	- **Email/Username:** **<inject key="AzureAdUserEmail"></inject>**
 
-5.  Block and unblock an existing agent (Frontline Operations Assistant)
-    and understand the impact of each action.
+    ![](./media/img1.png)
 
-6.  Export the full agent inventory to CSV for offline reporting and
-    audit purposes.
+	- **Temporary Acces Password:** **<inject key="AzureAdUserPassword"></inject>**
 
-7.  Identify agents that are missing a business owner and understand how
-    to close that governance gap.
+    ![](./media/img2.png)
 
-## Agents used in this lab
+1. If **Action required** pop-up window appears, click on **Ask later**.
 
+1. If prompted to **stay signed in**, you can click **No**.
 
+    ![](./media/img3.png)
 
-## Exercise 1: Create a New Agent — Holiday Returns Helper
+1. Select **Agent** to build a new agent.
 
-Build the Holiday Returns Helper agent from scratch in Copilot Studio,
-give it clear instructions and a knowledge source, and publish it so it
-is ready for governance review. You are building this on behalf of
-Jordan Blake's request, using the return-policy document supplied by
-Priya Nair as the knowledge source.
-
-1.  Open web browser and navigate to +++https://copilotstudio.preview.microsoft.com/+++
-
-2.  Sign in with the following credentials.
-
-    - Username - <+++@lab.CloudPortalCredential>(User1).Username+++
-
-    - TAP Token - <+++@lab.CloudPortalCredential(User1).AccessToken>+++
-
-    ![](./media/image1.png)
-    
-    ![](./media/image2.png)
-
-3.  When prompted to stay signed in, select **Yes**.
-    
-    ![](./media/image3.png)
-
-4.  Select **Agent** to build a new agent.
-
-    ![](./media/image4.png)
+    ![](./media/n1.png)
 
 5.  Enter the following details of the agent:
 
     - **Name:** Holiday Returns Helper
 
     - **Instructions:**
-    ```
-    You are Holiday Returns Helper for Zava Retail.
-    Your role is to assist store associates with questions about holiday returns, exchanges, and refunds.
-    Always answer using information from the uploaded Holiday Return Policy document.
-    Keep responses concise, professional, and suitable for frontline employees using a mobile device.
-    If the information is not available in the knowledge source, state that you couldn't find the answer rather than making assumptions.
-    Do not answer unrelated questions.
-    ```
-    ![](./media/image5.png)
+        ```
+        You are Holiday Returns Helper for Zava Retail.Your role is to assist store associates with questions about holiday returns, exchanges, and refunds.Always answer using information from the uploaded Holiday Return Policy document.Keep responses concise, professional, and suitable for frontline employees using a mobile device.If the information is not available in the knowledge source, state that you couldn't find the answer rather than making assumptions. Do not answer unrelated questions.
+        ```
 
-6.  Select **knowledge** from the left navigation menu to add a
-    knowledge source from C:\Lab Files\Agent365Lab.
+    ![](./media/n2.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image6.png)
+1. Select **knowledge** from the left navigation menu to add a knowledge source.
 
-7.  Select **Click to upload** the document.
+    ![](./media/n3.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image7.png)
+1. Select **Click to upload** the document.
 
-8.  Click **Add to agent.**
+    ![](./media/n4.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image8.png)
+1. Navigate to **C:\Lab Files\Agent365Lab** and open the **Zava_Retail_Holiday_Returns_Policy** file.
+   
+    ![](./media/n16.png)
 
-9.  Remove the **search all website** option.
+1. Make sure that file is uploaded and then click **Add to agent.**
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image9.png)
+    ![](./media/n5.png)
 
-10. Click the publish drop-down menu. Make sure Teams + Microsoft 365
-    are selected. Turn on Microsoft 365. Click **Save and publish**.
+1. Remove the **search all website** option.
 
-    ![](./media/image10.png)
+    ![](./media/n6.png)
 
-11. Select Publish to publish the agent.
+1. Click the publish drop-down menu.
 
-    ![](./media/image11.png)
+    ![](./media/n7.png)
 
-12. Select the **preview** tab to test the agent.
+1. Confirm **Teams + Microsoft 365 (1)** is selected as the channel, ensure **Make agent available in Microsoft 365 Copilot (2)** is checked, then click **Save and publish (3)**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image12.png)
+    ![](./media/n8.png)
 
-13. Enter the following prompt in the prompt field. Select the **Send**
-    button.
+1. Click **Publish (1)**, then click the **X (2)** to close the dialog.
 
-    ```
+    ![](./media/n9.png)
+
+1. Select the **preview** tab to test the agent.
+
+    ![](./media/n10.png)
+
+1. Enter the following **prompt (1)** in the prompt field and click the **Send** button.
+
+     ```
     What is the holiday return window?
-    ```
+     ```
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image13.png)
+    ![](./media/n11.png)
 
-14. The agent should explain the return window using the uploaded
-    policy.
+1. The agent should explain the return window using the uploaded policy.
+
+    ![](./media/n12.png)
+
+     > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
     
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image14.png)
-
-15. Enter the following prompt and select the **Send** button.
+1. Enter the following prompt and select the **Send** button.
 
     ```
     Can a customer exchange an item instead of requesting a refund?
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image15.png)
+    ![](./media/n14.png)
 
-16. The exchange policy should match the knowledge document.
+1. The exchange policy should match the knowledge document.
 
-    ![A screenshot of a computer screen AI-generated content may be
-    incorrect.](./media/image16.png)
+    ![](./media/n15.png)
+
+     > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
 
 ## Exercise 2: Explore the Agent Registry and Monitor Agent Activity
 
-Get a tenant-wide snapshot of Zava Retail's agent ecosystem — total
-agents, active usage, open requests, and ownership gaps — before
+Get a tenant-wide snapshot of Zava Retail's agent ecosystem - total
+agents, active usage, open requests, and ownership gaps - before
 drilling into individual agents
 
-1.  Open a browser and navigate to +++https://admin.cloud.microsoft/+++
+1. Open a browser and navigate to **Microsoft 365 admin center** using the URL
 
-2.  In the left navigation pane, expand **Agents**, and then
-    select **Overview**.
+    ```
+    https://admin.cloud.microsoft/
+    ```
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image17.png)
+1. In the left navigation pane, expand **Agents**, and then select **Overview**.
 
-3.  On the **Agent Overview** page, locate the following metrics and
-    note their current values:
+    ![](./media/n17.png)
 
-    1.  **Agent Registry** — total count of agents in the tenant.
+3. On the **Agent Overview** page, locate the following metrics and note their current values:
 
-    2.  **Active users** — unique users who interacted with an agent in
+    1.  **Agent Registry** - total count of agents in the tenant.
+
+    2.  **Active users** - unique users who interacted with an agent in
         the last 30 days.
 
-    3.  **Pending requests for agents** — open requests to add specific
+    3.  **Pending requests for agents** - open requests to add specific
         agents.
 
-    4.  **Agents without owners** — agents whose owner has left the
+    4.  **Agents without owners** - agents whose owner has left the
         company.
 
-    5.  **Agent analytics** — agents by creators, top platforms used to
+    5.  **Agent analytics** - agents by creators, top platforms used to
         build agents, and active users in Copilot over time.
 
-    ![A screenshot of a website AI-generated content may be
-    incorrect.](./media/image18.png)
+    ![](./media/n18.png)
 
-    ![A screenshot of a computer
-    AI-generated content may be incorrect.](./media/image19.png)
+    ![](./media/n19.png)
 
 ## Exercise 3: Inspect, Publish, and Validate the Holiday Returns Helper Agent
 
 In this exercise, you will review the submitted **Holiday Returns
-Helper** agent in the Agent Registry, approve it for organizational use,
-publish it to the agent store, install it in Microsoft Teams, and verify
-that it provides accurate responses for frontline retail employees.
+Helper** agent in the Agent Registry, approve it for organizational use, publish it to the agent store, install it in Microsoft Teams, and verify that it provides accurate responses for frontline retail employees.
 
-### Task 1: Review and Publish the Agent from the Agent Registry
+### Task 1: Install the Agent in Microsoft Teams
 
-Review the submitted Holiday Returns Helper agent in the Agent Registry
-and complete the approval workflow so it becomes available to users
-across the organization.
+Install the published Holiday Returns Helper agent in Microsoft Teams so it is available to frontline employees during customer interactions.
 
-1.  In the left navigation pane, select **Agents**. Select **All
-    agents**. Then select the **Requests** tab.
+1. Navigate to Microsoft Teams using the URL.
+     ```
+     https://teams.cloud.microsoft/
+     ```
 
-    ![](./media/image20.png)
+1. In the left navigation pane, select **Apps** and locate **Holiday Returns Helper**.
 
-2.  In the agent list, locate **Holiday Returns Helper** agent and
-    select the vertical **...** next to the name.
+    ![](./media/n20.png)
 
-    ![](./media/image21.png)
+1. Select **Add** to install the agent.
 
-3.  From the two options, you can either **Reject
-    submission** or **Publish to store**. For now, select **Publish to
-    store**.
+    ![](./media/n21.png)
 
-    ![](./media/image22.png)
+1. Select **Open**.
 
-4.  On the **Publish new agent** flow, under **Select users or groups
-    who can install the agent**, select **All users**.
+    ![](./media/n22.png)
 
-    ![](./media/image23.png)
+### Task 2: Verify the Agent's Responses
 
-5.  Under **Select users or groups who will have the agent pre-installed
-    (optional)**, select All Users.
+Test the Holiday Returns Helper agent by asking common customer service questions and confirm that it provides accurate and relevant responses.
 
-    ![](./media/image24.png)
+1. Open the **Holiday Returns Helper** agent in Microsoft Teams.
 
-6.  Select **Next**.
+1. Enter the following prompt and click **Send**
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image25.png)
-
-7.  On **Apply template**, select **Next**.
-
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image26.png)
-
-8.  On **Review permissions**, select **Next**.
-
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image27.png)
-
-9.  On **Review and finish**, select **Publish**.
-
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image28.png)
-
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image29.png)
-
-10. The agent is now published and available in the Registry.
-
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image30.png)
-
-### Task 2: Install the Agent in Microsoft Teams
-
-Install the published Holiday Returns Helper agent in Microsoft Teams so
-it is available to frontline employees during customer interactions.
-
-1.  Open **Microsoft Teams**. Navigate to +++https://teams.cloud.microsoft/+++
-
-2.  In the left navigation pane, select **Apps**. And locate **Holiday
-    Returns Helper**.
-
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image31.png)
-
-3.  Select **Add** to install the agent.
-
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image32.png)
-
-4.  Select **Open**.
-
-    ![A screenshot of a phone AI-generated content may be
-    incorrect.](./media/image33.png)
-
-### Task 3: Verify the Agent's Responses
-
-Test the Holiday Returns Helper agent by asking common customer service
-questions and confirm that it provides accurate and relevant responses.
-
-1.  Open the **Holiday Returns Helper** agent in Microsoft Teams.
-
-2.  Enter the following prompt:
     ```
     Can a customer exchange an item instead of requesting a refund?
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image34.png)
+    ![](./media/n23.png)
 
-3.  Review the response and verify that the exchange policy is explained
-    correctly.
-    
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image35.png)
+1. Review the response and verify that the exchange policy is explained correctly.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image36.png)
+    ![](./media/n24.png)
 
-4.  Enter the following prompt:
+1. Enter the following prompt and click **Send**
 
     ```
     What refund methods are supported?
     ```
 
-5.  Review the response and verify that the supported refund methods are
-    accurately described.
+    ![](./media/n25.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image37.png)
+1. Review the response and verify that the supported refund methods are accurately described.
 
-    ![A screenshot of a computer
-    AI-generated content may be incorrect.](./media/image38.png)
+    ![](./media/n26.png)
 
 ## Exercise 4: Block and Unblock the Frontline Operations Assistant
 
 Practice the emergency control every AI admin needs: immediately
-stopping an agent tenant-wide, and safely restoring it once a concern
-has been resolved. Riley Osei from Compliance & Risk has asked you to
-pause Sam Torres's Frontline Operations Assistant while a policy-wording
-issue is reviewed.
+stopping an agent tenant-wide, and safely restoring it once a concern has been resolved. Riley Osei from Compliance & Risk has asked you to pause Sam Torres's Frontline Operations Assistant while a policy-wording issue is reviewed.
 
 ### Task 1: Block an Agent
 
 Use the Registry to halt the Frontline Operations Assistant for all
 users and record why it was blocked, per Riley Osei's request.
 
-1.  On the **All agents** page, select the **Registry** tab, then search
-    for and select Frontline Operations Assistant in the agent list.
+1. Expand **Agents (1)** in the left navigation menu, click **All agents (2)**, then select **Registry (3)** tab.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image39.png)
+    ![](./media/n27.png)
 
-2.  On the details panel, select **Block**.
+1. Search for **Frontline Operations Assistant (1)** in the search field, then click **Frontline Operations Assistant (2)** from the results.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image40.png)
+    ![](./media/n28.png)
 
-3.  On the **Block agent** pane, review the message confirming that
-    blocking will prevent all users in the organisation from accessing
-    the agent. Check the box next to **Block agent**. Also select the
-    reason for block: Not approved for use. Select **Save**.
+1. On the details panel, select **Block**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image41.png)
+    ![](./media/n29.png)
 
-4.  Confirm that Frontline Operations Assistant now displays
-    a **Blocked** status.
+1. Select the **Block agent (1)** checkbox, then click **Save (2)**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image42.png)
+    ![](./media/n30.png)
+
+1. Confirm that Frontline Operations Assistant now displays a **Blocked** status.
+
+    ![](./media/n31.png)
 
 ### Task 2: Unblock an Agent
 
-Restore the Frontline Operations Assistant to Active status once Riley
-Osei confirms the policy-wording review is complete and the block is no
-longer needed.
+Restore the Frontline Operations Assistant to Active status once Riley Osei confirms the policy-wording review is complete and the block is no longer needed.
 
-1.  Select the block agent.
+1. Select the block agent.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image43.png)
+    ![](./media/image43.png)
 
-2.  On the **Unblock agent** pane, select the **Unblock
-    agent** checkbox. 
-    
-    ![A screenshot of a computer AI-generated content
-    may be incorrect.](./media/image44.png)
+2. On the **Unblock agent** pane, select the **Unblock agent** checkbox.
 
-3.  Select the unblock agent checkbox. Select **Save**. Close the
-    details panel.
+    ![](./media/n32.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image45.png)
+1. Select the unblock agent checkbox. Select **Save** and close the details panel.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image46.png)
+    ![](./media/n33.png)
 
-4.  In the agent list, confirm that Frontline Operations Assistant now
-    displays an **Active** status.
+1. Confirm that Frontline Operations Assistant now displays an **Active** status.
 
-    ![](./media/image47.png)
+    ![](./media/n34.png)
 
 ## Exercise 5: Export the Agent Inventory
 
-Produce an offline, shareable record of every agent in the tenant —
-useful for audits, leadership reporting, or compliance reviews outside
-the admin center.
+Produce an offline, shareable record of every agent in the tenant -
+useful for audits, leadership reporting, or compliance reviews outside the admin center.
 
-1.  On the Registry tab, select Export on the toolbar above the agent
-    list.
+1. On the Registry tab, select Export on the toolbar above the agent list.
 
-    Note: If an Export button is not visible in the toolbar, select the
-    ellipsis (...) menu in the toolbar to locate the export option.
+    ![](./media/n35.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image48.png)
+     >Note: If an Export button is not visible in the toolbar, select the ellipsis (...) menu in the toolbar to locate the export option.
 
-2.  Confirm the download in the confirmation dialog. Wait for the export
-    file to be generated and downloaded to your lab VM.
+1. Confirm the download in the confirmation dialog. Wait for the export file to be generated and downloaded to your lab VM.
 
-    ![](./media/image49.png)
+    ![](./media/n36.png)
 
-3.  Open the downloaded CSV file.
+1. Open the downloaded CSV file.
 
-4.  Confirm that the file contains rows for Project Knowledge Assistant,
-    Frontline Operations Assistant, HR & Payroll Assistant, and Holiday
-    Returns Helper.
+1. Confirm that the file contains rows for Project Knowledge Assistant,Frontline Operations Assistant, HR & Payroll Assistant, and Holiday Returns Helper.
 
-5.  Confirm that the following columns are present: agent name,
-    publisher, creator, creation date, host products, and availability
-    status.
+1. Confirm that the following columns are present: agent name, publisher, creator, creation date, host products, and availability status.
 
     ![](./media/image50.png)
 
@@ -459,34 +311,31 @@ the admin center.
 ## Exercise 6: Identify Ownerless Agents
 
 Use the Registry's ownerless filter to check whether any of Zava
-Retail's three agents lack a business owner, and understand what that
-gap would mean for accountability. Sam Torres already owns Frontline
-Operations Assistant, but Holiday Returns Helper should be assigned to
-Priya Nair — confirm whether that assignment has taken effect.
+Retail's three agents lack a business owner, and understand what that gap would mean for accountability. Sam Torres already owns Frontline Operations Assistant, but Holiday Returns Helper should be assigned to Priya Nair - confirm whether that assignment has taken effect.
 
-1.  On the Registry tab, select the Missing an owner card.
+1. On the Registry tab, select the Missing an owner card.
 
-2.  Review the list of agents that are displayed after applying the
-    ownerless filter.
+1. Review the list of agents that are displayed after applying the ownerless filter.
 
     ![](./media/image51.png)
 
-Note whether any of the three Zava agents appear in this filtered
-list. In a lab environment where agents were created by the
-Administrator, the agents may or may not appear as ownerless depending
-on how ownership is propagated from Copilot Studio. If no agents
-appear, this confirms that ownership was correctly assigned during
-creation. If agents appear, this represents a governance gap that
-would be addressed by reassigning ownership.
+     >**Note** : Review the list of agents displayed after applying the ownerless filter. The results may vary depending on the agents deployed in your organization's environment. Any agents displayed indicate missing ownership information and should be reviewed to ensure an appropriate business owner is assigned.
 
 ## Summary
 
-In this lab, you created and published a new agent in Microsoft Copilot
-Studio, explored the Agent 365 Overview to monitor tenant-wide agent
-activity, and used the Agent Registry to review, approve, and publish an
-agent for organizational use. You also installed the agent in Microsoft
-Teams, validated its responses, practiced blocking and unblocking an
-agent, exported the agent inventory for reporting, and identified
-potential ownership gaps. These tasks demonstrated the core capabilities
-of Agent 365 for governing, monitoring, and managing AI agents across an
-organization.
+In this lab, you completed the following:
+
+- Created and published the Holiday Returns Helper agent in Microsoft Copilot Studio using a trusted knowledge source.
+- Explored the Agent 365 Overview dashboard to monitor tenant-wide agent metrics, activity, and governance insights.
+- Published, installed, and validated the Holiday Returns Helper agent in Microsoft Teams to ensure it responded accurately to frontline retail scenarios.
+- Used the Agent Registry to manage agent lifecycle actions by blocking and restoring an existing agent during a compliance review.
+- Exported the organization's AI agent inventory to support governance, reporting, and audit requirements.
+- Identified ownerless agents and evaluated governance gaps to improve accountability across the AI agent ecosystem.
+
+By completing this lab, you learned how Agent 365 provides centralized governance, monitoring, lifecycle management, and compliance capabilities for Microsoft 365 Copilot agents, enabling organizations to securely deploy, manage, and scale AI solutions across the enterprise
+
+## You have successfully completed the Lab!
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+
+![Image](./media/nxtd1.png)

@@ -1,116 +1,36 @@
 # Lab 5 - Improve communication and work coordination across Zava Retail stores with a Frontline Agent
 
-**Estimated Duration:** 40 minutes
+## Estimated Duration: 40 Minutes
 
-## Lab objectives
+## Overview
 
-In this lab, you will create a Frontline Operations Agent using
-Microsoft 365 Copilot Agent Builder. The agent will help frontline
-workers, store managers, and supervisors handle daily operations,
-customer service, shift readiness, compliance, and escalation workflows.
-You will configure agent instructions, upload enterprise knowledge
-sources, test prompts, validate outputs, and optimize responses. After
-completing this lab, you will be able to: 
+In this lab, you will use **Microsoft 365 Copilot** Agent Builder to create a Frontline Operations Agent that helps Zava Retail employees perform daily operational tasks more efficiently. Rather than relying on managers or searching through multiple documents, frontline workers will be able to interact with an AI-powered assistant that provides instant guidance using enterprise knowledge.
 
-- Create a Microsoft 365 Copilot custom agent
+You will build a **Frontline Operations Agent** by defining its purpose and instructions, grounding it with operational knowledge sources such as SOPs, policies, employee handbooks, and store checklists, and publishing it for use across Microsoft 365. You will then access the agent in Microsoft Teams, test it using real-world retail scenarios from multiple personas-including cashiers, store associates, managers, and regional operations leaders-and refine its responses to improve accuracy and relevance.
 
-- Configure frontline retail agent instructions
+## Lab Objectives
 
-- Upload knowledge sources for grounding
+In this lab, you will perform the following:
 
-- Test store operations prompts
-
-- Improve frontline productivity with AI
-
-- Build reusable retail frontline agent templates
+- Exercise 1: Create the Frontline Operations Agent
+- Exercise 2: Access the Frontline Operations Agent in Microsoft Teams
+- Exercise 3: Test the agent using real-world retail operational scenarios and refine its responses
 
 ## Scenario
 
-Zava Retail is a rapidly expanding multi-format retail chain operating:
+Zava Retail operates 250 stores across multiple regions and supports more than 8,000 frontline employees, including cashiers, store associates, supervisors, and store managers. With high customer volumes, seasonal promotions, and frequent operational activities, frontline employees often need quick access to standard operating procedures, company policies, onboarding materials, and escalation guidance. However, searching through multiple documents or waiting for manager assistance results in slower issue resolution, inconsistent customer experiences, and reduced productivity.
 
-- 250 stores across urban, suburban, and tier-2 markets
+To address these challenges, Zava Retail has decided to deploy a Microsoft 365 Copilot Frontline Operations Agent that provides instant, knowledge-grounded assistance to employees directly within Microsoft 365 and Microsoft Teams. The agent is designed to answer operational questions, guide employees through store procedures, assist with customer service scenarios, provide onboarding support, and help managers prioritize daily operations using enterprise knowledge sources.
 
-- 8,000 employees including cashiers, floor associates, warehouse staff,
-  supervisors, and managers
+**Key Personas**
 
-- Presence across multiple regions, each with different staffing
-  patterns and customer behavior
+1. **Patricia Gray - Operations Head** : Oversees operations across multiple stores and is responsible for maintaining operational consistency, monitoring recurring issues, and improving frontline productivity across the organization.
 
-- Heavy seasonal demand spikes during festivals, clearance sales, school
-  openings, and holiday promotions
+1. **Fratini Greens - Store Manager** : Manages day-to-day store operations, supports frontline staff, oversees staffing and customer service, and ensures store procedures are followed consistently.
 
-- Thousands of frontline operational requests every week
+1. **Marie Brown - Store Associate** : Assists customers on the sales floor, answers product and promotion questions, manages inventory inquiries, and requires quick access to operational guidance during busy store hours.
 
-Zava Retail has invested in Microsoft 365 and wants to modernize store
-execution using a Microsoft 365 Copilot Frontline Agent.
-
-**Key Challenges:**
-
-- Managers spend too much time answering repetitive questions
-
-- Store processes are inconsistent across locations
-
-- Seasonal sales create staffing and service pressure
-
-- New hire onboarding takes too much manual effort
-
-- Operational issues are escalated at a slow pace
-
-To solve these challenges, Zava Retail deploys a **Microsoft 365 Copilot
-Frontline Agent** accessible in Copilot chat, Microsoft Teams, and
-mobile devices for store workers. The agent becomes a 24x7 AI operations
-Assistant for multiple retail stores. The Zava Frontline Agent will help
-8,000 employees across 250 stores work more efficiently by giving
-instant, consistent answers and reducing dependence on managers.
-
-**Key Personas:**
-
-**Patricia Gray – Operations Head**
-
-The regional operations manager at Zava Retail oversees multiple stores
-and ensures consistent execution across locations. The major challenges
-include:
-
-- Needs visibility into recurring issues across stores
-
-- Tracks store performance and staffing gaps
-
-- Requires faster escalation handling across regions
-
-**Marie Brown – Store / Sales Associate**
-
-The store associate at Zava Retail supports customers on the sales
-floor, manages shelf availability, and assists with promotions. The
-major challenges include:
-
-- Needs quick answers on product locations and promotions
-
-- Faces stock shortage questions from customers
-
-- Requires guidance during peak store traffic
-
-**David Turner – Cashier**
-
-The cashier at Zava Retail handles billing transactions, customer
-payments, and checkout queues. The major challenges include:
-
-- Needs support resolving pricing or discount issues
-
-- Manages long queues during rush hours
-
-- Requires quick access to refund and return policies
-
-**Fratini Greens – Store Manager**
-
-The store manager at Zava Retail is responsible for store performance,
-customer satisfaction, and team productivity. The major challenges
-include:
-
-- Receives repetitive operational questions from staff
-
-- Needs visibility into daily store priorities
-
-- Must balance staffing, sales, and service quality
+1. **David Turner - Cashier** : Handles customer transactions, resolves pricing and discount issues, manages checkout queues, and requires immediate access to return policies and checkout procedures.
 
 ## Exercise 1: Create the Frontline Agent
 
@@ -140,12 +60,11 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 
     ![](./media/q1.png)
 
-1. Expand **navigation pane** and click **New agent (1)** in the left navigation menu, then click **Skip to configure (2)**.
+1. Expand **navigation pane** and click **New agent (1)** in the left navigation menu, then click **Skip to configure (2)**.
 
    ![](./media/new12.png)
    
-1. When the **Agent creation panel** opens, paste the following details
-    in respective fields to build the agent.
+1. When the **Agent creation panel** opens, paste the following details in respective fields to build the agent.
 
     - **Name:** Frontline Operations Assistant
 
@@ -159,12 +78,11 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 
     ![](./media/n16.png)
 
-1. Navigate to **Knowledge** section to add knowledge sources.
-    Select **Upload from device**.
+1. Navigate to **Knowledge** section to add knowledge sources. Select **Upload from device**.
 
     ![](./media/q6.png)
 
-1. Select the below files from **C:\Labfiles\Lab5-Lab files** and select **Open**.
+1. Select the below files from **C:\Labfiles\Lab5-Lab files** and select **Open**.
 
     - SOP PDFs
 
@@ -185,7 +103,7 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 
     ![](./media/q8.png)
 
-1. Click **Create** to publish the agent.
+1. Click **Create** to publish the agent.
 
     ![](./media/q9.png)
 
@@ -199,9 +117,7 @@ Patricia logs into Copilot to review Festive Campaign readiness.
     
 ## Exercise 2: Access Frontline Operations Agent in Microsoft Teams
 
-Patricia Gray (Regional operations manager) is seeking for an overview
-of the operational activities and get the key operations related queries
-of Zava Retail on Microsoft Teams for better visibility.
+Patricia Gray (Regional operations manager) is seeking for an overview of the operational activities and get the key operations related queries of Zava Retail on Microsoft Teams for better visibility.
 
 1. Navigate to Microsoft Teams using the URL and sign in with your credentials if needed.
      
@@ -221,15 +137,15 @@ of Zava Retail on Microsoft Teams for better visibility.
 
     ![](./media/n1.png)
 
-4. Now, Patricia can use the agent directly inside Teams. **Frontline Operations Agent** can be accessed under Microsoft Teams.
+4. Now, Patricia can use the agent directly inside Teams. **Frontline Operations Agent** can be accessed under Microsoft Teams.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%205/media/image15.png)
-    
-## Exercise 3: Action and Decision Intelligence
+    ![](./media/image15.png)
+
+## Exercise 3: Action and Decision Intelligence
 
 ### Task 1: Identify Startup Checklist
 
-1. Navigate to `https://m365.cloud.microsoft/` Microsoft 365 copilot page.
+1. Navigate to Microsoft 365 copilot page using the URL.
 
      ```
      https://m365.cloud.microsoft/
@@ -300,8 +216,8 @@ of Zava Retail on Microsoft Teams for better visibility.
 
      > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
 
-1. Paste the below given prompt in the field, and then click on
-    the **Send** button. 
+1. Paste the below given prompt in the field, and then click on
+    the **Send** button.
 
      ```
      A new hire joined today as sales associate. Give Day 1 onboarding checklist.
@@ -350,45 +266,28 @@ of Zava Retail on Microsoft Teams for better visibility.
 
 1. Review the actions available for the generated response.
 
-     - **Clipboard Icon** – Used for **copying** the response text.
-     - **Thumbs-Up Icon** – Used to **like or approve** the response.
-     - **Thumbs-Down Icon** – Used to **dislike or flag** the response.
-     - **Pencil Icon** – Used to **rewrite or modify** the response.
-     - **... (More) Icon** – Opens additional options: **Schedule this prompt** to run the prompt automatically on a recurring basis, **Read aloud** to have the response read out loud, and **Export to Word** to save the response as a Word document.
+     - **Clipboard Icon** - Used for **copying** the response text.
+     - **Thumbs-Up Icon** - Used to **like or approve** the response.
+     - **Thumbs-Down Icon** - Used to **dislike or flag** the response.
+     - **Pencil Icon** - Used to **rewrite or modify** the response.
+     - **... (More) Icon** - Opens additional options: **Schedule this prompt** to run the prompt automatically on a recurring basis, **Read aloud** to have the response read out loud, and **Export to Word** to save the response as a Word document.
 
     ![](./media/n13.png)
 
 **Summary**
 
-In this lab, learners explored how Zava Retail can improve store
-operations using a **Microsoft 365 Copilot Frontline Operations Agent**.
-With 250 stores, 8,000 employees, and high seasonal demand, Zava Retail
-needed a scalable solution to reduce manager workload, improve
-consistency, and support frontline staff in real time.
+In this lab, you completed the following:
 
-In this lab, you created a custom agent to help store associates,
-cashiers, supervisors, and managers with daily tasks such as opening and
-closing procedures, shift readiness, promotions, returns, stock issues,
-safety incidents, and escalations.
+- Created a Microsoft 365 Copilot Frontline Operations Agent using Agent Builder and configured its instructions for retail operations.
+- Grounded the agent with enterprise knowledge sources, including SOPs, employee handbooks, store checklists, policies, FAQs, and shift guides.
+- Published the agent and accessed it from Microsoft Teams.
+- Tested the agent using multiple retail scenarios, including cashier startup procedures, customer issue resolution, inventory shortages, store management priorities, onboarding guidance, and regional operations queries.
+- Evaluated and refined the agent's responses to improve the quality and relevance of the generated output.
 
-The agent was grounded using SOPs, policies, FAQs, checklists, and
-training documents, then tested through real retail scenarios and
-persona-based prompts.
+By completing this lab, you learned how Microsoft 365 Copilot custom agents can provide instant, knowledge-grounded assistance to frontline employees, helping improve operational consistency, accelerate issue resolution, streamline onboarding, and enhance productivity across Zava Retail stores.
 
-By the end of the lab, learners demonstrated how the Zava Frontline
-Agent can:
+## You have successfully completed the Lab!
 
-- Reduce repetitive questions to managers
+Now, click on **Next >>** from the lower right corner to move on to the next page.
 
-- Improve consistency across stores
-
-- Speed up onboarding for new hires
-
-- Enable faster issue resolution
-
-- Improve frontline productivity and customer service
-
-This lab showed how AI-powered frontline agents can help Zava Retail
-scale operations while empowering employees with instant support.
-
- 
+![Image](./media/nxtd1.png)

@@ -1,38 +1,41 @@
-# Lab 6 – Build a Store Operations Assistant Copilot Agent for trusted customer success at Zava Retail
+# Lab 6 - Build a Store Operations Assistant Copilot Agent for trusted customer success at Zava Retail
 
-**Estimated Duration:** 40 minutes
+## Estimated Duration: 40 minutes
+
+## Overview
+
+In this lab, you will build a **Store Operations Assistant Copilot Agent** using **Microsoft 365 Copilot**, **SharePoint**, and **Copilot Studio** to deliver trusted, knowledge-grounded assistance for frontline retail operations. Rather than relying on manual document searches, you will create an AI-powered agent that uses verified SharePoint content to answer operational questions accurately while remaining within defined knowledge boundaries.
+
+You will create and configure a SharePoint-grounded agent, connect enterprise knowledge sources such as SOPs, HR documents, product specifications, project updates, and shift handover notes, and validate the agent through real-world testing. You will then enhance the agent using Copilot Studio by refining its instructions, creating topic-based conversation routing, and implementing multi-agent orchestration with a specialized HR & Payroll Assistant to seamlessly handle requests outside the primary agent's scope.
 
 ## Lab objectives 
 
-This lab provides hands-on experience in building intelligent Copilot
-Agents using Microsoft IQ principles. You will create a
-SharePoint-integrated agent with trusted knowledge boundaries, apply the
-five-step customer success framework to align it with a Core Unit of
-Work, and validate it through PoC testing. The lab also covers advanced
-customization using Copilot Studio, including custom instructions, topic
-routing, and multi-agent orchestration by connecting with a second
-specialized agent.
+In this lab, you will perform the following:
+
+- Exercise 1: Create and configure a SharePoint-grounded Store Operations Assistant Copilot Agent.
+- Exercise 2: Customize the agent in Copilot Studio using advanced instructions and topic-based conversation routing.
+- Exercise 3: Design and validate a multi-agent orchestration pattern by integrating a specialized HR & Payroll Assistant.
 
 ## Scenario
 
-Store associates and shift managers often lose valuable time searching
-through SOPs, policy documents, and operational guidelines during busy
-trading hours, slowing response times, and impacting customer service.
-The Store Operations Assistant Copilot Agent empowers frontline retail
-workers with instant, contextual access to accurate store procedures in
-the flow of work—helping them resolve customer queries faster, ensure
-policy compliance, and keep store operations running smoothly during
-peak demand.
+Zava Retail operates hundreds of stores where frontline employees rely on operational documents, policies, and standard operating procedures to perform their daily responsibilities. During busy trading hours, store associates and managers often spend valuable time searching through multiple SharePoint libraries to locate information related to HR policies, product specifications, store procedures, shift handovers, and project updates. This slows decision-making, increases dependency on supervisors, and creates inconsistent customer experiences.
 
+To improve operational efficiency, Zava Retail is deploying a Store Operations Assistant Copilot Agent that provides trusted, context-aware responses using verified SharePoint knowledge sources. The agent enables employees to quickly retrieve operational guidance while ensuring responses remain within approved knowledge boundaries. For requests outside its expertise, such as HR and payroll queries, the solution seamlessly routes users to a specialized HR & Payroll Assistant, demonstrating how multiple AI agents can work together to support complex enterprise workflows.
 
+**Key Personas**
+
+1. **Patricia Gray - Operations Head** : Oversees operational consistency across retail locations and requires trusted AI assistants that provide accurate, policy-compliant guidance while reducing dependency on support teams.
+
+1. **Fratini Greens - Store Manager** : Coordinates daily store operations, manages staff, and needs quick access to SOPs, project updates, and operational guidance to resolve issues efficiently.
+
+1. **Marie Brown - Store Associate** : Assists customers on the sales floor and relies on accurate procedures, product information, and operational documentation to deliver consistent customer service.
+
+1. **David Turner - HR & Payroll Specialist** : Supports employee-related requests, including leave, payroll, attendance, and HR policies, ensuring workforce-related queries are handled by the appropriate specialized agent.
 
 ## Exercise 1: Creating and Configuring Your Copilot Agent 
 
 Microsoft IQ represents a unified intelligence layer that brings
-contextual, work-aware AI into your everyday apps and agents. In this
-part, you will create a Copilot Agent in SharePoint that is grounded in
-verified, organization-specific content — ensuring responses are both
-intelligent and trustworthy.
+contextual, work-aware AI into your everyday apps and agents. In this part, you will create a Copilot Agent in SharePoint that is grounded in verified, organization-specific content - ensuring responses are both intelligent and trustworthy.
 
 ### Task 1: Access the Agent Creation Tool 
 
@@ -144,11 +147,9 @@ information in the respective fields:
 
 ### Task 3: Test Your Agent 
 
-Testing your agent validates both grounding knowledge and the quality of
-its responses. This step reflects the Trust dimension of Microsoft IQ —
-agents should only surface verified, relevant information.
+Testing your agent validates both grounding knowledge and the quality of its responses. This step reflects the Trust dimension of Microsoft IQ - agents should only surface verified, relevant information.
 
-1.  Navigate back to SharePoint window. Open **Agent Chat** on the right side of the ZavaSite page.
+1. Navigate back to SharePoint window. Open **Agent Chat** on the right side of the ZavaSite page.
 
     ![](./media/n20.png)
 
@@ -166,11 +167,7 @@ agents should only surface verified, relevant information.
     
 ## Exercise 2: Advanced Instruction Authoring in Copilot Studio
 
-The default Instructions field in SharePoint's agent creator is powerful
-but limited. Copilot Studio gives you a richer editing surface —
-including System Prompt composition, fallback handling, and topic-based
-routing — that lets you control exactly how the agent reasons and
-responds.
+The default Instructions field in SharePoint's agent creator is powerful but limited. Copilot Studio gives you a richer editing surface - including System Prompt composition, fallback handling, and topic-based routing - that lets you control exactly how the agent reasons and responds.
 
 ### Task 1: Open Your Agent in Copilot Studio
 
@@ -214,10 +211,7 @@ responds.
 
 ### Task 2: Add a Topic: Out-of-Scope Redirect
 
-Topics in Copilot Studio are rule-based conversation flows that trigger
-when specific phrases or conditions are detected. You will create a
-short topic that politely redirects users who ask questions outside the
-agent's domain.
+Topics in Copilot Studio are rule-based conversation flows that trigger when specific phrases or conditions are detected. You will create a short topic that politely redirects users who ask questions outside the agent's domain.
 
 1. In Copilot Studio, navigate to **Topics** in the upper menu bar.
    
@@ -286,19 +280,12 @@ agent's domain.
 ## Exercise 3: Designing a Multi-Agent Orchestration Pattern
 
 Real enterprise deployments rarely rely on a single agent. Complex
-workflows such as a procurement request that touches both inventory data
-and HR approval processes, that require multiple specialized agents
-working in coordination. This exercise introduces the concept of
-multi-agent orchestration and help you design (and partially configure)
-a handoff pattern between your primary agent and a second specialized
-agent.
+workflows such as a procurement request that touches both inventory data and HR approval processes, that require multiple specialized agents working in coordination. This exercise introduces the concept of multi-agent orchestration and help you design (and partially configure) a handoff pattern between your primary agent and a second specialized agent.
 
 ### Task 1: Create the Handoff Topic
 
 You will now create a new topic in your primary agent that triggers
-whenever a user asks a question outside the primary scope. This topic
-will surface a handoff message and when the license supports, it
-redirects the user to the second agent.
+whenever a user asks a question outside the primary scope. This topic will surface a handoff message and when the license supports, it redirects the user to the second agent.
 
 1. In Copilot Studio, navigate to **Topics**, **Add a topic (2)**, and **From blank (3)** to create another topic.
 
@@ -417,8 +404,7 @@ out-of-scope queries using multi-agent connections.
     
 ### Task 4: Test the End-to-End Orchestration
 
-With both agents published, validate the complete handoff flow using the
-test scenarios below.
+With both agents published, validate the complete handoff flow using the test scenarios below.
 
 1. Click **Test (1)**, enter the **prompt (2)** in the message field, then click the **Send (3)** button.
       
@@ -430,12 +416,19 @@ test scenarios below.
     
 ## Summary 
 
-In this lab, you created and configured a SharePoint-grounded Project
-Knowledge Assistant in Microsoft Copilot Studio, using verified
-SharePoint content to ensure accurate and trusted responses. You scoped
-and prioritized agent use cases, defined a Core Unit of Work, and mapped
-capabilities using the Work IQ framework. You also conducted a
-structured proof of concept, evaluated results for scaling
-opportunities, authored advanced conditional instructions, created
-out-of-scope redirects, and designed a multi-agent orchestration flow
-with structured handoffs between primary and specialized agents.
+In this lab, you completed the following:
+
+- Created a SharePoint-grounded Store Operations Assistant Copilot Agent using Microsoft 365 Copilot and connected it to trusted enterprise knowledge sources.
+- Configured the agent with custom instructions to ensure responses were generated only from verified SharePoint content while enforcing trusted knowledge boundaries.
+- Validated the agent by testing real-world operational scenarios and confirming accurate, knowledge-grounded responses.
+- Enhanced the agent in Copilot Studio by authoring advanced instructions, creating an out-of-scope topic, and implementing topic-based conversation routing.
+- Built a specialized HR & Payroll Assistant and configured a multi-agent orchestration pattern that automatically routes HR-related requests to the appropriate agent.
+- Tested the complete end-to-end orchestration flow to verify seamless collaboration between the primary Store Operations Assistant and the specialized HR & Payroll Assistant.
+
+By completing this lab, you learned how Microsoft 365 Copilot, SharePoint, and Copilot Studio can be combined to build trusted, enterprise-ready AI agents that deliver grounded responses, enforce organizational knowledge boundaries, and collaborate through multi-agent orchestration to support complex business workflows.
+
+## You have successfully completed the Lab!
+
+Now, click on **Next >>** from the lower right corner to move on to the next page.
+
+![Image](./media/nxtd1.png)
