@@ -46,7 +46,7 @@ The Workflows Agent orchestrates multi-step automations by connecting Outlook, T
 
 ## Architecture Diagram
 
-![Image](./images/ArcDay1.png)
+![Image](./images/Ad.png)
 
 ## Explanation of Components
 
