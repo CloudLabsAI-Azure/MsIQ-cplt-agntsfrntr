@@ -1,4 +1,4 @@
-# Lab 6 - Build an Enterprise Marketing Operations Agent with Microsoft 365 Copilot
+# Lab 6: Build an Enterprise Marketing Operations Agent with Microsoft 365 Copilot
 
 ## Estimated Duration: 40 Minutes
 
