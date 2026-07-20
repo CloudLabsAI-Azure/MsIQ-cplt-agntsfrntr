@@ -68,7 +68,7 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
 
 5. From the Microsoft Foundry homepage, select **Create an agent**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image2.png)
+    ![](./media/image2.png)
 
 6. Enter **proj-<DID> (1)** as the project name, select the Resource group that starts with **Copilot-Studio (2)**, and select **Create (3)**.
 
@@ -130,15 +130,15 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
 
     ![](./media/b12.png)
     ![](./media/b13.png)
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image10.png)
+    ![](./media/image10.png)
 
 12. Navigate to **C:\Labfiles\M365 Agents SDK** and select all the files inside that and click **Open**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image11.png)
+    ![](./media/image11.png)
 
 13. Select **Upload and save** to upload them. This will create a vector store for our agent.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image12.png)
+    ![](./media/image12.png)
 
     >**Note:** **Try again** if you get any error while uploading the files.
 
@@ -164,19 +164,19 @@ Now that you've seen how to build an agent using Microsoft Foundry, let's switch
 
     >**Note:** If you are asked to login, select **Microsoft**, **Work or School Account** and login with your @lab.CloudPortalCredential(User1).Username account.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image16.png)
+    ![](./media/image16.png)
 
 2. Select **Create a new project**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image17.png)
+    ![](./media/image17.png)
 
 3. Search for **Microsoft** and select the **Microsoft 365 Agents** template. Click on **Next**.
 
-    ![A screenshot of a computer project AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image19.png)
+    ![A screenshot of a computer project AI-generated content may be incorrect.](./media/image19.png)
 
 4. Provide a name for your project as **ZavaHRAgent** and select **Create**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image205.png)
+    ![](./media/image205.png)
 
 5. Scroll down in the list of templates, select **Echo Bot**, and select **Create**.
 
@@ -184,19 +184,19 @@ Now that you've seen how to build an agent using Microsoft Foundry, let's switch
 
 6. Select **Allow** if the pop up appears.
 
-    ![A screenshot of a computer error AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image206.png)
+    ![A screenshot of a computer error AI-generated content may be incorrect.](./media/image206.png)
 
 7. When the project template is scaffolded, go to Solution Explorer on the right-side panel and explore the agent template. Expand the **ZavaHRAgent** project.
 
     >**Note:** To view the project panel, close the GitHub Copilot Chat window.
 
-    - Open **Program.cs** — this code configures and runs the web server that hosts your agent. It sets up required services like authentication, routing, storage, and registers the **EchoBot**, and injects memory-based state handling.
+    - Open **Program.cs** - this code configures and runs the web server that hosts your agent. It sets up required services like authentication, routing, storage, and registers the **EchoBot**, and injects memory-based state handling.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image207.png)
+    ![](./media/image207.png)
 
     - Open **Bot > EchoBot.cs** and observe that this sample sets up a basic AI agent using the **Microsoft.Agents.Builder**. It sends a welcome message when a user joins the chat and listens for any message, echoing it back with a running message count.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image208.png)
+    ![](./media/image208.png)
 
 8. You've started with an **Echo Bot**, a simple bot that repeats back any message a user sends. It's a useful way to verify your setup and understand how conversations are handled behind the scenes.
 
@@ -219,23 +219,23 @@ Now that you've seen how to build an agent using Microsoft Foundry, let's switch
 
 12. To test your echo agent, hit **Start** or **F5**. This will launch the Test Tool automatically on localhost, where you can interact with your agent. If Visual Studio asks you to confirm the creation of a self-issued SSL certificate to test the application locally, **confirm** and **proceed**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image28.png)
+    ![](./media/image28.png)
 
-    ![A screenshot of a computer security warning AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image29.png)
+    ![A screenshot of a computer security warning AI-generated content may be incorrect.](./media/image29.png)
 
 13. Select **Allow** in the security alert.
 
-    ![A screenshot of a computer error AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image209.png)
+    ![A screenshot of a computer error AI-generated content may be incorrect.](./media/image209.png)
 
 14. The application now starts.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image3001.png)
+    ![](./media/image3001.png)
 
 15. Wait until the agent's message "Hello and Welcome!" appears (if you don't get a welcome message, refresh the browser once), then type anything such as "Hi" or "Hello". Observe that the agent echoes everything back.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image32.png)
+    ![](./media/image32.png)
 
-    ![A screenshot of a chat AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image33.png)
+    ![A screenshot of a chat AI-generated content may be incorrect.](./media/image33.png)
 
     >**Note:** If you get a warning message like "Cannot connect to your app" on the right-hand side log panel, stop debugging and click on Start again.
 
@@ -253,7 +253,7 @@ Now that you've created a basic bot, it's time to enhance it with generative AI 
 
 2. Right-click the **ZavaHRAgent solution** and select **Manage NuGet Packages for Solution**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image305.png)
+    ![](./media/image305.png)
 
 3. Select the **Browse** tab and search for **Microsoft.SemanticKernel.Agents.AzureAI**. Check the **Include prerelease** checkbox.
 
@@ -277,19 +277,19 @@ Now that you've created a basic bot, it's time to enhance it with generative AI 
 
 8. Select **Program.cs** and enter **builder.Services.AddKernel();** above the line **var app = builder.Build()** (Line 31).
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image314.png)
+    ![](./media/image314.png)
 
     This registers the Semantic Kernel, a core component that allows your agent to interact with generative AI models.
 
 9. Right-click the **ZavaHRAgent** project and select **Add > Class**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image315.png)
+    ![](./media/image315.png)
 
 10. Enter the class name as **FileReference.cs** and hit **Enter** to create the class.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image44.png)
+    ![](./media/image44.png)
 
-11. This class defines the structure used when referencing specific documents in responses — useful when your agent cites content from uploaded files.
+11. This class defines the structure used when referencing specific documents in responses - useful when your agent cites content from uploaded files.
 
     ```
     using Microsoft.Agents.Core.Models;
@@ -306,7 +306,7 @@ Now that you've created a basic bot, it's time to enhance it with generative AI 
     }
     ```
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image316.png)
+    ![](./media/image316.png)
 
 12. Right-click the **ZavaHRAgent** project and select **Add > Class** and define your class name as **ConversationStateExtensions.cs**. Replace the existing code with the following:
 
@@ -335,9 +335,9 @@ Now that you've created a basic bot, it's time to enhance it with generative AI 
     }
     ```
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image317.png)
+    ![](./media/image317.png)
 
-    >**Note:** This class adds helper methods to manage and track the number of user messages — demonstrating how state is stored and modified during an ongoing conversation.
+    >**Note:** This class adds helper methods to manage and track the number of user messages - demonstrating how state is stored and modified during an ongoing conversation.
 
 ## Exercise 4: Integrate Microsoft Foundry Agent with M365 Agents SDK
 
@@ -354,7 +354,7 @@ In this task, you'll connect to the Microsoft Foundry agent by adding a client t
     private readonly string _agentId;
     ```
 
-    ![A screenshot of a computer program AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image318.png)
+    ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image318.png)
 
 2. Replace the existing **EchoBot constructor** with the following.
 
@@ -385,7 +385,7 @@ In this task, you'll connect to the Microsoft Foundry agent by adding a client t
     }
     ```
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image320.png)
+    ![](./media/image320.png)
 
 3. Replace the **OnMessageAsync** method with the following.
 
@@ -444,11 +444,11 @@ In this task, you'll connect to the Microsoft Foundry agent by adding a client t
 
 4. When pasting the above code excerpt, you might see a warning (SKEXP0110) because this feature is still in preview. You can safely suppress this warning for now by right-clicking on **AzureAIAgent**, selecting **Quick Actions and Refactorings > Suppress or configure issues > Configure SKEXP0110 Severity > Silent**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image321.png)
+    ![](./media/image321.png)
 
 5. The code will now look like this.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image322.png)
+    ![](./media/image322.png)
 
 6. The **OnMessageAsync** method is the heart of your agent's response logic. By replacing the default echo behavior, you've enabled your agent to send the user's message to your Azure AI Foundry agent, stream the response back to the user in real time, track and attach citations and file references for transparency, and add sensitivity and AI-generated labels for security and traceability.
 
@@ -573,7 +573,7 @@ In this task, you will add your Foundry connection details to appsettings.json. 
 
     Replace the placeholders for **MicrosoftFoundryAgentId** and **ProjectEndpoint** with the values you saved to the notepad at the end of Exercise 1.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image323.png)
+    ![](./media/image323.png)
 
 2. The final version of **appsettings.json** will look like below.
 
@@ -633,29 +633,29 @@ In this task, you will test the created agent in Teams.
 
     Copy and paste the paths listed in the output to a notepad.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image52.png)
+    ![](./media/image52.png)
 
 2. From the **Start** window, search for **Environment** and select **Edit the system environment variables**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image53.png)
+    ![](./media/image53.png)
 
 3. Select **Environment variables**.
 
-    ![A screenshot of a computer program AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image54.png)
+    ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image54.png)
 
 4. Under **System variables**, select **Path** and then select **Edit**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image55.png)
+    ![](./media/image55.png)
 
 5. Add the path obtained from the output of the command **where az** (the first step of this task) and click **Ok**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image56.png)
+    ![](./media/image56.png)
 
 6. Select **Ok** in the other open windows of the **Environment Settings**.
 
 7. From Visual Studio, open **Tools > Command Line > Developer Command Prompt**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image324.png)
+    ![](./media/image324.png)
 
 8. Execute the below command.
 
@@ -665,52 +665,52 @@ In this task, you will test the created agent in Teams.
 
     A window will pop up in your browser. Select **Work or school account** and log in with your login credentials.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image325.png)
+    ![](./media/image325.png)
 
-    ![A computer screen with a white box and blue text AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image326.png)
+    ![A computer screen with a white box and blue text AI-generated content may be incorrect.](./media/image326.png)
 
 9. Once logged in, enter **1** to select the subscription.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image327.png)
+    ![](./media/image327.png)
 
 10. Expand **Start** and select **Dev Tunnels > Create a Tunnel**:
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image329.png)
+    ![](./media/image329.png)
 
 11. Provide the below details and select **Ok**.
 
-    - The account that will create the tunnel — select **Sign in -> Work or school account** and log in with your login credentials.
+    - The account that will create the tunnel - select **Sign in -> Work or school account** and log in with your login credentials.
     - Name - **DevTunnel**
     - Tunnel Type - **Temporary**
     - Access - **Public**
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image62.png)
+    ![](./media/image62.png)
 
-    ![A screenshot of a computer program AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image330.png)
+    ![A screenshot of a computer program AI-generated content may be incorrect.](./media/image330.png)
 
 12. Right-click the **M365Agent** project, select **Microsoft 365 Agents Toolkit > Select Microsoft 365 Account**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image334.png)
+    ![](./media/image334.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image335.png)
+    ![](./media/image335.png)
 
 13. Select your account and click **Continue**.
 
-    ![A screenshot of a computer error AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image66.png)
+    ![A screenshot of a computer error AI-generated content may be incorrect.](./media/image66.png)
 
 14. Expand the **drop down** next to **Multiple startup projects** and select **Microsoft Teams (browser)**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image336.png)
+    ![](./media/image336.png)
 
     You're now ready to run your integrated agent and test it live in Microsoft Teams.
 
 15. Hit **Start** or **F5** to start debugging. Microsoft Teams will launch automatically, and your agent app will pop up in the window. Select **Add** and **Open** to start chatting with your agent.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image337.png)
+    ![](./media/image337.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image338.png)
+    ![](./media/image338.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image339.png)
+    ![](./media/image339.png)
 
 16. You can ask one of the following questions to interact with the agent:
 
@@ -720,9 +720,9 @@ In this task, you will test the created agent in Teams.
 
     You should observe that you are getting similar responses to the agent you've created in Microsoft Foundry.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image340.png)
+    ![](./media/image340.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image341.png)
+    ![](./media/image341.png)
 
 17. Stop debugging from **Visual Studio 2022**.
 
@@ -737,7 +737,7 @@ In this exercise, you'll bring your custom engine agent into Copilot Chat by upd
     "manifestVersion": "1.22",
     ```
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image345.png)
+    ![](./media/image345.png)
 
 2. Replace the **bots** section with the following, which also adds copilotAgents to the manifest.
 
@@ -785,7 +785,7 @@ In this exercise, you'll bring your custom engine agent into Copilot Chat by upd
     },
     ```
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image346.png)
+    ![](./media/image346.png)
 
 3. Hit **Start** or **F5** to start debugging. Microsoft Teams will launch automatically.
 
@@ -793,29 +793,29 @@ In this exercise, you'll bring your custom engine agent into Copilot Chat by upd
 
     ![](./media/b27.png)
     ![](./media/b28.png)
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image349.png)
+    ![](./media/image349.png)
 
 5. In the File Explorer, go to your project folder. The path will be **C:\Users\Admin\source\repos\ZavaHRAgent\ZavaHRAgent** if you have not changed the path during the project setup. Navigate to **C:\Users\Admin\source\repos\ZavaHRAgent\M365Agent\appPackage\build**, select **appPackage.local.zip**, and click **Open**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image75.png)
+    ![](./media/image75.png)
 
-6. Your app will pop up in Teams again — select **Add**.
+6. Your app will pop up in Teams again - select **Add**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image350.png)
+    ![](./media/image350.png)
 
 7. Select **Open with Copilot** to test your agent on Copilot.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image351.png)
+    ![](./media/image351.png)
 
 8. Select the conversation starter **PerksPlus Details** and hit **Send**.
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image352.png)
+    ![](./media/image352.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image353.png)
+    ![](./media/image353.png)
 
 9. Observe that you are getting the response from the AI Foundry agent, now on Copilot Chat.
 
-    ![A screenshot of a chat AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%209/media/image354.png)
+    ![A screenshot of a chat AI-generated content may be incorrect.](./media/image354.png)
 
 ## Summary
 
