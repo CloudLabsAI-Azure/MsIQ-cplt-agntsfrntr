@@ -42,30 +42,41 @@ Before the agent can support workforce development, you must first build and con
     ```
 
     - **Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+
+        ![](./media/l3e1t1s1.png)
+
     - **Password**: <inject key="AzureAdUserPassword"></inject> **(2)**
 
-    ![](./media/image100.png)
-    ![](./media/image101.png)
-    ![](./media/image102.png)
+        ![](./media/l3e1t1s2.png)
 
-2. From the left navigation panel, click **More agents**, then click **Create Agent**.
+        If the **Stay signed in?** prompt appears after sign-in, Click **No.**
 
-    ![](./media/p2.png)
+        ![](./media/l3e1t1s3.png)
 
-3. The **New Agent** page will open. Now click **Skip**.
+2. Click **Agents (1)** from the left navigation pane, then select **More agents (2)** then click **Create Agent**.
 
-    ![](./media/p3.png)
-    ![](./media/p4.png)
+    ![](./media/l3e1t1s4.png)
+
+    ![](./media/l3e1t1s5.png)
+
+3. The **New Agent** page will open. Now click **Skip to configure**.
+
+    ![](./media/l3e1t1s6.png)
+
+    ![](./media/l3e1t1s7.png)
 
 ### Task 2: Define and Configure the Agent
 
 1. Paste the following details to define and configure the agent:
 
-    - **Agent Name**: +++Zava Retail Workforce Coach+++
+    - **Agent Name**: **Zava Retail Workforce Coach (1)**
 
-    - **Agent Description**: +++Supports workforce capability development by diagnosing skill gaps, generating personalized learning plans, and assisting leaders with workforce readiness decisions during digital transformation.+++
+    - **Agent Description**: 
+        ```
+        Supports workforce capability development by diagnosing skill gaps, generating personalized learning plans, and assisting leaders with workforce readiness decisions during digital transformation. (2)
+        ```
 
-    ![](./media/p5.png)
+        ![](./media/l3e1t2s1.png)
 
 2. Paste the below prompt in the field and then click the **Execute** button.
 
@@ -90,7 +101,7 @@ Before the agent can support workforce development, you must first build and con
     - Retail store cluster context
     ```
 
-    ![](./media/p6.png)
+    ![](./media/l3e1t2s2.png)
 
 3. In the **Knowledge Sources** section, upload or connect the organizational resources listed below. Select the **Upload from device** icon to upload the files. The required files for this lab are available at **C:\Lab Files\Lab 3 - Lab files**.
 
@@ -100,15 +111,19 @@ Before the agent can support workforce development, you must first build and con
     - Supply chain transition playbook
     - ERP migration training documentation
 
-    ![](./media/image305.png)
-    ![](./media/image306.png)
-    ![](./media/image307.png)
+        ![](./media/l3e1t2s3.png)
+
+        ![](./media/l3e1t2s4.png)
+
+        ![](./media/l3e1t2s5.png)
 
 4. Click **Create** and then select **Go to Agent**.
 
-    ![](./media/image308.png)
-    ![](./media/image309.png)
-    ![](./media/p7.png)
+    ![](./media/l3e1t2s6.png)
+
+    ![](./media/l3e1t2s7.png)
+
+    ![](./media/l3e1t2s8.png)
 
 ## Exercise 2: Grounding the Agent in Organizational Context
 
@@ -133,13 +148,15 @@ Once the agent is built, provide the transformation context of Zava Retail.
     3. Supply chain risk management for mid-career analysts
     ```
 
-    ![](./media/p8.png)
+    ![](./media/l3e2t1s1.png)
 
 2. Review the output:
 
-    ![](./media/image311.png)
-    ![](./media/image312.png)
-    ![](./media/image313.png)
+    ![](./media/l3e2t1s2.png)
+
+    ![](./media/l3e2t1s3.png)
+
+    ![](./media/l3e2t1s4.png)
 
     > **Note:** AI-generated responses are non-deterministic and may vary across environments, sessions, and prompts.
 
@@ -147,14 +164,17 @@ Once the agent is built, provide the transformation context of Zava Retail.
 
 1. To test the agent, enter the following prompt and click the **Send** button.
 
-    +++What are the most critical workforce skill domains I should prioritize during this retail digital transformation?+++
+    ```
+    What are the most critical workforce skill domains I should prioritize during this retail digital transformation?
+    ```
 
-    ![](./media/image314.png)
+     ![](./media/l3e2t2s1.png)
 
 2. Review the output:
 
-    ![](./media/image315.png)
-    ![](./media/image316.png)
+    ![](./media/l3e2t2s2.png)
+
+    ![](./media/l3e2t2s3.png)
 
     > **Note:** AI-generated responses are non-deterministic and may vary across environments, sessions, and prompts.
 
@@ -172,12 +192,13 @@ Once the agent is built, provide the transformation context of Zava Retail.
     learning plan should I create?
     ```
 
-    ![](./media/image317.png)
+    ![](./media/l3e3t1s1.png)
 
 2. Review the output:
 
-    ![](./media/image318.png)
-    ![](./media/image319.png)
+    ![](./media/l3e3t1s2.png)
+
+    ![](./media/l3e3t1s3.png)
 
 ### Task 2: Diagnose Maria Santos
 
@@ -190,12 +211,13 @@ Once the agent is built, provide the transformation context of Zava Retail.
     What urgent learning and knowledge transfer plan should I implement?
     ```
 
-    ![](./media/image320.png)
+    ![](./media/l3e3t2s1.png)
 
 2. Review the output:
 
-    ![](./media/image321.png)
-    ![](./media/image322.png)
+    ![](./media/l3e3t2s2.png)
+
+    ![](./media/l3e3t2s3.png)
 
 ### Task 3: Diagnose Derek Okonkwo
 
@@ -208,12 +230,13 @@ Once the agent is built, provide the transformation context of Zava Retail.
     What resistance patterns and skill gaps should I address?
     ```
 
-    ![](./media/image323.png)
+     ![](./media/l3e3t3s1.png)
 
 2. Review the output:
 
-    ![](./media/image324.png)
-    ![](./media/image325.png)
+    ![](./media/l3e3t3s2.png)
+
+    ![](./media/l3e3t3s3.png)
 
 ## Exercise 4: Generating Personalized Learning Plans
 
@@ -230,12 +253,13 @@ Once the agent is built, provide the transformation context of Zava Retail.
     - Success metrics
     ```
 
-    ![](./media/image326.png)
+    ![](./media/l3e4t1s1.png)
 
 2. Review the output:
 
-    ![](./media/image327.png)
-    ![](./media/image328.png)
+    ![](./media/l3e4t1s2.png)
+
+    ![](./media/l3e4t1s3.png)
 
 ### Task 2: Maria's 60-Day Transition Plan
 
@@ -249,23 +273,25 @@ Once the agent is built, provide the transformation context of Zava Retail.
     2. Analyst upskilling
     ```
 
-    ![](./media/image329.png)
+    ![](./media/l3e4t2s1.png)
 
 2. Review the output:
 
-    ![](./media/image330.png)
+    ![](./media/l3e4t2s2.png)
 
 ### Task 3: Derek's RMS Adoption Plan
 
 1. To generate a plan for Derek, paste the following prompt and select the **Send** button.
 
-    +++Create an 8-week adoption-focused learning plan for Derek that positions RMS mastery as a career growth opportunity.+++
+    ```
+    Create an 8-week adoption-focused learning plan for Derek that positions RMS mastery as a career growth opportunity.
+    ```
 
-    ![](./media/image331.png)
+    ![](./media/l3e4t3s1.png)
 
 2. Review the output:
 
-    ![](./media/image332.png)
+    ![](./media/l3e4t3s2.png)
 
 ## Exercise 5: Workforce Readiness Briefing
 
@@ -281,23 +307,25 @@ Once the agent is built, provide the transformation context of Zava Retail.
     4. 30-day watch list
     ```
 
-    ![](./media/image333.png)
+    ![](./media/l3e5t1s1.png)
 
 2. Review the output:
 
-    ![](./media/image334.png)
+    ![](./media/l3e5t1s2.png)
 
 ### Task 2: Tailor for VP of HR
 
 1. To tailor the workforce readiness summary for the VP of HR, paste the below prompt and click the **Send** button.
 
-    +++Condense this into a 5-bullet summary for my VP of HR focused only on HR action items.+++
+    ```
+    Condense this into a 5-bullet summary for my VP of HR focused only on HR action items.
+    ```
 
-    ![](./media/image335.png)
+    ![](./media/l3e5t2s1.png)
 
 2. Review the output:
 
-    ![](./media/image336.png)
+    ![](./media/l3e5t2s2.png)
 
 ## Summary
 

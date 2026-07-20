@@ -14,8 +14,8 @@ In this lab, you will perform the following:
 
 - Exercise 1: Access App Builder and Describe Your App
 - Exercise 2: Refine the App Through Conversation
-- Exercise 4: Test the App as a Real IT Team Member Would
-- Exercise 5: Publish the App and Share It with Your Team
+- Exercise 3: Test the App as a Real IT Team Member Would
+- Exercise 4: Publish the App and Share It with Your Team
 
 ## Scenario
 
@@ -38,24 +38,32 @@ App Builder works like a conversation. You describe the app you need in plain la
     ```
 
     - **Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+
+        ![](./media/l3e1t1s1.png)
+
     - **Password**: <inject key="AzureAdUserPassword"></inject> **(2)**
 
-    ![](./media/image100.png)
-    ![](./media/image101.png)
-    ![](./media/image102.png)
-    ![](./media/p1.png)
+        ![](./media/l3e1t1s2.png)
 
-2. On the left-hand navigation pane, click **More agents > App Builder (Frontier)**.
+        If the **Stay signed in?** prompt appears after sign-in, Click **No**
 
-    ![](./media/p2.png)
+        ![](./media/l3e1t1s3.png)
+
+        ![](./media/l4e1t1s1.png)
+
+2. Click **Agents (1)** from the left navigation pane, then select **More agents (2)** > **App Builder (Frontier)**.
+
+    ![](./media/l3e1t1s4.png)
+
+    ![](./media/l4e1t1s2.png)
 
 3. Select **Add** to add this agent to your environment.
 
-    ![](./media/image3.png)
+    ![](./media/l4e1t1s3.png)
 
 4. The App Builder interface will open with a conversational input field — this is where you describe your app.
 
-    ![](./media/p3.png)
+    ![](./media/l4e1t1s4.png)
 
 ### Task 2: Describe Your App in Natural Language
 
@@ -65,22 +73,25 @@ App Builder works like a conversation. You describe the app you need in plain la
     Build me an IT asset tracking app for Zava Retail. The app should
     let the IT team log equipment assigned to store managers and head office
     employees — including laptops, tablets, POS peripherals, and
-    accessories. It should track each item's status as Assigned, Pending
-    Collection, or Returned. I need a dashboard that shows total assets, how
-    many are currently assigned, how many are pending, and overall
-    completion rate. I also need a way to view all employees, manage tasks
-    related to asset setup, and a section for IT resources and policies.
+    accessories, with an option to add new asset records via a form (Model,
+    Serial Number, Type, Status, Assigned Employee). It should track each
+    item's status as Assigned, Pending Collection, or Returned. I need a
+    dashboard that shows total assets, how many are currently assigned, how
+    many are pending, and overall completion rate. I also need a way to view
+    all employees with their details visible directly in the main table, 
+    manage tasks related to asset setup, and a section for IT resources 
+    and policies.
     ```
 
-    ![](./media/p4.png)
+    ![](./media/l4e1t2s1.png)
 
-2. Once generation is complete, a live preview of your app will appear on the right side of the screen — with a navigation panel showing sections such as **Dashboard**, **Employees**, **Tasks**, **Resources**, and potential **Feedback**.
+2. Once generation is complete, a live preview of your app will appear on the right side of the screen — with a navigation panel showing sections such as **Dashboard**, **Assets**, **Employees**, **Tasks**, **Resources**, and potential **Feedback**.
 
-    ![](./media/p5.png)
+    ![](./media/l4e1t2s2.png)
 
 3. On the left side, Copilot will summarize what it built and may suggest enhancements. Read through its summary before proceeding.
 
-    ![](./media/p6.png)
+    ![](./media/l4e1t2s3.png)
 
 ## Exercise 2: Refine the App Through Conversation
 
@@ -97,11 +108,11 @@ App Builder works like a conversation. You describe the app you need in plain la
     overdue.
     ```
 
-    ![](./media/p7.png)
+    ![](./media/l4e2t1s1.png)
 
 3. Confirm the dashboard now includes an overdue section with the fields you specified.
 
-    ![](./media/p8.png)
+    ![](./media/l4e2t1s2.png)
 
 ### Task 2: Add Task Priority Indicators
 
@@ -113,7 +124,7 @@ App Builder works like a conversation. You describe the app you need in plain la
     only tasks due within the next 7 days.
     ```
 
-    ![](./media/p9.png)
+    ![](./media/l4e2t2s1.png)
 
 2. Once the response is generated, review the updated **Tasks** section in the preview.
 
@@ -122,7 +133,7 @@ App Builder works like a conversation. You describe the app you need in plain la
     - Priority labels are visible on each task
     - A **Due This Week** filter or view is available
 
-    ![](./media/p10.png)
+        ![](./media/l4e2t2s2.png)
 
 ### Task 3: Enhance the Employee Section
 
@@ -137,67 +148,66 @@ The IT team needs to see not just a list of employees, but a clear record of wha
     follow-up.
     ```
 
-    ![](./media/p11.png)
+    ![](./media/l4e2t3s1.png)
 
 2. Review the updated **Employees** section.
 
-    ![](./media/p12.png)
+    ![](./media/l4e2t3s2.png)
 
-## Exercise 4: Test the App as a Real IT Team Member Would
+## Exercise 3: Test the App as a Real IT Team Member Would
 
 ### Task 1: Log a New Asset Assignment
 
 1. In the app preview, navigate to the **Asset** section.
 
-    ![](./media/p13.png)
+    ![](./media/l4e3t1s1.png)
 
 2. To add a new asset record, paste the following details into the respective fields:
 
-    - **Model**: +++Macbook Air+++
-    - **Serial Number**: +++AB568J+++
+    - **Model**: ```Macbook Air```
+    - **Serial Number**: ```AB568J```
     - **Type**: Select **Laptop**
     - **Status**: Select **Pending Collection**
 
-    > **Note:** This asset is yet to be assigned.
+        > **Note:** This asset is yet to be assigned.
 
-    ![](./media/p14.png)
+        ![](./media/l4e3t1s2.png)
 
-3. Save the record.
+3. Confirm the record.
 
-    ![](./media/p15.png)
+    ![](./media/l4e3t1s3.png)
 
 ### Task 2: Complete a Task and Check Progress
 
 1. Navigate to the **Tasks** section.
 
-    ![](./media/p16.png)
+    ![](./media/l4e3t2s1.png)
 
-2. Find a task related to **Provision new laptop for store manager**. Select the checkbox to mark it as completed.
+2. Find a task related to **Provision new laptop for Sneha Patel**. Select the checkbox to mark it as completed.
 
-    ![](./media/p17.png)
-    ![](./media/p18.png)
+    ![](./media/l4e3t2s2.png)
+
+    ![](./media/l4e3t2s3.png)
 
 3. Return to the **Dashboard** and review that the overall completion percentage changes accordingly.
 
-    ![](./media/p19.png)
+    ![](./media/l4e3t2s4.png)
 
-## Exercise 5: Publish the App and Share It with Your Team
+## Exercise 4: Publish the App and Share It with Your Team
 
 ### Task 1: Publish the App
 
 1. In App Builder, click the **Publish** button in the top-right corner of the screen.
 
-2. Click **Publish**.
-
-    ![](./media/p20.png)
+    ![](./media/l4e4t1s1.png)
 
 3. Once published, App Builder will generate a direct link to your app. Select **Share > Copy link** to copy this link.
 
-    ![](./media/p21.png)
+    ![](./media/l4e4t1s2.png)
 
 4. Select **Copy** to copy the link.
 
-    ![](./media/p22.png)
+    ![](./media/l4e4t1s3.png)
 
     > **Note:** Save the link in your notes. It will be used in the upcoming task.
 
@@ -205,7 +215,7 @@ The IT team needs to see not just a list of employees, but a clear record of wha
 
 1. Open a new browser tab and paste the direct link you copied in Task 1 of the same exercise.
 
-    ![](./media/image22.png)
+    ![](./media/l4e4t2s1.png)
 
 2. Review that the app loads correctly with:
 
@@ -213,7 +223,7 @@ The IT team needs to see not just a list of employees, but a clear record of wha
     - Navigation sections (Employees, Tasks, Resources) accessible
     - The overdue items section present on the dashboard
 
-    ![](./media/p23.png)
+        ![](./media/l4e4t2s2.png)
 
 ### Task 3: Share and Brief Your Team
 
@@ -225,16 +235,15 @@ The IT team needs to see not just a list of employees, but a clear record of wha
     how to check overdue items.
     ```
 
-    ![](./media/p24.png)
+    ![](./media/l4e4t3s1.png)
 
 2. Copilot will generate a ready-to-send team briefing. Review the briefing and note any required edits.
 
-    ![](./media/p25.png)
-    ![](./media/p27.png)
+    ![](./media/l4e4t3s2.png)
 
 3. Copy the briefing and the direct app link — these are what you would share with the IT team in a real deployment.
 
-    ![](./media/p26.png)
+    ![](./media/l4e4t3s3.png)
 
 ## Summary
 
