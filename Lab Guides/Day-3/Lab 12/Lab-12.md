@@ -39,14 +39,23 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
 
     ![](./media/b1.png)
 
-2. **Sign in** using the following credentials:
+1. On the **Sign in** page, enter the following email/username and click **Next (2)**.
 
-    - Username - **@lab.CloudPortalCredential(User1).Username**
-    - TAP Token - **@lab.CloudPortalCredential(User1).AccessToken**
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+   
+    ![](../../Day-2/media/img1.png)
+     
+1. Now enter the following password and click on **Sign in (2)**.
+   
+   * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
+   
+    ![](../../Day-2/media/img2.png)
 
-    ![](./media/b2.png)
-    ![](./media/b3.png)
-    ![](./media/b4.png)
+      > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
+     
+1. If you see the pop-up **Stay Signed in?**, select **No**.
+
+    ![](../../Day-2/media/img3.png)
 
 3. Close the create a project Pop-up.
 
