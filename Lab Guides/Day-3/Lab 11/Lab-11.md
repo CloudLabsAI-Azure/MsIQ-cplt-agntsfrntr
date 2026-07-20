@@ -10,7 +10,9 @@ Zava Retail is a global retail and service organization that provides after-sale
 
 **Declarative agents** are a type of agent for Microsoft 365, built by extending Microsoft 365 Copilot. You define custom knowledge and custom actions to create agents tailored to a specific scenario. Declarative agents use the same infrastructure, orchestrator, foundation model, and security controls as Microsoft 365 Copilot, ensuring a consistent and familiar user experience.
 
-![Declarative agent architecture diagram. At the very basis there is the foundational model of Microsoft 365 Copilot, as well as the same orchestrator. The agent provides also custom knowledge and grounding data, and custom skills as actions, triggers, and workflows.. The user experience is available in Microsoft 365 Copilot.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image1.png)
+Declarative agent architecture diagram. At the very basis there is the foundational model of Microsoft 365 Copilot, as well as the same orchestrator. The agent provides also custom knowledge and grounding data, and custom skills as actions, triggers, and workflows.. The user experience is available in Microsoft 365 Copilot.
+
+![](./media/image1.png)
 
 **TypeSpec** is a language developed by Microsoft for designing and describing API contracts in a structured and type-safe way - a blueprint for how an API should look and behave, including what data it accepts, returns, and how its parts connect. TypeSpec brings the same structure to agents and their API actions that TypeScript brings to frontend/backend code, fitting naturally into design-first workflows with tools like Visual Studio Code. It provides a single source of truth for agent behavior, keeps actions and capabilities consistent, auto-generates OpenAPI specs and manifests, and catches design issues (mismatched types, unclear definitions) before implementation begins.
 
@@ -306,27 +308,27 @@ In this task, you will test the Repair Service Agent that you just created.
      https://m365.cloud.microsoft/
      ```
 
-     ![](../Day-2/media/img0.png)
+    ![](../../Day-2/media/img0.png)
 
 1. On the **Sign in** page, enter the following email/username and click **Next (2)**.
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
    
-    ![](../Day-2/media/img1.png)
+    ![](../../Day-2/media/img1.png)
      
 1. Now enter the following password and click on **Sign in (2)**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
    
-    ![](../Day-2/media/img2.png)
+    ![](../../Day-2/media/img2.png)
 
       > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
 
-      ![](../Day-2/media/GS-0.png) 
+      ![](../../Day-2/media/GS-0.png) 
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-    ![](../Day-2/media/img3.png)
+    ![](../../Day-2/media/img3.png)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
