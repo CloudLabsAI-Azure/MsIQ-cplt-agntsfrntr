@@ -102,23 +102,19 @@ In this exercise, you will import a pre-existing Solution.
      
 1. Select **Manage (1)** in the left navigation pane, choose **Environments (2)**, and then click **+ New (3)** to create a new environment.
 
-    ![](./images/note1.png) 
+    ![](./media/note1.png) 
     
 1. Select **Developer** as the **Type (1)**, enter **ODL_User_<inject key="DeploymentID" enableCopy="false"/>** in the **Name (2)** field, and then click **Next (3)**.
     
-    ![](./images/latest.png)
+    ![](./media/latest.png)
     
 1. Click **Save**.
     
-    ![](./images/note3.png)
+    ![](./media/note3.png)
     
 1. Once the newly created environment is ready, click on it to open.
     
-    ![](./images/latest1.png)
-    
-1. Copy the **Environment ID**.
-    
-    ![](./images/latest2.png)
+    ![](./media/latest1.png)
 
 1. Enter the following URL in a new tab to Microsoft Copilot Studio.
 
@@ -126,18 +122,16 @@ In this exercise, you will import a pre-existing Solution.
     https://copilotstudio.microsoft.com/
     ```
 
-1. Open **https://copilotstudio.microsoft.com** and sign in using lab credentials:
-
-   - Username: `@lab.CloudPortalCredential(User1).Username`
-   - TAP Token: `@lab.CloudPortalCredential(User1).AccessToken`
-
-1. Open a browser and navigate to Copilot Studio using the url **https://copilotstudio.microsoft.com** and login using the following credentials:
-    - Username - **@lab.CloudPortalCredential(User1).Username**
-    - TAP Token - **@lab.CloudPortalCredential(User1).AccessToken**
+     - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+   
+     - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
     ![](./media/z1.png)
+
     ![](./media/z2.png)
+
     ![](./media/z3.png)
+
     ![](./media/z4.png)
 
 2. Select the **...** in the left navigation and select **Solutions.**
@@ -175,8 +169,7 @@ In this exercise, you will import a pre-existing Solution.
 7. Review the solution and ensure that the following components are
     imported.
 
-8. Select the **Publish all customizations** button at the top of the
-    page.
+8. Select the **Publish all customizations** button at the top of the page.
 
     ![](./media/l110.png)
     
@@ -200,13 +193,11 @@ you imported in the previous exercise.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image13.png)
 
-4. Select the **Choose File** button, select the **job-roles.csv** file
-    from **C:\LabFiles** and then select **Open**.
+4. Select the **Choose File** button, select the **job-roles.csv** file from **C:\Lab Files** and then select **Open**.
 
     ![](./media/l112.png)
 
-5. Select **Next.** Leave the next step as is and select **Review
-    Mapping**
+5. Select **Next.** Leave the next step as is and select **Review Mapping**
 
     ![](./media/l113.png)
 
@@ -226,41 +217,35 @@ you imported in the previous exercise.
 8. Now, you will import the **Evaluation Criteria sample data**
 
 9. Select **Evaluation Criteria** in the left navigation.
+
     ![](./media/a4.png)
 
-11. Select **Import from CSV** like you did earlier. Select the **Choose
-    File** button, select
-    the **evaluation-criteria.csv** from **C:\LabFiles**.
+11. Select **Import from CSV** like you did earlier. Select the **Choose File** button, select the **evaluation-criteria.csv** from **C:\Lab Files**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image20.png)
 
     ![](./media/l114.png)
 
-12. Select **Next**. Leave the next step as is and select **Review
-    Mapping**
+12. Select **Next**. Leave the next step as is and select **Review Mapping**
 
     ![](./media/l115.png)
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image22.png)
 
-    >[!Important] If you do not see the mapping to be proper in the page,
-    then select **Back** and select the **Data Delimiter** to
+    >[!Important] If you do not see the mapping to be proper in the page, then select **Back** and select the **Data Delimiter** to
     be **None** and select **Review Mapping**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image23.png)
 
-13. Now we have to do a bit more work for the mapping. Select
-    the **magnifying glass icon** next to the **Job Role** field.
+13. Now we have to do a bit more work for the mapping. Select the **magnifying glass icon** next to the **Job Role** field.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image24.png)
 
-14. Make sure **Job Title** is selected here, and if not - add it and
-    select **OK**.
+14. Make sure **Job Title** is selected here, and if not - add it and select **OK**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image25.png)
 
-15. Make sure the rest of the mapping is correct too and select **Finish
-    Import** and then select **Done**.
+15. Make sure the rest of the mapping is correct too and select **Finish Import** and then select **Done**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image26.png)
     ![](./media/a7.png)
@@ -275,14 +260,11 @@ you imported in the previous exercise.
 Now you are done with the setup of the prerequisites, it's time for the
 actual work! Let's add our Hiring Agent first!
 
-1. From the Copilot Studio, select **Agents** from the left pane.
-    Select **+ Create blank agent**. Enter the name as **Hiring Agent** then select **Agent settings (Optional)**. 
+1. From the Copilot Studio, select **Agents** from the left pane. Select **+ Create blank agent**. 
 
     ![](./media/l116.png)
-    ![](./media/l117.png)
 
-2. In the Agent settings, select the Solution as **Operative** and then
-    select **Create**.
+2. Enter the name as **Hiring Agent** then select **Agent settings (Optional)**. In the Agent settings, select the Solution as **Operative** and then select **Create**.
 
     ![](./media/l118.png)
 
