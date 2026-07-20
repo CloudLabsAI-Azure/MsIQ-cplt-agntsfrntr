@@ -45,13 +45,13 @@ Welcome to the **Building AI Agents for Zava Retail** workshop. In this workshop
 
 This workshop provides a hands-on experience with modern agent development on Microsoft 365, helping you understand how both declarative and custom engine agents can transform everyday enterprise scenarios like after-sales service and HR support.
 
-![Image](./media/gsd1.png)
+![Image](../Day-2/media/gs1.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![Image](./media/GettingStarted-01.png)
+![Image](../Day-2/media/GettingStarted-01.png)
 
 ## Virtual Machine & Lab Guide
 Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
@@ -59,17 +59,17 @@ Your virtual machine is your workhorse throughout the workshop. The guide is you
 ## Exploring Your Lab Resources
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-![Image](./media/GettingStarted-02.png)
+![Image](../Day-2/media/GettingStarted-02.png)
 
 ## Utilizing the Split Window Feature
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-![Image](./media/GettingStarted-03.png)
+![Image](../Day-2/media/GettingStarted-03.png)
 
 ## Managing Your Virtual Machine
 Feel free to **start, restart, or stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-![Image](./media/GettingStarted-04.png)
+![Image](../Day-2/media/GettingStarted-04.png)
 
 ## Support Contact
 
@@ -82,6 +82,6 @@ Learner Support Contacts:
 
 Click **Next >>** from the bottom right corner to embark on your Lab journey!
 
-![Image](./media/nxtd1.png)
+![Image](../Day-2/media/nxtd1.png)
 
 ### Happy Learning!!

@@ -44,20 +44,6 @@ In this task, you will scaffold a new Declarative Agent project using the Micros
 
     ![](./media/t1b.png)
 
-2. Open Visual Studio Code. When the Foundry MCP pop-up appears, click **Allow**, then select **Work or School Account** and sign in using the following credentials:
-
-    - Username - **@lab.CloudPortalCredential(User1).Username**
-    - TAP Token - **@lab.CloudPortalCredential(User1).AccessToken**
-
-    ![](./media/t1.png)
-    ![](./media/t2.png)
-    ![](./media/t3.png)
-    ![](./media/t4.png)
-
-3. Select **Yes** to Sign in to all apps and website on this device.
-
-    ![](./media/t5.png)
-
 4. Locate the **Microsoft 365 Agents Toolkit icon** from the menu on the left and select it. An activity bar will open. Select the **Create a New Agent/App** button in the activity bar, which will open the palette with a list of app templates available on Microsoft 365 Agents Toolkit.
 
     ![m365atk-icon](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image7.png)
@@ -314,9 +300,37 @@ In this task, you will test the Repair Service Agent that you just created.
 
     ![](./media/t30.png)
 
-4. Open your web browser and navigate to **https://m365.cloud.microsoft/chat** to open the Copilot app and click on **Expand Navigation**.
+1. On your virtual machine, open a web browser and navigate to the Microsoft 365 Copilot portal.
 
-login command 
+     ```
+     https://m365.cloud.microsoft/
+     ```
+
+     ![](../Day-2/media/img0.png)
+
+1. On the **Sign in** page, enter the following email/username and click **Next (2)**.
+
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+   
+    ![](../Day-2/media/img1.png)
+     
+1. Now enter the following password and click on **Sign in (2)**.
+   
+   * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
+   
+    ![](../Day-2/media/img2.png)
+
+      > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
+
+      ![](../Day-2/media/GS-0.png) 
+     
+1. If you see the pop-up **Stay Signed in?**, select **No**.
+
+    ![](../Day-2/media/img3.png)
+
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+
+1. If a **Welcome to Microsoft 365** popup window appears, select **Maybe Later** to skip the tour.
 
     ![](./media/t31.png)
 
