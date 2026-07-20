@@ -1,4 +1,4 @@
-# Lab 1 - Transform Zava Retail Store Operations with a Smart Email Triage & Productivity Agent
+# Lab 1: Transform Zava Retail Store Operations with a Smart Email Triage & Productivity Agent
 
 ## Estimated Duration: 40 Minutes
 
@@ -43,10 +43,11 @@ You are Marie (Customer Support Manager) logging into Microsoft 365 Copilot to a
 
     - **Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
 
+        ![](./media/image1.png)
+
     - **Password**: <inject key="AzureAdUserPassword"></inject> **(2)**
 
-    ![](./media/image1.png)
-    ![](./media/image101.png)
+        ![](./media/image101.png)
 
 3. Click **Yes** to stay signed in.
 

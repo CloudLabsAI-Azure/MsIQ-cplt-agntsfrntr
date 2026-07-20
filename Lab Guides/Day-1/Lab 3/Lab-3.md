@@ -1,6 +1,6 @@
-# Lab 3 - Build the Zava Retail Workforce Upskilling Learning Agent with Microsoft 365 Copilot
+# Lab 3: Build the Zava Retail Workforce Upskilling Learning Agent with Microsoft 365 Copilot
 
-## Estimated Duration: 30 Minutes
+## Estimated Duration: 40 Minutes
 
 ## Overview
 

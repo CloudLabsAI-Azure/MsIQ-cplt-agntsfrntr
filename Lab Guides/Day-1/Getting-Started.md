@@ -1,6 +1,6 @@
 # Day 1: Build AI-Powered Agents and Workflows with Microsoft 365 Copilot
 
-### Overall Estimated Duration: 4 Hours 30 Minutes
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -46,7 +46,7 @@ The Workflows Agent orchestrates multi-step automations by connecting Outlook, T
 
 ## Architecture Diagram
 
-![Image](./images/ArcDay1.png)
+![Image](./images/Ad.png)
 
 ## Explanation of Components
 
@@ -84,13 +84,13 @@ The architecture for this lab involves the following key components:
 
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-![Image](./images/GettingStarted-00.png)
+![Image](./images/g1.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![Image](./images/GettingStarted-01.png)
+![Image](./images/gi.png)
 
 ## Virtual Machine & Lab Guide
 
@@ -112,7 +112,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 Feel free to **start, restart, or stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-![Image](./images/GettingStarted-04.png)
+![Image](./images/gr.png)
 
 ## Let's Get Started with Microsoft 365 Copilot
 
@@ -122,27 +122,23 @@ Feel free to **start, restart, or stop (2)** your virtual machine as needed from
     https://m365.cloud.microsoft/chat/
     ```
 
-    ![Image](./images/GettingStarted-11.png)
-
 1. On the **Sign in** page, enter the following email/username and click **Next (2)**.
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
    
-      ![Image](./images/GettingStarted-05.png "Enter Email")
+      ![Image](./images/l3e1t1s1.png)
      
 1. Now enter the following password and click on **Sign in (2)**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
    
-      ![Image](./images/GettingStarted-07.png "Enter Password")
+      ![Image](./images/l3e1t1s2.png)
 
       > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
 
-      ![](./images/GS-0.png) 
-     
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-   ![Image](./images/GettingStarted-06.png)
+   ![Image](./images/l3e1t1s3.png)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
@@ -159,6 +155,6 @@ Learner Support Contacts:
 
 Click **Next >>** from the bottom right corner to embark on your Lab journey!
 
-![Image](./images/Next.png)
+![Image](./images/nxtim.png)
 
 ### Happy Learning!!
