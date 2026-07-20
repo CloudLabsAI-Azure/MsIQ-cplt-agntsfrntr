@@ -117,7 +117,7 @@ In this exercise, you will sign in to Microsoft 365 Copilot Chat as Priya Nair a
         - Use structured, scannable formatting (headers, bullet points, short paragraphs).
         ```
 
-    ![](./media/image6.png)
+        ![](./media/l6e1t1s3.png)
 
 ### Task 3: Add a Knowledge Source
 
