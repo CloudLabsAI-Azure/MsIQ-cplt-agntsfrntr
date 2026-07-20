@@ -323,8 +323,6 @@ In this task, you will test the Repair Service Agent that you just created.
     ![](../../Day-2/media/img2.png)
 
       > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
-
-      ![](../../Day-2/media/GS-0.png) 
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
