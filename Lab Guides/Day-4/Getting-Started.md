@@ -1,4 +1,4 @@
-# Day 3: Build, Extend, and Govern Copilot Agents for Retail Operations with Microsoft 365 Copilot
+# Day 4: Build, Extend, and Govern Copilot Agents for Retail Operations with Microsoft 365 Copilot
 
 ### Overall Estimated Duration: 4 Hours
 
