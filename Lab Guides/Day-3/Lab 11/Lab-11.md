@@ -70,18 +70,6 @@ In this task, you will scaffold a new Declarative Agent project using the Micros
 
     ![](./media/t10.png)
 
-<!---
-9. Select **Yes, I trust the authors** option in the confirmation dialog.
-
-    ![](./media/t11.png)
-
-
-    >**Note:** If you get the Foundry MCP pop-up again, click **Allow** and then select your current username.
-
-    ![](./media/t12.png)
-    ![](./media/t13.png)
---->
-
 10. You'll need to sign into the **Microsoft 365 Agents Toolkit** in order to upload and test your agent from within it.
 
 11. Within the project window, select the **Microsoft 365 Agents Toolkit icon** again from the left side menu. This will open the Agent Toolkit's activity bar with sections like Accounts, Environment, Development, etc.
@@ -95,13 +83,6 @@ In this task, you will scaffold a new Declarative Agent project using the Micros
 13. This will open a dialog from the editor to sign in, create a Microsoft 365 developer sandbox, or Cancel. Select **Sign in**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image15.png)
-<!---
-
-14. Click **Allow** if you get a pop-up stating - Do you want to allow public and private networks to access this app?
-
-    ![](./media/t14.png)
-
---->
 
 1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next (2)**. 
 
