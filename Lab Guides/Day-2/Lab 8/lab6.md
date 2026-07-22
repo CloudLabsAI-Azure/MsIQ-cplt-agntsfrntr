@@ -1,4 +1,4 @@
-# Lab 6 - Build a Store Operations Assistant Copilot Agent for trusted customer success at Zava Retail
+# Lab 08: Build a Store Operations Assistant Copilot Agent for trusted customer success at Zava Retail
 
 ## Estimated Duration: 40 minutes
 
@@ -39,10 +39,11 @@ contextual, work-aware AI into your everyday apps and agents. In this part, you 
 
 ### Task 1: Access the Agent Creation Tool 
 
-1. Navigate to Microsoft 365 Copilot using the URL.
-     ```
-     https://m365.cloud.microsoft/
-     ```
+1. Open the browser and navigate to Microsoft 365 Copilot using the URL.
+
+    ```
+    https://m365.cloud.microsoft/
+    ```
 
     ![](./media/n1.png)
 
@@ -50,29 +51,23 @@ contextual, work-aware AI into your everyday apps and agents. In this part, you 
     
     ![](./media/n2.png)
 
-1. On the SharePoint home page, Click **Create site**.
+1. On the SharePoint home page, Select **Build** from the left menu and then click on **Site**.
     
-    ![](./media/n3.png)
+    ![](./media/n2a.png)
 
-1. Select **Team site** from the **Create a site** dialog.
+1. On the Team site template selection page, choose the **Standard team** template.
 
-    ![](./media/n4.png)
+    ![](./media/n2b.png)
 
-1. On the **Select a template** screen, select the **Standard team** template.
+1. Click Use template to proceed with the selected site template.
 
-   ![](./media/n5.png)
+    ![](./media/n2c.png)
 
-1. Review the **Standard Team** site preview, then click **Use template**.
+1. Enter the site **name (1)**, for as **ZavaSite<DID>,**" confirming the **Group email address** and **Site address** auto-populate.
 
-    ![](./media/n6.png)
+   ![](./media/n7a.png)
 
-1. Enter the site **name (1)**, for example "ZavaSite1," confirming the **Group email address** and **Site address** auto-populate, then click **Next (2)**.
-
-   ![](./media/n7.png)
-
-    >**Note:** If you encounter any error in **site address** please add unique number at the end of ZavaSite to make the address unique.
-
-1. Configure the following and then click **Create site**.
+1. Scroll down and configure the following and then click **Create site**.
    | Setting | Value |
    |---|---|
    | Privacy settings | **Private - only members can access this site** |
@@ -80,7 +75,7 @@ contextual, work-aware AI into your everyday apps and agents. In this part, you 
 
    ![](./media/n8.png)
 
-1. Leave the **Add members** field empty, then click **Finish**.
+1. Leave the **add owners and members** field empty, then click **Go to site**.
 
     ![](./media/n9.png)
 
@@ -108,10 +103,13 @@ contextual, work-aware AI into your everyday apps and agents. In this part, you 
   
 1. Navigate back to M365 Copilot window.
    
-1. Click **New agent (1)** in the left navigation menu, then click **Skip to configure (2)**.
+1. Expand **navigation pane** and click **Agents (1)** in the left navigation menu, then click **New agent (2)**.
 
-   ![](./media/n12.png)
+   ![](../Lab%207/media/new12.png)
 
+1. Click on **Skip**.
+
+   ![](../Lab%207/media/new12a.png)
 1. When the **Create new agent panel** opens, paste the following
 information in the respective fields:
 
@@ -135,11 +133,11 @@ information in the respective fields:
 
    ![](./media/n16.png)
    
-1. Click **Create** to finalize your agent configuration.  
+1. Click **Create (+)** to finalize your agent configuration.  
 
     ![](./media/n17.png)
 
-9. Select **Got to agent** to open newly created agent.
+9. Select **Start chat** to open newly created agent.
 
    ![](./media/n18.png)
 
@@ -149,7 +147,7 @@ information in the respective fields:
 
 Testing your agent validates both grounding knowledge and the quality of its responses. This step reflects the Trust dimension of Microsoft IQ - agents should only surface verified, relevant information.
 
-1. Navigate back to SharePoint window. Open **Agent Chat** on the right side of the ZavaSite page.
+1. Navigate back to SharePoint window. Open **Home (1)** on the right side of the ZavaSite page and then click on the **Copilot (2)** icon form the left bottom.
 
     ![](./media/n20.png)
 
@@ -158,8 +156,6 @@ Testing your agent validates both grounding knowledge and the quality of its res
      ```
      Summarize the project plan
      ```
-    
-    ![](./media/n21.png)
 
 1. Review the output:  
       
@@ -173,7 +169,7 @@ The default Instructions field in SharePoint's agent creator is powerful but lim
 
 1. Navigate back to M365 Copilot window.
 
-1. Click the **... (1)** menu next to **Project Knowledge Assistant**, then select **Edit (2)**.
+1. Go to the **Agents (1)** and click the **... (2)** menu next to **Project Knowledge Assistant**, then select **Edit (3)**.
 
     ![](./media/n24.png)
 
@@ -189,7 +185,7 @@ The default Instructions field in SharePoint's agent creator is powerful but lim
    
     ![](./media/n27.png)
 
-6. You will be redirected to the Copilot Studio page. In Copilot Studio, confirm the **Name (1)** field shows **Project Knowledge Assistant**, then review or update the **Instructions (2)**. 
+6. You will be redirected to the Copilot Studio page. In Copilot Studio, confirm the **Name (1)** field shows **Project Knowledge Assistant**, then review or update the **Instructions (2)**.
 
     ```
     You are the Store Operations Assistant for a retail organization. Only answer questions using content from the connected SharePoint sources. Always cite the document name and section. If a question falls outside your knowledge sources, respond: "I don't have that information — please check with your shift manager or visit the intranet." Keep responses to 3–5 bullet points. Do not speculate or summarize information that is not present in a source

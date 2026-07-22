@@ -36,10 +36,12 @@ To address these challenges, Zava Retail has decided to deploy a Microsoft 365 C
 
 Patricia logs into Copilot to review Festive Campaign readiness.
 
-1. Navigate to Microsoft 365 Copilot using the URL.
+1. Open the browser and navigate to Microsoft 365 Copilot using the URL.
+
      ```
      https://m365.cloud.microsoft/
      ```
+
 1. Sign in with following  credentials:
 
 	- **Email/Username:** **<inject key="AzureAdUserEmail"></inject>**
@@ -60,9 +62,13 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 
     ![](./media/q1.png)
 
-1. Expand **navigation pane** and click **New agent (1)** in the left navigation menu, then click **Skip to configure (2)**.
+1. Expand **navigation pane** and click **Agents (1)** in the left navigation menu, then click **New agent (2)**.
 
    ![](./media/new12.png)
+
+1. Click on **Skip**.
+
+   ![](./media/new12a.png)
    
 1. When the **Agent creation panel** opens, paste the following details in respective fields to build the agent.
 
@@ -103,14 +109,14 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 
     ![](./media/q8.png)
 
-1. Click **Create** to publish the agent.
+1. Click **Create (+)** to publish the agent.
 
     ![](./media/q9.png)
 
      >**Note**:Wait for 5-10 minutes for the agent building process
     completion.
     
-1. Once the agent is created successfully, click **Go to agent** to
+1. Once the agent is created successfully, click **Start chat** to
     start using the agent.
 
     ![](./media/q11.png)
@@ -150,6 +156,10 @@ Patricia Gray (Regional operations manager) is seeking for an overview of the op
      ```
      https://m365.cloud.microsoft/
      ```
+
+1. Go to the **Agents (1)** and select the **Frontline Operations ... (2)** agent.
+
+    ![](./media/img2a.png)
 
 2. Cashier at Zava Retail is starting the day and looking for a quick checklist. To execute this step, go to the Frontline Operations agent, paste the below given prompt in the field, and then click on the **Send** button.
 
