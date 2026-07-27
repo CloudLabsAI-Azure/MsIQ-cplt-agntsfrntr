@@ -44,7 +44,6 @@ Build the Holiday Returns Helper agent from scratch in Copilot Studio,give it cl
    ```
    https://copilotstudio.preview.microsoft.com/
    ```
-   ![](./media/n1.png)
 
 1. Sign in with following  credentials:
 
@@ -75,7 +74,7 @@ Build the Holiday Returns Helper agent from scratch in Copilot Studio,give it cl
         You are Holiday Returns Helper for Zava Retail.Your role is to assist store associates with questions about holiday returns, exchanges, and refunds.Always answer using information from the uploaded Holiday Return Policy document.Keep responses concise, professional, and suitable for frontline employees using a mobile device.If the information is not available in the knowledge source, state that you couldn't find the answer rather than making assumptions. Do not answer unrelated questions.
         ```
 
-    ![](./media/n2.png)
+      ![](./media/n2.png)
 
 1. Select **knowledge** from the left navigation menu to add a knowledge source.
 

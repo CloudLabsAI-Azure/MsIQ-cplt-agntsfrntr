@@ -136,7 +136,7 @@ generate a detailed task list for each participant based on the action items in 
 1. To generate a task list, paste the below prompt in the description box and select **Send** icon.  
 
     ```
-    Based on the action items and next steps in the meeting summary,create a detailed task list for each participant. Assign responsibilities clearly and include suggested deadlines or priority levels for each task, such as high, medium, or low priority where appropriate
+    Review the meeting summary and Based on the action items and next steps in the meeting summary,create a detailed task list for each participant. Assign responsibilities clearly and include suggested deadlines or priority levels for each task, such as high, medium, or low priority where appropriate
     ```
 
     ![](./media/n10.png)
@@ -174,9 +174,7 @@ structure complex financial information into actionable summaries and how detail
 
 ### Task 1: Create a business perspective summary 
 
-1. Navigate back to the Microsoft 365 Copilot home page and Click **New chat (1)**, then confirm the **Work (2)** mode is selected as Work mode ensures Copilot uses secure internal business context, while Web mode searches public external sources.
-
-    ![](./media/n14.png)
+1. Navigate back to the Microsoft 365 Copilot home page and Click **New chat**.
     
 1. Select the **+ icon** in the prompt field and then select **Upload images and files**.
 
