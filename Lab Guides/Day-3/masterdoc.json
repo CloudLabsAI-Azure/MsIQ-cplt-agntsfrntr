@@ -12,7 +12,11 @@
             {
                 "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/post-build-SPLabs/Lab%20Guides/Day-3/Lab%2012/Lab-12.md",
                 "Order": 3
-            }      
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/MsIQ-cplt-agntsfrntr/refs/heads/post-build-SPLabs/Lab%20Guides/Day-3/Lab%2013/Lab-13.md",
+                "Order": 4
+            }                  
         ]
     }
 ]
