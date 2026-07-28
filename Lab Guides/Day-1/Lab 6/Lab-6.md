@@ -1,12 +1,12 @@
-# Lab 6: Build an Enterprise Marketing Operations Agent with Microsoft 365 Copilot
+# Lab 06: Build an Enterprise Marketing Operations Agent with Microsoft 365 Copilot
 
 ## Estimated Duration: 40 Minutes
 
 ## Overview
 
-In this lab, you will use **Microsoft 365 Copilot Chat** to build a reusable custom agent — the **Zava Retail Marketing Operations Advisor** — that plans campaigns to a consistent enterprise structure, generates creative assets, adapts content for different audiences and channels, and prepares executive-ready summaries.
+In this lab, you will use **Microsoft 365 Copilot Chat** to build a reusable custom agent - the **Zava Retail Marketing Operations Advisor** - that plans campaigns to a consistent enterprise structure, generates creative assets, adapts content for different audiences and channels, and prepares executive-ready summaries.
 
-Zava Retail is a growing SMB omnichannel retailer with 12 physical stores and a successful online business. Its marketing team runs frequent, multi-channel campaigns — seasonal sales, product launches, loyalty promotions — but has no consistent, repeatable way to plan them. With a Summer Clearance campaign due for leadership approval by the end of the week, Priya Nair needs a faster, more consistent way to plan the campaign, produce channel-ready assets, adapt it for different audiences and regions, and package it for executive review.
+Zava Retail is a growing SMB omnichannel retailer with 12 physical stores and a successful online business. Its marketing team runs frequent, multi-channel campaigns - seasonal sales, product launches, loyalty promotions - but has no consistent, repeatable way to plan them. With a Summer Clearance campaign due for leadership approval by the end of the week, Priya Nair needs a faster, more consistent way to plan the campaign, produce channel-ready assets, adapt it for different audiences and regions, and package it for executive review.
 
 ## Lab Objectives
 
@@ -25,10 +25,10 @@ Every campaign brief at Zava Retail looks different depending on who wrote it. C
 
 **Key Personas**
 
-- **Priya Nair – Marketing Operations Lead (Learner):** Owns campaign planning and execution at Zava Retail.
-- **David Kim – VP of Marketing:** Requires every campaign brief to include an executive summary, KPIs, and clearly flagged risks before he will approve it.
-- **Sam Osei – Creative Director:** Needs channel-ready first-draft copy and imagery across email, social, SMS, and in-store signage.
-- **Regional Store Directors – North, South, Urban, Rural:** Require the same campaign to be adapted to local context.
+- **Priya Nair - Marketing Operations Lead (Learner):** Owns campaign planning and execution at Zava Retail.
+- **David Kim - VP of Marketing:** Requires every campaign brief to include an executive summary, KPIs, and clearly flagged risks before he will approve it.
+- **Sam Osei - Creative Director:** Needs channel-ready first-draft copy and imagery across email, social, SMS, and in-store signage.
+- **Regional Store Directors - North, South, Urban, Rural:** Require the same campaign to be adapted to local context.
 
 ## Exercise 1: Create and Configure the Marketing Operations Agent
 
@@ -226,7 +226,7 @@ Sam Osei's creative team needs a running start across every channel. In this exe
 
 ## Exercise 4: Refine the Campaign for Loyalty Members
 
-David Kim has a follow-up request: loyalty program members shouldn't receive the same "everything must go" clearance messaging as everyone else — they should feel like they're getting early, exclusive access. In this exercise, you will refine the existing campaign without starting over.
+David Kim has a follow-up request: loyalty program members shouldn't receive the same "everything must go" clearance messaging as everyone else - they should feel like they're getting early, exclusive access. In this exercise, you will refine the existing campaign without starting over.
 
 ### Task 1: Refine for Audience and Brand Tone
 
@@ -245,7 +245,7 @@ David Kim has a follow-up request: loyalty program members shouldn't receive the
     - What changed (e.g., messaging shifted from "clearance" to "exclusive loyalty access")
     - What was preserved (objective, KPIs, timeline)
 
-3. Confirm the tone reads as more premium — word choice, pacing, and framing should feel distinct from the original mass-market version.
+3. Confirm the tone reads as more premium - word choice, pacing, and framing should feel distinct from the original mass-market version.
 
     ![](./media/image32.png)
     ![](./media/image33.png)
@@ -301,7 +301,7 @@ David Kim has one rule for Friday's leadership review: every campaign pitch must
 
 2. Review the response. It must cover the following points:
 
-    - **Executive Summary**: 3–5 sentence overview for a VP-level decision-maker
+    - **Executive Summary**: 3-5 sentence overview for a VP-level decision-maker
     - **Expected Business Impact**: quantified or directional impact (revenue, traffic, engagement)
     - **Campaign Risks**: realistic risks (e.g., inventory shortfall, message fatigue, timing conflicts)
     - **Assumptions**: explicitly flagged placeholders (budget, dates, inventory levels)

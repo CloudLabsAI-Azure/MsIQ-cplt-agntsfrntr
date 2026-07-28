@@ -1,4 +1,4 @@
-# Lab 4: Automate Zava Retail IT Asset Management with Microsoft 365 Copilot App Builder
+# Lab 04: Automate Zava Retail IT Asset Management with Microsoft 365 Copilot App Builder
 
 ## Estimated Duration: 40 Minutes
 
