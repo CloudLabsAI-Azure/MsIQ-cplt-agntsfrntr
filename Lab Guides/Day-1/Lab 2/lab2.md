@@ -4,23 +4,23 @@
 
 ## Lab objective
 
-In this lab, you will learn how to use the Researcher Agent in Microsoft
-365 to gather, summarize, and analyse organization-related
-information. The Researcher Agent can collect relevant data from your
+In this lab, you will learn how to use the Researcher Agent in Microsoft
+365 to gather, summarize, and analyse organization-related
+information. The Researcher Agent can collect relevant data from your
 documents, emails, chats, and Teams messages, helping you create
-summaries, reports, and follow-ups on a given project or topic. After
-completing this lab, you will be able to: 
+summaries, reports, and follow-ups on a given project or topic. After
+completing this lab, you will be able to: 
 
-- Locate and launch the **Researcher Agent** in Microsoft 365. 
+- Locate and launch the **Researcher Agent** in Microsoft 365. 
 
-- Use prompts to gather recent discussions, documents, and emails. 
+- Use prompts to gather recent discussions, documents, and emails. 
 
-- Interact with follow-up questions to refine results. 
+- Interact with follow-up questions to refine results. 
 
-- Generate summaries, reports, or action items related to a topic. 
+- Generate summaries, reports, or action items related to a topic. 
 
 - Explore advanced prompt use cases such as progress updates, meeting
-prep, and document discovery. 
+prep, and document discovery. 
 
 ## Scenario
 
@@ -66,49 +66,45 @@ challenges include:
 
 - Needs quick insights before leadership meetings
 
-## Exercise 1: Access the Researcher Agent 
+## Exercise 1: Access the Researcher Agent 
 
 Patricia logs into Copilot to review Festive Campaign readiness.
 
 1.  Navigate to +++https://m365copilot.com/+++ Microsoft 365 copilot
-    page. 
+    page. 
 
-2.  Enter the **Username** - +++@lab.CloudPortalCredential(User1).Username+++ in the field and then click on
-    the **Next** button to proceed. 
+2.  Enter the **Username** - +++@lab.CloudPortalCredential(User1).Username+++ in the field and then click on
+    the **Next** button to proceed. 
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image1.png)
 
-3.  Enter **TAP Token** - +++@lab.CloudPortalCredential(User1).AccessToken+++ in the field and then click on the **Sign
-    in** button and click on the **Yes** to stay Signed in. 
+3.  Enter **TAP Token** - +++@lab.CloudPortalCredential(User1).AccessToken+++ in the field and then click on the **Sign
+    in** button and click on the **Yes** to stay Signed in. 
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image2.png)
     ![](./media/b1.png)
 
 4.  Explore the Copilot chat environment.
 
-    ![](./media/b2.png)
+    ![](./media/x1.png)
 
-5.  In the left **navigation pane**, look for **Agents**. 
+5.  In the left **navigation pane**, look for **Agents**. 
 
-    - If **Researcher** appears directly under the **Agents** section \>
-    select **Researcher**. 
+    - If **Researcher** appears directly under the **Agents** section \>
+    select **Researcher**. 
 
-    ![](./media/b3.png)
+    ![](./media/x2.png)
 
-    - If not, select **More agents**. In the **Agent Store** window, under
-    the **Built by Microsoft** section, select **Researcher**. 
+    - If not, select **More agents**. In the **Agent Store** window, under
+    the **Built by Microsoft** section, select **Researcher**. 
 
-    ![](./media/b4.png)
+    ![](./media/x3.png)
 
-6.  Select **Open** to access the Researcher agent.
+6.  The **Researcher Agent window** opens in a new pane. 
 
-    ![](./media/b5.png)
+    ![](./media/x4.png)
 
-7.  The **Researcher Agent window** opens in a new pane. 
-
-    ![](./media/b6.png)
-
-## Exercise 2: Run Your First Research Prompt (Campaign Intelligence)
+## Exercise 2: Run Your First Research Prompt (Campaign Intelligence)
 
 Patricia wants a complete overview of campaign progress for Zava Retail.
 
@@ -119,8 +115,8 @@ Patricia wants a complete overview of campaign progress for Zava Retail.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image300.png)
 
-3. Go to the Researcher agent, paste the following prompt in the prompt
-    field, and then click on the **Execute** button.
+3. Go to the Researcher agent, paste the following prompt in the prompt
+    field, and then click on the **Execute** button.
    
     ```
     Help me gather and summarize all recent discussions, documents, and
@@ -136,14 +132,14 @@ Patricia wants a complete overview of campaign progress for Zava Retail.
 
     - Marketing campaign activities
 
-    - Key risks or delays 
+    - Key risks or delays
     ```
 
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image8.png)
+    ![](./media/x5.png)
 
-4.  Wait for the **Researcher Agent** to gather and summarize the data
-    review the Researcher agent carefully. The Researcher Agent may ask
-    clarifying questions. Select the report length as “Short” and select/enter
+4.  Wait for the **Researcher Agent** to gather and summarize the data
+    review the Researcher agent carefully. The Researcher Agent may ask
+    clarifying questions. Select the report length as “Short” and select/enter
     “Go ahead with your best judgement” and select **Send** button.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image9.png)
@@ -152,7 +148,7 @@ Patricia wants a complete overview of campaign progress for Zava Retail.
     shared beforehand so the Researcher Agent can access relevant data and
     produce meaningful insights and summaries.
 
-5. Review the Researcher agent’s response: 
+5. Review the Researcher agent’s response: 
 
     The agent searches across Outlook, Teams, and SharePoint documents to
     retrieve the following:
@@ -188,7 +184,7 @@ Patricia wants a complete overview of campaign progress for Zava Retail.
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image17.png)
     > Note: Generated outputs are non-deterministic and may vary across users, sessions, and environments.
 
-## Exercise 3: Action and Decision Intelligence 
+## Exercise 3: Action and Decision Intelligence 
 
 Patricia Gray needs clear next steps and decisions. This exercise will
 help Researcher Agent perform a task or take a specific action based on
@@ -196,8 +192,8 @@ the data, findings, or situation.
 
 ### Task 1: Identify Action Items
 
-1.  In the Researcher agent, paste the below given prompt in the
-    field and then click on the **Send** button. 
+1.  In the Researcher agent, paste the below given prompt in the
+    field and then click on the **Send** button. 
 
     +++List all action items related to the Zava Festive Campaign.+++
 
@@ -215,10 +211,9 @@ the data, findings, or situation.
 ### Task 2: Key Decisions
 
 1. Under the Researcher agent, paste the below given prompt in the
-field and then click on the **Send** button. 
+field and then click on the **Send** button. 
 
-    +++Summarize key decisions made across emails and Teams discussions for
-    the campaign.+++
+    +++Summarize key decisions made across emails and Teams discussions for the campaign.+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image21.png)
 
@@ -235,20 +230,20 @@ field and then click on the **Send** button. 
 
 1. Select **new chat** button to start new chat
 2. Under Researcher agent, paste the below given prompt in the chat
-panel and then click on the **Send** button. 
+panel and then click on the **Send** button. 
 
     +++Draft an email to the leadership team summarizing campaign readiness and participation.+++
 
-    ![](./media/b7.png)
+    ![](./media/x6.png)
 
-3. Wait for the **Researcher Agent** to gather and summarize the data
-review the Researcher agent carefully. The Researcher Agent may ask
-clarifying questions. Select the report length as “Short” and select/Enter “Go
+3. Wait for the **Researcher Agent** to gather and summarize the data
+review the Researcher agent carefully. The Researcher Agent may ask
+clarifying questions. Select the report length as “Short” and select/Enter “Go
 ahead with your best judgement” and select the **Send** button.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image25.png)
 
-4.  Review the output: 
+4.  Review the output: 
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image26.png)
 
@@ -258,23 +253,23 @@ ahead with your best judgement” and select the **Send** button.
 
 ### Task 4: Meeting Preparation (Executive Readiness)
 
-Meeting preparation prompts help you gather background
-information, summarize key updates, and identify action items or
-discussion points before a meeting. They ensure that all participants
-come informed and ready to contribute effectively. Patricia has a
+Meeting preparation prompts help you gather background
+information, summarize key updates, and identify action items or
+discussion points before a meeting. They ensure that all participants
+come informed and ready to contribute effectively. Patricia has a
 leadership review meeting in next week and she want to be prepared for
 the upcoming meeting.
 
 1.  Under the Researcher agent, paste the below given prompt in the
-    field and then click on the **Send** button. 
+    field and then click on the **Send** button. 
 
-    +++Help me prepare for an upcoming meeting by summarizing recent communication and shared files about.+++
+    +++Help me prepare for an upcoming meeting by summarizing recent communication and shared files about.+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image29.png)
 
-2.  Wait for the **Researcher Agent** to gather and summarize the data
-    review the Researcher agent carefully. The Researcher Agent may ask
-    clarifying questions. Select the report length as “Short” and select/enter
+2.  Wait for the **Researcher Agent** to gather and summarize the data
+    review the Researcher agent carefully. The Researcher Agent may ask
+    clarifying questions. Select the report length as “Short” and select/enter
     “Meeting is the Q2 Sales Review on April 10” and select the
     **Send** button.
 
@@ -289,9 +284,9 @@ the upcoming meeting.
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image33.png)
 
 4.  Paste the below given prompt in the field and then click on
-    the **Send** button.
+    the **Send** button.
 
-    +++What topics have been discussed in past weekly team syncs?+++
+    +++What topics have been discussed in past weekly team syncs?+++
 
     ![](./media/b8.png)
     
@@ -306,12 +301,12 @@ the upcoming meeting.
 ### Task 5: Progress and Status Analysis
 
 Progress and status updates help you to review
-achievements, identify gaps, and plan next steps. Patricia Gray wants to
+achievements, identify gaps, and plan next steps. Patricia Gray wants to
 update the current status, blockers, and overall campaign progress to
 the leadership team.
 
 1.  Under Researcher agent, paste the below given prompt in the field
-    and then click on the **Send** button.   
+    and then click on the **Send** button.   
     +++Summarize the current status and blockers for the Zava Festive Campaign.+++
 
     ![](./media/b9.png)
@@ -326,25 +321,25 @@ the leadership team.
 
 ### Task 6: Identify Gaps and Risks
 
-This section helps identify missing information, unclear points, or
-areas needing further investigation from research, meetings, or ongoing
-project activities. Summary Prompts help you articulate what’s unclear,
-while Action Prompts guide you to resolve or explore these gaps
-further. Patricia wants to uncover hidden risks.
+This section helps identify missing information, unclear points, or
+areas needing further investigation from research, meetings, or ongoing
+project activities. Summary Prompts help you articulate what’s unclear,
+while Action Prompts guide you to resolve or explore these gaps
+further. Patricia wants to uncover hidden risks.
 
 1. Start new conversation.
    ![](./media/b10.png)
 
 2.  Under Research agent window, paste the below given prompt in the
-    field and then click on the **Send** button. 
+    field and then click on the **Send** button. 
 
     +++What open questions or gaps remain in the Zava Festive Campaign?+++
 
-    ![](./media/b11.png)
+    ![](./media/x7.png)
 
-4.  Wait for the **Researcher Agent** to gather and summarize the data
-    review the Researcher agent carefully. The Researcher Agent may ask
-    clarifying questions. Select the report length as “Short” and select
+4.  Wait for the **Researcher Agent** to gather and summarize the data
+    review the Researcher agent carefully. The Researcher Agent may ask
+    clarifying questions. Select the report length as “Short” and select
     “Analyze sales data and customer feedback for gaps” and select the
     **Send** button.
 
@@ -354,16 +349,16 @@ further. Patricia wants to uncover hidden risks.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image44.png)
 
-### Task 7: Document Discovery and Insights 
+### Task 7: Document Discovery and Insights 
 
-This section helps users or AI tools explore, analyse, and extract
-valuable information from existing documents, reports, or shared
-repositories. It focuses on identifying key insights, patterns, or
-references that can guide research, planning, or project documentation. 
+This section helps users or AI tools explore, analyse, and extract
+valuable information from existing documents, reports, or shared
+repositories. It focuses on identifying key insights, patterns, or
+references that can guide research, planning, or project documentation. 
 It helps you to find latest campaign documents and insights.
 
 1.  Under Researcher agent, paste the below given prompt in the field
-    and then click on the **Send** button.
+    and then click on the **Send** button.
 
     +++Find the latest version of Zava Festive Campaign plan and summarize key updates.+++
 
@@ -376,7 +371,7 @@ It helps you to find latest campaign documents and insights.
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image47.png)
 
 3.  Enter the below given prompt in the field and then click on
-    the **Send** button.   
+    the **Send** button.   
     +++Summarize contents of shared documents related to campaign planning.+++
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image48.png)
@@ -388,10 +383,10 @@ It helps you to find latest campaign documents and insights.
 ### Task 8: Generate Executive Communication
 
 Use the Researcher Agent to help communicate findings to your
-team. Patricia needs a leadership update.
+team. Patricia needs a leadership update.
 
 1.  Under Researcher Agent, paste the below given prompt in the field
-    and then click on the **Send** button. 
+    and then click on the **Send** button. 
 
     ```
     Draft an executive summary email on Zava Festive Campaign covering:
@@ -417,45 +412,45 @@ team. Patricia needs a leadership update.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image54.png)
 
-### Task 9: Review and Refine the Output 
+### Task 9: Review and Refine the Output 
 
 1.  Evaluate whether the Researcher Agent’s summary meets your
-    expectations. 
+    expectations. 
 
 2.  If results are too broad or missing key details, refine your
-    prompt. 
+    prompt. 
 
-    >[!Knowledge]: “Narrow this summary to focus only on critical risks and delivery blockers.”
+    >[!Knowledge]: “Narrow this summary to focus only on critical risks and delivery blockers.”
 
 3.  Export or copy the summary for documentation, reports, or meeting
-    notes. 
+    notes. 
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image55.png)
 
-    >[!Note] Here is a brief overview of the tasks associated with each
-    icon shown in the screenshot: 
+    >[!Note] Here is a brief overview of the tasks associated with each
+    icon shown in the screenshot: 
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%202/media/image56.png)
 
-    1.  **Clipboard Icon** – Likely used for **copying or
-        pasting** content. 
+    1.  **Clipboard Icon** – Likely used for **copying or
+        pasting** content. 
 
-    2.  **Thumbs-Up Icon** – Typically indicates **liking or approving** an
-        item or action. 
+    2.  **Thumbs-Up Icon** – Typically indicates **liking or approving** an
+        item or action. 
 
-    3.  **Thumbs-Down Icon** – Generally used to **dislike or
-        disapprove** something. 
+    3.  **Thumbs-Down Icon** – Generally used to **dislike or
+        disapprove** something. 
 
-    4.  **Speaker Icon** – Represents **audio settings or volume control**. 
+    4.  **Speaker Icon** – Represents **audio settings or volume control**. 
 
-    5.  **Pencil Icon** – Commonly used for **editing or writing** tasks. 
+    5.  **Pencil Icon** – Commonly used for **editing or writing** tasks. 
 
-    6.  **Clock with Arrow Icon** – Tooltip says **"Add to recent page"**,
-        which means it adds the current item to your **recently accessed
-        pages** for quick reference. 
+    6.  **Clock with Arrow Icon** – Tooltip says **"Add to recent page"**,
+        which means it adds the current item to your **recently accessed
+        pages** for quick reference. 
 
-## Summary 
+## Summary 
 
 In this lab, you explored how the Researcher Agent in Microsoft 365
 Copilot helps transform scattered organizational data into actionable
@@ -471,4 +466,4 @@ As a result, Zava Retail reduced information silos, improved
 decision-making, and automated research to transform fragmented
 communication into a single source of truth.
 
- 
+ 

@@ -1,4 +1,4 @@
-# Lab 5: Streamline Zava Retail Calendar Management with Microsoft 365 Copilot Cowork
+# Lab 05: Streamline Zava Retail Calendar Management with Microsoft 365 Copilot Cowork
 
 ## Estimated Duration: 40 Minutes
 

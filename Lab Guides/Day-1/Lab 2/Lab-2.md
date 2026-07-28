@@ -1,4 +1,4 @@
-# Lab 2: Elevate Zava Retail Intelligence with a Researcher Agent for Smarter Insights and Reporting
+# Lab 02: Elevate Zava Retail Intelligence with a Researcher Agent for Smarter Insights and Reporting
 
 ## Estimated Duration: 40 Minutes
 
@@ -6,7 +6,7 @@
 
 In this lab, you will learn how to use the **Researcher Agent** in Microsoft 365 Copilot to gather, summarize, and analyze organization-related information. The Researcher Agent can collect relevant data from your documents, emails, chats, and Teams messages, helping you create summaries, reports, and follow-ups on a given project or topic.
 
-Zava Retail, a fast-growing omnichannel retailer, was preparing for a large-scale Festive Collection campaign launch. Over the last 90 days, multiple teams worked on vendor onboarding, marketing campaigns, inventory planning, and customer support readiness. Critical information was scattered across emails, Teams chats, documents, and meeting notes — making it difficult for leadership to gain a unified view. You will use the Researcher Agent to consolidate, analyze, and transform this fragmented data into actionable business intelligence.
+Zava Retail, a fast-growing omnichannel retailer, was preparing for a large-scale Festive Collection campaign launch. Over the last 90 days, multiple teams worked on vendor onboarding, marketing campaigns, inventory planning, and customer support readiness. Critical information was scattered across emails, Teams chats, documents, and meeting notes - making it difficult for leadership to gain a unified view. You will use the Researcher Agent to consolidate, analyze, and transform this fragmented data into actionable business intelligence.
 
 ## Lab Objectives
 
@@ -26,11 +26,11 @@ In this lab, you will perform the following:
 
 ## Scenario
 
-At Zava Retail, all critical information is scattered across various communication channels — emails (vendor discussions, escalations), Teams chats (campaign planning), documents (strategy decks, reports), and meeting notes. Due to this information fragmentation, there is no single source of truth, and the leadership team cannot see project status, risks, and dependencies.
+At Zava Retail, all critical information is scattered across various communication channels - emails (vendor discussions, escalations), Teams chats (campaign planning), documents (strategy decks, reports), and meeting notes. Due to this information fragmentation, there is no single source of truth, and the leadership team cannot see project status, risks, and dependencies.
 
 **Key Personas**
 
-**Patricia Gray – Operations Head:** Oversees campaign readiness, aligns cross-functional teams, and drives executive decisions. Cannot manually review hundreds of emails and documents, and needs quick insights before leadership meetings.
+**Patricia Gray - Operations Head:** Oversees campaign readiness, aligns cross-functional teams, and drives executive decisions. Cannot manually review hundreds of emails and documents, and needs quick insights before leadership meetings.
 
 ## Exercise 1: Access the Researcher Agent
 
@@ -42,7 +42,7 @@ Patricia logs into Copilot to review Festive Campaign readiness.
     https://m365.cloud.microsoft/chat/
     ```
     
-5. In the left **navigation pane**, look for **Agents**.
+5. In the left **navigation pane**, look for **New Agents**.
 
     - If **Researcher** appears directly under the **Agents** section, select **Researcher**.
 
@@ -132,10 +132,12 @@ Patricia wants a complete overview of campaign progress for Zava Retail.
 Patricia Gray needs clear next steps and decisions. This exercise will help the Researcher Agent perform a task or take a specific action based on the data, findings, or situation.
 
 ### Task 1: Identify Action Items
-
+ 
 1. In the Researcher agent, paste the below prompt in the field and then click the **Send** button.
 
-    `List all action items related to the Zava Festive Campaign.`
+    ```
+    List all action items related to the Zava Festive Campaign.
+    ```
 
     ![](./media/l2e3t1s1.png)
 
@@ -149,7 +151,9 @@ Patricia Gray needs clear next steps and decisions. This exercise will help the 
 
 1. Under the Researcher agent, paste the below prompt in the field and then click the **Send** button.
 
-    `Summarize key decisions made across emails and Teams discussions for the campaign.`
+    ```
+    Summarize key decisions made across emails and Teams discussions for the campaign.
+    ```
 
     ![](./media/l2e3t2s1.png)
 
@@ -165,7 +169,9 @@ Patricia Gray needs clear next steps and decisions. This exercise will help the 
 
 2. Under the Researcher agent, paste the below prompt in the chat panel and then click the **Send** button.
 
-    `Draft an email to the leadership team summarizing campaign readiness and participation.`
+    ```
+    Draft an email to the leadership team summarizing campaign readiness and participation.
+    ```
 
     ![](./media/l2e3t3s1.png)
 
@@ -187,7 +193,9 @@ Meeting preparation prompts help you gather background information, summarize ke
 
 1. Under the Researcher agent, paste the below prompt in the field and then click the **Send** button.
 
-    `Help me prepare for an upcoming meeting by summarizing recent communication and shared files about.`
+    ```
+    Help me prepare for an upcoming meeting by summarizing recent communication and shared files about.
+    ```
 
     ![](./media/l2e3t4s1.png)
 
@@ -205,7 +213,9 @@ Meeting preparation prompts help you gather background information, summarize ke
 
 4. Paste the below prompt in the field and then click the **Send** button.
 
-    `What topics have been discussed in past weekly team syncs?`
+    ```
+    What topics have been discussed in past weekly team syncs?
+    ```
 
     ![](./media/l2e3t4s6.png)
 
@@ -223,9 +233,11 @@ Progress and status updates help you review achievements, identify gaps, and pla
 
 1. Under the Researcher agent, paste the below prompt in the field and then click the **Send** button.
 
-    `Summarize the current status and blockers for the Zava Festive Campaign.`
+    ```
+    Summarize the current status and blockers for the Zava Festive Campaign.
+    ```
 
-     ![](./media/l2e3t5s1.png)
+    ![](./media/l2e3t5s1.png)
 
 2. Review the output:
 
@@ -241,7 +253,9 @@ This section helps identify missing information, unclear points, or areas needin
 
 2. Under the Researcher agent window, paste the below prompt in the field and then click the **Send** button.
 
-    `What open questions or gaps remain in the Zava Festive Campaign?`
+    ```
+    What open questions or gaps remain in the Zava Festive Campaign?
+    ```
 
     ![](./media/l2e3t6s1.png)
 
@@ -259,7 +273,9 @@ This section helps users or AI tools explore, analyze, and extract valuable info
 
 1. Under the Researcher agent, paste the below prompt in the field and then click the **Send** button.
 
-    `Find the latest version of Zava Festive Campaign plan and summarize key updates.`
+    ```
+    Find the latest version of Zava Festive Campaign plan and summarize key updates.
+    ```
 
     ![](./media/l2e3t7s1.png)
 
@@ -271,7 +287,9 @@ This section helps users or AI tools explore, analyze, and extract valuable info
 
 3. Enter the below prompt in the field and then click the **Send** button.
 
-    `Summarize contents of shared documents related to campaign planning.`
+    ```
+    Summarize contents of shared documents related to campaign planning.
+    ```
 
     ![](./media/l2e3t7s4.png)
 
@@ -311,12 +329,12 @@ Use the Researcher Agent to help communicate findings to your team. Patricia nee
 
     > **Note:** Here is a brief overview of the tasks associated with each icon shown in the screenshot:
 
-    1. **Clipboard Icon** – Used for **copying or pasting** content.
-    2. **Thumbs-Up Icon** – Indicates **liking or approving** an item or action.
-    3. **Thumbs-Down Icon** – Used to **dislike or disapprove** something.
-    4. **Speaker Icon** – Represents **audio settings or volume control**.
-    5. **Pencil Icon** – Used for **editing or writing** tasks.
-    6. **Clock Icon** – **"Schedule this prompt"**, Schedules the selected prompt to run automatically at a specified time and deliver the generated results on a recurring basis.
+    1. **Clipboard Icon** - Used for **copying or pasting** content.
+    2. **Thumbs-Up Icon** - Indicates **liking or approving** an item or action.
+    3. **Thumbs-Down Icon** - Used to **dislike or disapprove** something.
+    4. **Speaker Icon** - Represents **audio settings or volume control**.
+    5. **Pencil Icon** - Used for **editing or writing** tasks.
+    6. **Clock Icon** - **"Schedule this prompt"**, Schedules the selected prompt to run automatically at a specified time and deliver the generated results on a recurring basis.
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Lab 3: Build the Zava Retail Workforce Upskilling Learning Agent with Microsoft 365 Copilot
+# Lab 03: Build the Zava Retail Workforce Upskilling Learning Agent with Microsoft 365 Copilot
 
 ## Estimated Duration: 40 Minutes
 
@@ -53,7 +53,7 @@ Before the agent can support workforce development, you must first build and con
 
         ![](./media/l3e1t1s3.png)
 
-2. Click **Agents (1)** from the left navigation pane, then select **More agents (2)** then click **Create Agent**.
+2. Click **More Agents (1)** from the left navigation pane, then click **Create Agent (2)**.
 
     ![](./media/l3e1t1s4.png)
 
