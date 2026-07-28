@@ -1,45 +1,87 @@
-# Lab 1: Transform Zava Retail Store Operations with a Smart Email Triage & Productivity Agent
+# Lab 1 - Transform Cross-Functional Program Execution at Zava Retail with Planner Agent
 
-## Estimated Duration: 40 Minutes
+### Estimated Duration: 40 minutes
 
-## Overview
+## Lab Overview
 
-In this lab, you will explore the **Workflows Agent** in Microsoft 365 Copilot as an AI-powered orchestration engine that goes beyond traditional automation. Instead of building static workflows, you will design intelligent, adaptive workflows (agents) that can plan, execute, and improve tasks using natural language.
-
-You will build an **Intelligent Email Triage Agent** for Zava Retail — a rapidly growing omnichannel retailer facing high volumes of communication across customers, suppliers, and internal teams. The agent will automatically run every weekday morning, review unread emails from the last 24 hours, identify urgent and actionable items, categorize messages intelligently, generate summaries with next steps, and deliver structured output to Microsoft Teams. You will also use Work IQ to provide productivity and workload insights.
-
-## Lab Objectives
-
-In this lab, you will perform the following:
-
-- Exercise 1: Access the Workflows Agent
-- Exercise 2: Build the Zava Email Triage Workflow
-- Exercise 3: Configure an Autonomous Workflow
-- Exercise 4: Integrate Work IQ to Retrieve Zava Leadership Insights
+In this lab, you'll use Planner Agent in Microsoft 365 Copilot to review
+project plans, identify risks, generate executive summaries, assign
+follow-up work, and coordinate peak season readiness across multiple
+teams.
 
 ## Scenario
 
-Zava Retail teams receive hundreds of emails daily from customers (complaints, returns, inquiries), suppliers (inventory updates, delays), and internal teams (approvals, escalations). This results in missed urgent emails, slow response times, employee burnout, and lack of visibility into priorities.
+**Zava Retail** is a rapidly growing omnichannel retailer that serves
+customers through its e-commerce platform and a network of more than
+**50 retail stores**. As the business has expanded, so has the
+complexity of coordinating store operations, inventory, marketing
+campaigns, workforce readiness, and supplier activities across multiple
+locations.
 
-**Key Personas**
+To prepare for the upcoming holiday shopping season, Zava Retail has
+launched the **Peak Season Readiness Program**. The initiative brings
+together Store Operations, Workforce Readiness, Marketing, and Inventory
+teams to coordinate activities, track progress, and ensure every store
+is ready before the busiest shopping period begins.
 
-1. **Marie Brown – Customer Support Manager:** Manages the customer support inbox, handles escalations and SLA compliance, and coordinates with logistics.
+**Priya Nair**, the Regional Operations Manager, is responsible for
+overseeing the program and ensuring every workstream stays on schedule.
+Instead of manually reviewing hundreds of tasks across multiple buckets,
+Priya uses **Microsoft 365 Copilot Planner Agent** to quickly assess
+project health, identify overdue or high-priority work, summarize
+progress, and recommend next steps.
 
-2. **David Turner – Supply Chain Coordinator:** Tracks vendor communications, manages inventory updates and delays, and coordinates with warehouses.
+In this lab, you'll step into Priya's role and use Planner Agent to
+monitor the Peak Season Readiness Program, uncover potential risks, and
+make informed operational decisions that help ensure every store is
+ready for the busiest shopping season of the year.
 
-3. **Patricia Gray – Operations Head:** Oversees business operations across departments, tracks productivity and workload, and ensures operational efficiency.
+## Key Personas
 
-## Exercise 1: Access the Workflows Agent
+1.  **Priya Nair - Regional Operations Manager**: Owns the Peak Season
+    Readiness Program and coordinates activities across multiple
+    departments. Uses Planner Agent to monitor project health, identify
+    risks, and prepare executive updates.
 
-You are Marie (Customer Support Manager) logging into Microsoft 365 Copilot to automate email triage.
+2.  **Daniel Chen - Director of Store Operations**: Responsible for ensuring
+    every retail location is operational before the holiday launch.
+    Focuses on store readiness, staffing, and equipment deployment.
 
-1. Navigate to the following URL to open Microsoft 365 Copilot.
+3.  **Sophia Martinez - Supply Chain Manager**: Monitors inventory
+    availability, warehouse readiness, and supplier deliveries. Uses
+    project updates to reduce stock shortages during peak demand.
+
+4.  **Emma Brooks - Marketing Campaign Manager**: Coordinates promotional
+    campaigns and store launch activities. Depends on timely completion
+    of cross-functional tasks before marketing campaigns begin.
+
+## Lab Objectives
+
+After completing this lab, you will be able to:
+
+- Review Planner plans using Planner Agent.
+
+- Identify overdue and high-risk tasks.
+
+- Generate executive summaries.
+
+- Recommend project priorities.
+
+- Create and assign follow-up tasks.
+
+- Track overall program readiness.
+
+## Exercise 0: Lab Setup
+
+Creating plans in the planner
+
+1. Navigate to the following URL to open Teams.
 
     ```
-    https://m365.cloud.microsoft/chat/
+    https://teams.microsoft.com
     ```
 
-2. Sign in with your Microsoft 365 Copilot account credentials.
+2.  Enter the following credentials to login to Teams:
 
     - **Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
 
@@ -53,417 +95,448 @@ You are Marie (Customer Support Manager) logging into Microsoft 365 Copilot to a
 
     ![](./media/image3.png)
 
-4. After successful login, you will see the **Copilot Chat** home page.
+3.  From the left navigation menu, select 3 **dots(…)** and then select
+    **Planner**.
 
-    ![](./media/b1.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image4.png)
 
-5. In the **left navigation**, select **Agents** and explore the Agent Store.
+4.  Select **+Create a plan**.
 
-    ![](./media/b2.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image5.png)
 
-6. Scroll down and look for the **Workflows (Frontier)** option under the **Built by Microsoft** header.
+5.  Select **Create basic plan**.
 
-    ![](./media/b4.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image6.png)
 
-7. Select **Add** to add the **Workflows  (Frontier)**.
+6.  Enter plan name as **Zava Retail-Peak Season Readiness**. Then
+    select **Create basic plan**.
 
-    ![](./media/b5.png)
+    ![](./media/image7.png)
 
-    Now your agent is ready to use.
+7.  Select **Add to new bucket** to add a new bucket in the recently
+    created plan.
 
-    ![](./media/b6.png)
+    ![](./media/image8.png)
 
-## Exercise 2: Build the Zava Email Triage Workflow
+8.  Enter bucket name as ****Store Operations**** and press **Enter**.
 
-### Task 1: Populate the Inbox with Sample Emails
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image9.png)
 
-Populate the Outlook inbox with realistic unread sample emails so the Zava Email Triage Agent can analyze, categorize, and generate actionable insights from them during workflow execution.
+    Your new bucket is add.
 
-1. Navigate to `C:\Lab Files\Lab 1-Lab files` and open the **Sample Emails for Lab1** file. Here you will find all the sample emails that will be used in this lab.
+    ![](./media/image10.png)
 
-    ![](./media/b7.png)
+9.  Similarly, add the following buckets:
 
-1. Open a new tab in your browser and navigate to the following Outlook URL:
-   ```
-   https://outlook.office365.com/mail/
-   ```
+    - **Workforce Readiness**
 
-1. Select the ODL user account
+    - **Marketing & Promotions**
 
-    ![](./media/image15aa.png)
+    - **Inventory & Supply Chain**
 
-1. Click on the **New mail** button in the top left corner.
+10. Now we add the following new tasks in the **Store Operations** bucket:
 
-    ![](./media/image15a.png)
+    | Task name | Status | Priority | Due Date (use dates similar to these) | Assign to |
+    |-----------|----------|----------|----------------------------------------|-----------|
+    | **Reset Store Layouts - Region East** | Completed | Medium | 5 days ago | Current Username |
+    | **Reset Store Layouts - Region West** | In Progress | Medium | Tomorrow | Current Username |
+    | **Deep-Clean & Signage Refresh - Region West** | Not Started | Urgent | 3 days ago (Overdue) | Current Username |
 
-1. Copy the subject and body of the first sample email from the `Sample Emails for Lab1` file and paste them into the email editor.
+    So select **+Add Task** and enter the task name from the above table.
+    Then select **Add Task**.
 
-1. In the **To** field, enter the current lab user's email address: **Username** - <inject key="AzureAdUserEmail"></inject>
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image11.png)
 
-1. Click **Send** to send the email to yourself.
+1. After creating the task, select the task and then in the task window
+    enter the given details.
 
-    ![](./media/image15b.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image12.png)
 
-1. Repeat the same steps for the remaining 5 sample emails in the file so that there are at least 6 unread sample emails in your inbox.
+    ![A screenshot of a computer
+    AI-generated content may be incorrect.](./media/image13.png)
 
-### Task 2: Describe the Workflow in Natural Language
+11. Similarly, add the tasks in the following buckets:
 
-1. Define Business Logic (Prompt) in the Workflow (Frontier) chat. Paste the below prompt and click **Send**.
+1.  Workforce Readiness:
 
-    ```
-    Each weekday morning, review unread emails from the last 24 hours.
-    Focus on:
-    - Customer complaints and escalations
-    - Supplier/vendor updates
-    - Internal approvals or urgent requests
+    | Task name | Progress | Priority | Due Date (use dates similar to these) | Assign to |
+    |-----------|----------|----------|----------------------------------------|-----------|
+    | **Post Seasonal Job Openings** | Completed | Medium | 7 days ago | Current Username |
+    | **Complete Seasonal Hiring - Region East** | In Progress | Important | In 2 days | Current Username |
+    | **Complete Seasonal Onboarding & Training** | Not Started | Medium | In 5 days | Current Username |
 
-    Categorize emails into:
-    - Urgent – Needs immediate action
-    - Action Required – Needs response
-    - FYI – Informational
+    ![](./media/image13a.png)
 
-    For each email include:
-    - Sender
-    - Subject
-    - Summary
-    - Any deadlines
-    - Suggested next steps
+2.  Marketing & Promotions:
 
-    Highlight:
-    - Customer complaints impacting SLA
-    - Supplier delays affecting inventory
+    | Task name | Progress | Priority | Due Date (use dates similar to these) | Assign to |
+    |-----------|----------|----------|----------------------------------------|-----------|
+    | **Finalize Peak Season Campaign Creative** | Completed | Medium | 6 days ago | Current Username |
+    | **Launch Email & Social Campaign** | In Progress | Important | Tomorrow | Current Username |
+    | **Coordinate In-Store Promo Displays** | Not Started | Medium | In 4 days | Current Username |
 
-    Send the structured summary to myself on Microsoft Teams email id -
-    <inject key="AzureAdUserEmail"></inject>.
-    ```
+3.  Inventory & Supply Chain
 
-    > **Note:** The email ID will be automatically replaced with the username you are currently using to execute this lab.
+    | Task name | Progress | Priority | Due Date (use dates similar to these) | Assign to |
+    |-----------|----------|----------|----------------------------------------|-----------|
+    | **Confirm Backup Supplier Agreements** | In Progress | Important | Tomorrow | Current Username |
+    | **Validate Store-Level Inventory counts** | Not Started | Urgent | Yesterday (Overdue) | Current Username |
+    | **Pre-Position Distribution Center Stock** | Not Started | Medium | In 6 days | Current Username |
 
-    ![](./media/image11.png)
-
-2. Select **Save** on the top right corner of the **Workflow** window to run the actions automatically. Your workflow is now created and ready to test.
-
-    ![](./media/image12.png)
-
-3. Select **Test** to review the output.
-
-    ![](./media/image13.png)
-
-4. Once the testing is successful, it will show the test duration and result as a success confirmation.
+    So the final planner will look like this:
 
     ![](./media/image14.png)
 
-    Once the test process is completed, review that it:
+    Now we are ready with the lab setup.
 
-    - Creates a scheduled trigger (weekday mornings)
-    - Connects to:
-        - Outlook (email ingestion)
-        - Dataverse AI (reasoning)
-        - Teams (output delivery)
-    - Applies AI reasoning for categorization and summarization.
+# Exercise 1 - Explore Planner Agent
 
-    > **Note:** You did not configure connectors manually — Copilot did it. Test process can take 5–10 minutes. Wait until the process is completed.
+As the Regional Operations Manager, Priya Nair needs a quick overview of
+the Peak Season Readiness Program before reviewing project progress.
+Rather than navigating Planner manually, she'll begin by accessing
+**Microsoft 365 Copilot Planner Agent**, which provides AI-powered
+assistance for analyzing project plans, tracking tasks, and identifying
+operational risks.
 
-### Task 3: Validate Output
+In this exercise, you'll access Planner Agent and become familiar with
+its interface, preparing you to analyze the Peak Season Readiness
+Program in the following exercises.
 
-After processing your prompt, you will see the run results:
+### Task 1 - Open Planner Agent
 
-1. Navigate to the following URL to view emails in Outlook.
+Access Microsoft 365 Copilot from your Microsoft 365 environment. This
+serves as the entry point for interacting with Planner Agent using
+natural language.
 
-    ```
-    https://outlook.office365.com/mail/
-    ```
+1.  Open new tab and navigate to **https://m365.cloud.microsoft/chat/**
 
-    > **Note:** You need to send different types of sample emails to the account to verify that the workflow triggers a notification in Microsoft Teams. If you do not have any new unread emails in your inbox, you will need to send test emails to validate the workflow and outputs.
+2.  Select **More agents**. Locate and select **Planner Agent** under
+    Build by Microsoft.
 
     ![](./media/image15.png)
 
-2. Review the email categorization accuracy.
+3.  Select **Open** to open Planner Agent.
 
     ![](./media/image16.png)
 
-3. Navigate to the following URL to view the output in Microsoft Teams.
-
-    ```
-    https://teams.cloud.microsoft/
-    ```
+4.  Now Planner agent is ready to go.
 
     ![](./media/image17.png)
 
-    ![](./media/image18.png)
+## Exercise 2 - Analyze the Peak Season Readiness Program
 
-4. Check for the following test results for Zava Retail:
+With Planner Agent open, Priya has received a request from regional
+leadership to provide a quick update on the Peak Season Readiness
+Program. Rather than reviewing every task manually, she'll use Planner
+Agent to understand the current state of the project, identify completed
+work, and determine which activities are still in progress.
 
-    - Are customer complaints marked as Urgent?
-    - Are supplier delays highlighted?
-    - Are summaries actionable?
-    - Is the Teams message structured clearly?
+In this exercise, you'll use natural language prompts to generate an
+AI-powered summary of the project and review its current execution
+status.
 
-## Exercise 3: Autonomous Workflow
+### Task 1 - Summarize the Project
 
-Marie Brown (Customer Support Manager) wants to reduce missed follow-ups.
+Regional leadership has requested an overview of the readiness program
+before the weekly planning meeting. Instead of manually reviewing every
+task, you'll ask Planner Agent to generate a high-level summary of the
+project.
 
-1. Navigate to the following URL to open Microsoft 365 Copilot.
+1.  Enter the following prompt in the prompt filed and select Send
+    button:
 
-    ```
-    https://m365.cloud.microsoft/chat/
-    ```
-
-2. Go to the **Workflows (Frontier)** agent.
-
-3. Paste the below prompt in the chat and select **Save**.
-
-    ```
-    When a new email arrives in Outlook with "Urgent" in the email subject:
-    Send a Microsoft Teams reminder with an Urgent timeline to respond to the email.
-    If there is no email response within 5 minutes:
-    Send an escalation notification on email and Microsoft Teams.
-
-    When a new email arrives in Outlook with "Urgent" in the email subject:
-    Send a Microsoft Teams reminder to "<inject key="AzureAdUserEmail"></inject>" to respond to the email instantly.
-    If the email is still not responded to in 2 hours:
-    Send an escalation notification to Microsoft Teams.
+    ``` 
+    Summarize the tasks in my Planner plan "Zava Retail - Peak Season Readiness
     ```
 
-    > **Note:** The email ID will be automatically replaced with the username (Email ID) you are currently using to execute this lab.
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image18.png)
 
-    ![](./media/image26.png)
+2.  Review the AI-generated summary.
 
-4. Once the workflow is saved, select **Test**.
+    Notice how Planner Agent identifies:
+
+    - Completed work
+
+    - Tasks currently in progress
+
+    - Remaining work
+
+    - Overall readiness status
+
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image19.png)
+
+    ![A screenshot of a computer
+    AI-generated content may be incorrect.](./media/image20.png)
+
+    ![A
+    screenshot of a computer AI-generated content may be
+    incorrect.](./media/image21.png)
+
+### Task 2 - Review Current Activities
+
+After understanding the overall project status, Priya wants to know
+which initiatives are actively being worked on. Use Planner Agent to
+identify tasks currently in progress across the different operational
+workstreams.
+
+1.  Enter the following prompt and click Send button:
+
+    ```
+    Which tasks are currently in progress?
+    ```
+
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image22.png)
+
+2.  Review the response.
+
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image23.png)
+
+### Task 3 - Review Completed Activities
+
+Before discussing remaining work, Priya also wants to recognize
+milestones that have already been achieved. Use Planner Agent to
+identify completed readiness activities across the program.
+
+1.  Enter the following prompt and click the Send button:
+
+    ```
+    Which readiness activities have already been completed?
+    ```
+
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image24.png)
+
+2.  Review the completed tasks.
+
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image25.png)
+
+    ![A screenshot of a computer
+    AI-generated content may be incorrect.](./media/image26.png)
+
+## Exercise 3 - Identify Priorities and Risks
+
+Although the project is progressing well, the holiday shopping season is
+approaching quickly. Even a few delayed activities could impact store
+readiness, inventory availability, or promotional campaigns. Before the
+next operational review meeting, Priya must identify the
+highest-priority work, understand potential schedule risks, and
+determine whether the organization is on track for a successful launch.
+
+### Task 1 - Identify Priorities
+
+With dozens of active tasks across multiple departments, it isn't always
+obvious which activities deserve immediate attention. Ask Planner Agent
+to identify the highest-priority work that should be completed this
+week.
+
+1.  Select **New Chat**.
 
     ![](./media/image27.png)
 
-5. Review the outcome:
+2.  Enter the following prompt and click the Send button:
 
-    - Automated follow-ups
-    - Escalation logic activated
+    ```
+    Analyze my Planner plan "Zava Retail - Peak Season Readiness" and
+    recommend the top priorities for this week based on due dates,
+    priorities, and task status.
+    ```
+    
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image28.png)
 
-6. Review the automated follow-up message sent on Teams. It ensures that urgent emails are not missed.
-
-    ![](./media/image28.png)
-
-7. Once the mentioned time of 2 hours has passed, review the automated escalation message on Teams.
-
-    > **Note:** Currently, the last step of the workflow cannot be executed until the 2-hour mark is reached. The flow will send the Teams message after the 2-hour mark is reached.
+3.  Review Planner Agent's recommendations.
 
     ![](./media/image29.png)
 
-## Exercise 4: Integrate Work IQ to Retrieve Zava Leadership Insights
-
-Patricia Gray (Operations Head) wants visibility into workload and burnout risks at Zava Retail.
-
-### Task 1: Add Workload Analysis
-
-1. Navigate to the following URL to open Microsoft 365 Copilot.
-
-    ```
-    https://m365.cloud.microsoft/chat/
-    ```
-
-2. Go to the **Workflows (Frontier)** agent.
-
-3. Paste the below prompt in the chat and select **Save**.
-
-    ```
-    Analyze my email workload patterns.
-    When a new email arrives in Outlook:
-
-    After every new email received:
-
-    Send me a summary in Microsoft Teams at
-    <inject key="AzureAdUserEmail"></inject> that includes:
-    - Total number of emails received on the same day
-    - Number of emails marked as High Importance on the same day
-    - Number of emails received after 6 PM, in non-working hours.
-
-    Include a short note indicating if workload is high based on these counts.
-    ```
-
-    > **Note:** The email ID will be automatically replaced with the username (Email ID) you are currently using to execute this lab.
-
     ![](./media/image30.png)
-
-4. Select **Test**.
 
     ![](./media/image31.png)
 
-5. Review the output:
+### Task 2 - Identify Risks
 
-    - Adds Work IQ intent to workflow
-    - Extends AI reasoning layer
+Priya now wants to understand which activities could delay the Peak
+Season Readiness Program. Use Planner Agent to identify overdue tasks
+and other potential risks that may affect the project timeline.
 
-6. Review the Email workload summary and intensity.
+1.  Enter the following prompt and click the Send button:
+
+    ```
+    Which tasks or activities could delay Peak Season Readiness, and are any of them overdue?
+    ```
 
     ![](./media/image32.png)
 
-### Task 2: Classify Workload
-
-1. Navigate to the following URL to open Microsoft 365 Copilot.
-
-    ```
-    https://m365.cloud.microsoft/chat/
-    ```
-
-2. Under the **Workflows (Frontier)** agent, paste the below prompt in the chat and select **Save**.
-
-    ```
-    Create a workflow to classify the workload into:
-    - Low
-    - Moderate
-    - High
-    Also flag the following conditions:
-    - Email overload
-    - After-hours work
-    - Urgent response pressure
-    ```
+2.  Review the identified risks. Notice how Planner Agent surfaces the
+    overdue, high-priority tasks — Deep-Clean & Signage Refresh - Region
+    West and Validate Store-Level Inventory Counts — and explains why
+    they pose a risk to the timeline.
 
     ![](./media/image33.png)
 
-3. Select **Test**.
-
     ![](./media/image34.png)
-
-4. Review the output:
-
-    - Adds classification logic
-    - Introduces conditional reasoning
-    - Tags workload states
-
-5. After the test run, verify:
-
-    - Workload category appears (Low/Moderate/High)
-    - Flags are visible in output
 
     ![](./media/image35.png)
 
-### Task 3: Generate Insights
+### Task 3 - Review Season Readiness
 
-1. Navigate to the following URL to open Microsoft 365 Copilot.
+After reviewing priorities and risks, Priya needs to determine whether
+the organization is prepared for the upcoming holiday season. Ask
+Planner Agent to evaluate the overall readiness of the business based on
+the current project status.
+
+1.  Enter the following prompt and click the Send button:
 
     ```
-    https://m365.cloud.microsoft/chat/
-    ```
-
-2. Under the **Workflows (Frontier)** agent, paste the below prompt in the chat to turn raw signals into leadership insights. Select **Save**.
-
-    ```
-    When a new email arrives, analyze today's email workload and patterns.
-
-    Based on today's email workload and patterns, identify:
-    - Risks such as burnout or overload
-    - Inefficiencies in handling emails
-    - Missed priorities
-    Provide 3 actionable recommendations to improve productivity.
+    Is the business ready for the start of peak season? Explain why or why not.
     ```
 
     ![](./media/image36.png)
 
-3. Once the workflow is saved, select **Test**.
+2.  Review Planner Agent's assessment, including how it weighs the
+    overdue tasks in its judgment.
 
-    ![](./media/image37.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image37.png)
 
-4. Review the output:
+    ![A screenshot of a computer
+    AI-generated content may be incorrect.](./media/image38.png)
 
-    - Adds insight generation layer
-    - Uses AI reasoning to interpret patterns
-    - Produces structured recommendations
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image39.png)
 
-5. After running the workflow, check that the Teams output includes:
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image40.png)
 
-    - Risks (e.g., burnout risk)
-    - Inefficiencies
-    - Missed priorities
-    - 3 recommendations
+## Exercise 4 - Generate Leadership Insights
 
-    ![](./media/image38.png)
+The regional leadership meeting begins in less than an hour, and Priya
+needs a concise update on the Peak Season Readiness Program. Rather than
+manually reviewing dozens of Planner tasks, she'll use Planner Agent to
+summarize project progress, highlight operational risks, and identify
+the actions needed to keep the program on schedule.
 
-### Task 4: Add Adaptive Intelligence
+In this exercise, you'll use Planner Agent to generate leadership-ready
+insights based on the current status of the Zava Retail - Peak Season
+Readiness Planner plan.
 
-1. Before adding adaptive intelligence, first add some sample tasks to Teams Planner so that the agent can fetch data from there.
+### Task 1 - Summarize Project Status
 
-2. Navigate to the following URL.
+Before discussing operational decisions, leadership needs a quick
+overview of the current state of the readiness program. Use Planner
+Agent to summarize the Planner plan for executive stakeholders.
 
-    ```
-    https://teams.cloud.microsoft/
-    ```
+1.  Select **New Chat**.
 
-3. From the left navigation, select the **three dots (...)** and then select **Planner**.
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image41.png)
 
-4. Click **+ Create a Plan**.
-
-    ![](./media/b8.png)
-
-5. Click **Create basic plan**.
-
-    ![](./media/b9.png)
-
-6. Enter the plan name as +++Zava Retail FY-26+++ and click **Create basic plan**.
-
-    ![](./media/b10.png)
-
-7. Select **+ Add task**.
-
-    ![](./media/b11.png)
-
-8. Enter the task name as +++knowledge transfer with CRM Team+++ set any due date and then click the **Add task** button to add the task to the planner.
-
-    ![](./media/b12.png)
-
-9. Similarly, add the following tasks to the planner:
-
-    - +++Prepare onboarding program training+++
-    - +++Prepare training for vendor program+++
-    - +++Prepare training for new joiners+++
-
-10. Navigate to the following URL to open Microsoft 365 Copilot.
+2.  Enter the following prompt and click the Send button:
 
     ```
-    https://m365.cloud.microsoft/chat/
+    Review my Planner plan "Zava Retail - Peak Season Readiness" and
+    summarize the current project status, including completed work, tasks in
+    progress, remaining work, and any overdue activities.
     ```
 
-11. Under the **Workflows (Frontier)** agent, paste the below prompt in the chat to make the agent dynamic and context-aware. Select **Save**.
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image42.png)
+
+3.  Review the generated summary and verify that it accurately reflects
+    the Planner plan by highlighting completed activities, ongoing work,
+    remaining tasks, and overdue items. Notice how Planner Agent
+    provides a concise project overview without requiring a manual
+    review of every task.
+
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image43.png)
+
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image44.png)
+
+    ![A screenshot of a computer
+    AI-generated content may be incorrect.](./media/image45.png)
+
+### Task 2 - Recommend Next Steps
+
+Leadership now wants to understand what actions should be taken to keep
+the project on schedule. Ask Planner Agent to analyze the Planner plan
+and recommend the next operational priorities.
+
+1.  Enter the following prompt and click the Send button:
 
     ```
-    When work activity is detected outside business hours (after 6 PM):
-
-    If the number of assigned tasks is greater than 5:
-
-    Send a notification in Microsoft Teams to me that includes:
-    - A message indicating high workload and potential overload risk
-    - A list of current tasks
-
-    Also include suggestions to:
-    - Delegate some tasks to team members
-    - Rebalance workload for the next day
+    Analyze my Planner tasks and recommend the next actions to keep the project on schedule.
     ```
 
-    ![](./media/image39.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image46.png)
 
-12. Select **Test**.
+2.  Review Planner Agent's recommendations and verify that they focus on
+    overdue tasks, high-priority activities, and upcoming deadlines.
 
-    ![](./media/image40.png)
+    ![A screenshot of a computer AI-generated content may be
+    incorrect.](./media/image47.png)
 
-13. Review the output:
+    ![A screenshot of a computer
+    AI-generated content may be incorrect.](./media/image48.png)
 
-    - Adds **conditional logic (IF-THEN)**
-    - Enables adaptive responses
-    - Personalizes recommendations
+    ![A
+    screenshot of a computer AI-generated content may be
+    incorrect.](./media/image49.png)
 
-14. Review the output after the test run is completed. When the workload is high, enhanced recommendations will appear automatically. The overload risk is also highlighted explicitly.
+    ![A screenshot of a computer
+    AI-generated content may be incorrect.](./media/image50.png)
 
-    ![](./media/image41.png)
+### Task 3 - Prepare a Leadership Update
+
+To conclude the weekly readiness review, Priya needs a report she can
+share with regional leadership. Use Planner Agent to generate a
+comprehensive readiness update that includes project status,
+accomplishments, risks, and recommended actions.
+
+1.  Enter the following prompt and click the Send button:
+
+    ```
+    Based on my Planner plan "Zava Retail - Peak Season Readiness", prepare a leadership update that includes:
+    • Overall project status
+    • Completed work
+    • Tasks currently in progress
+    • Remaining work
+    • Overdue or high-priority tasks
+    • Recommended next steps
+    ```
+
+    ![](./media/image51.png)
+
+2.  Review the generated leadership update and confirm that it
+    summarizes the current state of the Planner plan in a clear,
+    business-focused format suitable for sharing during an operational
+    review meeting.
+
+    ![](./media/image52.png)
+
+    ![](./media/image53.png)
+
+    ![](./media/image54.png)
 
 ## Summary
 
-In this lab, you have completed the following:
-
-- Accessed the Workflows Agent in Microsoft 365 Copilot and built an Intelligent Email Triage Agent for Zava Retail
-- Built a scheduled workflow that runs every weekday, reviews unread emails, categorizes them into Urgent, Action Required, and FYI, and sends structured output to Microsoft Teams
-- Configured an autonomous follow-up and escalation workflow triggered by emails with "Urgent" in the subject
-- Integrated Work IQ to analyze email workload patterns, classify workload intensity, generate leadership productivity insights, and add adaptive conditional logic to reduce employee burnout
-
-## You have successfully completed the lab!
-
-### Now, click on **Next >>** from the lower right corner to move on to the next page.
-
-   ![](./media/Next.png)
+In this lab, you used Microsoft 365 Copilot's Planner Agent to transform
+cross-functional program execution at Zava Retail. You reviewed project
+progress, analyzed assigned tasks, identified risks and overdue work,
+generated executive-ready summaries, recommended next steps, and created
+follow-up tasks to keep the Peak Season Readiness Program on track.
+These capabilities demonstrate how Planner Agent helps improve
+operational visibility, streamline collaboration across teams, and
+enable more informed decision-making for business-critical initiatives.
