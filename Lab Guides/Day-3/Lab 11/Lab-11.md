@@ -165,6 +165,37 @@ Additionally, there's a **prompts** folder housing the **instructions.tsp** file
 
     ![](./media/t21.png)
 
+1. The Final code for the **main.tsp** will look like below:
+
+    ```
+    import "@typespec/http";
+    import "@typespec/openapi3";
+    import "@microsoft/typespec-m365-copilot";
+    import "./actions/github.tsp";
+    import "./prompts/instructions.tsp";
+    import "./env.tsp";
+
+    using TypeSpec.M365.Copilot.Agents;
+
+    @agent(
+    "RepairServiceAgent",
+    "An agent for managing repair information"
+    )
+    @instructions(Prompts.INSTRUCTIONS)
+    // Uncomment this part to add a conversation starter to the agent.
+    // This will be shown to the user when the agent is first created.
+    // Uncomment this part to add a conversation starter to the agent.
+    // This will be shown to the user when the agent is first created.
+    @conversationStarter(#{
+    title: "List repairs",
+    text: "List all repairs"
+    })
+    namespace RepairServiceAgent {  
+    // Uncomment this part to include custom actions in the agent
+    // op searchIssues is global.GitHubAPI.searchIssues;
+    }
+    ```
+
 4. Next, go to **prompts/instructions.tsp** and update the instructions. Replace the entire code block in the file with the below code:
 
     ```
@@ -217,6 +248,45 @@ Additionally, there's a **prompts** folder housing the **instructions.tsp** file
 
     ![](./media/t25.png)
 
+1. Final code will be for **action.tsp** is below:
+
+    ```
+    import "@typespec/http";
+    import "@microsoft/typespec-m365-copilot";
+    import "../env.tsp";
+
+    using TypeSpec.Http;
+    using TypeSpec.M365.Copilot.Actions;
+
+    @service
+    @server(RepairsAPI.SERVER_URL)
+    @actions(RepairsAPI.ACTIONS_METADATA)
+    namespace RepairsAPI{
+    /**
+    * Metadata for the API actions.
+    */
+    const ACTIONS_METADATA = #{
+        nameForHuman: "Repair Service Agent",
+        descriptionForHuman: "Manage your repairs and maintenance tasks.",
+        descriptionForModel: "Plugin to add, update, remove, and view repair objects.",
+        legalInfoUrl: "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+        privacyPolicyUrl: "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    };
+
+    /**
+    * The base URL for the  API.
+    */
+    const SERVER_URL = "https://repairshub.azurewebsites.net";
+    /**
+    * List repairs from the API 
+    * @param assignedTo The user assigned to a repair item.
+    */
+
+    @route("/repairs")
+    @get  op listRepairs(@query assignedTo?: string): string;
+    }
+    ```
+
 3. Next, replace the operation in the template code from searchIssues to **listRepairs**, which is a repair operation to get the list of **repairs**. Replace the entire block of code starting just after the SERVER_URL definition and ending *before* the final closing braces with the snippet below. Be sure to leave the closing braces intact. (Line numbers should be 27 to 45)
 
     ```
@@ -251,6 +321,38 @@ Additionally, there's a **prompts** folder housing the **instructions.tsp** file
     ```
 
     ![](./media/t28.png)
+
+1. Final code for the **main.tsp** is below:
+
+    ```
+    import "@typespec/http";
+    import "@typespec/openapi3";
+    import "@microsoft/typespec-m365-copilot";
+    import "./actions/actions.tsp";
+    import "./prompts/instructions.tsp";
+    import "./env.tsp";
+
+    using TypeSpec.M365.Copilot.Agents;
+
+    @agent(
+    "RepairServiceAgent",
+    "An agent for managing repair information"
+    )
+    @instructions(Prompts.INSTRUCTIONS)
+    // Uncomment this part to add a conversation starter to the agent.
+    // This will be shown to the user when the agent is first created.
+    // Uncomment this part to add a conversation starter to the agent.
+    // This will be shown to the user when the agent is first created.
+    @conversationStarter(#{
+    title: "List repairs",
+    text: "List all repairs"
+    })
+    namespace RepairServiceAgent{  
+
+        op listRepairs is global.RepairsAPI.listRepairs;   
+
+    }
+    ```
 
 6. Save the files using **CTRL+S**.
 
@@ -510,6 +612,113 @@ In this task, you will enhance the reference cards or response cards using Adapt
 
     ![](./media/t42.png)
 
+1. Final **actions.tsp** code will be look like below one:
+
+    ```
+    import "@typespec/http";
+    import "@microsoft/typespec-m365-copilot";
+    import "../env.tsp";
+
+    using TypeSpec.Http;
+    using TypeSpec.M365.Copilot.Actions;
+
+    @service
+    @server(RepairsAPI.SERVER_URL)
+    @actions(RepairsAPI.ACTIONS_METADATA)
+    namespace RepairsAPI{
+    /**
+    * Metadata for the API actions.
+    */
+    const ACTIONS_METADATA = #{
+        nameForHuman: "Repair Service Agent",
+        descriptionForHuman: "Manage your repairs and maintenance tasks.",
+        descriptionForModel: "Plugin to add, update, remove, and view repair objects.",
+        legalInfoUrl: "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+        privacyPolicyUrl: "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    };
+
+    /**
+    * The base URL for the  API.
+    */
+    const SERVER_URL = "https://repairshub.azurewebsites.net";
+    /**
+    * List repairs from the API 
+    * @param assignedTo The user assigned to a repair item.
+    */
+    @route("/repairs")
+    @card(#{  dataPath: "$", file: "adaptiveCards/repair.json",    properties: #{ title: "$.title", url: "$.image" } })
+    @get  op listRepairs(@query assignedTo?: string): string;
+
+    /**
+    * Create a new repair using the API. 
+    * When creating a repair, the `id` field is optional and will be generated by the server.
+    * The `date` field should be in ISO 8601 format (e.g., "2023-10-01T12:00:00Z").
+    * The `title` field based on what repair user wants to create
+    * @param repair The repair to create.
+    */
+    @route("/repairs") 
+
+    @card(#{  dataPath: "$", file: "adaptiveCards/repair.json",    properties: #{ title: "$.title", url: "$.image" } }) 
+    @post  op createRepair(@body repair: Repair): Repair;
+
+    /**
+    * Update an existing repair.
+    * The `id` field is required to identify the repair to update.
+    * The `date` field should be in ISO 8601 format (e.g., "2023-10-01T12:00:00Z").
+    * The `image` field should be a valid URL pointing to the image associated with the repair.
+    * @param repair The repair to update.
+    */
+    @route("/repairs")  
+    @patch(#{implicitOptionality: true})
+    op updateRepair(@body repair: Repair): Repair;
+
+    /**
+    * Delete a repair.
+    * The `id` field is required to identify the repair to delete.
+    * @param repair The repair to delete.
+    */
+    @route("/repairs") 
+    @delete  op deleteRepair(@body repair: Repair): Repair;
+
+    /**
+    * A model representing a repair.
+    */
+    model Repair {
+    /**
+    * The unique identifier for the repair.
+    */
+    id?: string;
+
+    /**
+    * The short summary or title of the repair.
+    */
+    title: string;
+
+    /**
+    * The detailed description of the repair.
+    */
+    description?: string;
+
+    /**
+    * The user who is assigned to the repair.
+    */
+    assignedTo?: string;
+
+    /**
+    * The optional date and time when the repair is scheduled or completed.
+    */
+    @format("date-time")
+    date?: string;
+
+    /**
+    * The URL of the image associated with the repair.
+    */
+    @format("uri")
+    image?: string;
+    }
+    }
+    ```
+
 ### Task 3: Update agent instruction for new operations
 
 1. In the **src/agent/prompts/instructions.tsp** file, update the instructions definition to have additional directives for the agent. Replace the **INSTRUCTIONS** constant with the below code:
@@ -544,12 +753,6 @@ In this task, you will take the updated agent - now also a repairs analyst - to 
 3. Ensure that the provisioning gets succeeded.
 
     ![](./media/t45.png)
-
-    >**Alert:** There are a couple of known issues where the Provision action in Agents Toolkit may fail with the errors shown below. If this happens, simply retry the provisioning process until it succeeds.
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image50.png)
-
-    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image51.png)
 
 4. Open the web browser and navigate to **https://dev.teams.microsoft.com/** and select **Apps** from the left-hand navigation menu to verify that **RepairServiceAgentdev** is present under Apps.
 
