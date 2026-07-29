@@ -222,11 +222,11 @@ natural language.
 2. Select **More agents**. Locate and select **Planner Agent** under
     Build by Microsoft.
 
-    ![](./media/image15.png)
+     ![](./media/image15.png)
 
 4. Now Planner agent is ready to go.
 
-    ![](./media/image17.png)
+     ![](./media/image17.png)
 
 ## Exercise 2 - Analyze the Peak Season Readiness Program
 
@@ -254,7 +254,7 @@ project.
     Summarize the tasks in my Planner plan "Zava Retail - Peak Season Readiness
     ```
 
-    ![](./media/image18.png)
+     ![](./media/image18.png)
 
 2. Review the AI-generated summary.
 
@@ -268,7 +268,7 @@ project.
 
     - Overall readiness status
 
-    ![](./media/image19.png)
+     ![](./media/image19.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image20.png)
@@ -290,11 +290,11 @@ workstreams.
     Which tasks are currently in progress?
     ```
 
-    ![](./media/image22.png)
+     ![](./media/image22.png)
 
 2. Review the response.
 
-    ![](./media/image23.png)
+     ![](./media/image23.png)
 
 ### Task 3 - Review Completed Activities
 
@@ -308,11 +308,11 @@ identify completed readiness activities across the program.
     Which readiness activities have already been completed?
     ```
 
-    ![](./media/image24.png)
+     ![](./media/image24.png)
 
 2. Review the completed tasks.
 
-    ![](./media/image25.png)
+     ![](./media/image25.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image26.png)
@@ -335,7 +335,7 @@ week.
 
 1. Click on the **Planner Agent** to open the **New Chat**.
 
-    ![](./media/image41.png)
+     ![](./media/image41.png)
 
 2. Enter the following prompt and click the Send button:
 
@@ -345,15 +345,15 @@ week.
     priorities, and task status.
     ```
     
-    ![](./media/image28.png)
+     ![](./media/image28.png)
 
 3. Review Planner Agent's recommendations.
 
-    ![](./media/image29.png)
+     ![](./media/image29.png)
 
-    ![](./media/image30.png)
+     ![](./media/image30.png)
 
-    ![](./media/image31.png)
+     ![](./media/image31.png)
 
 ### Task 2 - Identify Risks
 
@@ -367,18 +367,18 @@ and other potential risks that may affect the project timeline.
     Which tasks or activities could delay Peak Season Readiness, and are any of them overdue?
     ```
 
-    ![](./media/image32.png)
+     ![](./media/image32.png)
 
 2. Review the identified risks. Notice how Planner Agent surfaces the
     overdue, high-priority tasks — Deep-Clean & Signage Refresh - Region
     West and Validate Store-Level Inventory Counts — and explains why
     they pose a risk to the timeline.
 
-    ![](./media/image33.png)
+     ![](./media/image33.png)
 
-    ![](./media/image34.png)
+     ![](./media/image34.png)
 
-    ![](./media/image35.png)
+     ![](./media/image35.png)
 
 ### Task 3 - Review Season Readiness
 
@@ -393,19 +393,19 @@ the current project status.
     Is the business ready for the start of peak season? Explain why or why not.
     ```
 
-    ![](./media/image36.png)
+     ![](./media/image36.png)
 
 2. Review Planner Agent's assessment, including how it weighs the
     overdue tasks in its judgment.
 
-    ![](./media/image37.png)
+     ![](./media/image37.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image38.png)
 
-    ![](./media/image39.png)
+     ![](./media/image39.png)
 
-    ![](./media/image40.png)
+     ![](./media/image40.png)
 
 ## Exercise 4 - Generate Leadership Insights
 
@@ -427,7 +427,7 @@ Agent to summarize the Planner plan for executive stakeholders.
 
 1. Click on the **Planner Agent** to open the **New Chat**.
 
-    ![](./media/image41.png)
+     ![](./media/image41.png)
 
 2. Enter the following prompt and click the Send button:
 
@@ -437,7 +437,7 @@ Agent to summarize the Planner plan for executive stakeholders.
     progress, remaining work, and any overdue activities.
     ```
 
-    ![](./media/image42.png)
+     ![](./media/image42.png)
 
 3. Review the generated summary and verify that it accurately reflects
     the Planner plan by highlighting completed activities, ongoing work,
@@ -445,9 +445,9 @@ Agent to summarize the Planner plan for executive stakeholders.
     provides a concise project overview without requiring a manual
     review of every task.
 
-    ![](./media/image43.png)
+     ![](./media/image43.png)
 
-    ![](./media/image44.png)
+     ![](./media/image44.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image45.png)
@@ -464,12 +464,12 @@ and recommend the next operational priorities.
     Analyze my Planner tasks and recommend the next actions to keep the project on schedule.
     ```
 
-    ![](./media/image46.png)
+     ![](./media/image46.png)
 
 2. Review Planner Agent's recommendations and verify that they focus on
     overdue tasks, high-priority activities, and upcoming deadlines.
 
-    ![](./media/image47.png)
+     ![](./media/image47.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image48.png)
@@ -500,15 +500,15 @@ accomplishments, risks, and recommended actions.
     • Recommended next steps
     ```
 
-    ![](./media/image51.png)
+     ![](./media/image51.png)
 
 2. Review the generated leadership update and confirm that it summarizes the current state of the Planner plan in a clear, business-focused format suitable for sharing during an operational review meeting.
 
-    ![](./media/image52.png)
+     ![](./media/image52.png)
 
-    ![](./media/image53.png)
+     ![](./media/image53.png)
 
-    ![](./media/image54.png)
+     ![](./media/image54.png)
 
 ## Summary
 

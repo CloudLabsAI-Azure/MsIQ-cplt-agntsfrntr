@@ -247,21 +247,21 @@ The IT team needs to see not just a list of employees, but a clear record of wha
 
 1. Return to App Builder. In the conversation input, paste the following prompt and click the **Send** button.
 
-    ```
-    Draft a brief message I can send to the Zava Retail IT team
-    explaining what this app does, how to log a new asset assignment, and
-    how to check overdue items.
-    ```
+      ```
+      Draft a brief message I can send to the Zava Retail IT team
+      explaining what this app does, how to log a new asset assignment, and
+      how to check overdue items.
+      ```
 
-    ![](./media/l4e4t3s1.png)
+      ![](./media/l4e4t3s1.png)
 
 2. Copilot will generate a ready-to-send team briefing. Review the briefing and note any required edits.
 
-    ![](./media/l4e4t3s2.png)
+      ![](./media/l4e4t3s2.png)
 
 3. Copy the briefing and the direct app link - these are what you would share with the IT team in a real deployment.
 
-    ![](./media/l4e4t3s3.png)
+      ![](./media/l4e4t3s3.png)
 
 ## Summary
 
