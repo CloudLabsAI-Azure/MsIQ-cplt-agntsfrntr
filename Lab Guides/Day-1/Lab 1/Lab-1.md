@@ -38,20 +38,20 @@ ready for the busiest shopping season of the year.
 
 ## Key Personas
 
-1.  **Priya Nair - Regional Operations Manager**: Owns the Peak Season
+1. **Priya Nair - Regional Operations Manager**: Owns the Peak Season
     Readiness Program and coordinates activities across multiple
     departments. Uses Planner Agent to monitor project health, identify
     risks, and prepare executive updates.
 
-2.  **Daniel Chen - Director of Store Operations**: Responsible for ensuring
+2. **Daniel Chen - Director of Store Operations**: Responsible for ensuring
     every retail location is operational before the holiday launch.
     Focuses on store readiness, staffing, and equipment deployment.
 
-3.  **Sophia Martinez - Supply Chain Manager**: Monitors inventory
+3. **Sophia Martinez - Supply Chain Manager**: Monitors inventory
     availability, warehouse readiness, and supplier deliveries. Uses
     project updates to reduce stock shortages during peak demand.
 
-4.  **Emma Brooks - Marketing Campaign Manager**: Coordinates promotional
+4. **Emma Brooks - Marketing Campaign Manager**: Coordinates promotional
     campaigns and store launch activities. Depends on timely completion
     of cross-functional tasks before marketing campaigns begin.
 
@@ -81,7 +81,7 @@ Creating plans in the planner
     https://teams.microsoft.com
     ```
 
-2.  Enter the following credentials to login to Teams:
+2. Enter the following credentials to login to Teams:
 
     - **Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
 
@@ -95,30 +95,30 @@ Creating plans in the planner
 
     ![](./media/image3.png)
 
-3.  From the left navigation menu, select 3 **dots(…)** and then select
+3. From the left navigation menu, select 3 **dots(…)** and then select
     **Planner**.
 
     ![](./media/image4.png)
 
-4.  Select **+Create a plan**.
+4. Select **+Create a plan**.
 
     ![](./media/image5.png)
 
-5.  Select **Create basic plan**.
+5. Select **Create basic plan**.
 
     ![](./media/image6.png)
 
-6.  Enter plan name as **Zava Retail-Peak Season Readiness**. Then
+6. Enter plan name as **Zava Retail-Peak Season Readiness**. Then
     select **Create basic plan**.
 
     ![](./media/image7.png)
 
-7.  Select **Add to new bucket** to add a new bucket in the recently
+7. Select **Add to new bucket** to add a new bucket in the recently
     created plan.
 
     ![](./media/image8.png)
 
-8.  Enter bucket name as ****Store Operations**** and press **Enter**.
+8. Enter bucket name as ****Store Operations**** and press **Enter**.
 
     ![](./media/image9.png)
 
@@ -126,7 +126,7 @@ Creating plans in the planner
 
     ![](./media/image10.png)
 
-9.  Similarly, add the following buckets:
+9. Similarly, add the following buckets:
 
     - **Workforce Readiness**
 
@@ -159,7 +159,7 @@ Creating plans in the planner
 
 11. Similarly, add the tasks in the following buckets:
 
-1.  **Workforce Readiness:**
+1. **Workforce Readiness:**
 
     | Task name | Progress | Priority | Due Date (use dates similar to these) | Assign to |
     |-----------|----------|----------|----------------------------------------|-----------|
@@ -169,7 +169,7 @@ Creating plans in the planner
 
     ![](./media/image13a.png)
 
-2.  **Marketing & Promotions:**
+2. **Marketing & Promotions:**
 
     | Task name | Progress | Priority | Due Date (use dates similar to these) | Assign to |
     |-----------|----------|----------|----------------------------------------|-----------|
@@ -177,7 +177,7 @@ Creating plans in the planner
     | **Launch Email & Social Campaign** | In Progress | Important | Tomorrow | Current Username |
     | **Coordinate In-Store Promo Displays** | Not Started | Medium | In 4 days | Current Username |
 
-3.  **Inventory & Supply Chain**
+3. **Inventory & Supply Chain**
 
     | Task name | Progress | Priority | Due Date (use dates similar to these) | Assign to |
     |-----------|----------|----------|----------------------------------------|-----------|
@@ -194,7 +194,7 @@ Creating plans in the planner
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you outa.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="9bcf7fd4-b1ee-470e-accd-a31bccb58b29" />   
 
@@ -217,14 +217,14 @@ Access Microsoft 365 Copilot from your Microsoft 365 environment. This
 serves as the entry point for interacting with Planner Agent using
 natural language.
 
-1.  Open new tab and navigate to **https://m365.cloud.microsoft/chat/**
+1. Open new tab and navigate to **https://m365.cloud.microsoft/chat/**
 
-2.  Select **More agents**. Locate and select **Planner Agent** under
+2. Select **More agents**. Locate and select **Planner Agent** under
     Build by Microsoft.
 
     ![](./media/image15.png)
 
-4.  Now Planner agent is ready to go.
+4. Now Planner agent is ready to go.
 
     ![](./media/image17.png)
 
@@ -247,7 +247,7 @@ before the weekly planning meeting. Instead of manually reviewing every
 task, you'll ask Planner Agent to generate a high-level summary of the
 project.
 
-1.  Enter the following prompt in the prompt filed and select Send
+1. Enter the following prompt in the prompt filed and select Send
     button:
 
     ``` 
@@ -256,7 +256,7 @@ project.
 
     ![](./media/image18.png)
 
-2.  Review the AI-generated summary.
+2. Review the AI-generated summary.
 
     Notice how Planner Agent identifies:
 
@@ -284,7 +284,7 @@ which initiatives are actively being worked on. Use Planner Agent to
 identify tasks currently in progress across the different operational
 workstreams.
 
-1.  Enter the following prompt and click Send button:
+1. Enter the following prompt and click Send button:
 
     ```
     Which tasks are currently in progress?
@@ -292,7 +292,7 @@ workstreams.
 
     ![](./media/image22.png)
 
-2.  Review the response.
+2. Review the response.
 
     ![](./media/image23.png)
 
@@ -302,7 +302,7 @@ Before discussing remaining work, Priya also wants to recognize
 milestones that have already been achieved. Use Planner Agent to
 identify completed readiness activities across the program.
 
-1.  Enter the following prompt and click the Send button:
+1. Enter the following prompt and click the Send button:
 
     ```
     Which readiness activities have already been completed?
@@ -310,7 +310,7 @@ identify completed readiness activities across the program.
 
     ![](./media/image24.png)
 
-2.  Review the completed tasks.
+2. Review the completed tasks.
 
     ![](./media/image25.png)
 
@@ -333,11 +333,11 @@ obvious which activities deserve immediate attention. Ask Planner Agent
 to identify the highest-priority work that should be completed this
 week.
 
-1.  Click on the **Planner Agent** to open the **New Chat**.
+1. Click on the **Planner Agent** to open the **New Chat**.
 
     ![](./media/image41.png)
 
-2.  Enter the following prompt and click the Send button:
+2. Enter the following prompt and click the Send button:
 
     ```
     Analyze my Planner plan "Zava Retail - Peak Season Readiness" and
@@ -347,7 +347,7 @@ week.
     
     ![](./media/image28.png)
 
-3.  Review Planner Agent's recommendations.
+3. Review Planner Agent's recommendations.
 
     ![](./media/image29.png)
 
@@ -361,7 +361,7 @@ Priya now wants to understand which activities could delay the Peak
 Season Readiness Program. Use Planner Agent to identify overdue tasks
 and other potential risks that may affect the project timeline.
 
-1.  Enter the following prompt and click the Send button:
+1. Enter the following prompt and click the Send button:
 
     ```
     Which tasks or activities could delay Peak Season Readiness, and are any of them overdue?
@@ -369,7 +369,7 @@ and other potential risks that may affect the project timeline.
 
     ![](./media/image32.png)
 
-2.  Review the identified risks. Notice how Planner Agent surfaces the
+2. Review the identified risks. Notice how Planner Agent surfaces the
     overdue, high-priority tasks — Deep-Clean & Signage Refresh - Region
     West and Validate Store-Level Inventory Counts — and explains why
     they pose a risk to the timeline.
@@ -387,7 +387,7 @@ the organization is prepared for the upcoming holiday season. Ask
 Planner Agent to evaluate the overall readiness of the business based on
 the current project status.
 
-1.  Enter the following prompt and click the Send button:
+1. Enter the following prompt and click the Send button:
 
     ```
     Is the business ready for the start of peak season? Explain why or why not.
@@ -395,7 +395,7 @@ the current project status.
 
     ![](./media/image36.png)
 
-2.  Review Planner Agent's assessment, including how it weighs the
+2. Review Planner Agent's assessment, including how it weighs the
     overdue tasks in its judgment.
 
     ![](./media/image37.png)
@@ -425,11 +425,11 @@ Before discussing operational decisions, leadership needs a quick
 overview of the current state of the readiness program. Use Planner
 Agent to summarize the Planner plan for executive stakeholders.
 
-1.  Click on the **Planner Agent** to open the **New Chat**.
+1. Click on the **Planner Agent** to open the **New Chat**.
 
     ![](./media/image41.png)
 
-2.  Enter the following prompt and click the Send button:
+2. Enter the following prompt and click the Send button:
 
     ```
     Review my Planner plan "Zava Retail - Peak Season Readiness" and
@@ -439,7 +439,7 @@ Agent to summarize the Planner plan for executive stakeholders.
 
     ![](./media/image42.png)
 
-3.  Review the generated summary and verify that it accurately reflects
+3. Review the generated summary and verify that it accurately reflects
     the Planner plan by highlighting completed activities, ongoing work,
     remaining tasks, and overdue items. Notice how Planner Agent
     provides a concise project overview without requiring a manual
@@ -458,7 +458,7 @@ Leadership now wants to understand what actions should be taken to keep
 the project on schedule. Ask Planner Agent to analyze the Planner plan
 and recommend the next operational priorities.
 
-1.  Enter the following prompt and click the Send button:
+1. Enter the following prompt and click the Send button:
 
     ```
     Analyze my Planner tasks and recommend the next actions to keep the project on schedule.
@@ -466,7 +466,7 @@ and recommend the next operational priorities.
 
     ![](./media/image46.png)
 
-2.  Review Planner Agent's recommendations and verify that they focus on
+2. Review Planner Agent's recommendations and verify that they focus on
     overdue tasks, high-priority activities, and upcoming deadlines.
 
     ![](./media/image47.png)
@@ -488,7 +488,7 @@ share with regional leadership. Use Planner Agent to generate a
 comprehensive readiness update that includes project status,
 accomplishments, risks, and recommended actions.
 
-1.  Enter the following prompt and click the Send button:
+1. Enter the following prompt and click the Send button:
 
     ```
     Based on my Planner plan "Zava Retail - Peak Season Readiness", prepare a leadership update that includes:
@@ -502,10 +502,7 @@ accomplishments, risks, and recommended actions.
 
     ![](./media/image51.png)
 
-2.  Review the generated leadership update and confirm that it
-    summarizes the current state of the Planner plan in a clear,
-    business-focused format suitable for sharing during an operational
-    review meeting.
+2. Review the generated leadership update and confirm that it summarizes the current state of the Planner plan in a clear, business-focused format suitable for sharing during an operational review meeting.
 
     ![](./media/image52.png)
 
