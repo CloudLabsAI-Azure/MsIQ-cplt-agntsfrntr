@@ -191,6 +191,13 @@ Creating plans in the planner
 
     Now we are ready with the lab setup.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+- If you receive a success message, you can proceed to the next task.
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="9bcf7fd4-b1ee-470e-accd-a31bccb58b29" />   
+
 # Exercise 1 - Explore Planner Agent
 
 As the Regional Operations Manager, Priya Nair needs a quick overview of
