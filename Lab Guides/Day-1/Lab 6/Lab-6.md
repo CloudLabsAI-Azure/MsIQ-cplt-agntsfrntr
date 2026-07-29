@@ -59,13 +59,17 @@ In this exercise, you will sign in to Microsoft 365 Copilot Chat as Priya Nair a
 
 ### Task 2: Create the Agent
 
-1. From the left navigation menu, select **New agent**.
+2. Click **More Agents (1)** from the left navigation pane, then click **Create Agent (2)**.
 
-    ![](./media/l6e1t1s1.png)
+    ![](./media/l3e1t1s4.png)
 
-2. Select **Skip to configure**.
+    ![](./media/l3e1t1s5.png)
 
-    ![](./media/l6e1t1s2.png)
+3. The **New Agent** page will open. Now click **Skip**.
+
+    ![](./media/l3e1t1s6.png)
+
+    ![](./media/l3e1t1s7.png)
 
 3. Enter the agent's identity:
 
@@ -135,7 +139,7 @@ In this exercise, you will sign in to Microsoft 365 Copilot Chat as Priya Nair a
 
     ![](./media/image9.png)
 
-3. Select **Go to agent**.
+3. Select **Start chat**.
 
     ![](./media/image10.png)
 

@@ -1,4 +1,4 @@
-# Lab 1 - Transform Cross-Functional Program Execution at Zava Retail with Planner Agent
+# Lab 01: Transform Cross-Functional Program Execution at Zava Retail with Planner Agent
 
 ### Estimated Duration: 40 minutes
 

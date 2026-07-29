@@ -70,6 +70,8 @@ Patricia wants a complete overview of campaign progress for Zava Retail.
 
 2. To view the sample emails, navigate to the following URL.
 
+    >**Note:** If you are unable to find the existing emails in Outlook, use the provided file and send the emails to the users from your personal email account.
+
     ```
     https://outlook.office365.com/mail
     ```

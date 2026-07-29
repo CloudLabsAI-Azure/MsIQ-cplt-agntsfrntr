@@ -182,11 +182,23 @@ The IT team needs to see not just a list of employees, but a clear record of wha
 
     ![](./media/l4e3t2s1.png)
 
-2. Find a task related to **Provision new laptop for Sneha Patel**. Select the checkbox to mark it as completed.
+1. From the left navigation pane, select **Tasks**.
+
+2. On the **Setup Tasks** page, review the available task categories:
+
+   * **All**
+   * **To Do**
+   * **In Progress**
+   * **Completed**
+   * **Due This Week**
+
+3. Select each category to filter the displayed tasks and verify that the task list updates accordingly.
+
+    ![](./media/l4e3t2s1a.png)
+
+1. Select any one of the task checkbox to mark it as completed.
 
     ![](./media/l4e3t2s2.png)
-
-    ![](./media/l4e3t2s3.png)
 
 3. Return to the **Dashboard** and review that the overall completion percentage changes accordingly.
 
