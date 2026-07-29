@@ -84,7 +84,7 @@ App Builder works like a conversation. You describe the app you need in plain la
 
     ![](./media/l4e1t2s1.png)
 
-2. Once generation is complete, a live preview of your app will appear on the right side of the screen - with a navigation panel showing sections such as **Dashboard**, **Assets**, **Employees**, **Tasks**, **Resources**, and potential **Feedback**.
+2. Once generation is complete, a live preview of your app will appear on the right side of the screen - with a navigation panel showing sections such as **Dashboard (1)**, **Assets (2)**, **Employees (3)**, **Tasks (4)**, **Resources (5)**, and potential **Feedback**.
 
     ![](./media/l4e1t2s2.png)
 
