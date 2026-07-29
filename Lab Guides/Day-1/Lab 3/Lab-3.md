@@ -59,7 +59,7 @@ Before the agent can support workforce development, you must first build and con
 
     ![](./media/l3e1t1s5.png)
 
-3. The **New Agent** page will open. Now click **Skip to configure**.
+3. The **New Agent** page will open. Now click **Skip**.
 
     ![](./media/l3e1t1s6.png)
 

@@ -4,9 +4,9 @@
 
 ## Overview
 
-In this lab, you will use **App Builder** inside Microsoft 365 Copilot to create a fully functional business application — using nothing but natural language. You will describe what you want, watch Copilot build it in real time, refine it through conversation, and publish it for your team.
+In this lab, you will use **App Builder** inside Microsoft 365 Copilot to create a fully functional business application - using nothing but natural language. You will describe what you want, watch Copilot build it in real time, refine it through conversation, and publish it for your team.
 
-You are an IT Asset Manager at Zava Retail, a growing retail chain with over 1,200 employees across 15 store locations and a central head office. Every quarter, your IT team manually tracks equipment issued to store managers and head office staff using a shared spreadsheet that is constantly out of date. The goal is to build a **Zava Retail IT Asset Tracker** app — a conversational, no-code tool inside the Microsoft 365 Copilot — that gives a live dashboard to manage asset assignments, track request statuses, and flag overdue items within the IT team.
+You are an IT Asset Manager at Zava Retail, a growing retail chain with over 1,200 employees across 15 store locations and a central head office. Every quarter, your IT team manually tracks equipment issued to store managers and head office staff using a shared spreadsheet that is constantly out of date. The goal is to build a **Zava Retail IT Asset Tracker** app - a conversational, no-code tool inside the Microsoft 365 Copilot - that gives a live dashboard to manage asset assignments, track request statuses, and flag overdue items within the IT team.
 
 ## Lab Objectives
 
@@ -27,7 +27,7 @@ At Zava Retail, nobody knows at a glance which employees have outstanding equipm
 
 ## Exercise 1: Access App Builder and Describe Your App
 
-App Builder works like a conversation. You describe the app you need in plain language — the same way you would brief a colleague — and Copilot builds it.
+App Builder works like a conversation. You describe the app you need in plain language - the same way you would brief a colleague - and Copilot builds it.
 
 ### Task 1: Access App Builder
 
@@ -51,19 +51,18 @@ App Builder works like a conversation. You describe the app you need in plain la
 
         ![](./media/l4e1t1s1.png)
 
-2. Click **Agents (1)** from the left navigation pane, then select **More agents (2)** > **App Builder (Frontier)**.
+2. On the left-hand navigation pane, click **More agents\>App Builder(Frontier)**.
 
-    ![](./media/l3e1t1s4.png)
+    ![](./media/bb2.png)
 
-    ![](./media/l4e1t1s2.png)
+3. Select **Add** to add this agent to your environment.  
 
-3. Select **Add** to add this agent to your environment.
+    ![](./media/bb3.png)
 
-    ![](./media/l4e1t1s3.png)
+4. The App Builder interface will open with a conversational input
+    field - this is where you describe your app.
 
-4. The App Builder interface will open with a conversational input field — this is where you describe your app.
-
-    ![](./media/l4e1t1s4.png)
+    ![](./media/bb4.png)
 
 ### Task 2: Describe Your App in Natural Language
 
@@ -72,7 +71,7 @@ App Builder works like a conversation. You describe the app you need in plain la
     ```
     Build me an IT asset tracking app for Zava Retail. The app should
     let the IT team log equipment assigned to store managers and head office
-    employees — including laptops, tablets, POS peripherals, and
+    employees - including laptops, tablets, POS peripherals, and
     accessories, with an option to add new asset records via a form (Model,
     Serial Number, Type, Status, Assigned Employee). It should track each
     item's status as Assigned, Pending Collection, or Returned. I need a
@@ -85,7 +84,7 @@ App Builder works like a conversation. You describe the app you need in plain la
 
     ![](./media/l4e1t2s1.png)
 
-2. Once generation is complete, a live preview of your app will appear on the right side of the screen — with a navigation panel showing sections such as **Dashboard**, **Assets**, **Employees**, **Tasks**, **Resources**, and potential **Feedback**.
+2. Once generation is complete, a live preview of your app will appear on the right side of the screen - with a navigation panel showing sections such as **Dashboard**, **Assets**, **Employees**, **Tasks**, **Resources**, and potential **Feedback**.
 
     ![](./media/l4e1t2s2.png)
 
@@ -103,7 +102,7 @@ App Builder works like a conversation. You describe the app you need in plain la
 
     ```
     Add a section to the dashboard that highlights overdue asset requests
-    — items that have been in Pending Collection status for more than 7
+    - items that have been in Pending Collection status for more than 7
     days. Show the employee's name, asset type, and how many days are
     overdue.
     ```
@@ -119,8 +118,8 @@ App Builder works like a conversation. You describe the app you need in plain la
 1. In the conversation input, paste the following prompt and click the **Send** button.
 
     ```
-    In the Tasks section, add priority indicators — High, Medium, and
-    Low — for each task. Also add a Due This Week view that filters to show
+    In the Tasks section, add priority indicators - High, Medium, and
+    Low - for each task. Also add a Due This Week view that filters to show
     only tasks due within the next 7 days.
     ```
 
@@ -143,7 +142,7 @@ The IT team needs to see not just a list of employees, but a clear record of wha
 
     ```
     In the Employees section, add a column showing each employee's asset
-    setup status — either Complete or In Progress. Also add a filter so the
+    setup status - either Complete or In Progress. Also add a filter so the
     IT team can view only employees with In Progress status who may need
     follow-up.
     ```
@@ -241,7 +240,7 @@ The IT team needs to see not just a list of employees, but a clear record of wha
 
     ![](./media/l4e4t3s2.png)
 
-3. Copy the briefing and the direct app link — these are what you would share with the IT team in a real deployment.
+3. Copy the briefing and the direct app link - these are what you would share with the IT team in a real deployment.
 
     ![](./media/l4e4t3s3.png)
 

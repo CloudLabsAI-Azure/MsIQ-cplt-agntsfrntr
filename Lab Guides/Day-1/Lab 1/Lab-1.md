@@ -98,18 +98,15 @@ Creating plans in the planner
 3.  From the left navigation menu, select 3 **dots(…)** and then select
     **Planner**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image4.png)
+    ![](./media/image4.png)
 
 4.  Select **+Create a plan**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image5.png)
+    ![](./media/image5.png)
 
 5.  Select **Create basic plan**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image6.png)
+    ![](./media/image6.png)
 
 6.  Enter plan name as **Zava Retail-Peak Season Readiness**. Then
     select **Create basic plan**.
@@ -123,8 +120,7 @@ Creating plans in the planner
 
 8.  Enter bucket name as ****Store Operations**** and press **Enter**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image9.png)
+    ![](./media/image9.png)
 
     Your new bucket is add.
 
@@ -138,6 +134,8 @@ Creating plans in the planner
 
     - **Inventory & Supply Chain**
 
+    ![](./media/image10a.png)
+
 10. Now we add the following new tasks in the **Store Operations** bucket:
 
     | Task name | Status | Priority | Due Date (use dates similar to these) | Assign to |
@@ -149,21 +147,19 @@ Creating plans in the planner
     So select **+Add Task** and enter the task name from the above table.
     Then select **Add Task**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image11.png)
+    ![](./media/image11.png)
 
 1. After creating the task, select the task and then in the task window
-    enter the given details.
+    enter the given details and then click on the close option.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image12.png)
+    ![](./media/image12.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image13.png)
 
 11. Similarly, add the tasks in the following buckets:
 
-1.  Workforce Readiness:
+1.  **Workforce Readiness:**
 
     | Task name | Progress | Priority | Due Date (use dates similar to these) | Assign to |
     |-----------|----------|----------|----------------------------------------|-----------|
@@ -173,7 +169,7 @@ Creating plans in the planner
 
     ![](./media/image13a.png)
 
-2.  Marketing & Promotions:
+2.  **Marketing & Promotions:**
 
     | Task name | Progress | Priority | Due Date (use dates similar to these) | Assign to |
     |-----------|----------|----------|----------------------------------------|-----------|
@@ -181,7 +177,7 @@ Creating plans in the planner
     | **Launch Email & Social Campaign** | In Progress | Important | Tomorrow | Current Username |
     | **Coordinate In-Store Promo Displays** | Not Started | Medium | In 4 days | Current Username |
 
-3.  Inventory & Supply Chain
+3.  **Inventory & Supply Chain**
 
     | Task name | Progress | Priority | Due Date (use dates similar to these) | Assign to |
     |-----------|----------|----------|----------------------------------------|-----------|
@@ -221,10 +217,6 @@ natural language.
 
     ![](./media/image15.png)
 
-3.  Select **Open** to open Planner Agent.
-
-    ![](./media/image16.png)
-
 4.  Now Planner agent is ready to go.
 
     ![](./media/image17.png)
@@ -255,8 +247,7 @@ project.
     Summarize the tasks in my Planner plan "Zava Retail - Peak Season Readiness
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image18.png)
+    ![](./media/image18.png)
 
 2.  Review the AI-generated summary.
 
@@ -270,8 +261,7 @@ project.
 
     - Overall readiness status
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image19.png)
+    ![](./media/image19.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image20.png)
@@ -293,13 +283,11 @@ workstreams.
     Which tasks are currently in progress?
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image22.png)
+    ![](./media/image22.png)
 
 2.  Review the response.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image23.png)
+    ![](./media/image23.png)
 
 ### Task 3 - Review Completed Activities
 
@@ -313,13 +301,11 @@ identify completed readiness activities across the program.
     Which readiness activities have already been completed?
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image24.png)
+    ![](./media/image24.png)
 
 2.  Review the completed tasks.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image25.png)
+    ![](./media/image25.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image26.png)
@@ -340,9 +326,9 @@ obvious which activities deserve immediate attention. Ask Planner Agent
 to identify the highest-priority work that should be completed this
 week.
 
-1.  Select **New Chat**.
+1.  Click on the **Planner Agent** to open the **New Chat**.
 
-    ![](./media/image27.png)
+    ![](./media/image41.png)
 
 2.  Enter the following prompt and click the Send button:
 
@@ -352,8 +338,7 @@ week.
     priorities, and task status.
     ```
     
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image28.png)
+    ![](./media/image28.png)
 
 3.  Review Planner Agent's recommendations.
 
@@ -406,17 +391,14 @@ the current project status.
 2.  Review Planner Agent's assessment, including how it weighs the
     overdue tasks in its judgment.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image37.png)
+    ![](./media/image37.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image38.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image39.png)
+    ![](./media/image39.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image40.png)
+    ![](./media/image40.png)
 
 ## Exercise 4 - Generate Leadership Insights
 
@@ -436,10 +418,9 @@ Before discussing operational decisions, leadership needs a quick
 overview of the current state of the readiness program. Use Planner
 Agent to summarize the Planner plan for executive stakeholders.
 
-1.  Select **New Chat**.
+1.  Click on the **Planner Agent** to open the **New Chat**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image41.png)
+    ![](./media/image41.png)
 
 2.  Enter the following prompt and click the Send button:
 
@@ -449,8 +430,7 @@ Agent to summarize the Planner plan for executive stakeholders.
     progress, remaining work, and any overdue activities.
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image42.png)
+    ![](./media/image42.png)
 
 3.  Review the generated summary and verify that it accurately reflects
     the Planner plan by highlighting completed activities, ongoing work,
@@ -458,11 +438,9 @@ Agent to summarize the Planner plan for executive stakeholders.
     provides a concise project overview without requiring a manual
     review of every task.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image43.png)
+    ![](./media/image43.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image44.png)
+    ![](./media/image44.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image45.png)
@@ -479,14 +457,12 @@ and recommend the next operational priorities.
     Analyze my Planner tasks and recommend the next actions to keep the project on schedule.
     ```
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image46.png)
+    ![](./media/image46.png)
 
 2.  Review Planner Agent's recommendations and verify that they focus on
     overdue tasks, high-priority activities, and upcoming deadlines.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](./media/image47.png)
+    ![](./media/image47.png)
 
     ![A screenshot of a computer
     AI-generated content may be incorrect.](./media/image48.png)
