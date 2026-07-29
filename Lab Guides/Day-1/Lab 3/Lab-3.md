@@ -6,7 +6,7 @@
 
 In this lab, you will explore how to build a **Workforce Upskilling Agent** using Microsoft 365 Copilot Agent Builder. You will learn how to configure the agent aligned to workforce transformation goals, ground it in organizational context using Work IQ principles, and enrich it with enterprise knowledge sources.
 
-Zava Retail — a mid-sized retail chain specializing in consumer electronics and home goods — is eighteen months into a digital transformation initiative. Technology adoption is accelerating faster than employee readiness. To address this challenge, you will build and deploy a Workforce Upskilling Agent that helps identify skill gaps, personalize employee learning journeys, and improve workforce readiness across operations.
+Zava Retail - a mid-sized retail chain specializing in consumer electronics and home goods - is eighteen months into a digital transformation initiative. Technology adoption is accelerating faster than employee readiness. To address this challenge, you will build and deploy a Workforce Upskilling Agent that helps identify skill gaps, personalize employee learning journeys, and improve workforce readiness across operations.
 
 ## Lab Objectives
 
@@ -125,6 +125,13 @@ Before the agent can support workforce development, you must first build and con
 
     ![](./media/l3e1t2s8.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+- If you receive a success message, you can proceed to the next task.
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="bfccd00c-8bca-4f4a-b8d6-468b6e76349d" /> 
+
 ## Exercise 2: Grounding the Agent in Organizational Context
 
 Once the agent is built, provide the transformation context of Zava Retail.
@@ -187,7 +194,7 @@ Once the agent is built, provide the transformation context of Zava Retail.
     ```
     I have a Store Operations Supervisor named Alex who is consistently
     overriding AI-powered inventory replenishment alerts without reviewing
-    them — approximately 3 times per week over the past month. Based on this
+    them - approximately 3 times per week over the past month. Based on this
     behavioral signal, what skill gaps should I hypothesize, and what targeted
     learning plan should I create?
     ```
@@ -224,7 +231,7 @@ Once the agent is built, provide the transformation context of Zava Retail.
 1. Paste the following prompt and click the **Send** button to diagnose workforce skill gaps.
 
     ```
-    Our RMS went live 6 months ago. Derek is at 31% system utilization —
+    Our RMS went live 6 months ago. Derek is at 31% system utilization -
     lowest on his team.
     He has 11 years of legacy system experience.
     What resistance patterns and skill gaps should I address?

@@ -56,7 +56,6 @@ In this exercise, you will sign in to Microsoft 365 Copilot Chat as Priya Nair a
 
     ![](./media/l3e1t1s3.png)
 
-
 ### Task 2: Create the Agent
 
 2. Click **More Agents (1)** from the left navigation pane, then click **Create Agent (2)**.
@@ -146,6 +145,13 @@ In this exercise, you will sign in to Microsoft 365 Copilot Chat as Priya Nair a
     Now the agent is ready to use.
 
     ![](./media/image11.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+- If you receive a success message, you can proceed to the next task.
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="620c8ade-181b-4983-a5e0-e94614be109a" /> 
 
 ## Exercise 2: Build the Summer Clearance Campaign Brief
 
