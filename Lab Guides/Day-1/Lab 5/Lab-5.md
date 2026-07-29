@@ -20,7 +20,7 @@ In this lab, you will perform the following:
 
 ## Scenario
 
-Alex Morgan needs an AI-powered executive assistant to manage the calendar during a store expansion program — detecting and resolving scheduling conflicts, scheduling meetings using email context, and setting up standing rules to protect focus time and enforce notice requirements.
+Alex Morgan needs an AI-powered executive assistant to manage the calendar during a store expansion program - detecting and resolving scheduling conflicts, scheduling meetings using email context, and setting up standing rules to protect focus time and enforce notice requirements.
 
 **Key Personas**
 
@@ -76,9 +76,9 @@ In this task, you enter a one-shot prompt that asks Cowork to create eight reali
     calendar for next week.
 
     Important: For meetings 7 and 8, leave the description and body
-    completely empty — no agenda text at all.
+    completely empty - no agenda text at all.
 
-    1. "Store Expansion Kickoff — Operations Review"
+    1. "Store Expansion Kickoff - Operations Review"
     Monday, 10:00–11:00 AM
     Organiser: Tom Bradley (Store Operations Manager)
 
@@ -86,7 +86,7 @@ In this task, you enter a one-shot prompt that asks Cowork to create eight reali
     Monday, 10:30–11:30 AM
     Organiser: IT Team
 
-    3. "Supplier Onboarding Planning — City Store 1"
+    3. "Supplier Onboarding Planning - City Store 1"
     Tuesday, 9:00–10:00 AM
     Organiser: Lisa Chen (Procurement & Supply Chain Manager)
 
@@ -94,23 +94,23 @@ In this task, you enter a one-shot prompt that asks Cowork to create eight reali
     Tuesday, 10:00–11:00 AM
     Organiser: Lisa Chen (Procurement & Supply Chain Manager)
 
-    5. "Marketing Campaign Kickoff — Grand Opening"
+    5. "Marketing Campaign Kickoff - Grand Opening"
     Tuesday, 11:00 AM–12:00 PM
     Organiser: Marketing Team
 
-    6. "HR Recruitment Drive — Store Staffing Update"
+    6. "HR Recruitment Drive - Store Staffing Update"
     Wednesday, 8:00–9:00 AM
     Organiser: HR Team
 
     7. "Store Operations Weekly Check-in"
     Thursday, 2:00–3:00 PM
     Organiser: Tom Bradley (Store Operations Manager)
-    (NO description, NO agenda — leave body completely blank)
+    (NO description, NO agenda - leave body completely blank)
 
-    8. "Expansion Progress Review — Leadership Update"
+    8. "Expansion Progress Review - Leadership Update"
     Friday, 11:00 AM–12:00 PM
     Organiser: Rachel Singh (Operations Director)
-    (NO description, NO agenda — leave body completely blank)
+    (NO description, NO agenda - leave body completely blank)
 
     Please create all 8 meetings and confirm when done.
     ```
@@ -127,7 +127,7 @@ In this task, you enter a one-shot prompt that asks Cowork to create eight reali
 
    ![](./media/l5e2t1s4.png)
 
-    > **Note:** All eight meetings will be created one at a time, and you'll receive a separate approval prompt for each. Review each request before approving — this is your chance to confirm exactly what Cowork is about to add to your calendar.
+    > **Note:** All eight meetings will be created one at a time, and you'll receive a separate approval prompt for each. Review each request before approving - this is your chance to confirm exactly what Cowork is about to add to your calendar.
 
     ![](./media/l5e2t1s5.png)
 
@@ -151,7 +151,7 @@ Use Copilot Cowork to identify overlapping meetings and unbroken meeting runs on
 
 ### Task 1: Scan the Calendar and Prioritize Conflicts
 
-Ask Cowork to review the next five business days, flag every overlap and back-to-back run, and propose fixes — while protecting the two meetings Lisa Chen has already confirmed.
+Ask Cowork to review the next five business days, flag every overlap and back-to-back run, and propose fixes - while protecting the two meetings Lisa Chen has already confirmed.
 
 1. Select **New Task**.
 
@@ -169,9 +169,9 @@ Ask Cowork to review the next five business days, flag every overlap and back-to
     2. Identify any back-to-back runs of 3 or more consecutive meetings
        with no break between them
     3. For each conflict or back-to-back run, propose a resolution:
-       — Which meeting should be moved and why
-       — The best alternative time slot that avoids other meetings
-       — A polite and professional reschedule message I can send to the organiser
+       - Which meeting should be moved and why
+       - The best alternative time slot that avoids other meetings
+       - A polite and professional reschedule message I can send to the organiser
 
     Priority: Keep the Supplier Onboarding Planning and Inventory &
     Delivery Schedule Review meetings in their current slots if possible,
@@ -197,7 +197,7 @@ Act on Cowork's recommendation for the overlapping Monday meetings: move the IT 
 1. With the conflicts identified, ask Cowork to resolve the Monday overlap between the Store Expansion Kickoff and the IT Infrastructure Briefing. Enter the following prompt and select **Send**.
 
     ```
-    For the Monday conflict between the Store Expansion Kickoff —
+    For the Monday conflict between the Store Expansion Kickoff -
     Operations Review and the New Store IT Infrastructure Briefing,
     please do the following:
     1. Move the IT Infrastructure Briefing to the next available
@@ -205,7 +205,7 @@ Act on Cowork's recommendation for the overlapping Monday meetings: move the IT 
        expansion meetings
     2. Draft a professional reschedule message to the IT Team explaining
        the conflict and proposing the new time
-    3. Keep the tone collaborative — mention that the Store Expansion
+    3. Keep the tone collaborative - mention that the Store Expansion
        Kickoff with Tom Bradley takes priority as it covers operational
        readiness for both new store locations
     ```
@@ -229,9 +229,9 @@ Fix the three-meeting Tuesday run by adding prep breaks, keeping Lisa Chen's con
 1. In the same thread, ask Cowork to fix the Tuesday back-to-back run. Enter the following prompt and select **Send**.
 
     ```
-    For the three back-to-back meetings on Tuesday — Supplier
+    For the three back-to-back meetings on Tuesday - Supplier
     Onboarding Planning, Inventory & Delivery Schedule Review, and
-    Marketing Campaign Kickoff — please do the following:
+    Marketing Campaign Kickoff - please do the following:
     1. Keep the Supplier Onboarding Planning at 9:00 AM as Lisa Chen
        has confirmed her availability
     2. Add a 15-minute preparation break between each meeting
@@ -261,7 +261,7 @@ Fix the three-meeting Tuesday run by adding prep breaks, keeping Lisa Chen's con
 
     ```
     Please apply these schedule changes to the calendar. Then create the
-    email as a draft in Outlook — don't send it — so I can review it first.
+    email as a draft in Outlook - don't send it - so I can review it first.
     ```
 
     ![](./media/l5e3t3s6.png)
@@ -297,7 +297,7 @@ Wrap up the exercise with an at-a-glance summary of meeting load for the week, p
     2. Any days that are overloaded with meetings
     3. Days that have good availability for focused strategic work
     4. One recommendation for when I should block time to work on
-       the Master Expansion Plan document — considering all the
+       the Master Expansion Plan document - considering all the
        meetings we have just resolved
 
     Keep the summary concise and actionable.
@@ -313,7 +313,7 @@ Wrap up the exercise with an at-a-glance summary of meeting load for the week, p
 
 ## Exercise 4: Schedule Meetings Intelligently Using Email Context
 
-Real scheduling requests rarely come with a full brief attached — the context often lives in an email thread. In this exercise, you'll send yourself a sample email about supplier onboarding, then ask Cowork to use that context to intelligently schedule a recurring sync with Lisa Chen.
+Real scheduling requests rarely come with a full brief attached - the context often lives in an email thread. In this exercise, you'll send yourself a sample email about supplier onboarding, then ask Cowork to use that context to intelligently schedule a recurring sync with Lisa Chen.
 
 ### Task 1: Send a Sample Context Email
 
@@ -363,13 +363,13 @@ Ask Cowork to book a 30-minute sync with Lisa Chen, applying scheduling constrai
 
     ![](./media/l5e4t2s6.png)
 
-6. Check the personal email address you used earlier — you should receive a meeting request for the newly scheduled sync.
+6. Check the personal email address you used earlier - you should receive a meeting request for the newly scheduled sync.
 
     ![](./media/l5e4t2s7.png)
 
 ## Exercise 5: Apply Executive Calendar Management Rules
 
-In this exercise, you'll move from one-off fixes to standing rules — the kind of protections a real executive assistant would maintain automatically.
+In this exercise, you'll move from one-off fixes to standing rules - the kind of protections a real executive assistant would maintain automatically.
 
 ### Task 1: Define Standing Calendar Rules
 
@@ -384,9 +384,9 @@ Set up two ongoing rules: flag any meeting requested with less than 48 hours' no
     ```
     I want to apply two standing rules to my calendar going forward: (1)
     Any meeting requested with less than 48 hours' notice should be
-    flagged, and I should be prompted before accepting — this is requirement from my Operations Director. (2) Protect a daily
+    flagged, and I should be prompted before accepting - this is requirement from my Operations Director. (2) Protect a daily
     90-minute focus block each morning this week for the Master Expansion
-    Plan document — no meetings should be scheduled over it without my
+    Plan document - no meetings should be scheduled over it without my
     explicit approval. Show me what this looks like on my calendar before
     making any changes.
     ```
@@ -401,7 +401,7 @@ Set up two ongoing rules: flag any meeting requested with less than 48 hours' no
 
     ![](./media/l5e5t1s3.png)
 
-4. Review the proposed **Focus — Master Expansion Plan** calendar update, then click **Update** to apply the focus-block changes and continue the rule setup process.
+4. Review the proposed **Focus - Master Expansion Plan** calendar update, then click **Update** to apply the focus-block changes and continue the rule setup process.
 
     ![](./media/l5e5t1s4.png)
 
@@ -409,7 +409,7 @@ Set up two ongoing rules: flag any meeting requested with less than 48 hours' no
 
     ![](./media/l5e5t1s5.png)
 
-6. Review the **Focus block guard — Master Expansion Plan** trigger settings, then click **Set up** to create the automatic alert rule that protects focus blocks from conflicting meeting invitations.
+6. Review the **Focus block guard - Master Expansion Plan** trigger settings, then click **Set up** to create the automatic alert rule that protects focus blocks from conflicting meeting invitations.
 
     ![](./media/l5e5t1s6.png)
 
@@ -425,7 +425,7 @@ Simulate a real short-notice request from Tom Bradley to confirm the new notice 
 
     ```
     Tom Bradley just messaged asking for a 30-minute call tomorrow morning
-    to discuss a staffing issue at City Store 1 — no agenda given. Can you
+    to discuss a staffing issue at City Store 1 - no agenda given. Can you
     find time?
     ```
 
@@ -470,7 +470,7 @@ In this lab, you have completed the following:
 - Signed in to Microsoft 365 Copilot Cowork and used it as an AI-powered executive calendar assistant for Alex Morgan's store expansion program
 - Populated the calendar with eight expansion meetings using a single prompt, and resolved a Monday overlap and a Tuesday back-to-back run with AI-recommended fixes
 - Scheduled a weekly project sync with Lisa Chen by pulling talking points directly from an email context, with scheduling constraints applied automatically
-- Set up two standing calendar rules — a 48-hour notice flag and a 90-minute daily focus block — and tested the notice rule against a real short-notice request from Tom Bradley
+- Set up two standing calendar rules - a 48-hour notice flag and a 90-minute daily focus block - and tested the notice rule against a real short-notice request from Tom Bradley
 - Generated an executive summary confirming protected focus time, meetings missing agendas, and on-track status for the Friday Leadership Update
 
 ## You have successfully completed the lab!
