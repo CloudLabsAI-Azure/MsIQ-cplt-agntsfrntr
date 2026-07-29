@@ -35,7 +35,11 @@ Microsoft Foundry is a platform that enables developers to build, deploy, and sc
 
 Microsoft Foundry is your launchpad for building AI agents. In this task, you'll log in to Microsoft Foundry with your login credentials.
 
-1. Open the browser and navigate to **https://ai.azure.com**, and click **Start building**.
+1. Open the browser and enter the following URL to navigate to the Microsoft Foundry portal, and click **Start building**.
+
+    ```
+    https://ai.azure.com
+    ```
 
     ![](./media/b1.png)
 
@@ -43,13 +47,13 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
    
-    ![](../../Day-2/media/img1.png)
+     ![](../../Day-2/media/img1.png)
      
 1. Now enter the following password and click on **Sign in (2)**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
    
-    ![](../../Day-2/media/img2.png)
+     ![](../../Day-2/media/img2.png)
 
       > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
      
@@ -57,38 +61,51 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
 
     ![](../../Day-2/media/img3.png)
 
-3. Close the create a project Pop-up.
+1. Close the create a project Pop-up.
 
     ![](./media/b5.png)
 
-4. From the top-right navigation bar, **disable** the new foundry toggle. Click **Continue without feedback**.
+1. From the top-right navigation bar, **disable** the new foundry toggle. Click **Continue without feedback**.
 
     ![](./media/b6.png)
+
     ![](./media/b7.png)
 
-5. From the Microsoft Foundry homepage, select **Create an agent**.
+1. From the Microsoft Foundry homepage, select **Create an agent**.
 
     ![](./media/image2.png)
 
-6. Enter **proj-<DID> (1)** as the project name, select the Resource group that starts with **Copilot-Studio (2)**, and select **Create (3)**.
+1. Enter **proj-<DID> (1)** as the project name, select the Resource group that starts with **Copilot-Studio (2)**, and select **Create (3)**.
 
     ![](./media/b8.png)
 
-7. This will scaffold a new project for you in Microsoft Foundry. It usually takes 3-5 minutes.
+1. This will scaffold a new project for you in Microsoft Foundry. It usually takes 3-5 minutes.
 
-1. Click on the **Cancel** option on model deploy page
+1. On the **Deploy a model** page, from the models list, select **gpt-5 (1)**, and then click **Confirm (2)**.
 
-    ![](./media/b9a.png)
+    ![](./media/img0.png)
 
-8. When your project is created, you'll land in the **Agents Playground**.
+1. On the **Deploy gpt-5** pane, review the **Deployment name** and **Deployment type** details, and then click **Deploy (1)**.
 
-    ![](./media/b9.png)
+    ![](./media/img1.png)
 
-9. Now that you're inside the Agents Playground, you'll customize your agent's identity and behavior from **Setup** to match a real-world scenario: an internal HR Agent at Zava Retail.
+1. On the **Agent Deprecation Notice** dialog, click **Create agent**.
 
-    ![](./media/b10.png)
+    ![](./media/img2.png)
 
-10. In your agent's Setup panel, name your agent as **Zava HR Agent** and update the Instructions as the following:
+1. On the **Create Legacy Agent** dialog, click **Yes**.
+
+    ![](./media/img3.png)
+
+1. When your project is created, you'll land in the **Agents Playground**.
+
+    ![](./media/img4.png)
+
+1. Now that you're inside the Agents Playground, you'll customize your agent's identity and behavior from **Setup** to match a real-world scenario: an internal HR Agent at Zava Retail.
+
+    ![](./media/img5.png)
+
+10. In your agent's Setup panel, name your agent as **Zava HR Agent (1)** and update the **Instructions (2)** as the following:
 
     ```
     You are Zava HR Agent, an internal assistant for Zava Retail. Your role is to help employees find accurate,
@@ -124,7 +141,7 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
     - What happens during a performance review?
     ```
 
-    ![](./media/b11.png)
+     ![](./media/img6.png)
 
 11. In the Knowledge section, select **+ Add** and select **Files**, then **Select local files**.
 
@@ -132,7 +149,7 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
     ![](./media/b13.png)
     ![](./media/image10.png)
 
-12. Navigate to **C:\Labfiles\M365 Agents SDK** and select all the files inside that and click **Open**.
+12. Navigate to **C:\Lab Files\M365 Agents SDK** and select all the files inside that and click **Open**.
 
     ![](./media/image11.png)
 
@@ -166,13 +183,55 @@ Now that you've seen how to build an agent using Microsoft Foundry, let's switch
 
     ![](./media/image16.png)
 
-2. Select **Create a new project**.
+    >Note: If you are not able to see Visual Studio 2022 on Desktop, search in the LabVM search box, type **Visual Studio Code (1)**, and then select **Visual Studio 2022 (2)** from **Apps**.
+
+     ![](./media/img7.png)
+
+1. On the **Sign in to Visual Studio** window, click **Sign in with Microsoft**.
+
+    ![](./media/img8.png)
+
+1. In the **Sign in** dialog, select **Work or school account (1)**, and then click **Continue (2)**.
+
+    ![](./media/img9.png)
+
+1. On the **Sign in** page, enter the following email/username and click **Next (2)**.
+
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+   
+     ![](../../Day-2/media/img1.png)
+     
+1. Now enter the following password and click on **Sign in (2)**.
+   
+   * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
+   
+     ![](../../Day-2/media/img2.png)
+
+      > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
+
+1. In the **Sign in to all apps and websites on this device?** prompt, click **No, this app only**.
+
+    ![](./media/img10.png)
+
+1. Select **Create a new project**.
 
     ![](./media/image17.png)
 
-3. Search for **Microsoft** and select the **Microsoft 365 Agents** template. Click on **Next**.
+1. Search for **Microsoft** and select the **Microsoft 365 Agents** template. Click on **Next**.
 
     ![A screenshot of a computer project AI-generated content may be incorrect.](./media/image19.png)
+
+    >**Note:** If you are unable to find **Microsoft 365 Agents (1)** from the search bar, then click **Install more tools and features (2)**.
+
+    ![](./media/img11.png)
+
+    -  In the Visual Studio Installer, select **Individual components (1)**, in the search box enter **Microsoft 365 (2)**, select **Microsoft 365 Agents Toolkit (3)**, keep **Install while downloading (4)** as the installation option, and then click **Modify (5)**.
+
+       ![](./media/img12.png)
+
+    - On the **Before we get started** prompt, click **Continue (1)**.
+
+      ![](./media/img13.png)   
 
 4. Provide a name for your project as **ZavaHRAgent** and select **Create**.
 
@@ -192,21 +251,21 @@ Now that you've seen how to build an agent using Microsoft Foundry, let's switch
 
     - Open **Program.cs** - this code configures and runs the web server that hosts your agent. It sets up required services like authentication, routing, storage, and registers the **EchoBot**, and injects memory-based state handling.
 
-    ![](./media/image207.png)
+      ![](./media/image207.png)
 
     - Open **Bot > EchoBot.cs** and observe that this sample sets up a basic AI agent using the **Microsoft.Agents.Builder**. It sends a welcome message when a user joins the chat and listens for any message, echoing it back with a running message count.
 
-    ![](./media/image208.png)
+      ![](./media/image208.png)
 
 8. You've started with an **Echo Bot**, a simple bot that repeats back any message a user sends. It's a useful way to verify your setup and understand how conversations are handled behind the scenes.
 
-9. From Visual Studio, select **Tools -> NuGet Package Manager -> Package Manager Settings**, to add NuGet.org to the package sources.
+9. From Visual Studio, select **Tools (1) -> NuGet Package Manager (2) -> Package Manager Settings (3)**, to add NuGet.org to the package sources.
 
     ![](./media/b18.png)
 
 10. Select **Package Sources** and click on the **+** symbol to add a new package source.
 
-    >**Note:** If you get an existing package, delete it using the **X** symbol.
+    >**Note:** If you get an existing **nuget.org** named package, delete it using the **X** symbol.
 
     ![](./media/b19.png)
 
@@ -215,9 +274,11 @@ Now that you've seen how to build an agent using Microsoft Foundry, let's switch
     - Name - **nuget.org**
     - Source - **https://api.nuget.org/v3/index.json**
 
-    ![](./media/b20.png)
+      ![](./media/b20.png)
 
-12. To test your echo agent, hit **Start** or **F5**. This will launch the Test Tool automatically on localhost, where you can interact with your agent. If Visual Studio asks you to confirm the creation of a self-issued SSL certificate to test the application locally, **confirm** and **proceed**.
+12. To test your echo agent, hit **Start** or **F5** in Visual Studio to run the project. This will launch the Test Tool automatically on localhost, where you can interact with your agent. If Visual Studio asks you to confirm the creation of a self-issued SSL certificate to test the application locally, **confirm** and **proceed**.
+
+    ![](./media/img14.png)
 
     ![](./media/image28.png)
 
@@ -251,45 +312,43 @@ Now that you've created a basic bot, it's time to enhance it with generative AI 
 
 1. Add the **Semantic Kernel NuGet** Package. This package will provide support for Azure AI integration.
 
-2. Right-click the **ZavaHRAgent solution** and select **Manage NuGet Packages for Solution**.
+1. Right-click the **ZavaHRAgent solution** and select **Manage NuGet Packages for Solution**.
 
-    ![](./media/image305.png)
+    ![](./media/img15.png)
 
-3. Select the **Browse** tab and search for **Microsoft.SemanticKernel.Agents.AzureAI**. Check the **Include prerelease** checkbox.
+    ![](./media/img16.png)
 
-    ![](./media/b22.png)
+1. In **Manage Packages for Solution**, select **Browse (1)**, search for **Microsoft.SemanticKernel.Agents.AzureAI (2)**, select **Include prerelease (3)**, select the **ZavaHRAgent** project checkbox **(4)**, and then click **Install (5)**.
 
-4. Select the **package**, select **Zava** under Project, and select **Install**.
+    ![](./media/img17.png)
 
-    ![](./media/b23.png)
-
-5. Select **Apply** in the Preview Changes dialog.
+1. Select **Apply** in the Preview Changes dialog.
 
     ![](./media/b24.png)
 
-6. Select **I Accept** in the License Acceptance dialog.
+1. Select **I Accept** in the License Acceptance dialog.
 
     ![](./media/b25.png)
 
-7. The package is now installed.
+1. The package is now installed.
 
     ![](./media/b26.png)
 
-8. Select **Program.cs** and enter **builder.Services.AddKernel();** above the line **var app = builder.Build()** (Line 31).
+1. Select **Program.cs** and enter **builder.Services.AddKernel();** above the line **var app = builder.Build()** (Line 31).
 
     ![](./media/image314.png)
 
     This registers the Semantic Kernel, a core component that allows your agent to interact with generative AI models.
 
-9. Right-click the **ZavaHRAgent** project and select **Add > Class**.
+1. Right-click the **ZavaHRAgent** project and select **Add > Class**.
 
     ![](./media/image315.png)
 
-10. Enter the class name as **FileReference.cs** and hit **Enter** to create the class.
+1. Enter the class name as **FileReference.cs** and hit **Enter** to create the class.
 
     ![](./media/image44.png)
 
-11. This class defines the structure used when referencing specific documents in responses - useful when your agent cites content from uploaded files.
+1. This class defines the structure used when referencing specific documents in responses - useful when your agent cites content from uploaded files.
 
     ```
     using Microsoft.Agents.Core.Models;
@@ -308,7 +367,7 @@ Now that you've created a basic bot, it's time to enhance it with generative AI 
 
     ![](./media/image316.png)
 
-12. Right-click the **ZavaHRAgent** project and select **Add > Class** and define your class name as **ConversationStateExtensions.cs**. Replace the existing code with the following:
+1. Right-click the **ZavaHRAgent** project and select **Add > Class** and define your class name as **ConversationStateExtensions.cs**. Replace the existing code with the following:
 
     ```
     using Microsoft.Agents.Builder.State;
@@ -635,7 +694,7 @@ In this task, you will test the created agent in Teams.
 
     ![](./media/image52.png)
 
-2. From the **Start** window, search for **Environment** and select **Edit the system environment variables**.
+2. From the LabVM search bar, search for **Environment** and select **Edit the system environment variables**.
 
     ![](./media/image53.png)
 
