@@ -433,6 +433,13 @@ In this task, you will test the Repair Service Agent that you just created.
 
     ![](./media/t35.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+- If you receive a success message, you can proceed to the next task.
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="a5cd123a-10a7-4789-82dc-9e0bcc4dd8d8" /> 
+
 ## Exercise 2: Enhance Agent capabilities
 
 In this exercise, you will enhance the agent by adding more operations, enabling responses with Adaptive Cards, and incorporating code interpreter capabilities. Let's explore each of these enhancements step by step. Go back to the project in VS Code.
