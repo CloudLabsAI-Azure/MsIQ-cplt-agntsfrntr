@@ -46,11 +46,11 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 
 	- **Email/Username:** **<inject key="AzureAdUserEmail"></inject>**
 
-    ![](./media/img1.png)
+      ![](./media/img1.png)
 
 	- **Temporary Acces Password:** **<inject key="AzureAdUserPassword"></inject>**
 
-    ![](./media/img2.png)
+      ![](./media/img2.png)
 
 1. If **Action required** pop-up window appears, click on **Ask later**.
 
@@ -91,18 +91,13 @@ Patricia logs into Copilot to review Festive Campaign readiness.
 1. Select the below files from **C:\Labfiles\Lab5-Lab files** and select **Open**.
 
     - SOP PDFs
-
     - Employee handbook
-
     - Store checklist
-
     - FAQ docs
-
     - Policy docs
-
     - Shift guides
 
-    ![](./media/q7.png)
+      ![](./media/q7.png)
 
 1. Verify that all the selected files are uploaded in the Knowledge
     sources.
@@ -133,11 +128,11 @@ Patricia Gray (Regional operations manager) is seeking for an overview of the op
 
 	- **Email/Username:** **<inject key="AzureAdUserEmail"></inject>**
 
-    ![](./media/img1.png)
+      ![](./media/img1.png)
 
 	- **Temporary Acces Password:** **<inject key="AzureAdUserPassword"></inject>**
 
-    ![](./media/img2.png)
+      ![](./media/img2.png)
 
 1. Click the **Copilot (1)** icon in the left navigation bar, expand the panel using the **sidebar (2)** toggle, then select **Frontline Operations ... (3)** under **Agents**.
 
@@ -272,7 +267,7 @@ Patricia Gray (Regional operations manager) is seeking for an overview of the op
     - **Example**: Narrow this summary to focus only on critical risks and
     delivery blockers.
 
-    ![](./media/n15.png)
+      ![](./media/n15.png)
 
 1. Review the actions available for the generated response.
 
@@ -282,9 +277,9 @@ Patricia Gray (Regional operations manager) is seeking for an overview of the op
      - **Pencil Icon** - Used to **rewrite or modify** the response.
      - **... (More) Icon** - Opens additional options: **Schedule this prompt** to run the prompt automatically on a recurring basis, **Read aloud** to have the response read out loud, and **Export to Word** to save the response as a Word document.
 
-    ![](./media/n13.png)
+       ![](./media/n13.png)
 
-**Summary**
+### **Summary**
 
 In this lab, you completed the following:
 
