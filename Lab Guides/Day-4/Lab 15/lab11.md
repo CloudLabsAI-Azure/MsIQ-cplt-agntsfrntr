@@ -171,69 +171,57 @@ In this lab, you will:
 In this exercise, we will first create an Azure AI Search resource,
 which will be used to search through the documents.
 
-1.  Open a browser, navigate to
-    +++https://portal.azure.com+++ and
-    login using the **Username** and **TAP** credentials from
-    the **Resources** tab.
+1. Open a browser, navigate to **https://portal.azure.com** and login using the **Username** and **TAP** credentials from the **Resources** tab.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image1.png)
 
-2.  From the Home page of the Azure portal, select **Foundry.**
+2. From the Home page of the Azure portal, select **Foundry.**
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image2.png)
 
-3.  In the **Microsoft Foundry| AI Search page**, select **AI Search** from the left pane
-    and then select **+ Create**.
+3. In the **Microsoft Foundry| AI Search page**, select **AI Search** from the left pane and then select **+ Create**.
 
     ![](./media/v1.png)
 
-4.  Enter the below details and select **Review + create**.
+4. Enter the below details and select **Review + create**.
 
-    - Subscription - @lab.CloudSubscription.Name
+    - Subscription - Select the available Subscription
 
-    - Resource group - @lab.CloudResourceGroup(ResourceGroup1).Name
+    - Resource group - Copilot-Studio
 
-    - Service name - +++documentstore@lab.labinstance.id+++
+    - Service name - **documentstore<inject key="DeploymentID" enableCopy="false"/>**
 
-    - Location - @lab.CloudResourceGroup(ResourceGroup1).Location
+    - Location - <inject key="Region" enableCopy="false"/>
 
     ![](./media/v2.png)
 
-5.  Once the validation passes, select **Create**.
+5. Once the validation passes, select **Create**.
 
     ![](./media/v3.png)
 
-6.  The deployment takes a few minutes. Select **Go to resource** once
-    the search service is created.
+6. The deployment takes a few minutes. Select **Go to resource** once the search service is created.
 
     ![](./media/v4.png)
 
-7.  From the **Overview** page, copy the Url value and save it in a
-    notepad to be used in a future exercise.
+7. From the **Overview** page, copy the Url value and save it in a notepad to be used in a future exercise.
 
     ![](./media/v5.png)
 
-8.  Select **Keys** under **Security + networking** from the left pane. Copy
-    the **Primary admin key** and save it in a notepad for using it in
-    the upcoming exercises.
+8. Select **Keys** under **Security + networking** from the left pane. Copy the **Primary admin key** and save it in a notepad for using it in the upcoming exercises.
 
     ![](./media/v6.png)
 
-9.  Select **Identity** under **Security + networking** from the left pane.
+9. Select **Identity** under **Security + networking** from the left pane.
 
     ![](./media/v7.png)
 
-10. Toggle the Status to **On** under **System assigned** and then click
-    on **Save**.
+10. Toggle the Status to **On** under **System assigned** and then click on **Save**.
 
     ![](./media/v8.png)
     
-11. Select **Yes** in the **Enable system assigned managed
-    identity** confirmation dialog. This setting will enable the search
-    service to be listed under the managed identity resources, which can
-    then be assigned roles as required.
+11. Select **Yes** in the **Enable system assigned managed identity** confirmation dialog. This setting will enable the search service to be listed under the managed identity resources, which can then be assigned roles as required.
 
     ![](./media/v9.png)
 
@@ -242,60 +230,58 @@ which will be used to search through the documents.
 This exercise is to create a storage account with Blob storage and
 upload the documents required supporting the retail customers in it.
 
-1.  From the Home page of the Azure portal, select **Storage accounts**.
+1. From the Home page of the Azure portal, select **Storage accounts**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image12.png)
 
-2.  Select **+ Create** to create a new Storage account.
+2. Select **+ Create** to create a new Storage account.
 
     ![](./media/v10.png)
 
-3.  Enter the below details, accept the default values in the other
-    fields and click on **Review + create**.
+3. Enter the below details, accept the default values in the other fields and click on **Review + create**.
 
-    - Subscription - @lab.CloudSubscription.Name
+    - Subscription - Select the available Subscription
 
-    - Resource group - @lab.CloudResourceGroup(ResourceGroup1).Name
+    - Resource group - Copilot-Studio
 
-    - Region - @lab.CloudResourceGroup(ResourceGroup1).Location
+    - Region - <inject key="Region" enableCopy="false"/>
 
-    - Storage account name - +++docstore@lab.labinstance.id+++
+    - Storage account name - **docstore<inject key="DeploymentID" enableCopy="false"/>**
 
-    - Preferred storage type - Select **Azure Blob Storage or Azure Data
-      Lake Storage**
+    - Preferred storage type - Select **Azure Blob Storage or Azure Data Lake Storage**
 
     ![](./media/v11.png)
     
-4.  Once the validation passes, click on **Create**.
+4. Once the validation passes, click on **Create**.
 
     ![](./media/v12.png)
     
-5.  Once the resource creation succeeds, click on **Go to resource**.
+5. Once the resource creation succeeds, click on **Go to resource**.
 
     ![](./media/v13.png)
 
     ![](./media/v14.png)
 
-6.  Select **Containers** under **Data storage**. Select **+ Add
-    container**, enter the name as +++documents+++ and click
+6. Select **Containers** under **Data storage**. Select **+ Add
+    container**, enter the name as **documents** and click
     on **Create** to create the container.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image18.png)
 
-7.  Select the created container **documents** to upload the leave
+7. Select the created container **documents** to upload the leave
     policy document into it.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image19.png)
 
-8.  Click on **Upload** and then select **Browse for files**.
+8. Click on **Upload** and then select **Browse for files**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image20.png)
 
-9.  Select the **documents** from **C:\LabFiles\AISearch** folder and
+9. Select the **documents** from **C:\LabFiles\AISearch** folder and
     then click on **Upload**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -304,7 +290,7 @@ upload the documents required supporting the retail customers in it.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image22.png)
 
-10. Navigate to the **docstore@lab.labinstance.id** Storage account
+10. Navigate to the **docstore<inject key="DeploymentID" enableCopy="false"/>** Storage account
     (Select **Storageaccounts** from the **Home page** of the Azure
     portal and select the resource that starts with **docstore**) and
     select **Access Control (IAM)** from the left pane. Select **Add -\>
@@ -313,14 +299,14 @@ upload the documents required supporting the retail customers in it.
     ![A screenshot of a computer AI-generated content may be
         incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image23.png)
 
-11. Search for +++Storage Blob Data Reader+++, select it and click
+11. Search for **Storage Blob Data Reader**, select it and click
     on **Next**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image24.png)
 
 12. Click on **+Select members**, search for and select your **user
-    id** +++@lab.CloudPortalCredential(User1).Username+++, select
+    id** **@lab.CloudPortalCredential(User1).Username**, select
     your **user id** that gets listed and then click on **Select**. This
     adds the Storage Blob Data Reader role to your user id.
 
@@ -329,7 +315,7 @@ upload the documents required supporting the retail customers in it.
 
 13. Select **Managed identity** and then select **+ Select members**.
     Select **Search service(Foundry IQ)** under **Managed identity** and select
-    the **docuemntstore@lab.LabInstance.Id** search service that gets listed.
+    the **docuemntstore<inject key="DeploymentID" enableCopy="false"/>** search service that gets listed.
 
     ![](./media/v15.png)
     
@@ -362,25 +348,25 @@ to perform the search over the documents. To vectorize the data, an
 embedding model needs to be deployed. In this exercise, you will create
 an Azure OpenAI Service and deploy the text-embedding model in it.
 
-1.  From the Azure portal Home page, search for select +++Azure
-    OpenAI+++.
+1. From the Azure portal Home page, search for select **Azure
+    OpenAI**.
 
     ![](./media/v18.png)
     
-2.  Select **+ Create -> Azure OpenAI**.
+2. Select **+ Create -> Azure OpenAI**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image32.png)
 
-3.  Enter the below details and select **Next**.
+3. Enter the below details and select **Next**.
 
-    - Subscription - @lab.CloudSubscription.Name
+    - Subscription - Select the available Subscription
 
-    - Resource group - @lab.CloudResourceGroup(ResourceGroup1).Name
+    - Resource group - Copilot-Studio
 
-    - Region - @lab.CloudResourceGroup(ResourceGroup1).Location
+    - Region - <inject key="Region" enableCopy="false"/>
       
-    - Name - +++openaiservice@lab.labinstance.id+++
+    - Name - **openaiservice<inject key="DeploymentID" enableCopy="false"/>**
 
     - Pricing tier - Select **Standard S0**
 
@@ -390,33 +376,33 @@ an Azure OpenAI Service and deploy the text-embedding model in it.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image34.png)
 
-4.  Select **Next** in the next 2 screens, and then select **Create** in
+4. Select **Next** in the next 2 screens, and then select **Create** in
     the **Review + submit** screen.
 
     ![](./media/v19.png)
 
-5.  Click on **Go to resource** once the service is created.
+5. Click on **Go to resource** once the service is created.
 
     ![](./media/v20.png)
 
-6.  Select **Access control (IAM)** from the left pane, select **Add -\>
+6. Select **Access control (IAM)** from the left pane, select **Add -\>
     Add role assignment**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image37.png)
 
-7.  Search for +++Cognitive Services OpenAI User+++, select the role
+7. Search for **Cognitive Services OpenAI User**, select the role
     and click on **Next**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image38.png)
 
-8.  Select **+ Select members**, search for your **user
-    id** +++@lab.CloudPortalCredential(User1).Username+++, select it
+8. Select **+ Select members**, search for your **user
+    id** **@lab.CloudPortalCredential(User1).Username**, select it
     and click on **Select**.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image39.png)
 
-9.  Back in the **Add role assignment** screen, select **Managed
+9. Back in the **Add role assignment** screen, select **Managed
     identity**. Then select **+ Select members**. In the **Select
     managed identities** screen, select **Search
     service(Foundry IQ)** under **Managed identity** and select the resource that
@@ -457,7 +443,7 @@ an Azure OpenAI Service and deploy the text-embedding model in it.
 
     ![](./media/v27.png)
     
-18. Search for +++text-embedding+++,
+18. Search for **text-embedding**,
     select **text-embedding-3-large** and then select **Confirm**.
 
     ![](./media/v28.png)
@@ -477,23 +463,23 @@ an Azure OpenAI Service and deploy the text-embedding model in it.
 The AI Search resource needs a Vector index to perform the vector
 search. You will vectorize the uploaded data in this exercise.
 
-1.  From the Azure portal, go to the AI Search service resource that
+1. From the Azure portal, go to the AI Search service resource that
     starts with **documentstore**. Select **Import data**.
 
     ![](./media/v30.png)
 
-2.  Select the **Azure Blob Storage** option.
+2. Select the **Azure Blob Storage** option.
 
     ![](./media/v31.png)
     
-3.  Select the **RAG** option in the **What scenarios are you targeting?** screen.
+3. Select the **RAG** option in the **What scenarios are you targeting?** screen.
 
     ![](./media/v32.png)
     
-4.  Enter the below details, accept the other values as default and
+4. Enter the below details, accept the other values as default and
     click **Next**.
 
-    - Subscription - @lab.CloudSubscription.Name
+    - Subscription - Select the available Subscription
 
     - Storage account- Select the account that starts with **docstore**
 
@@ -501,11 +487,11 @@ search. You will vectorize the uploaded data in this exercise.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image52.png)
 
-5.  In the Vectorize your text screen, the subscription is
+5. In the Vectorize your text screen, the subscription is
     pre-populated. Enter the below details and click **Next**.
 
     - Kind - Select **Foundry resource(Microsoft Foundry/Azure OpenAI)**
-    - Microsoft Foundry service/project - Select **openaiservice@Lab.LabInstance.ID**
+    - Microsoft Foundry service/project - Select **openaiservice<inject key="DeploymentID" enableCopy="false"/>**
 
     - Model deployment - Select **text-embedding-3-large**
 
@@ -515,7 +501,7 @@ search. You will vectorize the uploaded data in this exercise.
 
     ![](./media/aa34.png)
 
-6.  Select Next in the **Vectorize and enrich your images** screen since
+6. Select Next in the **Vectorize and enrich your images** screen since
     we are not dealing with images here and select **Next** in
     the **Advanced settings** screen as well.
 
@@ -525,7 +511,7 @@ search. You will vectorize the uploaded data in this exercise.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image55.png)
 
-7.  Select **Create** in the **Review + create** screen.
+7. Select **Create** in the **Review + create** screen.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image56.png)
@@ -539,8 +525,8 @@ search. You will vectorize the uploaded data in this exercise.
 In this exercise, you will create a retail assistant agent in Copilot
 Studio.
 
-1.  Login to
-    +++https://copilotstudio.microsoft.com+++/ using
+1. Login to
+    **https://copilotstudio.microsoft.com**/ using
     your login credentials from the **Resources tab**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -552,16 +538,16 @@ Studio.
 2. Select **Agents** and then select **Create blank agent**.
    ![](./media/v34.png)
 
-3. Enter +++Retail assistant+++ as your agent name and then click **Create** button to create new agent in Copilot Studio.
+3. Enter **Retail assistant** as your agent name and then click **Create** button to create new agent in Copilot Studio.
    ![](./media/v35.png)
 
 4. Select **Edit** and enter `You are a Retail assistant agent for customers HR who will answer questions related to the store products` as your description. Click **Save** to save the changes.
    ![](./media/v36.png)
     
-5.  Once the agent is created, in the Test pane, enter +++What is the warranty period for Washing machine ?+++ and click **Send**.`
+5. Once the agent is created, in the Test pane, enter **What is the warranty period for Washing machine ?** and click **Send**.`
     ![](./media/v37.png)
   
-6.  It gives a generalized reply as in the screenshot below.
+6. It gives a generalized reply as in the screenshot below.
    ![](./media/v38.png)
 
 ## Exercise 6: Add the Azure AI Search as a knowledge source
@@ -570,49 +556,49 @@ In this exercise, you will add the Azure AI Search that you created from
 the Azure portal, as a knowledge source to the Retail assistance agent
 in Copilot Studio.
 
-1.  From the **Overview** page of the agent, select **+ Add knowledge**.
+1. From the **Overview** page of the agent, select **+ Add knowledge**.
 
     ![](./media/v39.png)
 
-2.  Select **Azure AI Search** from the list of knowledge sources
+2. Select **Azure AI Search** from the list of knowledge sources
     available.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image64.png)
 
-3.  Click on the **drop down** next to **Not connected** in the next
+3. Click on the **drop down** next to **Not connected** in the next
     screen and select **Create new connection**.
 
     ![A screenshot of a search engine AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image65.png)
 
-4.  Enter the **Endpoint url** and the **Admin key** values which we
+4. Enter the **Endpoint url** and the **Admin key** values which we
     saved to a notepad in a previous exercise and then click
     on **Create** to create the connection.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image66.png)
 
-5.  Once the connection is established, the available index is listed
+5. Once the connection is established, the available index is listed
     and already selected. Click on **Add to agent**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image67.png)
 
-6.  The AI Search service is added as a knowledge source to the agent
+6. The AI Search service is added as a knowledge source to the agent
     and is in **Ready** state now.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image68.png)
 
-7.  Now, let us test the agent with the same question we have tried
+7. Now, let us test the agent with the same question we have tried
     before.
 
-8.  In the Test pane, enter +++What is the warranty period for Washing machine?+++ and click **Send**.
+8. In the Test pane, enter **What is the warranty period for Washing machine?** and click **Send**.
 
     ![](./media/v40.png)
     
-9.  You can see that the response from the agent now is from the
+9. You can see that the response from the agent now is from the
     document uploaded in the AI Search service.
 
     ![](./media/v41.png)
@@ -622,24 +608,24 @@ in Copilot Studio.
 In this exercise, you will deploy a model in the Microsoft Foundry to use
 it in the Copilot Studio (in the next exercise).
 
-1.  Open the Microsoft Foundry Azure OpenAI resource created earlier.
+1. Open the Microsoft Foundry Azure OpenAI resource created earlier.
 
-2.  From the left pane, select **Deployments**.
+2. From the left pane, select **Deployments**.
 
     ![](./media/v46.png)
     
-3.  Select the drop down next to the **+ Deploy model** and
+3. Select the drop down next to the **+ Deploy model** and
     select **Deploy base model**.
 
     ![](./media/v42.png)
     
-4.  Select **phi-4** and select **Confirm**.
+4. Select **phi-4** and select **Confirm**.
     
-5.  In the Deploy phi-4 dialog, enter the **Deployment name** as
-    +++ModelforMCS+++, accept the other defaults and
+5. In the Deploy phi-4 dialog, enter the **Deployment name** as
+    **ModelforMCS**, accept the other defaults and
     select **Deploy.**
 
-6.  Copy the Target URI and key values to a notepad to be used during
+6. Copy the Target URI and key values to a notepad to be used during
     the connection creation from the Copilot Studio.
 
 Now that the model is deployed, you can use it in Copilot Studio's agent
@@ -652,21 +638,21 @@ Microsoft Foundry in the Copilot Studio. Here, we are using a base model
 that is deployed. We can also create a fine tuned model as per the
 business requirements and then use it in Copilot Studio.
 
-1.  From the Copilot Studio agent, select **Tools** from the top menu
+1. From the Copilot Studio agent, select **Tools** from the top menu
     bar. Click **+ Add a tool**
 
     ![](./media/v47.png)
     
-2.  Select **Prompt** since we are going to add a new prompt.
+2. Select **Prompt** since we are going to add a new prompt.
 
     ![](./media/v48.png)
 
-3.  In the Custom prompt screen, select the drop down next to
+3. In the Custom prompt screen, select the drop down next to
     the **model** name.
 
     ![](./media/v49.png)
     
-4.  Select **+** against **Azure AI Foundry Models** to add the model
+4. Select **+** against **Azure AI Foundry Models** to add the model
     deployed in Azure AI Foundry and select **Connect a new model**.
 
     ![](./media/v50.png)
@@ -674,26 +660,26 @@ business requirements and then use it in Copilot Studio.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image81.png)
 
-5.  Enter the below details and click on **Connect**.
+5. Enter the below details and click on **Connect**.
 
-    - Model deployment name - +++ModelforMCS+++
+    - Model deployment name - **ModelforMCS**
 
-    - Base model name - +++Phi-4+++
+    - Base model name - **Phi-4**
 
     - Azure model endpoint URL - Enter the target url saved earlier
 
     - API Key - Enter the model API key saved earlier.
 
-6.  Once connected, select **Close**.
+6. Once connected, select **Close**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image84.png)
 
-7.  You can see that the model ModelforMCS is selected now
+7. You can see that the model ModelforMCS is selected now
 
     ![](./media/v52.png)
 
-8.  Rename the prompt to +++WM Types+++. Enter +++What are the different types of Washing Machines?+++ and select **Test**.
+8. Rename the prompt to **WM Types**. Enter **What are the different types of Washing Machines?** and select **Test**.
 
     ![](./media/v53.png)
     
