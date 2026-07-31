@@ -104,7 +104,7 @@ In this exercise, you will import a pre-existing Solution.
 
     ![](./media/note1.png) 
     
-1. Select **Developer** as the **Type (1)**, enter **ODL_User_<inject key="DeploymentID" enableCopy="false"/>** in the **Name (2)** field, and then click **Next (3)**.
+1. Select **Developer** as the **Type (1)**, enter **ODL_User <inject key="DeploymentID" enableCopy="false"/>'s Environment** in the **Name (2)** field, and then click **Next (3)**.
     
     ![](./media/latest.png)
     
