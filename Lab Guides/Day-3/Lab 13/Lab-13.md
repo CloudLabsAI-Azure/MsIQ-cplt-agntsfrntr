@@ -2,23 +2,11 @@
 
 ## Scenario
 
-Northstar Community Hospital operates multiple outpatient clinics and
-receives hundreds of appointment requests every day through phone calls
-and emails. This manual scheduling process often results in long wait
-times, booking conflicts, and increased administrative workload for
-front-desk staff.
+Northstar Community Hospital operates multiple outpatient clinics and receives hundreds of appointment requests every day through phone calls and emails. This manual scheduling process often results in long wait times, booking conflicts, and increased administrative workload for front-desk staff.
 
-To improve patient experience and operational efficiency, the hospital
-is implementing an AI-powered patient assistant built with Microsoft
-Copilot Studio. The assistant enables patients to securely verify their
-identity, ask hospital-related questions, view available appointment
-slots, book appointments, and cancel existing bookings. Behind the
-scenes, Power Automate orchestrates appointment retrieval and booking
-while Microsoft Dataverse stores appointment information.
+To improve patient experience and operational efficiency, the hospital is implementing an AI-powered patient assistant built with Microsoft Copilot Studio. The assistant enables patients to securely verify their identity, ask hospital-related questions, view available appointment slots, book appointments, and cancel existing bookings. Behind the scenes, Power Automate orchestrates appointment retrieval and booking while Microsoft Dataverse stores appointment information.
 
-By the end of this lab, you will have built an intelligent healthcare
-agent that combines conversational AI with business process automation
-to streamline patient appointment management.
+By the end of this lab, you will have built an intelligent healthcare agent that combines conversational AI with business process automation to streamline patient appointment management.
 
 ## Lab Objectives
 
@@ -35,8 +23,7 @@ After completing this lab, you will be able to:
 - Create reusable conversational topics for identity verification,
   appointment booking, cancellation, and emergency assistance.
 
-- Build Power Automate agent flows that retrieve available appointment
-  slots and confirm bookings.
+- Build Power Automate agent flows that retrieve available appointment slots and confirm bookings.
 
 - Connect Copilot Studio topics with Power Automate flows.
 
@@ -47,58 +34,73 @@ After completing this lab, you will be able to:
 **Emily Carter**  
 **Role:** Digital Transformation Lead – Northstar Community Hospital
 
-Emily is responsible for modernizing patient services by implementing
-AI-powered healthcare solutions. Her objective is to reduce
-administrative effort, improve appointment scheduling efficiency, and
-provide patients with a secure self-service experience while ensuring
-sensitive healthcare interactions follow responsible AI practices.
+Emily is responsible for modernizing patient services by implementing AI-powered healthcare solutions. Her objective is to reduce administrative effort, improve appointment scheduling efficiency, and provide patients with a secure self-service experience while ensuring sensitive healthcare interactions follow responsible AI practices.
 
 ## Exercise 0: Prepare the Healthcare Data Foundation
 
-Create and populate the Dataverse table that will store appointment slot
-information used throughout the lab.
+Create and populate the Dataverse table that will store appointment slot information used throughout the lab.
+
+### Task 0 Creating solution
+
+1. Open a web browser and navigate to **make.powerapps.com**.
+
+1. Select solutions -> Select +New solution
+
+1. In new solution window:
+
+   - Display name: HealthcareSolution
+
+   - Name: HealthcareSolution
+
+   - Select +New Publisher
+
+   - Enter display name in the new publisher window: NorthstarHealthcare
+
+   - Name: NorthstarHealthcare
+
+   - Prefix: nhs
+
+   - select save
+   
+Now in this solution add the appointment table.
+while creating new agent select this soltuion in the advance setting.
 
 ### Task 1: Create and Populate the Appointment Slot Table
 
-Create the Appointment Slot Dataverse table and import the provided
-appointment schedule so the healthcare agent has appointment data
-available during booking.
+Create the Appointment Slot Dataverse table and import the provided appointment schedule so the healthcare agent has appointment data available during booking.
 
-1.  Open a web browser and navigate to +++make.powerapps.com+++.
+1. Open a web browser and navigate to **make.powerapps.com**.
 
-2.  Select **Table**s from the left navigation menu. Then select **+New
-    table**.
+2. Select **Table**s from the left navigation menu. Then select **+ New table**.
 
     ![](./media/image1.png)
 
-3.  Select **+Create new tables**.
+3. Select **+ Create new tables**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image2.png)
 
-4.  Select **Create**.
+4. Select **Create**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image3.png)
 
-5.  Select **Import an Excel file or .CSV**.
+5. Select **Import an Excel file or .CSV**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image4.png)
 
-6.  Select Browse, navigate to
-    C:/Labfiles/Healthcare/AppointmentSlot.csv file. Select
-    **Import**.
+6. Select Browse, navigate to C:/Labfiles/Healthcare/AppointmentSlot.csv file. Select **Import**.
     
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image5.png)
 
-7.  Select all the columns and click **Save**.
+7. Select all the columns and click **Save**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image6.png)
 
-8.  Select **Save and exit(twice).**
+8. Select **Save and exit(twice).**
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image7.png)
@@ -106,7 +108,7 @@ available during booking.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image8.png)
 
-9.  Your table will appear in the table list. Select the **Appointment
+9. Your table will appear in the table list. Select the **Appointment
     Slot** table.
 
     ![A screenshot of a computer AI-generated content may be
@@ -130,29 +132,29 @@ Create a healthcare agent, configure its instructions, connect
 organizational knowledge, and apply responsible AI settings to ensure
 grounded responses.
 
-1.  Open a web browser and navigate to
-    +++https://copilotstudio.microsoft.com+++.
+1. Open a web browser and navigate to
+    **https://copilotstudio.microsoft.com**.
 
-2.  Click **Agents** from the left-navigation menu, and then select
+2. Click **Agents** from the left-navigation menu, and then select
     **+Create a blank agent.**
 
     ![](./media/image12.png)
 
-3.  Enter agent name as: +++**Northstar Patient Assistant+++**. Click
+3. Enter agent name as: ****Northstar Patient Assistant****. Click
     **Create**.
 
     ![](./media/image13.png)
 
-4.  Click **Edit** to enter the following agent’s description:
+4. Click **Edit** to enter the following agent’s description:
 
-    +++An AI assistant that helps patients book and cancel appointments
-    while answering hospital-related questions.+++
+    **An AI assistant that helps patients book and cancel appointments
+    while answering hospital-related questions.**
 
     Click **Save**.
 
     ![](./media/image14.png)
 
-5.  Move to the Instruction section and click Edit. Enter the following
+5. Move to the Instruction section and click Edit. Enter the following
     instructions in the field:
     ```
     You are the Northstar Patient Assistant.
@@ -167,22 +169,22 @@ grounded responses.
 
     ![](./media/image15.png)
 
-6.  In the knowledge section, select **Add knowledge** to add a
+6. In the knowledge section, select **Add knowledge** to add a
     knowledge source to the agent.
 
     ![](./media/image16.png)
 
-7.  Click **Select to browse** option. Select files from
+7. Click **Select to browse** option. Select files from
     C:/Labfiles/Healthcare/.
 
     ![](./media/image17.png)
 
-8.  Click **Add to agent**.
+8. Click **Add to agent**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image18.png)
 
-9.  Disable the **web search** option.
+9. Disable the **web search** option.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image19.png)
@@ -214,14 +216,14 @@ Build a safety topic that immediately identifies emergency medical
 situations and directs patients to emergency services instead of
 continuing the conversation.
 
-1.  Select **Topics**. Select +Add a topic. Select +From blank.
+1. Select **Topics**. Select +Add a topic. Select +From blank.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image23.png)
 
-2.  Enter the name of the topic as +++Emergency Assistance+++.
+2. Enter the name of the topic as **Emergency Assistance**.
 
-3.  Enter the following value in the trigger:
+3. Enter the following value in the trigger:
 
     ```
     Use this topic when a user reports a medical emergency or mentions
@@ -232,13 +234,13 @@ continuing the conversation.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image24.png)
 
-4.  Click the **plus sign(+)** below trigger and then select **Send a
+4. Click the **plus sign(+)** below trigger and then select **Send a
     message**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image25.png)
 
-5.  Enter the following message in the message box:
+5. Enter the following message in the message box:
     ```
     If you believe you are experiencing a medical emergency, call your
     local emergency services 999 immediately or visit the nearest
@@ -249,12 +251,12 @@ continuing the conversation.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image26.png)
 
-6.  Click the **plus sign** below the message box and select **Topic
+6. Click the **plus sign** below the message box and select **Topic
     management**-\>select **End conversation**.
 
     ![](./media/image27.png)
 
-7.  Click the **Save** button to save the topic.
+7. Click the **Save** button to save the topic.
 
     ![](./media/image28.png)
 
@@ -263,17 +265,17 @@ continuing the conversation.
 Create a reusable topic that securely collects patient identity
 information before allowing appointment-related actions.
 
-1.  Select **Topics**. Select +Add a topic. Select +From blank.
+1. Select **Topics**. Select +Add a topic. Select +From blank.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image23.png)
 
-2.  Enter the name of the topic as +++**Verify Patient Identity**+++.
+2. Enter the name of the topic as ****Verify Patient Identity****.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image29.png)
 
-3.  Enter the **description**:
+3. Enter the **description**:
 
     ```
     Internal helper topic. This topic is only called from other topics. It
@@ -285,18 +287,18 @@ information before allowing appointment-related actions.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image30.png)
 
-4.  Click the plus sign(+) and select **Ask a question** from the
+4. Click the plus sign(+) and select **Ask a question** from the
     drop-down.
 
     ![](./media/image31.png)
 
-5.  Enter the following details:
+5. Enter the following details:
 
-    - Message: +++Please enter your Patient ID (for example, NH1234)+++
+    - Message: **Please enter your Patient ID (for example, NH1234)**
 
     - Identify: Select **User's entire response**
 
-    - Set Variable: Enter +++PatientID+++. Make it **Global**.
+    - Set Variable: Enter **PatientID**. Make it **Global**.
 
     ![](./media/image32.png)
 
@@ -304,27 +306,27 @@ information before allowing appointment-related actions.
 
     ![](./media/image34.png)
 
-6.  Select Sign(+) below the previous node and add **Ask Question**.
+6. Select Sign(+) below the previous node and add **Ask Question**.
 
-7.  Enter the following details:
+7. Enter the following details:
 
-    - Question: +++Please enter your date of birth in YYYY-MM-DD formate.+++
+    - Question: **Please enter your date of birth in YYYY-MM-DD formate.**
 
     - Identify: Select **User's entire response**
 
-    - Set Variable: Enter +++ **DateOfBirth** +++. Make it **Global**.
+    - Set Variable: Enter ** **DateOfBirth** **. Make it **Global**.
 
     ![](./media/image35.png)
 
-8.  Select the **+** button below the node. Select **Ask a question.**
+8. Select the **+** button below the node. Select **Ask a question.**
 
-9.  Enter the following details:
+9. Enter the following details:
 
-    - Question: +++Please enter your full name.+++
+    - Question: **Please enter your full name.**
 
     - Select **Person Name** in the identify field.
 
-    - Create a new variable name as: +++PatientName+++ and make it
+    - Create a new variable name as: **PatientName** and make it
     **Global,** so that we can access it outside of this topic.
 
     ![A screenshot of a computer AI-generated content may be
@@ -335,8 +337,8 @@ information before allowing appointment-related actions.
 
 11. Enter the following message:
 
-    +++Thank you. Your identity has been verified. Let's continue with
-    your appointment request.+++
+    **Thank you. Your identity has been verified. Let's continue with
+    your appointment request.**
 
     ![](./media/image37.png)
 
@@ -355,33 +357,33 @@ information before allowing appointment-related actions.
 Design the conversation that collects appointment preferences and
 prepares the booking request for automation.
 
-1.  Go to **Topics**. Select **+ Add a topic**. Select **From blank**.
+1. Go to **Topics**. Select **+ Add a topic**. Select **From blank**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image40.png)
 
-2.  Enter:
+2. Enter:
 
-    - Topic Name: +++Book Appointment+++
+    - Topic Name: **Book Appointment**
 
-    - Topic Description: +++Use this topic when a patient wants to book,
-    schedule, or make an appointment with a healthcare provider.+++
+    - Topic Description: **Use this topic when a patient wants to book,
+    schedule, or make an appointment with a healthcare provider.**
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image41.png)
 
-3.  Click the **+ sign** below the previous node. Select **Topic
+3. Click the **+ sign** below the previous node. Select **Topic
     Management -\> Go to another topic-\> Verify Patient Identity**.
 
     ![](./media/image42.png)
 
-4.  Click the **+ sign** below the previous node. Select **Ask a
+4. Click the **+ sign** below the previous node. Select **Ask a
     question**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image43.png)
 
-5.  Enter the following details:
+5. Enter the following details:
 
     - Enter question: 
     ```
@@ -401,29 +403,29 @@ prepares the booking request for automation.
 
     - Identify: Select **User’s entire response**
 
-    - Set variable: Enter +++specialty+++
+    - Set variable: Enter **specialty**
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image44.png)
 
-6.  Click the **+ sign** below the previous node. Select **Ask a
+6. Click the **+ sign** below the previous node. Select **Ask a
     question.**
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image45.png)
 
-7.  Enter the following details:
+7. Enter the following details:
 
-    - Question: Enter +++Is this your first visit or a follow-up
-    appointment?+++
+    - Question: Enter **Is this your first visit or a follow-up
+    appointment?**
 
     - Identify: Select **Multiple Choice options**
 
-    - Options for user: Select +New option -\> Enter +++First Visit+++
+    - Options for user: Select +New option -\> Enter **First Visit**
 
-    - Again select +New option -\> Enter +++Follow-up+++
+    - Again select +New option -\> Enter **Follow-up**
 
-    - Save user response as +++AppointmentType+++
+    - Save user response as **AppointmentType**
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image46.png)
@@ -431,23 +433,23 @@ prepares the booking request for automation.
     ![A screenshot of a computer screen
     AI-generated content may be incorrect.](./media/image47.png)
 
-8.  Click the **+ sign** below the previous node. Select **Ask a
+8. Click the **+ sign** below the previous node. Select **Ask a
     question.**
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image48.png)
 
-    - Question: +++Please briefly describe the reason for your
-    appointment.+++
+    - Question: **Please briefly describe the reason for your
+    appointment.**
 
     - Identify: Select **User’s entire response**
 
-    - Save user response as +++**ReasonForVisit+++**
+    - Save user response as ****ReasonForVisit****
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image49.png)
 
-9.  Click the **+ sign** below the previous node. Select **Send a
+9. Click the **+ sign** below the previous node. Select **Send a
     message. **
 
     ![A screenshot of a computer AI-generated content may be
@@ -499,33 +501,33 @@ prepares the booking request for automation.
 Create a conversation that allows patients to securely cancel existing
 appointments after confirming their identity
 
-1.  Navigate to **Topics**. Select **+ Add a topic**. Select **From
+1. Navigate to **Topics**. Select **+ Add a topic**. Select **From
     blank**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image56.png)
 
-2.  Enter the following details:
+2. Enter the following details:
 
-    - Topic Name: +++Cancel Appointment+++
+    - Topic Name: **Cancel Appointment**
 
-    - Description: +++Use this topic when a patient wants to cancel an
-      existing appointment.+++
+    - Description: **Use this topic when a patient wants to cancel an
+      existing appointment.**
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image57.png)
 
-3.  Click the **+ sign** below the previous node. Select **Topic
+3. Click the **+ sign** below the previous node. Select **Topic
     Management -\> Go to another topic-\> Verify Patient Identity**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image58.png)
 
-4.  Click the **+ sign** below the previous node. Select Ask question.
+4. Click the **+ sign** below the previous node. Select Ask question.
 
     ![](./media/image59.png)
 
-5.  Enter the following details:
+5. Enter the following details:
 
     - Question: Please enter your appointment reference number(AB2039).
 
@@ -536,30 +538,30 @@ appointments after confirming their identity
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image60.png)
 
-6.  Click the **+ sign** below the previous node. Select Ask a question.
+6. Click the **+ sign** below the previous node. Select Ask a question.
 
-7.  Enter the bellow details:
+7. Enter the bellow details:
 
     - Question: Are you sure you want to cancel this appointment?
 
     - Identify: Multiple choice options
 
-    - Options for users: Select +New option-\>Enter +++Yes++
+    - Options for users: Select +New option-\>Enter **Yes++
 
-    - Select +New option -\>Enter +++No+++
+    - Select +New option -\>Enter **No**
 
     - Save response as: CancelConfirmation
 
     ![](./media/image61.png)
 
-8.  Click the **+ sign** below the previous Yes node. Select Add a
+8. Click the **+ sign** below the previous Yes node. Select Add a
     message.
 
     ![](./media/image62.png)
 
-9.  Enter the following message:
+9. Enter the following message:
 
-    +++Thank you. Your cancellation request has been recorded.+++
+    **Thank you. Your cancellation request has been recorded.**
 
     ![](./media/image63.png)
 
@@ -600,56 +602,56 @@ appointments after confirming their identity
 Validate the conversational experience by testing emergency handling,
 knowledge retrieval, and appointment booking interactions.
 
-1.  Select **Test** from the upper-right corner of Copilot Studio.
+1. Select **Test** from the upper-right corner of Copilot Studio.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image70.png)
 
-2.  Start a new conversation. Enter the following prompt and click Send
+2. Start a new conversation. Enter the following prompt and click Send
     button:
 
-    +++I have chest pain.+++
+    **I have chest pain.**
 
     ![A screenshot of a chat AI-generated content may be
     incorrect.](./media/image71.png)
 
-3.  **Review the output:**
+3. **Review the output:**
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image72.png)
 
-4.  Start a **new test session:** Enter the following prompt:
+4. Start a **new test session:** Enter the following prompt:
 
-    +++Which insurance providers do you accept?+++
+    **Which insurance providers do you accept?**
 
     ![](./media/image73.png)
 
-5.  Now you can see the agent is accessing the genral informations:
+5. Now you can see the agent is accessing the genral informations:
 
     ![](./media/image74.png)
 
-6.  Started a new conversation: Enter the following prompt:
+6. Started a new conversation: Enter the following prompt:
 
-    +++I want to book an appointment.+++
+    **I want to book an appointment.**
 
     ![](./media/image75.png)
 
-7.  Enter follow-up questions:
+7. Enter follow-up questions:
 
-    - Enter your Patient ID: +++NH2201+++
+    - Enter your Patient ID: **NH2201**
 
-    - Please enter your date of birth: +++2/11/1985+++
+    - Please enter your date of birth: **2/11/1985**
 
-    - Please enter your name: +++James Ortiz+++
+    - Please enter your name: **James Ortiz**
 
     - Which speciality would you like to book an appointment with:
-    +++Cardiology+++
+    **Cardiology**
 
     - Is this your first visit or a follow-up appointment: Select First
     Visit
 
-    - Please briefly describe the reason for your appointment: +++I m
-    feeling little pain in my chest+++
+    - Please briefly describe the reason for your appointment: **I m
+    feeling little pain in my chest**
 
     ![](./media/image76.png)
 
@@ -667,48 +669,48 @@ availability and automatically confirm bookings.
 Create a Power Automate flow that retrieves available appointment slots
 from Dataverse based on the patient's selected medical specialty.
 
-1.  Open a new tab and navigate to +++make.powerautomate.com+++.
+1. Open a new tab and navigate to **make.powerautomate.com**.
 
-2.  Select **Create** from the left navigation menu. Then choose
+2. Select **Create** from the left navigation menu. Then choose
     **Instant cloud flow**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image79.png)
 
-3.  Enter the flow name as +++HC-SlotLookup+++. Then choose **When an
+3. Enter the flow name as **HC-SlotLookup**. Then choose **When an
     agent calls the flow** trigger. Select **Create** to create the
     flow.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image80.png)
 
-4.  Select the **When an agent calls the flow** trigger and then click
+4. Select the **When an agent calls the flow** trigger and then click
     **+Add an input**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image81.png)
 
-5.  Select **Text**.
+5. Select **Text**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image82.png)
 
-6.  Enter the first input parameter name as +++specialty+++.
+6. Enter the first input parameter name as **specialty**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image83.png)
 
-7.  Select **+Add an input,** then add +++patient_id+++.
+7. Select **+Add an input,** then add **patient_id**.
 
     ![](./media/image84.png)
 
-8.  Click the **+ sign** below the previous node. Search for +++List
-    rows+++ in the search bar. Select **List rows** from Dataverse.
+8. Click the **+ sign** below the previous node. Search for **List
+    rows** in the search bar. Select **List rows** from Dataverse.
 
     ![](./media/image85.png)
 
-9.  Enter Connection name as: +++
-    @lab.CloudPortalCredential(User1).Username+++. Click **Sign in** to
+9. Enter Connection name as: **
+    @lab.CloudPortalCredential(User1).Username**. Click **Sign in** to
     connect to Dataverse.
 
     ![](./media/image86.png)
@@ -718,9 +720,9 @@ from Dataverse based on the patient's selected medical specialty.
 
     ![](./media/image87.png)
 
-11. In the filter field, **enter +++cr41f_medicalspecialty eq '+++ -\>
+11. In the filter field, **enter **cr41f_medicalspecialty eq '** -\>
     click daynamic symbol -\> select insert specialty dynamic value -\>
-    enter +++** **' and cr41f_doctorbookingstatus eq 1+++**.
+    enter **** **' and cr41f_doctorbookingstatus eq 1****.
 
     **Note:** The Dataverse schema prefix (for example, **cr14f**,
     **cr41f**, **crbab**, etc.) is automatically generated when the table is
@@ -734,7 +736,7 @@ from Dataverse based on the patient's selected medical specialty.
 
     ![](./media/image89.png)
 
-13. Click the **+ sign** below the previous node. Search +++search+++.
+13. Click the **+ sign** below the previous node. Search **search**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image90.png)
@@ -788,7 +790,7 @@ from Dataverse based on the patient's selected medical specialty.
     incorrect.](./media/image94.png)
 
 17. Click the **+ sign** below the previous node. Search for
-    +++compose++++.
+    **compose**+.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image95.png)
@@ -820,7 +822,7 @@ from Dataverse based on the patient's selected medical specialty.
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image99.png)
 
-22. Enter +++ AppointmentSlots+++.
+22. Enter ** AppointmentSlots**.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image100.png)
@@ -842,40 +844,40 @@ from Dataverse based on the patient's selected medical specialty.
 Integrate the HC-SlotLookup flow with the booking conversation so
 patients can view available appointment slots directly within the chat.
 
-1.  Navigate back to Copilot Studio.
+1. Navigate back to Copilot Studio.
 
-2.  Select Agents-\> select Northstar Patient Assistant.
+2. Select Agents-\> select Northstar Patient Assistant.
 
     ![](./media/image104.png)
 
-3.  Select Topics -\> open **Book Appointment** topic.
+3. Select Topics -\> open **Book Appointment** topic.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image105.png)
 
-4.  After the” I can help you schedule your appointment, but I can't
+4. After the” I can help you schedule your appointment, but I can't
     provide medical advice.” **Message** node, click + sign. Select
     **Add a tool -\>HC-SlotLookup.**
 
     ![](./media/image106.png)
 
-5.  In the Action tool, in the specialty field, click the three dots(…).
+5. In the Action tool, in the specialty field, click the three dots(…).
     Select **specialty** variable.
 
     ![](./media/image107.png)
 
-6.  Similarly, in the patient_id field, click the three dots(…). Select
+6. Similarly, in the patient_id field, click the three dots(…). Select
     the **PatientID** variable.
 
     ![A screenshot of a computer AI-generated content may be
     incorrect.](./media/image108.png)
 
-7.  Under the Action node, click the (+) sign. Select **Send a
+7. Under the Action node, click the (+) sign. Select **Send a
     message**.
 
-8.  In the send a message node, Enter the following message:
+8. In the send a message node, Enter the following message:
 
-    +++I found the following available appointments:+++
+    **I found the following available appointments:**
 
     Then select variable(X)-\>select AppointmentSlots variable.
 
@@ -886,7 +888,7 @@ patients can view available appointment slots directly within the chat.
     ![A screenshot of a computer AI-generated
     content may be incorrect.](./media/image110.png)
 
-9.  Click the **+ sign** below the previous node. Select **Ask a
+9. Click the **+ sign** below the previous node. Select **Ask a
     question**.
 
     ![A screenshot of a computer AI-generated content may be
@@ -894,12 +896,12 @@ patients can view available appointment slots directly within the chat.
 
 10. Enter the following details:
 
-    - Question: +++Which appointment would you like to book? Please enter
-    the Slot ID.+++
+    - Question: **Which appointment would you like to book? Please enter
+    the Slot ID.**
 
     - Identify: Select **User’s entire response**
 
-    - Save user response as +++selectedSlot+++
+    - Save user response as **selectedSlot**
 
     ![](./media/image112.png)
 
@@ -910,54 +912,54 @@ patients can view available appointment slots directly within the chat.
 Create a Power Automate flow that reserves the selected appointment
 slot, updates Dataverse, and returns a booking confirmation.
 
-1.  Open a new browser tab and navigate to
-    **+++https://make.powerautomate.com+++**.
+1. Open a new browser tab and navigate to
+    ****https://make.powerautomate.com****.
 
-2.  Select **Create** from the left navigation menu, then choose
+2. Select **Create** from the left navigation menu, then choose
     **Instant cloud flow**.
 
     ![](./media/image113.png)
 
-3.  Enter the flow name as **+++HC-BookAppointment+++**. Select the
+3. Enter the flow name as ****HC-BookAppointment****. Select the
     **When an agent calls the flow** trigger and click **Create**.
 
     ![](./media/image114.png)
 
-4.  Select the **When an agent calls the flow** trigger, then click **+
+4. Select the **When an agent calls the flow** trigger, then click **+
     Add an input**.
 
-5.  Select **Text**.
+5. Select **Text**.
 
-6.  Enter the first input parameter name as:**+++slot_id+++**
+6. Enter the first input parameter name as:****slot_id****
 
-7.  Click **+ Add an input** and create the following input parameters
+7. Click **+ Add an input** and create the following input parameters
     one by one:
 
     | **Name**                  | **Type** |
     |-----------------------|------|
-    | +++patient_id+++         | Text |
-    | +++patient_name+++       | Text |
-    | +++date_of_birth+++       | Date |
-    | +++specialty+++           | Text |
-    | +++appointment_type+++    | Text |
-    | +++reason_for_visit+++    | Text |
+    | **patient_id**         | Text |
+    | **patient_name**       | Text |
+    | **date_of_birth**       | Date |
+    | **specialty**           | Text |
+    | **appointment_type**    | Text |
+    | **reason_for_visit**    | Text |
 
     ![](./media/image115.png)
 
-8.  Click the **+** sign below the trigger. Search for +++**List a
-    row+++** and select **List rows** from **Microsoft Dataverse**.
+8. Click the **+** sign below the trigger. Search for ****List a
+    row**** and select **List rows** from **Microsoft Dataverse**.
 
     ![](./media/image116.png)
 
-9.  If prompted, create a Dataverse connection.
+9. If prompted, create a Dataverse connection.
 
 10. Select the **Appointment Slot** table.
 
     ![](./media/image117.png)
 
 11. In the **Filter rows** field, enter the following expression:
-    +++ppa_slotidentifier eq '+++ -\>Select **Dynamic content** and
-    insert the **slot_id** parameter -\> +++’+++
+    **ppa_slotidentifier eq '** -\>Select **Dynamic content** and
+    insert the **slot_id** parameter -\> **’**
 
     **Note:** The Dataverse schema prefix (for example, **cr14f**,
     **cr41f**, **crbab**, etc.) is automatically generated when the table
@@ -1021,28 +1023,28 @@ slot, updates Dataverse, and returns a booking confirmation.
     ![](./media/image130.png)
 
 19. Click the **+** sign below the **Apply to each** action. Search for
-    +++**Compose+++** and select **Compose**.
+    ****Compose**** and select **Compose**.
 
     ![](./media/image131.png)
 
 20. Enter manually:
 
-    +++✅ Your appointment has been confirmed.
+    **✅ Your appointment has been confirmed.
 
-    Appointment Reference:+++
+    Appointment Reference:**
 
     Insert the **slot_id** dynamic content from **When an agent calls the
     flow**.
 
-    Continue typing: +++Patient Name:+++
+    Continue typing: **Patient Name:**
 
     Insert **patient_name** dynamic content.
 
-    Continue typing: +++Specialty:+++
+    Continue typing: **Specialty:**
 
     Insert **specialty** dynamic content.
 
-    Finally type: +++Status: Booked+++
+    Finally type: **Status: Booked**
 
     ![](./media/image132.png)
 
@@ -1053,7 +1055,7 @@ slot, updates Dataverse, and returns a booking confirmation.
 
 22. Click **+ Add an output**. Select **Text**.
 
-23. Enter the output name as: +++BookingConfirmation+++
+23. Enter the output name as: **BookingConfirmation**
 
 24. Select **Dynamic content**. Select **Outputs** from the **Compose**
     action.
@@ -1071,26 +1073,26 @@ slot, updates Dataverse, and returns a booking confirmation.
 Integrate the booking flow with the conversation so appointment requests
 are automatically processed and confirmed.
 
-1.  Navigate back to Copilot Studio.
+1. Navigate back to Copilot Studio.
 
-2.  Select Agents from the left-navigation panel and then open the
+2. Select Agents from the left-navigation panel and then open the
     **Northstar Patient Assistant** agent.
 
     ![](./media/image137.png)
 
-3.  Select **Topics** -\> Open the **Book Appointment** topic.
+3. Select **Topics** -\> Open the **Book Appointment** topic.
 
     ![](./media/image138.png)
 
-4.  In the Book Appointment topic, Locate the question: **“Which
+4. In the Book Appointment topic, Locate the question: **“Which
     appointment would you like to book? Please enter the Slot ID.”**
 
-5.  Click the + **sign** immediately below this question. Select **Add a
+5. Click the + **sign** immediately below this question. Select **Add a
     tool** -\>Select **HC-BookAppointment**.
 
     ![](./media/image139.png)
 
-6.  Map the following variables.
+6. Map the following variables.
 
     | Flow Input          | Agent Variable    |
     |---------------------|-------------------|
@@ -1108,7 +1110,7 @@ are automatically processed and confirmed.
 
     ![](./media/image141.png)
 
-7.  Replace the previous placeholder message. Select {X} to add new
+7. Replace the previous placeholder message. Select {X} to add new
     variable -\> Select **BookingConfirmation** output returned by the
     flow.
 
@@ -1116,10 +1118,10 @@ are automatically processed and confirmed.
 
     ![](./media/image143.png)
 
-8.  The message node should display the booking confirmation returned by
+8. The message node should display the booking confirmation returned by
     Power Automate.
 
-9.  Click the + **sign** below the booking confirmation message node.
+9. Click the + **sign** below the booking confirmation message node.
     Select Topic management-\>End current topic.
 
     ![](./media/image144.png)
@@ -1136,33 +1138,33 @@ are automatically processed and confirmed.
 Validate the complete appointment booking process and verify that
 booking details are correctly stored in Dataverse.
 
-1.  Select Test to test the agent.
+1. Select Test to test the agent.
 
-2.  Enter the following prompt:
+2. Enter the following prompt:
 
-    **+++I want to book an appointment.+++**
+    ****I want to book an appointment.****
 
     ![](./media/image146.png)
 
-3.  Enter the follow up questions:
+3. Enter the follow up questions:
 
-    - Enter your Patient ID: +++NH2201+++
+    - Enter your Patient ID: **NH2201**
 
-    - Please enter your date of birth: +++1985-11-02+++
+    - Please enter your date of birth: **1985-11-02**
 
-    - Please enter your name: +++James Ortiz+++
+    - Please enter your name: **James Ortiz**
 
     - Which speciality would you like to book an appointment with:
-    +++Orthopaedics +++
+    **Orthopaedics **
 
     - Is this your first visit or a follow-up appointment: Select First
     Visit
 
-    - Please briefly describe the reason for your appointment: +++I m
-    feeling a little pain in my right Knee+++
+    - Please briefly describe the reason for your appointment: **I m
+    feeling a little pain in my right Knee**
 
     - Which appointment would you like to book? Please enter the Slot ID:
-    +++APT1024+++.
+    **APT1024**.
 
     ![](./media/image147.png)
 
@@ -1172,18 +1174,18 @@ booking details are correctly stored in Dataverse.
 
     ![](./media/image150.png)
 
-4.  Navigate to +++ <https://make.powerapps.com/>+++ to verify the
+4. Navigate to ** <https://make.powerapps.com/>** to verify the
     booking.
 
-5.  Select Tables-\>Appointment slot.
+5. Select Tables-\>Appointment slot.
 
     ![](./media/image151.png)
 
-6.  Select **+19 additional rows** to view all the rows.
+6. Select **+19 additional rows** to view all the rows.
 
     ![](./media/image152.png)
 
-7.  Locate Slot Id: APT1024 and you can see that the appointment is
+7. Locate Slot Id: APT1024 and you can see that the appointment is
     booked.
 
     ![](./media/image153.png)

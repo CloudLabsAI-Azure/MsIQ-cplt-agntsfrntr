@@ -103,7 +103,14 @@ This exercise establishes the system of record that every agent in this lab will
 
     - Student Request
 
-    ![A screenshot of a computer AI-generated content may be  incorrect.](./media/image14.png)
+      ![A screenshot of a computer AI-generated content may be  incorrect.](./media/image14.png)
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="9950f965-1ab6-44c4-b833-fd37f0e34e37" /> 
 
 ## Exercise 1: Build Atlas, the Orchestrator Agent
 
@@ -764,6 +771,13 @@ knowledge-and-skills-only agent, showing that not every specialist in a multi-ag
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image76.png)
 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="eea6d2d7-c470-4e24-bade-5be202a8a01e" /> 
+
 ## Exercise 5: Connect All Specialist Agents to Atlas
 
 A specialist agent is only useful once Atlas knows it exists. In this exercise you will connect all three child agents to Atlas as connected agents, publish the updated orchestrator, and run three end-to-end tests to confirm each type of request is routed to the correct specialist and returns accurate, data-grounded answers.
@@ -956,6 +970,13 @@ A working agent only creates value once students can actually reach it. In this 
 1. Confirm a new certificate request record now exists for **STU008**, matching what you submitted in Teams.:  
     
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image110.png)
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="12b67378-22ad-4926-a922-0cfd581d0e74" /> 
 
 ## Summary
 

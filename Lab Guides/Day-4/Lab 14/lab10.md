@@ -172,7 +172,15 @@ In this exercise, you will import a pre-existing Solution.
 8. Select the **Publish all customizations** button at the top of the page.
 
     ![](./media/l110.png)
-    
+
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="a6bfcb05-6ead-4400-981f-6cfd5fdce732" />  
+
 ## Exercise 2 - Import sample data  
 
 In this exercise, you will add sample data to some of the tables that
@@ -585,6 +593,13 @@ existing) without depending on user interaction.
 17. Select the **Designer** tab again and select **Publish**.
 
     ![](./media/l152.png)
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="430ad193-8932-421c-bec6-a6a71186381a" />     
 
 ## Task 5 - Connect the flow to your agent
 

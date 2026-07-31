@@ -4,15 +4,13 @@
 
 ## Overview
 
-In this lab, you will get hands-on experience building and deploying intelligent agents, adaptive workflows, and no-code applications using **Microsoft 365 Copilot**. Participants will learn how to use purpose-built Copilot agents — including the Workflows Agent, Researcher Agent, Copilot Agent Builder, App Builder, Cowork, and Copilot Chat — to transform real-world business scenarios for Zava Retail, a growing omnichannel retailer.
+In this lab, you will get hands-on experience building and deploying intelligent agents, adaptive workflows, and no-code applications using **Microsoft 365 Copilot**. Participants will learn how to use purpose-built Copilot agents — including the Researcher Agent, Copilot Agent Builder, App Builder, Cowork, and Copilot Chat — to transform real-world business scenarios for Zava Retail, a growing omnichannel retailer.
 
 By completing this lab, learners will be equipped to design AI-powered automation, ground agents in organizational knowledge, generate structured business assets, manage enterprise calendars with AI assistance, and build custom agents that can be shared across an organization.
 
 ## Objective
 
 By the end of this lab, participants will be able to:
-
-- **Build and deploy adaptive workflows** using the Workflows Agent in Microsoft 365 Copilot to automate email triage, escalation, and workload intelligence for Zava Retail.
 
 - **Use the Researcher Agent** to gather, analyze, and transform fragmented organizational data — across emails, chats, and documents — into actionable business intelligence and executive reports.
 
@@ -42,7 +40,7 @@ In this lab, you will use the Microsoft 365 Copilot platform and its suite of AI
 
 Each agent is grounded in organizational data — emails, Teams messages, SharePoint documents, and Planner tasks — and uses AI reasoning to plan, execute, and generate outputs across different functional areas including customer support, marketing, HR, IT, and operations.
 
-The Workflows Agent orchestrates multi-step automations by connecting Outlook, Teams, and Dataverse AI. The Researcher Agent aggregates intelligence from across Microsoft 365. The Copilot Agent Builder lets you configure and deploy purpose-built agents with custom instructions and knowledge sources. App Builder generates functional business applications from natural language prompts. Cowork manages calendar intelligence, and Copilot Chat enables enterprise-grade custom agent creation with image generation and web capabilities.
+The Researcher Agent aggregates intelligence from across Microsoft 365. The Copilot Agent Builder lets you configure and deploy purpose-built agents with custom instructions and knowledge sources. App Builder generates functional business applications from natural language prompts. Cowork manages calendar intelligence, and Copilot Chat enables enterprise-grade custom agent creation with image generation and web capabilities.
 
 ## Architecture Diagram
 
@@ -52,13 +50,9 @@ The Workflows Agent orchestrates multi-step automations by connecting Outlook, T
 
 The architecture for this lab involves the following key components:
 
-1. **Microsoft 365 Copilot Portal (m365.cloud.microsoft):** The primary interface for accessing all Copilot agents, including the Workflows Agent, Researcher Agent, App Builder, Cowork, and Copilot Chat.
+1. **Microsoft 365 Copilot Portal (m365.cloud.microsoft):** The primary interface for accessing all Copilot agents, including the Researcher Agent, App Builder, Cowork, and Copilot Chat.
    - Acts as the entry point for agent creation and interaction.
    - Provides access to the Agent Store for discovering and adding pre-built Microsoft agents.
-
-1. **Workflows Agent (Frontier):** An AI-powered orchestration engine that enables the creation of intelligent, adaptive workflows using natural language.
-   - Connects to Outlook, Teams, Dataverse AI, and other Microsoft 365 services.
-   - Enables scheduled and event-driven automation without manual connector configuration.
 
 1. **Researcher Agent:** A pre-built Microsoft Copilot agent that aggregates and analyzes data from Outlook, Teams, and SharePoint documents.
    - Uses AI reasoning to surface insights, action items, risks, and executive summaries.

@@ -4,13 +4,7 @@
 
 ## Scenario:
 
-Zava Retail is a fast-growing omnichannel retailer specializing in home
-appliances and consumer electronics, operating both physical stores and
-a rapidly expanding e-commerce platform across multiple regions. As
-product complexity increases-especially for items like washing machines,
-refrigerators, and smart home devices-customers frequently reach out for
-support related to product specifications, installation guidance,
-warranty coverage, and troubleshooting.
+Zava Retail is a fast-growing omnichannel retailer specializing in home appliances and consumer electronics, operating both physical stores and a rapidly expanding e-commerce platform across multiple regions. As product complexity increases-especially for items like washing machines, refrigerators, and smart home devices-customers frequently reach out for support related to product specifications, installation guidance, warranty coverage, and troubleshooting.
 
 Currently, Zava Retail's customer support model relies heavily on:
 
@@ -33,13 +27,9 @@ This approach is creating **operational bottlenecks**:
 - Digital self-service channels fail to handle nuanced or
   product-specific queries
 
-To address these challenges, Zava Retail's Digital Innovation team has
-initiated a **Customer Support Modernization program** to introduce
-AI-driven self-service capabilities.
+To address these challenges, Zava Retail's Digital Innovation team has initiated a **Customer Support Modernization program** to introduce AI-driven self-service capabilities.
 
-As part of this initiative, the team plans to deploy an **AI-powered
-Product Knowledge Agent** integrated into their website and support
-channels. This agent will:
+As part of this initiative, the team plans to deploy an **AI-powered Product Knowledge Agent** integrated into their website and support channels. This agent will:
 
 - Leverage **Azure AI Search** to index product manuals, warranty
   policies, and troubleshooting guides stored in internal repositories
@@ -49,12 +39,9 @@ channels. This agent will:
 
 - Provide **natural, conversational responses** to customer queries
 
-- Include **direct references to source documents** for transparency and
-  trust
+- Include **direct references to source documents** for transparency and trust
 
-- Integrate **custom or bring-your-own models from Microsoft Foundry**
-  to tailor responses to Zava Retail's tone, product catalog, and
-  support policies
+- Integrate **custom or bring-your-own models from Microsoft Foundry** to tailor responses to Zava Retail's tone, product catalog, and support policies
 
 This solution is expected to:
 
@@ -69,12 +56,7 @@ This solution is expected to:
 - Enable scalable, 24/7 support without proportional increases in
   staffing
 
-In this lab, you will act as Elena Rodriguez, an AI Engineer at Zava
-Retail, and simulate the company's implementation by building and
-configuring an intelligent product support agent using Azure AI
-Search, Azure OpenAI, and Microsoft Copilot Studio, while also
-integrating a custom model from Microsoft Foundry to align with
-enterprise-grade AI deployment practices.
+In this lab, you will act as Elena Rodriguez, an AI Engineer at Zava Retail, and simulate the company's implementation by building and configuring an intelligent product support agent using Azure AI Search, Azure OpenAI, and Microsoft Copilot Studio, while also integrating a custom model from Microsoft Foundry to align with enterprise-grade AI deployment practices.
 
 **Key Personas**
 
@@ -229,6 +211,13 @@ In this exercise, we will first create an Azure AI Search resource, which will b
 
     ![](./media/v9.png)
 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="336509c8-664a-4cd8-b4ef-8151e1c22676" /> 
+
 ## Exercise 2: Create a Storage account
 
 This exercise is to create a storage account with Blob storage and
@@ -326,6 +315,13 @@ upload the documents required supporting the retail customers in it.
 
 In this exercise, we have created a Storage account and added the
 documents and required Role permissions to it.
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="f8879497-d9c6-4219-a9d7-97eaba2cb7fe" /> 
 
 ## Exercise 3: Create an Azure OpenAI Service and deploy a model
 
@@ -433,6 +429,13 @@ The AI Search service will have to vectorize the data uploaded, in order to perf
 
     ![](./media/v29.png)
 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="1309cc2b-a704-4be4-a0cd-418a37fb7a3e" /> 
+
 ## Exercise 4: Create a vector index
 
 The AI Search resource needs a Vector index to perform the vector
@@ -489,7 +492,14 @@ search. You will vectorize the uploaded data in this exercise.
 1. Click on **Close** in the success dialog box.
 
     ![](./media/v33.png)
-    
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="c4da5a14-8227-450b-82a8-d492e000f7e2" /> 
+
 ## Exercise 5: Create a retail assistant agent
 
 In this exercise, you will create a retail assistant agent in Copilot Studio.
@@ -564,6 +574,13 @@ In this exercise, you will add the Azure AI Search that you created from the Azu
 1. You can see that the response from the agent now is from the document uploaded in the AI Search service.
 
     ![](./media/v41.png)
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="a9171194-7a6c-4fbc-a9eb-cd4b02f3e46c" /> 
 
 ## Exercise 7: Deploy a Model in Microsoft Foundry
 
