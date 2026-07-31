@@ -929,7 +929,7 @@ A working agent only creates value once students can actually reach it. In this 
    I need a bonafide certificate for my visa application.
    ```
 
-    ![](./media/image106.png)
+![](./media/image106.png)
 
 1. When Atlas (via the Student Services Agent) asks for your Student ID, respond with:
 
