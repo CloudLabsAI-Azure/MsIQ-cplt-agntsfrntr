@@ -63,7 +63,7 @@ contextual, work-aware AI into your everyday apps and agents. In this part, you 
 
     ![](./media/n2c.png)
 
-1. Enter the site **name (1)**, for as **ZavaSite-<DID>,**" confirming the **Group email address** and **Site address** auto-populate.
+1. Enter the site **name (1)**, for as **ZavaSite-<inject key="DeploymentID" enableCopy="false"/>,**" confirming the **Group email address** and **Site address** auto-populate.
 
    ![](./media/n7a.png)
 

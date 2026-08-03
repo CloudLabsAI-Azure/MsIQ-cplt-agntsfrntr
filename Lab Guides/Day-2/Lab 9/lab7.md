@@ -114,7 +114,7 @@ Finance department members including Amari Rivera, Quincy Brooks, Miguel Reyes, 
    
     ![](./media/n7.png)
 
-1. Click the **Copilot (1)** icon in the left navigation bar, enter a prompt **(2)**, then click the **Send (3)** button.
+1. Click the **Copilot (1)** icon in the left navigation bar and open a **new chat**, enter a prompt **(2)**, then click the **Send (3)** button.
 
    ```
    Generate a downloadable summary. Review the summary to ensure it includes decisions, next steps, and responsibilities. Ask Copilot to generate a downloadable file for distribution to the meeting participants. Download the document that Copilot generated
