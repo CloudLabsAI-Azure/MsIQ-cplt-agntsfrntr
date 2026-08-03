@@ -327,7 +327,3 @@ In this lab, you have completed the following:
 - Packaged the campaign for executive approval with a summary, business impact analysis, risks, assumptions, success metrics, and an approval checklist
 
 ## You have successfully completed the lab!
-
-### Now, click on **Next >>** from the lower right corner to move on to the next page.
-
-   ![](./media/Next.png)

@@ -513,3 +513,9 @@ follow-up tasks to keep the Peak Season Readiness Program on track.
 These capabilities demonstrate how Planner Agent helps improve
 operational visibility, streamline collaboration across teams, and
 enable more informed decision-making for business-critical initiatives.
+
+## You have successfully completed the lab!
+
+### Now, click on **Next >>** from the lower right corner to move on to the next page.
+
+   ![](./media/Next.png)
