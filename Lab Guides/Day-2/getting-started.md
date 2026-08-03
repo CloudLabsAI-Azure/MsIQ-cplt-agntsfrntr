@@ -36,7 +36,7 @@ Participants should have:
 
 In this lab, you will use the Microsoft 365 Copilot platform, SharePoint, Copilot Studio, and Agent 365 to build, extend, and govern AI agents that support retail operations at Zava Retail. The workflow begins by creating and grounding purpose-built Microsoft Copilot agents through the Microsoft 365 Copilot portal, SharePoint, and Copilot Studio, and then managing them centrally through the Microsoft 365 admin center.
 
-Each agent is grounded in organizational data — SOPs, employee handbooks, store checklists, SharePoint document libraries, HR and payroll content, and finance workbooks — and uses AI reasoning to plan, execute, and generate outputs across different functional areas including frontline operations, store management, HR, finance, and governance.
+Each agent is grounded in organizational data - SOPs, employee handbooks, store checklists, SharePoint document libraries, HR and payroll content, and finance workbooks - and uses AI reasoning to plan, execute, and generate outputs across different functional areas including frontline operations, store management, HR, finance, and governance.
 
 The Copilot Agent Builder lets you configure and deploy knowledge-grounded frontline agents. SharePoint-grounded agents deliver trusted, boundary-aware responses, while Copilot Studio adds advanced instruction authoring, topic-based routing, and multi-agent orchestration. Copilot in Excel, Teams, and Chat accelerates financial analysis, meeting summarization, and acquisition evaluation. Agent 365 provides centralized governance, monitoring, lifecycle management, and compliance across the entire agent ecosystem.
 
