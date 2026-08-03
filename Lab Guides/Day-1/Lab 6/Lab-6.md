@@ -124,7 +124,7 @@ In this exercise, you will sign in to Microsoft 365 Copilot Chat as Priya Nair a
 
 ### Task 3: Add a Knowledge Source
 
-1. Move to the **Knowledge** section and upload the required files available at **C:\Lab Files\Lab 6 - Lab files**.
+1. Move to the **Knowledge** section and upload the required files available at **C:\Lab Files\marketingAgent**.
 
     ![](./media/image7.png)
 
