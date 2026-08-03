@@ -146,13 +146,6 @@ In this exercise, you will sign in to Microsoft 365 Copilot Chat as Priya Nair a
 
     ![](./media/image11.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-- If you receive a success message, you can proceed to the next task.
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="620c8ade-181b-4983-a5e0-e94614be109a" /> 
-
 ## Exercise 2: Build the Summer Clearance Campaign Brief
 
 David Kim has asked Priya for a complete campaign plan for the Summer Clearance event before he'll consider it for approval. In this exercise, you will test whether a single prompt produces a complete, structured campaign brief.

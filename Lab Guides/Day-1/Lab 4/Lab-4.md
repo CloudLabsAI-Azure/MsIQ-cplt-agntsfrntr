@@ -236,13 +236,6 @@ The IT team needs to see not just a list of employees, but a clear record of wha
 
         ![](./media/l4e4t2s2.png)
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-- If you receive a success message, you can proceed to the next task.
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="47c62b18-9806-451c-9c7d-e5718a0af920" /> 
-
 ### Task 3: Share and Brief Your Team
 
 1. Return to App Builder. In the conversation input, paste the following prompt and click the **Send** button.
