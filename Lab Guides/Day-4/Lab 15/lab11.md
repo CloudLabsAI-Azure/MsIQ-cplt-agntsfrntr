@@ -58,7 +58,7 @@ This solution is expected to:
 
 In this lab, you will act as Elena Rodriguez, an AI Engineer at Zava Retail, and simulate the company's implementation by building and configuring an intelligent product support agent using Azure AI Search, Azure OpenAI, and Microsoft Copilot Studio, while also integrating a custom model from Microsoft Foundry to align with enterprise-grade AI deployment practices.
 
-**Key Personas**
+## Key Personas
 
 **1. Sarah Mitchell - Customer Support Director**
 
@@ -113,40 +113,18 @@ In this lab, you will act as Elena Rodriguez, an AI Engineer at Zava Retail, and
 
 - Success metric: Get accurate answers instantly without waiting
 
-**Objective**
+## Lab Objectives
 
-In this lab, you will:
+In this lab, you will perform the following:
 
-- Provision and configure an **Azure AI Search** service
-
-- Create and configure an **Azure Storage account** to host knowledge
-  documents
-
-- Upload and manage product-related documents (manuals, FAQs, policies)
-  in Blob Storage
-
-- Configure **managed identities and role-based access control (RBAC)**
-  for secure service integration
-
-- Provision an **Azure OpenAI resource** and deploy an embedding model
-
-- Generate embeddings and create a **vector index** in Azure AI Search
-  for semantic retrieval
-
-- Implement a **Retrieval-Augmented Generation (RAG)** pipeline using
-  indexed data
-
-- Create and configure an agent in **Microsoft Copilot Studio**
-
-- Integrate Azure AI Search as a **knowledge source** for the agent
-
-- Deploy a **foundation model in Microsoft Foundry** and connect it to
-  Copilot Studio
-
-- Create and test **custom prompts** using the integrated model
-
-- Validate end-to-end functionality of the AI-powered product support
-  agent
+- Exercise 1: Create an Azure AI Search resource
+- Exercise 2: Create a Storage account
+- Exercise 3: Create an Azure OpenAI Service and deploy a model
+- Exercise 4: Create a vector index
+- Exercise 5: Create a retail assistant agent
+- Exercise 6: Add the Azure AI Search as a knowledge source
+- Exercise 7: Deploy a Model in Microsoft Foundry
+- Exercise 8: Create a prompt in the Copilot Studio and use the model created in Microsoft Foundry
 
 ## Exercise 1: Create an Azure AI Search resource
 
@@ -638,3 +616,8 @@ You connected this knowledge base to a Copilot Studio agent, allowing it to answ
 
 This lab demonstrates how to build and connect the core components required for a RAG-based, enterprise-ready support solution.
 
+## You have successfully completed the lab!
+
+### Now, click on **Next >>** from the lower right corner to move on to the next page.
+
+   ![](./media/next.png)

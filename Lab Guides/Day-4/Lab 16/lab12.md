@@ -1,6 +1,6 @@
 # Lab 16 - Orchestrating multi-agent AI for retail using Copilot Studio, Microsoft Foundry, and Fabric
 
-## Objective:
+## Overview:
 
 Build an intelligent, multi-agent retail assistant using Microsoft
 Copilot Studio, MicrosoftFoundry, and Microsoft Fabric. In this lab, you will design and implement a customer-facing AI system that orchestrates across specialized agents to handle product discovery, customer support, policy queries, and real-time operational insights.
@@ -16,6 +16,23 @@ A premium outdoor retail brand (focused on **camping & trekking gear**) wants to
 - Handles **support queries**
 
 - Provides **guided recommendations for outdoor trips**
+
+## Lab Objectives
+
+In this lab, you will perform the following:
+
+- Exercise 1: Create Copilot Studio agent
+  - Task 1: Create the agent and configure knowledge sources
+  - Task 2: Test the agent
+- Exercise 2: Foundry agent
+  - Task 1: Create Foundry resource
+  - Task 2: Connect Foundry agent to Copilot Studio agent
+  - Task 3: Test the agent
+- Exercise 3: Create Fabric Data Agent
+  - Task 1: Create Lakehouse and load data
+  - Task 2: Create Fabric Data Agent
+  - Task 3: Add Fabric Data Agent to the Copilot Studio agent
+  - Task 4: Test the agent
 
 ## Exercise 1: Create Copilot Studio agent
 
@@ -105,8 +122,7 @@ configure its behavior, and ground it with knowledge sources related to shipping
 
     ![](./media/m7.png)
 
-1. Under **Knowledge**, **disable** **Allow ungrounded
-    responses** and **Use information from the web** options and then
+1. Under **Knowledge**, **disable** **Allow ungrounded responses** and **Use information from the web** options and then
     select **Save**.
 
     ![](./media/m8.png)
@@ -300,10 +316,14 @@ must **add a role assignment** to your user account in the Azure Portal by compl
 
     ![](./media/m21.png)
 
-1. Click Publish to publish -> Teams & Microsoft 365 Copilot.
+1. From the agent page, click **Publish (1)**, and then select **Teams & Microsoft 365 Copilot (2)**.
+
+    ![](./media/l16-19.png)
 
 1. In the Publish to Teams and Microsoft 365 window add:
-   
+
+    - Agent name set to **TrailGearExpert**
+
     - Short description: 
     
       ```
@@ -320,9 +340,15 @@ must **add a role assignment** to your user account in the Azure Portal by compl
 
 1. Then click to **Next: Publish** options
 
-1. Choose who can use the agent: Just you. Then select Publish.
+    ![](./media/l16-20.png)
+
+1. Choose who can use the agent: **Just you**. Then select **Publish**.
+
+    ![](./media/l16-21.png)
 
 1. Select done. Now, you have successfully created and configured the Foundry agent to provide detailed product knowledge and recommendations.
+
+    ![](./media/l16-22.png)
 
 ## Task 2: Connect Foundry agent to Copilot Studio agent
 
@@ -408,7 +434,7 @@ product-related queries are correctly routed to the Foundry agent.
 
 You have validated that the Copilot Studio agent can successfully invoke the Foundry agent to handle product-related queries.
 
-You have extended your solution by adding a specialized product agent, demonstrating agent collaboration and domain-specific intelligence.
+You have extended your solution by adding a specialized product agent, demonstrating agent collaboration and domain-specific intelligence. 
 
 ## Exercise 3: Create Fabric Data Agent
 
@@ -417,6 +443,36 @@ In this exercise, you will further enhance the solution by introducing a Fabric 
 ### Task 1: Create Lakehouse and load data
 
 In this task, you will create a Fabric workspace and Lakehouse, and load structured datasets required for operational insights.
+
+1. In the new tab, enter the following URL to navigate to the Azure portal
+
+   ```
+   https://portal.azure.com
+   ```
+
+1. In the top search bar, search for **Microsoft Fabric capacity** and select it.  
+
+1. On the **Microsoft Fabric capacity** page, click **+ Create**.  
+
+1. In **Basics** tab, enter the following details: 
+
+    - Select your default **Subscription**
+
+    - **Resource group** as **Copilot-Studio**
+
+    - Enter a **Capacity name** as **fabric<inject key="DeploymentID" enableCopy="false"/>**
+
+    - Select the **Region** as <inject key="Region" enableCopy="false"/>
+
+    - Choose the Size as **F4**
+    
+    - Keep the Fabric Capacity Administrator as default <inject key="AzureAdUserEmail"></inject>
+
+1. Click **Review + create** and validate the settings. 
+
+    ![](./media/l14-1.png)
+
+1. Click **Create** to deploy the Fabric capacity. 
 
 1. In the new Tab, enter the following URL to navigate to the Microsoft Fabric portal.
 
@@ -474,7 +530,7 @@ In this task, you will create a Fabric workspace and Lakehouse, and load structu
 
     ![](./media/m29.png)
 
-1. **Repeat** the process for the other files as well to load the **products**, **orders** and **inventory** tables.
+1. **Repeat** the **steps 15-17** for the other files as well to load the **products**, **orders** and **inventory** tables.
 
     ![](./media/m30.png)
 
@@ -500,7 +556,7 @@ In this task, you will create the **TrailOps Analyst** Fabric Data Agent and con
 
     ![](./media/m32.png)
 
-1. Select the Lakehouse - **lh<inject key="DeploymentID" enableCopy="false"/>** and select **Add**.
+1. Select the Lakehouse **lh<inject key="DeploymentID" enableCopy="false"/>** and select **Add**.
 
     ![](./media/image70.png)
 
@@ -627,3 +683,9 @@ You have successfully completed the multi-agent architecture by adding a data-dr
 In this lab, you created the **Retail Assistant**, a modern AI solution for an outdoor retail company. You began by building a Copilot Studio agent that serves as the primary customer interface for handling support and policy-related queries. You then extended its capabilities by integrating a specialized product expert agent built using Microsoft Foundry to provide intelligent product recommendations. Finally, you added a Fabric Data Agent to enable real-time insights from structured business data such as orders and inventory.
 
 Now, you will have implemented a fully functional multi-agent system that demonstrates orchestration, specialization, and data-driven intelligence.
+
+## You have successfully completed the lab!
+
+### Now, click on **Next >>** from the lower right corner to move on to the next page.
+
+   ![](./media/next.png)

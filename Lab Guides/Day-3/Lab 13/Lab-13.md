@@ -8,27 +8,6 @@ To improve patient experience and operational efficiency, the hospital is implem
 
 By the end of this lab, you will have built an intelligent healthcare agent that combines conversational AI with business process automation to streamline patient appointment management.
 
-## Lab Objectives
-
-After completing this lab, you will be able to:
-
-- Create and populate Microsoft Dataverse tables for healthcare
-  appointment management.
-
-- Build a healthcare conversational agent using Microsoft Copilot
-  Studio.
-
-- Configure knowledge sources and implement responsible AI guardrails.
-
-- Create reusable conversational topics for identity verification,
-  appointment booking, cancellation, and emergency assistance.
-
-- Build Power Automate agent flows that retrieve available appointment slots and confirm bookings.
-
-- Connect Copilot Studio topics with Power Automate flows.
-
-- Test an end-to-end AI-powered appointment booking experience.
-
 ## Persona
 
 **Emily Carter**  
@@ -36,11 +15,35 @@ After completing this lab, you will be able to:
 
 Emily is responsible for modernizing patient services by implementing AI-powered healthcare solutions. Her objective is to reduce administrative effort, improve appointment scheduling efficiency, and provide patients with a secure self-service experience while ensuring sensitive healthcare interactions follow responsible AI practices.
 
-## Exercise 0: Prepare the Healthcare Data Foundation
+## Lab Objectives
+
+In this lab, you will perform the following:
+
+- Exercise 0: Prepare the Healthcare Data Foundation
+  - Task 0 Creating solution
+  - Task 1 - Create and Populate the Appointment Slot Table
+  - Task 3 - Update the action for the agent
+  - Task 4 - (Read only) Understand the decorators
+  - Task 5 - Test your agent
+- Exercise 1 - Build the Conversational Healthcare Agent
+  - Task 1 - Create the Northstar Patient Assistant
+  - Task 2 - Create the Emergency Assistance Topic
+  - Task 3 - Build the Patient Identity Verification Topic
+  - Task 4 - Build the Appointment Booking Topic
+  - Task 5 - Build the Appointment Cancellation Topic
+  - Task 6 - Test the Healthcare Agent
+- Exercise 2 - Automate Appointment Management
+  - Task 1 - Build the HC-SlotLookup Flow
+  - Task 2 - Connect the HC-SlotLookup Flow to the Agent
+  - Task 3 - Build HC-BookAppointment Flow
+  - Task 4 - Connect the HC-BookAppointment Flow to the Agent
+  - Task 5 - Test the End-to-End Appointment Booking Experience
+
+## Exercise 0 - Prepare the Healthcare Data Foundation
 
 Create and populate the Dataverse table that will store appointment slot information used throughout the lab.
 
-### Task 0 Creating solution
+### Task 0 - Creating solution
 
 1. Open the browser, enter the following URL to navigate to the Power Apps portal:
 
@@ -64,7 +67,7 @@ Create and populate the Dataverse table that will store appointment slot informa
 
     ![](./media/l13-3.png)
 
-### Task 1: Create and Populate the Appointment Slot Table
+### Task 1 - Create and Populate the Appointment Slot Table
 
 Create the Appointment Slot Dataverse table and import the provided appointment schedule so the healthcare agent has appointment data available during booking.
 
@@ -110,13 +113,13 @@ Create the Appointment Slot Dataverse table and import the provided appointment 
 
     ![](./media/image11.png)
 
-## Exercise 1: Build the Conversational Healthcare Agent
+## Exercise 1 - Build the Conversational Healthcare Agent
 
 Develop a secure patient assistant using Copilot Studio that can answer
 hospital questions, verify patient identity, and manage appointment
 conversations.
 
-### Task 1: Create the Northstar Patient Assistant
+### Task 1 - Create the Northstar Patient Assistant
 
 Create a healthcare agent, configure its instructions, connect
 organizational knowledge, and apply responsible AI settings to ensure
@@ -171,11 +174,6 @@ grounded responses.
     knowledge source to the agent.
 
     ![](./media/image16.png)
-
-7. Click **Select to browse** option. Select files from
-    C:/Labfiles/Healthcare/.
-
-    ![](./media/image17.png)
 
 8. In the file picker, browse to **C:/Lab Files/Healthcare/ (1)**, select the clinic information files shown **(2)**, and then click **Open (3)**.
 
@@ -260,7 +258,7 @@ continuing the conversation.
 
     ![](./media/image28.png)
 
-### Task 3 –Build the Patient Identity Verification Topic
+### Task 3 – Build the Patient Identity Verification Topic
 
 Create a reusable topic that securely collects patient identity
 information before allowing appointment-related actions.
@@ -405,17 +403,11 @@ prepares the booking request for automation.
 
     - Question: Enter **Is this your first visit or a follow-up appointment?**
 
-    - Identify: Select **Multiple Choice options**
-
-    - Options for user: Select **+ New option** -\> Enter **First Visit**
-
-    - Again select +New option -\> Enter **Follow-up**
+    - Identify: Select **User’s entire response**
 
     - Save user response as **AppointmentType**
 
-      ![A screenshot of a computer AI-generated content may be incorrect.](./media/image46.png)
-
-      ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image47.png)
+      ![A screenshot of a computer AI-generated content may be incorrect.](./media/l13-13.png)
 
 8. Click the **+ sign** below the previous node. Select **Ask a question.**
 
@@ -766,7 +758,7 @@ from Dataverse based on the patient's selected medical specialty.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image103.png)
 
-### Task 2: Connect the HC-SlotLookup Flow to the Agent
+### Task 2 - Connect the HC-SlotLookup Flow to the Agent
 
 Integrate the HC-SlotLookup flow with the booking conversation so
 patients can view available appointment slots directly within the chat.
@@ -1037,7 +1029,7 @@ are automatically processed and confirmed.
 
 11. Select **Publish**, then select **Publish** again to publish the latest changes.
 
-### Task 5 —Test the End-to-End Appointment Booking Experience
+### Task 5 - Test the End-to-End Appointment Booking Experience
 
 Validate the complete appointment booking process and verify that
 booking details are correctly stored in Dataverse.
@@ -1077,7 +1069,7 @@ booking details are correctly stored in Dataverse.
 
     ![](./media/image150.png)
 
-4. Navigate to ** <https://make.powerapps.com/>** to verify the booking.
+4. Navigate to **<https://make.powerapps.com/>** to verify the booking.
 
 5. Select Tables-\> AppointmentSlot.
 

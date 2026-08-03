@@ -884,4 +884,4 @@ In this lab, you have completed the following:
 
 ### Now, click on **Next >>** from the lower right corner to move on to the next page.
 
-   ![](../images/Next.png)
+   ![](./media/next.png)

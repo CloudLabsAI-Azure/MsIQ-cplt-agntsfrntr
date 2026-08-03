@@ -13,25 +13,30 @@ data must come straight from Dataverse, and admissions answers must come straigh
 
 Priya has assigned you, a Power Platform developer on her team, to build and ship this pilot. In this lab, you'll build **Atlas**, the orchestrator agent students talk to, and connect it to three specialist child agents - **Student Services**, **Academic**, and **Admissions** - each wired to exactly the data, knowledge, and skills it needs. By the end, you'll publish Atlas to Teams and Microsoft 365 Copilot and prove a request like Aditi's can be resolved in one conversation, not four business days.
 
-## Lab Objective
+## Lab Objectives
 
-By the end of this lab, you will be able to:
+In this lab, you will perform the following:
 
-- Provision and populate Microsoft Dataverse tables from source data to serve as the system of record for student, academic, and financial data.
-
-- Build an orchestrator agent in Copilot Studio that interprets a
-  student's intent and routes it to the correct specialist agent.
-
-- Build a child agent that uses the **Model Context Protocol (MCP)** to securely read and write live Dataverse records.
-
-- Build a child agent that combines **MCP tools**, **grounded knowledge sources**, and **custom skills** to handle multi-faceted academic requests.
-
-- Build a child agent that relies purely on **knowledge sources** and **skills** to answer admissions questions without live data access.
-
-- Connect all specialist agents to the orchestrator and validate
-  end-to-end multi-agent routing.
-
-- Publish the orchestrator agent to Microsoft Teams and Microsoft 365 Copilot and validate the experience from a student's point of view.
+- Exercise 0: Provision the Dataverse Data Foundation
+  - Task 1: Import Source Data into Dataverse Tables
+- Exercise 1: Build Atlas, the Orchestrator Agent
+  - Task 1: Create and Configure the Atlas Agent
+  - Task 2: Ground Atlas in General University Knowledge
+  - Task 3: Test Atlas in the Preview Pane
+- Exercise 2: Build the Student Services Agent with Live Dataverse Access
+  - Task 1: Create and Configure the Student Services Agent
+  - Task 2: Connect the Agent to the Dataverse MCP Server
+- Exercise 3: Build the Academic Agent with MCP, Knowledge, and Skills 
+  - Task 1: Create and Configure the Academic Agent
+  - Task 2: Add the Academic Advisor and Exam Planner Skills
+- Exercise 4: Build the Admissions Agent with Knowledge and Skills
+  - Task 1: Create and Configure the Admissions Agent
+- Exercise 5: Connect All Specialist Agents to Atlas
+  - Task 1: Connect the Specialist Agents to Atlas
+  - Task 2: Validate End-to-End Multi-Agent Routing
+- Exercise 6: Publish Atlas to Microsoft Teams and Microsoft 365 Copilot
+  - Task 1: Publish Atlas to Teams and Microsoft 365 Copilot
+  - Task 2: Test the End-to-End Student Experience in Teams
 
 ## Exercise 0: Provision the Dataverse Data Foundation
 
@@ -970,3 +975,5 @@ In this lab, you built a complete multi-agent student support system for Riverbe
 You connected all three specialists to Atlas, validated accurate routing end to end, and published Atlas to Microsoft Teams and Microsoft 365 Copilot - confirming a real student request can flow from a chat message all the way into a Dataverse record.
 
 This pattern - one orchestrator plus specialized connected agents, each using only the tools it needs - is reusable for any department or industry that wants to automate service requests without sacrificing accuracy, security, or a single point of contact.
+
+## You have successfully completed the lab!
