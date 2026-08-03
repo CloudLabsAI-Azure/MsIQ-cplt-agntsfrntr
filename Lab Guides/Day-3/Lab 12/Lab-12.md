@@ -184,15 +184,9 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
 
 Now that you've seen how to build an agent using Microsoft Foundry, let's switch gears and explore how to build your own agent locally using the Microsoft 365 Agents SDK. This SDK lets you build multi-channel, production-ready agents that can run in Microsoft Teams, Microsoft 365 Copilot, and other preferred channels.
 
-1. From **Desktop**, open **Visual Studio 2022**.
+1. In the LabVM search box, type **Visual (1)**, and then select **Visual Studio 2022 (2)** from **Apps**.
 
-    >**Note:** If you are asked to login, select **Microsoft**, **Work or School Account** and login with your @lab.CloudPortalCredential(User1).Username account.
-
-    ![](./media/image16.png)
-
-    >Note: If you are not able to see Visual Studio 2022 on Desktop, search in the LabVM search box, type **Visual Studio Code (1)**, and then select **Visual Studio 2022 (2)** from **Apps**.
-
-     ![](./media/img7.png)
+    ![](./media/img7.png)
 
 1. On the **Sign in to Visual Studio** window, click **Sign in with Microsoft**.
 
@@ -210,11 +204,9 @@ Now that you've seen how to build an agent using Microsoft Foundry, let's switch
      
 1. Now enter the following password and click on **Sign in (2)**.
    
-   * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
+   * **Temporary Access Pass**: <inject key="AzureAdUserPassword"></inject> **(1)**
    
      ![](../../Day-2/media/img2.png)
-
-      > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
 
 1. In the **Sign in to all apps and websites on this device?** prompt, click **No, this app only**.
 

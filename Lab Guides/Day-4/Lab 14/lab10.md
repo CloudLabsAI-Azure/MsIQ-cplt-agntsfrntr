@@ -126,21 +126,19 @@ In this exercise, you will import a pre-existing Solution.
    
      - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
-    ![](./media/z1.png)
+       ![](./media/z1.png)
 
-    ![](./media/z2.png)
+       ![](./media/z2.png)
 
-    ![](./media/z3.png)
+       ![](./media/z3.png)
 
-    ![](./media/z4.png)
+       ![](./media/z4.png)
 
 2. Select the **...** in the left navigation and select **Solutions.**
 
     ![](./media/l10.png)
 
-3. Select **Import solution**. Click on **Browse** and select
-    the **zip** file starting with **Operative** form **C:\LabFiles** and
-    select **Open**.
+3. Select **Import solution**. Click on **Browse** and select the **zip** file starting with **Operative** form **C:\Lab Files** and select **Open**.
 
     ![](./media/l11.png)
 
@@ -154,20 +152,15 @@ In this exercise, you will import a pre-existing Solution.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image6.png)
 
-5. This will take some time of around 3 to 5 minutes. On success, you
-    will see a green notification bar with the following message when
-    it's done: "Solution "Operative" imported successfully."
+5. This will take some time of around 3 to 5 minutes. On success, you will see a green notification bar with the following message when it's done: "Solution "Operative" imported successfully."
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image7.png)
 
-6. Once you see the "imported successfully" message, take a look at
-    what you imported by selecting the display name of the solution
-    (**Operative**) in the solutions list.
+6. Once you see the "imported successfully" message, take a look at what you imported by selecting the display name of the solution (**Operative**) in the solutions list.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image8.png)
 
-7. Review the solution and ensure that the following components are
-    imported.
+7. Review the solution and ensure that the following components are imported.
 
 8. Select the **Publish all customizations** button at the top of the page.
 
@@ -186,14 +179,11 @@ In this exercise, you will import a pre-existing Solution.
 In this exercise, you will add sample data to some of the tables that
 you imported in the previous exercise.
 
-1. From the solution that you imported in the last exercise, locate the **Hiring Hub Model-Driven App**. Select the **ellipsis (⋮)** menu next to
-    it and then select the **Play** button from the menu that appears.
+1. From the solution that you imported in the last exercise, locate the **Hiring Hub Model-Driven App**. Select the **ellipsis (⋮)** menu next to it and then select the **Play** button from the menu that appears.
 
     ![](./media/l111.png)
 
-2. Select **Job Roles** in the left navigation. Select
-    the **More** icon (three dots below each other) in the command bar
-    and then select the **right arrow** next to **Import from Excel.**
+2. Select **Job Roles** in the left navigation. Select the **More** icon (three dots below each other) in the command bar and then select the **right arrow** next to **Import from Excel.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image12.png)
 
@@ -215,8 +205,7 @@ you imported in the previous exercise.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image17.png)
 
-7. Select **Done**. This can take a little while, but you can hit
-    the **Refresh** button to see if the import has succeeded.
+7. Select **Done**. This can take a little while, but you can hit the **Refresh** button to see if the import has succeeded.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image18.png)
 
@@ -240,7 +229,7 @@ you imported in the previous exercise.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image22.png)
 
-    >[!Important] If you do not see the mapping to be proper in the page, then select **Back** and select the **Data Delimiter** to
+    >**Note:** If you do not see the mapping to be proper in the page, then select **Back** and select the **Data Delimiter** to
     be **None** and select **Review Mapping**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image23.png)
@@ -258,8 +247,7 @@ you imported in the previous exercise.
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image26.png)
     ![](./media/a7.png)
 
-16. This can take a little while, but you can hit the **Refresh** button
-    to see if the import has succeeded.
+16. This can take a little while, but you can hit the **Refresh** button to see if the import has succeeded.
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image27.png)
 
