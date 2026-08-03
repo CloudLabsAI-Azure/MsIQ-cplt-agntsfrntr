@@ -211,13 +211,6 @@ In this exercise, we will first create an Azure AI Search resource, which will b
 
     ![](./media/v9.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="336509c8-664a-4cd8-b4ef-8151e1c22676" /> 
-
 ## Exercise 2: Create a Storage account
 
 This exercise is to create a storage account with Blob storage and
@@ -315,13 +308,6 @@ upload the documents required supporting the retail customers in it.
 
 In this exercise, we have created a Storage account and added the
 documents and required Role permissions to it.
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="f8879497-d9c6-4219-a9d7-97eaba2cb7fe" /> 
 
 ## Exercise 3: Create an Azure OpenAI Service and deploy a model
 
@@ -429,13 +415,6 @@ The AI Search service will have to vectorize the data uploaded, in order to perf
 
     ![](./media/v29.png)
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="1309cc2b-a704-4be4-a0cd-418a37fb7a3e" /> 
-
 ## Exercise 4: Create a vector index
 
 The AI Search resource needs a Vector index to perform the vector
@@ -492,13 +471,6 @@ search. You will vectorize the uploaded data in this exercise.
 1. Click on **Close** in the success dialog box.
 
     ![](./media/v33.png)
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="c4da5a14-8227-450b-82a8-d492e000f7e2" /> 
 
 ## Exercise 5: Create a retail assistant agent
 
@@ -574,13 +546,6 @@ In this exercise, you will add the Azure AI Search that you created from the Azu
 1. You can see that the response from the agent now is from the document uploaded in the AI Search service.
 
     ![](./media/v41.png)
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="a9171194-7a6c-4fbc-a9eb-cd4b02f3e46c" /> 
 
 ## Exercise 7: Deploy a Model in Microsoft Foundry
 

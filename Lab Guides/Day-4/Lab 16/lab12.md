@@ -177,13 +177,6 @@ retrieves and responds using the configured knowledge sources.
 
     You have successfully built the foundational Copilot Studio agent that serves as the orchestrator for customer interactions.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="6c2a5dd8-2e11-4103-8d05-e4d65e5c343f" /> 
-
 ## Exercise 2: Foundry agent
 
 In this exercise, you will enhance the solution by creating a
@@ -417,13 +410,6 @@ You have validated that the Copilot Studio agent can successfully invoke the Fou
 
 You have extended your solution by adding a specialized product agent, demonstrating agent collaboration and domain-specific intelligence.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="24452d6b-b2ce-4307-9344-6b14e7036819" /> 
-
 ## Exercise 3: Create Fabric Data Agent
 
 In this exercise, you will further enhance the solution by introducing a Fabric Data Agent to provide real-time insights from structured business data.
@@ -635,13 +621,6 @@ question and the purpose of the agent.
 You have validated that the Copilot Studio agent can intelligently route queries and orchestrate responses across multiple specialized agents.
 
 You have successfully completed the multi-agent architecture by adding a data-driven agent, enabling real-time insights and advanced orchestration.
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="a15477eb-6bd9-4ca2-9f82-a13d55e9ff47" /> 
 
 ## Summary:
 

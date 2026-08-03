@@ -173,13 +173,6 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
 
     >**Note:** By customizing the instructions and uploading relevant documents, you're teaching the agent how to behave and what knowledge to rely on. This is a simplified form of Retrieval-Augmented Generation (RAG).
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-- If you receive a success message, you can proceed to the next task.
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="aa81c757-8018-4876-860e-2ae841d76426" /> 
-
 ## Exercise 2: Build your first agent using M365 Agents SDK
 
 Now that you've seen how to build an agent using Microsoft Foundry, let's switch gears and explore how to build your own agent locally using the Microsoft 365 Agents SDK. This SDK lets you build multi-channel, production-ready agents that can run in Microsoft Teams, Microsoft 365 Copilot, and other preferred channels.
