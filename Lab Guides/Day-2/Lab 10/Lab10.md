@@ -334,7 +334,3 @@ In this lab, you completed the following:
 By completing this lab, you learned how Agent 365 provides centralized governance, monitoring, lifecycle management, and compliance capabilities for Microsoft 365 Copilot agents, enabling organizations to securely deploy, manage, and scale AI solutions across the enterprise
 
 ## You have successfully completed the Lab!
-
-Now, click on **Next >>** from the lower right corner to move on to the next page.
-
-![Image](./media/nxtd1.png)

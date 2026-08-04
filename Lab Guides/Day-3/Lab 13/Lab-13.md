@@ -1,5 +1,7 @@
 # Lab 13: Build a Healthcare Agent to Automate Patient Appointments
 
+### Estimated Duration: 100 Minutes
+
 ## Scenario
 
 Northstar Community Hospital operates multiple outpatient clinics and receives hundreds of appointment requests every day through phone calls and emails. This manual scheduling process often results in long wait times, booking conflicts, and increased administrative workload for front-desk staff.
@@ -11,7 +13,7 @@ By the end of this lab, you will have built an intelligent healthcare agent that
 ## Persona
 
 **Emily Carter**  
-**Role:** Digital Transformation Lead – Northstar Community Hospital
+**Role:** Digital Transformation Lead - Northstar Community Hospital
 
 Emily is responsible for modernizing patient services by implementing AI-powered healthcare solutions. Her objective is to reduce administrative effort, improve appointment scheduling efficiency, and provide patients with a secure self-service experience while ensuring sensitive healthcare interactions follow responsible AI practices.
 
@@ -55,7 +57,7 @@ Create and populate the Dataverse table that will store appointment slot informa
 
     ![](./media/l13-0.png)
 
-1. In the **New solution** pane, enter **HealthcareSolution (1)** in **Display name**, enter **HealthcareSolution (2)** in **Name**, and then click **+ New publisher (3)**.
+1. In the **New solution** pane, enter **HealthcareSolution-<inject key="DeploymentID" enableCopy="false"/> (1)** in **Display name**, enter **HealthcareSolution-<inject key="DeploymentID" enableCopy="false"/> (2)** in **Name**, and then click **+ New publisher (3)**.
 
     ![](./media/l13-1.png)
 
@@ -258,7 +260,7 @@ continuing the conversation.
 
     ![](./media/image28.png)
 
-### Task 3 – Build the Patient Identity Verification Topic
+### Task 3 - Build the Patient Identity Verification Topic
 
 Create a reusable topic that securely collects patient identity
 information before allowing appointment-related actions.
@@ -341,7 +343,7 @@ information before allowing appointment-related actions.
 
     ![](./media/image39.png)
 
-### Task 4 – Build the Appointment Booking Topic
+### Task 4 - Build the Appointment Booking Topic
 
 Design the conversation that collects appointment preferences and
 prepares the booking request for automation.
@@ -457,7 +459,7 @@ prepares the booking request for automation.
 
     ![](./media/image55.png)
 
-### Task 5 – Build the Appointment Cancellation Topic
+### Task 5 - Build the Appointment Cancellation Topic
 
 Create a conversation that allows patients to securely cancel existing
 appointments after confirming their identity
@@ -548,7 +550,7 @@ appointments after confirming their identity
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image69.png)
 
-### Task 6 – Test the Healthcare Agent
+### Task 6 - Test the Healthcare Agent
 
 Validate the conversational experience by testing emergency handling,
 knowledge retrieval, and appointment booking interactions.

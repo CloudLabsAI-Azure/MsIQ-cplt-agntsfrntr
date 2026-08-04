@@ -525,7 +525,7 @@ Academic requests span two very different needs: live data (grades, exam timetab
 
     - Then click on **Create.**
 
-    ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image59.png)
+      ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image59.png)
 
 1. Again, select **Tools** from the menu to create an Exam Planner skill. So enter the following values in **Create from blank** tab:
 
@@ -675,8 +675,7 @@ knowledge-and-skills-only agent, showing that not every specialist in a multi-ag
     - Description: 
     
       ```
-      Use when a prospective student asks about admission
-    eligibility, application procedures, required documents admission deadlines, or international admissions.**
+      Use when a prospective student asks about admission eligibility, application procedures, required documents admission deadlines, or international admissions.**
 
     - Instruction:
 
@@ -759,7 +758,7 @@ knowledge-and-skills-only agent, showing that not every specialist in a multi-ag
 
     - Select **Create**.
 
-    ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image74.png)
+      ![A screenshot of a computer screen AI-generated content may be incorrect.](./media/image74.png)
 
 1. Select **Publish**.
 
@@ -934,7 +933,7 @@ A working agent only creates value once students can actually reach it. In this 
    I need a bonafide certificate for my visa application.
    ```
 
-![](./media/image106.png)
+   ![](./media/image106.png)
 
 1. When Atlas (via the Student Services Agent) asks for your Student ID, respond with:
 
