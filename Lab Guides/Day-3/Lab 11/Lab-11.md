@@ -52,7 +52,6 @@ In this task, you will scaffold a new Declarative Agent project using the Micros
 
     > **Note:** If you do not see the icon shown in the image below, update **Visual Studio Code** to the latest version and ensure that the **Microsoft 365 Agents Toolkit** extension is installed. Updating Visual Studio Code is required for the extension to function correctly. To update VS Code, go to **Settings** and install the latest available version before proceeding.
 
-
     ![m365atk-icon](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%208/media/image7.png)
 
     ![](./media/t6.png)
