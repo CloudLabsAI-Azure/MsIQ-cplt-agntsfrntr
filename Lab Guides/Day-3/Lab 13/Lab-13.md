@@ -1,6 +1,6 @@
 # Lab 13: Build a Healthcare Agent to Automate Patient Appointments
 
-### Estimated Duration: 100 Minutes.
+### Estimated Duration: 100 Minutes
 
 ## Scenario
 
@@ -47,35 +47,35 @@ Create and populate the Dataverse table that will store appointment slot informa
 
 ### Task 0 - Creating solution
 
-1. Open the browser, enter the following URL to navigate to the Power Apps portal:
+1. Open the browser, enter the following URL to navigate to the Power Apps portal and login using the credentials given in the **Environment tab**:
 
    ```
    make.powerapps.com
    ``` 
 
-1. From the left navigation pane, select **Tables** **(1)**. On the **Tables** page, select **+ New table** **(2)**, and then choose **Create new tables** **(3)** from the drop-down menu.
+2. From the left navigation pane, select **Tables** **(1)**. On the **Tables** page, select **+ New table** **(2)**, and then choose **Create new tables** **(3)** from the drop-down menu.
 
     ![](./media/l13-0a.png)
 
-1. Now click on **Switch and create**. It will be created in few minutes.
+3. Now click on **Switch and create**. It will be created in few minutes.
 
     ![](./media/l13-0b.png)
 
     ![](./media/l13-0c.png)
 
-1. In the left navigation, select **Solutions (1)**, and then click **+ New solution (2)**.
+4. In the left navigation, select **Solutions (1)**, and then click **+ New solution (2)**.
 
     ![](./media/l13-0.png)
 
-1. In the **New solution** pane, enter **HealthcareSolution-<inject key="DeploymentID" enableCopy="false"/> (1)** in **Display name**, enter **HealthcareSolution-<inject key="DeploymentID" enableCopy="false"/> (2)** in **Name**, and then click **+ New publisher (3)**.
+5. In the **New solution** pane, enter **HealthcareSolution-<inject key="DeploymentID" enableCopy="false"/> (1)** in **Display name**, enter **HealthcareSolution-<inject key="DeploymentID" enableCopy="false"/> (2)** in **Name**, and then click **+ New publisher (3)**.
 
     ![](./media/l13-1.png)
 
-1. In the **New publisher** pane, enter **NorthstarHealthcare (1)** in **Display name**, enter **NorthstarHealthcare (2)** in **Name**, enter **nhs (3)** in **Prefix**, and then click **Save (4)**.
+6. In the **New publisher** pane, enter **NorthstarHealthcare (1)** in **Display name**, enter **NorthstarHealthcare (2)** in **Name**, enter **nhs (3)** in **Prefix**, and then click **Save (4)**.
 
     ![](./media/l13-2.png)
 
-1. In the **New solution** pane, verify the solution details and selected publisher, and then click **Create (1)**.
+7. In the **New solution** pane, verify the solution details and selected publisher, and then click **Create (1)**.
 
     ![](./media/l13-3.png)
 
@@ -663,6 +663,8 @@ from Dataverse based on the patient's selected medical specialty.
 8. Click the **+ sign** below the previous node. Search for **List rows** in the search bar. Select **List rows** from Dataverse.
 
     ![](./media/image85.png)
+   Note: If you face the following error while sign-in then open the pop-ups blocked. Select Allows allow pop-up and Select Done.
+   ![](./media/aa1.png)
 
 9. Enter Connection name as: **<inject key="AzureAdUserEmail"></inject>**. Click **Sign in** to connect to Dataverse.
 
@@ -673,12 +675,12 @@ from Dataverse based on the patient's selected medical specialty.
 
     ![](./media/image87.png)
 
-11. In the filter field, **enter **cr41f_medicalspecialty eq '** -\> click daynamic symbol -\> select insert specialty dynamic value -\> enter **** **' and cr41f_doctorbookingstatus eq 1****.
+11. In the filter field, **enter **nhs_specialty eq '** -\> click daynamic symbol -\> select insert specialty dynamic value -\> enter **' and nhs_doctorstatus eq 1****.
 
     >**Note:** The Dataverse schema prefix (for example, **cr14f**,
-    **cr41f**, **crbab**, etc.) is automatically generated when the table is created and **may be different in your environment**. Always verify the actual schema name of your columns before using them in Power Automate expressions
+    **cr41f**, **crbab**,**nhs** etc.) is automatically generated when the table is created and **may be different in your environment**. Always verify the actual schema name of your columns before using them in Power Automate expressions.
 
-    ![](./media/image88.png)
+    ![](./media/aa2.png)
 
 12. Enter the Row count as 4.
 
@@ -703,26 +705,26 @@ from Dataverse based on the patient's selected medical specialty.
     '📅 Appointment',
     decodeUriComponent('%0A'),
     'Date: ',
-    formatDateTime(item()?['cr41f_appointmentdateandtime'], 'dd MMM yyyy'),
+    formatDateTime(item()?['nhs_appointmentdatetime'], 'dd MMM yyyy'),
     decodeUriComponent('%0A'),
     'Time: ',
-    formatDateTime(item()?['cr41f_appointmentdateandtime'], 'hh:mm tt'),
+    formatDateTime(item()?['nhs_appointmentdatetime'], 'hh:mm tt'),
     decodeUriComponent('%0A'),
     '👨‍⚕️ Doctor: ',
-    item()?['cr41f_clinicianname'],
+    item()?['nhs_clinicianname'],
     decodeUriComponent('%0A'),
     '📍 Location: ',
-    item()?['cr41f_cliniclocation'],
+    item()?['nhs_location'],
     decodeUriComponent('%0A'),
     '🆔 Slot ID: ',
-    item()?['cr41f_slotidentifier'],
+    item()?['nhs_slotid'],
     decodeUriComponent('%0A'),
     '────────────────────────'
     )
     ```
 
     >**Note:** The Dataverse schema prefix (for example, **cr14f**,
-    **cr41f**, **crbab**, etc.) is automatically generated when the table is created and **may be different in your environment**. Always verify the actual schema name of your columns before using them in Power Automate expressions
+    **cr41f**, **crbab**, **nhs** etc.) is automatically generated when the table is created and **may be different in your environment**. Always verify the actual schema name of your columns before using them in Power Automate expressions
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image93.png)
 
@@ -769,6 +771,20 @@ from Dataverse based on the patient's selected medical specialty.
 24. Click the **save** button to save the changes.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image103.png)
+25. After successfully saving the flow, select the **back** button from the top left of the navigation bar.
+26. Select **Solutions** from the left navigation. Then select **HealthcareSolution**.
+    ![](./media/aa3.png)
+27. You will be navigated to Power Apps. Expand the menu.
+    ![](./media/aa4.png)
+28. Select Objects -> Cloud flows.
+    ![](./media/aa5.png)
+29. Select Add existing -> Automation -> Cloud flow
+    ![](./media/aa6.png)
+30. Select HC-SlotLoopup flow. Then click Add to add this flow to the Healthcare solution.
+    ![](./media/aa7.png)
+31. Select Publish all customizations.
+    ![](./media/aa8.png)
+
 
 ### Task 2 - Connect the HC-SlotLookup Flow to the Agent
 
@@ -884,14 +900,14 @@ slot, updates Dataverse, and returns a booking confirmation.
 
     ![](./media/image117.png)
 
-11. In the **Filter rows** field, enter the following expression: **ppa_slotidentifier eq '** -\>Select **Dynamic content** and insert the **slot_id** parameter -\> **’**
+11. In the **Filter rows** field, enter the following expression: **nhs_slotid eq '** -\>Select **Dynamic content** and insert the **slot_id** parameter -\> **’**
 
     >**Note:** The Dataverse schema prefix (for example, **cr14f**,
-    **cr41f**, **crbab**, etc.) is automatically generated when the table is created and **may be different in your environment**. Always verify the actual schema name of your columns before using them in Power Automate expressions
+    **cr41f**, **crbab**, **nhs** etc.) is automatically generated when the table is created and **may be different in your environment**. Always verify the actual schema name of your columns before using them in Power Automate expressions
 
-    ![](./media/image118.png)
+    ![](./media/aa9.png)
 
-    ![](./media/image119.png)
+    ![](./media/aa10.png)
 
 12. Enter **1** in the **Row count** field.
 
@@ -927,9 +943,9 @@ slot, updates Dataverse, and returns a booking confirmation.
     | Patient ID         | `patient_id`         | When an agent calls the flow → `patient_id`      |
     | Patient Name       | `patient_name`       | When an agent calls the flow → `patient_name`    |
     | Date Of Birth      | `date_of_birth`      | When an agent calls the flow → `date_of_birth`   |
-    | Medical Specialty  | `specialty`          | When an agent calls the flow → `specialty`       |
+    | Specialty  | `specialty`          | When an agent calls the flow → `specialty`       |
     | Reason For Visit   | `reason_for_visit`   | When an agent calls the flow → `reason_for_visit`|
-    | Status             | `Confirmed`          | Select the choice value manually                 |
+    | Status(Status of Appointment)             | `Confirmed`          | Select the choice value manually                 |
 
     ![](./media/image127.png)
 
@@ -945,9 +961,9 @@ slot, updates Dataverse, and returns a booking confirmation.
 
 20. Enter manually:
 
-    **✅ Your appointment has been confirmed.
+    **✅ Your appointment has been confirmed.**
 
-    Appointment Reference:**
+    **Appointment Reference:**
 
     Insert the **slot_id** dynamic content from **When an agent calls the
     flow**.
@@ -969,7 +985,7 @@ slot, updates Dataverse, and returns a booking confirmation.
 
     ![](./media/image133.png)
 
-22. Click **+ Add an output**. Select **Text**.
+22. Select **Respond to the agent**, it will open an pop-up windows. Now click **+ Add an output**. Select **Text**.
 
 23. Enter the output name as: **BookingConfirmation**
 
@@ -983,6 +999,21 @@ slot, updates Dataverse, and returns a booking confirmation.
 25. Click **Save** to save the flow.
 
     ![](./media/image136.png)
+26. After successfully saving the flow, select the back button from the top left of the navigation bar.
+    ![](./media/aa11.png)
+27. Select Solutions from the left navigation. Then select HealthcareSolution.
+    ![](./media/aa12.png)
+28. You will be navigated to Power Apps. Expand the menu.
+    ![](./media/aa13.png)
+29. Select Objects -> Cloud flows
+    ![](./media/aa14.png)
+30. Select Add existing -> Automation -> Cloud flow
+    ![](./media/aa15.png)
+31. Select HC-BookAppointment flow. Then click Add to add this flow to the Healthcare solution.
+    ![](./media/aa16.png)
+32. Select Publish all customizations.
+    ![](./media/aa17.png)
+
 
 ### Task 4 — Connect the HC-BookAppointment Flow to the Agent
 
@@ -1066,8 +1097,7 @@ booking details are correctly stored in Dataverse.
 
     - Which speciality would you like to book an appointment with: **Orthopaedics**
 
-    - Is this your first visit or a follow-up appointment: Select First
-    Visit
+    - Is this your first visit or a follow-up appointment: **First Visit**
 
     - Please briefly describe the reason for your appointment: **I m feeling a little pain in my right Knee**
 
