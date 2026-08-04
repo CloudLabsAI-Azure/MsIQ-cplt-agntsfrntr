@@ -1,6 +1,6 @@
 # Lab 13: Build a Healthcare Agent to Automate Patient Appointments
 
-### Estimated Duration: 100 Minutes
+### Estimated Duration: 100 Minutes.
 
 ## Scenario
 
