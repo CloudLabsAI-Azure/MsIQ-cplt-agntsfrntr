@@ -389,6 +389,8 @@ In this task, you will test the Repair Service Agent that you just created.
 
     ![](./media/t30.png)
 
+    >**Note:** If you encounter an error at this step, it is likely due to an issue with the installation of the npm packages. In this case, delete the entire project folder, recreate it by following the previous steps, and then repeat this task. This will ensure that all required dependencies are installed correctly and the provisioning process completes successfully.
+
 1. On your virtual machine, open a web browser and navigate to the Microsoft 365 Copilot portal.
 
      ```
