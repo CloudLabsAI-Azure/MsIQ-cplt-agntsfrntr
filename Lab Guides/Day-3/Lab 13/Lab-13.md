@@ -53,6 +53,14 @@ Create and populate the Dataverse table that will store appointment slot informa
    make.powerapps.com
    ``` 
 
+1. From the left navigation pane, select **Tables** **(1)**. On the **Tables** page, select **+ New table** **(2)**, and then choose **Create new tables** **(3)** from the drop-down menu.
+
+    ![](./media/l13-0a.png)
+
+1. Now click on **Switch and create**. It will be created in few minutes.
+
+    ![](./media/l13-0b.png)
+
 1. In the left navigation, select **Solutions (1)**, and then click **+ New solution (2)**.
 
     ![](./media/l13-0.png)
