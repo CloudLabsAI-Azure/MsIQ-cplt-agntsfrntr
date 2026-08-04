@@ -75,7 +75,7 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
 
     ![](./media/image2.png)
 
-1. Enter **proj-<DID> (1)** as the project name, select the Resource group that starts with **Copilot-Studio (2)**, and select **Create (3)**.
+1. Enter **proj-<inject key="DeploymentID" enableCopy="false"/> (1)** as the project name, select the Resource group that starts with **Copilot-Studio (2)**, and select **Create (3)**.
 
     ![](./media/b8.png)
 
@@ -225,6 +225,8 @@ Now that you've seen how to build an agent using Microsoft Foundry, let's switch
 
       ![](./media/img13.png)   
 
+1. Once the installation is complete, close and reopen Visual StudioMi.
+
 4. Provide a name for your project as **ZavaHRAgent** and select **Create**.
 
     ![](./media/image205.png)
@@ -340,7 +342,7 @@ Now that you've created a basic bot, it's time to enhance it with generative AI 
 
     ![](./media/image44.png)
 
-1. This class defines the structure used when referencing specific documents in responses - useful when your agent cites content from uploaded files.
+1. This class defines the structure used when referencing specific documents in responses - useful when your agent cites content from uploaded files and then save the file.
 
     ```
     using Microsoft.Agents.Core.Models;
@@ -458,9 +460,8 @@ In this task, you'll connect to the Microsoft Foundry agent by adding a client t
 
         // if the threadId is not set, we create a new thread
         // otherwise, we use the existing thread
-        var thread = string.IsNullOrEmpty(threadId)
-            ? new AzureAIAgentThread(_projectClient)
-            : new AzureAIAgentThread(_projectClient, threadId);
+        string? threadId = null; 
+        var thread = new AzureAIAgentThread(_projectClient);
 
         try
         {
@@ -474,14 +475,6 @@ In this task, you'll connect to the Microsoft Foundry agent by adding a client t
             // invoke the agent and stream the responses to the user
             await foreach (AgentResponseItem<StreamingChatMessageContent> agentResponse in agent.InvokeStreamingAsync(message, thread, cancellationToken: cancellationToken))
             {
-                // if the threadId is not set, we set it from the agent response
-                // and store it in the conversation state for future use
-                if (string.IsNullOrEmpty(threadId))
-                {
-                    threadId = agentResponse.Thread.Id;
-                    turnState.Conversation.ThreadId(threadId);
-                }
-
                 turnContext.StreamingResponse.QueueTextChunk(agentResponse.Message.Content);
             }
         }
@@ -502,111 +495,6 @@ In this task, you'll connect to the Microsoft Foundry agent by adding a client t
     ![](./media/image322.png)
 
 6. The **OnMessageAsync** method is the heart of your agent's response logic. By replacing the default echo behavior, you've enabled your agent to send the user's message to your Azure AI Foundry agent, stream the response back to the user in real time, track and attach citations and file references for transparency, and add sensitivity and AI-generated labels for security and traceability.
-
-    ```cs
-    using Azure.AI.Agents.Persistent;
-    using Azure.Identity;
-    using Microsoft.Agents.Builder;
-    using Microsoft.Agents.Builder.App;
-    using Microsoft.Agents.Builder.State;
-    using Microsoft.Agents.Core.Models;
-    using Microsoft.SemanticKernel;
-    using Microsoft.SemanticKernel.Agents;
-    using Microsoft.SemanticKernel.Agents.AzureAI;
-    using Microsoft.SemanticKernel.ChatCompletion;
-
-    namespace ZavaHRAgent.Bot;
-
-    public class EchoBot : AgentApplication
-    {
-        private readonly PersistentAgentsClient _projectClient;
-        private readonly string _agentId;
-        public EchoBot(AgentApplicationOptions options) : base(options)
-        {
-            OnConversationUpdate(ConversationUpdateEvents.MembersAdded, WelcomeMessageAsync);
-
-            // Listen for ANY message to be received. MUST BE AFTER ANY OTHER MESSAGE HANDLERS
-            OnActivity(ActivityTypes.Message, OnMessageAsync);
-        }
-
-        public EchoBot(AgentApplicationOptions options, IConfiguration configuration) : base(options)
-        {
-
-            OnConversationUpdate(ConversationUpdateEvents.MembersAdded, WelcomeMessageAsync);
-
-            // Listen for ANY message to be received. MUST BE AFTER ANY OTHER MESSAGE HANDLERS 
-            OnActivity(ActivityTypes.Message, OnMessageAsync);
-
-            // Microsoft Foundry Project ConnectionString
-            string projectEndpoint = configuration["AIServices:ProjectEndpoint"];
-            if (string.IsNullOrEmpty(projectEndpoint))
-            {
-                throw new InvalidOperationException("ProjectEndpoint is not configured.");
-            }
-            _projectClient = new PersistentAgentsClient(projectEndpoint, new AzureCliCredential());
-
-            // Microsoft Foundry Agent Id
-            _agentId = configuration["AIServices:AgentID"];
-            if (string.IsNullOrEmpty(_agentId))
-            {
-                throw new InvalidOperationException("AgentID is not configured.");
-            }
-
-        }
-
-        protected async Task OnMessageAsync(ITurnContext turnContext, ITurnState turnState, CancellationToken cancellationToken)
-        {
-            // send the initial message to the user
-            await turnContext.StreamingResponse.QueueInformativeUpdateAsync("Working on it...", cancellationToken);
-
-            // get the agent definition from the project
-            var agentDefinition = await _projectClient.Administration.GetAgentAsync(_agentId, cancellationToken);
-
-            // initialize a new agent instance from the agent definition
-            var agent = new AzureAIAgent(agentDefinition, _projectClient);
-
-            // retrieve the threadId from the conversation state
-            // this is set if the agent has been invoked before in the same conversation
-            var threadId = turnState.Conversation.ThreadId();
-
-            // if the threadId is not set, we create a new thread
-            // otherwise, we use the existing thread
-            var thread = string.IsNullOrEmpty(threadId)
-                ? new AzureAIAgentThread(_projectClient)
-                : new AzureAIAgentThread(_projectClient, threadId);
-
-            try
-            {
-                // increment the message count in state and queue the count to the user
-                int count = turnState.Conversation.IncrementMessageCount();
-                turnContext.StreamingResponse.QueueTextChunk($"({count}) ");
-
-                // create the user message to send to the agent
-                var message = new ChatMessageContent(AuthorRole.User, turnContext.Activity.Text);
-
-                // invoke the agent and stream the responses to the user
-                await foreach (AgentResponseItem<StreamingChatMessageContent> agentResponse in agent.InvokeStreamingAsync(message, thread, cancellationToken: cancellationToken))
-                {
-                    // if the threadId is not set, we set it from the agent response
-                    // and store it in the conversation state for future use
-                    if (string.IsNullOrEmpty(threadId))
-                    {
-                        threadId = agentResponse.Thread.Id;
-                        turnState.Conversation.ThreadId(threadId);
-                    }
-
-                    turnContext.StreamingResponse.QueueTextChunk(agentResponse.Message.Content);
-                }
-            }
-            finally
-            {
-                // ensure we end the streaming response
-                await turnContext.StreamingResponse.EndStreamAsync(cancellationToken);
-            }
-        }
-    }
-
-    ```
 
 ### Task 2: Configure Azure AI Agent Service Keys
 
@@ -698,7 +586,7 @@ In this task, you will test the created agent in Teams.
 
     ![](./media/image55.png)
 
-5. Add the path obtained from the output of the command **where az** (the first step of this task) and click **Ok**.
+5. Click on New and Add the path obtained from the output of the command **where az** (the first step of this task) and click **Ok**.
 
     ![](./media/image56.png)
 
@@ -811,7 +699,7 @@ In this exercise, you'll bring your custom engine agent into Copilot Chat by upd
             "commands": [ 
             { 
                 "title": "Emergency and Mental Health",
-                "description": "What's the difference between Northwind Standard and Health Plus when it comes to emergency and mental health coverage?" 
+                "description": "What’s the difference between Northwind Standard and Health Plus when it comes to emergency and mental health coverage?" 
             }, 
             { 
                 "title": "PerksPlus Details", 
