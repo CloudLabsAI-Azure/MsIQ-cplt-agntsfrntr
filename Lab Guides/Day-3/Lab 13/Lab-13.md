@@ -61,6 +61,8 @@ Create and populate the Dataverse table that will store appointment slot informa
 
     ![](./media/l13-0b.png)
 
+    ![](./media/l13-0c.png)
+
 1. In the left navigation, select **Solutions (1)**, and then click **+ New solution (2)**.
 
     ![](./media/l13-0.png)
