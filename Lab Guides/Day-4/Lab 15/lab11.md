@@ -142,8 +142,7 @@ In this exercise, we will first create an Azure AI Search resource, which will b
 
 1. From the Home page of the Azure portal, select **Foundry.**
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image2.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image2.png)
 
 1. In the **Microsoft Foundry** page, select **AI Search** from the left pane and then select **+ Create**.
 
@@ -196,8 +195,7 @@ upload the documents required supporting the retail customers in it.
 
 1. From the Home page of the Azure portal, select **Storage accounts**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image12.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image12.png)
 
 1. Select **+ Create** to create a new Storage account.
 
@@ -215,6 +213,8 @@ upload the documents required supporting the retail customers in it.
 
     - Preferred storage type - Select **Azure Blob Storage or Azure Data Lake Storage**
 
+    - Redundancy - **Locally redundant storage (LRS)**
+
     ![](./media/v11.png)
     
 1. Once the validation passes, click on **Create**.
@@ -229,35 +229,29 @@ upload the documents required supporting the retail customers in it.
 
 1. From the left navigation pane, select **Containers (1)** under **Data storage**. Select **+ Add container (2)**, enter the name as **documents (3)** and click on **Create (4)** to create the container.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image18.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image18.png)
 
 1. Select the created container **documents** to upload the leave policy document into it.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image19.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image19.png)
 
 1. Click on **Upload** and then select **Browse for files**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image20.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image20.png)
 
 1. Select the **documents** from **C:\Lab Files\AISearch** folder and then click on **Upload**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image21.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image21.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image22.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image22.png)
 
 1. Navigate to the **docstore<inject key="DeploymentID" enableCopy="false"/>** Storage account (Select **Storageaccounts** from the **Home page** of the Azure portal and select the resource that starts with **docstore**) and select **Access Control (IAM)** from the left pane. Select **Add -\> Add role assignment**.
 
-  ![A screenshot of a computer AI-generated content may be incorrect.](https://raw.githubusercontent.com/technofocus-pte MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image23.png)
+    ![](./media/15a.png)
 
 1. Search for **Storage Blob Data Reader**, select it and click on **Next**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image24.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image24.png)
 
 1. Click on **+Select members**, search for and select your **user id** **<inject key="AzureAdUserEmail"></inject>**, select your **user id** that gets listed and then click on **Select**. This adds the Storage Blob Data Reader role to your user id.
 
@@ -273,8 +267,7 @@ upload the documents required supporting the retail customers in it.
 
 1. Back in the Add role assignment screen, click on **Review + assign**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image28.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image28.png)
 
 1. Select **Review + assign** again in the next screen.
 
@@ -297,8 +290,7 @@ The AI Search service will have to vectorize the data uploaded, in order to perf
     
 1. Select **+ Create -> Azure OpenAI**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image32.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image32.png)
 
 1. Enter the below details and select **Next**.
 
@@ -312,11 +304,9 @@ The AI Search service will have to vectorize the data uploaded, in order to perf
 
     - Pricing tier - Select **Standard S0**
 
-      ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image33.png)
+      ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image33.png)
 
-      ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image34.png)
+      ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image34.png)
 
 1. Select **Next** in the next 2 screens, and then select **Create** in the **Review + submit** screen.
 
@@ -333,8 +323,7 @@ The AI Search service will have to vectorize the data uploaded, in order to perf
 1. Search for **Cognitive Services OpenAI User**, select the role
     and click on **Next**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image38.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image38.png)
 
 1. Select **+ Select members**, search for your **user
     id** *<inject key="AzureAdUserEmail"></inject>**, select it
@@ -356,15 +345,17 @@ The AI Search service will have to vectorize the data uploaded, in order to perf
 
 1. Wait for a **success** message on the role additions before proceeding with the next tasks.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image43.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image43.png)
 
 1. From the **Overview** page of the Azure OpenAI Service resource, select **Go to Foundry portal** to open the Azure OpenAI Service there and deploy a model.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image44.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image44.png)
 
 1. Close the **Create a project** window.
+
+    > **Note:** In some cases, you may not be able to close the **Create New Project** dialog after the project has been created. If this occurs, click **Microsoft Foundry (1)** from the upper-left corner, and then select **openaiservice<inject key="DeploymentID" enableCopy="false"/> (2)** to open the newly created project.
+
+    ![](./media/v24a.png)
 
 1. **Turn off** New Foundry toggle button and the select **continue without feedback**.
 
@@ -386,8 +377,7 @@ The AI Search service will have to vectorize the data uploaded, in order to perf
     
 1. Select **Deploy** in the Deploy text-embedding-3-large.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image47.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image47.png)
 
 1. The model gets deployed and the screen is loaded with the deployment details.
 
@@ -435,16 +425,13 @@ search. You will vectorize the uploaded data in this exercise.
 
 1. Select Next in the **Vectorize and enrich your images** screen since we are not dealing with images here and select **Next** in the **Advanced settings** screen as well.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image54.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image54.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image55.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image55.png)
 
 1. Select **Create** in the **Review + create** screen.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image56.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image56.png)
 
 1. Click on **Close** in the success dialog box.
 
@@ -456,11 +443,9 @@ In this exercise, you will create a retail assistant agent in Copilot Studio.
 
 1. Login to **https://copilotstudio.microsoft.com**/ using your login credentials from the **Resources tab**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image1.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image1.png)
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image58.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image58.png)
 
 1. Select **Agents** and then select **Create blank agent**.
 
@@ -492,8 +477,7 @@ In this exercise, you will add the Azure AI Search that you created from the Azu
 
 1. Select **Azure AI Search** from the list of knowledge sources available.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image64.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image64.png)
 
 1. Click on the **drop down** next to **Not connected** in the next screen and select **Create new connection**.
 
@@ -502,18 +486,15 @@ In this exercise, you will add the Azure AI Search that you created from the Azu
 
 1. Enter the **Endpoint url** and the **Admin key** values which we saved to a notepad in a previous exercise and then click on **Create** to create the connection.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image66.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image66.png)
 
 1. Once the connection is established, the available index is listed and already selected. Click on **Add to agent**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image67.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image67.png)
 
 1. The AI Search service is added as a knowledge source to the agent and is in **Ready** state now.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image68.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image68.png)
 
 1. Now, let us test the agent with the same question we have tried before.
 
@@ -569,8 +550,7 @@ In this exercise, you will learn how to bring the deployed model from Microsoft 
 
     ![](./media/v50.png)
     
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image81.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image81.png)
 
 1. Enter the below details and click on **Connect**.
 
@@ -584,8 +564,7 @@ In this exercise, you will learn how to bring the deployed model from Microsoft 
 
 1. Once connected, select **Close**.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image84.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image84.png)
 
 1. You can see that the model ModelforMCS is selected now
 
@@ -601,8 +580,7 @@ In this exercise, you will learn how to bring the deployed model from Microsoft 
 
 1. Select the **Add and configure** option to add the prompt to the agent.
 
-    ![A screenshot of a computer AI-generated content may be
-    incorrect.](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image88.png)
+    ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2011/media/image88.png)
 
     ![](./media/v55.png)
 
