@@ -71,17 +71,25 @@ Microsoft Foundry is your launchpad for building AI agents. In this task, you'll
 
     ![](./media/b7.png)
 
-1. From the Microsoft Foundry homepage, select **Create an agent**.
+1. On the Microsoft Foundry (Classic) portal, from the top navigation bar, click **All resources** to view the full list of resources.
 
-    ![](./media/image2.png)
+    ![](./media/image.png)
 
-1. Enter **proj-<inject key="DeploymentID" enableCopy="false"/> (1)** as the project name, select the Resource group that starts with **Copilot-Studio (2)**, and select **Create (3)**.
+1. Click the **Create new** button highlighted in red on the **All resources** page.
+
+    ![](./media/img-1.png)
+
+1. On the **Create project** screen, select **Microsoft Foundry resource** (option **1**), then click **Next** (option **2**) to continue.
+
+    ![](./media/img-2.png)
+
+1. On Create a new project window, enter **proj-<inject key="DeploymentID" enableCopy="false"/> (1)** as the project name, select the Resource group that starts with **Copilot-Studio (2)**, and select **Create (3)**.
 
     ![](./media/b8.png)
 
 1. This will scaffold a new project for you in Microsoft Foundry. It usually takes 3-5 minutes.
 
-1. On the **Deploy a model** page, from the models list, select **gpt-5 (1)**, and then click **Confirm (2)**.
+1. Click on Agent from the left navigation pane, then it will open the **Deploy a model** page, from the models list, select **gpt-5 (1)**, and then click **Confirm (2)**.
 
     ![](./media/img0.png)
 
