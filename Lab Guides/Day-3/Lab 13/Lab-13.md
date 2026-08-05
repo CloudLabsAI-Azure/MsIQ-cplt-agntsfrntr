@@ -63,6 +63,8 @@ Create and populate the Dataverse table that will store appointment slot informa
 
     ![](./media/l13-0c.png)
 
+    >**Note:** Please use the newly created envrionment **ODL_User <inject key="DeploymentID" enableCopy="false"/>'s Environment** for further lab execution.
+
 4. In the left navigation, select **Solutions (1)**, and then click **+ New solution (2)**.
 
     ![](./media/l13-0.png)
@@ -83,7 +85,7 @@ Create and populate the Dataverse table that will store appointment slot informa
 
 Create the Appointment Slot Dataverse table and import the provided appointment schedule so the healthcare agent has appointment data available during booking.
 
-1. In the solution command bar, click **+ New (1)**, select **Table (2)**, and then select **Tables (3)**.
+1. In the HealthcareSolution solution command bar, click **+ New (1)**, select **Table (2)**, and then select **Tables (3)**.
 
     ![](./media/l13-4.png)
 
@@ -143,8 +145,9 @@ grounded responses.
     https://copilotstudio.microsoft.com
     ```
 
-1. Click **Agents** from the left-navigation menu, and then select
-    **+Create a blank agent.**
+    >**Note:** Please select the environment **ODL_User <inject key="DeploymentID" enableCopy="false"/>'s Environment** from top-right corner in the Copilot Studio to create the Agent. 
+
+1. Click **Agents** from the left-navigation menu, and then select **+Create a blank agent.**
 
     ![](./media/image12.png)
 
