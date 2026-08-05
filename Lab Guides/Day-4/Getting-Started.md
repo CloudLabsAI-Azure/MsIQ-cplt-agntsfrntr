@@ -1,44 +1,38 @@
-# Day 4: Build, Extend, and Govern Copilot Agents for Retail Operations with Microsoft 365 Copilot
+# Day 4: Build and Orchestrate Multi-Agent AI Systems with Microsoft Copilot Studio
 
 ### Overall Estimated Duration: 4 Hours
 
-## Overview
+In this lab, you will get hands-on experience designing, building, and orchestrating intelligent **multi-agent AI systems** using **Microsoft Copilot Studio**, **Microsoft Dataverse**, **Microsoft Foundry**, and **Microsoft Fabric**. Across three real-world scenarios-retail hiring operations, an outdoor retail customer assistant, and university student services-you will learn how to build orchestrator agents that route requests to specialized child agents, ground those agents in trusted enterprise data, extend them with custom models and real-time analytics, and publish them to Microsoft Teams and Microsoft 365 Copilot.
 
-In this lab, you will get hands-on experience building, extending, and governing intelligent Copilot agents using **Microsoft 365 Copilot**, **SharePoint**, **Copilot Studio**, and **Agent 365**. Participants will learn how to use Copilot Agent Builder, SharePoint-grounded agents, Copilot Studio orchestration, Copilot in Excel, Teams, and Chat, and Agent 365 governance to transform real-world retail operations scenarios for Zava Retail, a growing omnichannel retailer.
-
-By completing this lab, learners will be equipped to create knowledge-grounded frontline agents, build trusted SharePoint-based assistants with multi-agent handoff, accelerate financial analysis and reporting with AI assistance, and govern the enterprise agent ecosystem with centralized visibility, lifecycle control, and compliance.
+By completing this lab, learners will be equipped to build event-driven, data-grounded, multi-agent platforms that reduce manual effort, deliver accurate and consistent responses, and scale operations efficiently across different industries.
 
 ## Objective
 
 By the end of this lab, participants will be able to:
 
-- **Build and deploy a Frontline Operations Agent** using Copilot Agent Builder in Microsoft 365 Copilot, grounded in operational knowledge sources such as SOPs, employee handbooks, and store checklists, and test it across real-world retail scenarios in Microsoft Teams.
+- **Build an Autonomous Hiring Operations Platform** using Microsoft Copilot Studio and Dataverse, creating a centralized Hiring Agent that orchestrates end-to-end recruitment with specialized agents for resume intake and interview preparation, enhanced by event-driven automation that detects resume emails, stores candidate data in Dataverse, and notifies teams in Microsoft Teams.
 
-- **Create a SharePoint-grounded Store Operations Assistant** and enhance it in Copilot Studio with advanced instructions, topic-based conversation routing, and multi-agent orchestration to a specialized HR & Payroll Assistant.
+- **Orchestrate a multi-agent retail assistant** using Copilot Studio, Microsoft Foundry, and Microsoft Fabric, routing customer requests across specialized agents to handle product discovery, policy queries, support, and guided trip recommendations, with responses tailored by Foundry models and enriched by real-time operational insights from Fabric.
 
-- **Optimize financial analysis and reporting** using Microsoft 365 Copilot across Excel, Teams, and Copilot Chat to analyze Cost of Goods Sold (COGS) data, summarize finance meetings, and evaluate a potential acquisition.
-
-- **Govern and monitor the agent ecosystem** with Agent 365 by publishing a Holiday Returns Helper agent, reviewing tenant-wide governance metrics, managing agent lifecycle actions, exporting the agent inventory, and identifying ownerless agents.
+- **Build a multi-agent student services system** using Copilot Studio, creating an orchestrator agent (Atlas) connected to specialized child agents for Student Services, Academic, and Admissions-each grounded strictly in approved sources (Dataverse and official prospectuses) with a "no guessing" rule-and publish it to Microsoft Teams and Microsoft 365 Copilot.
 
 ## Pre-requisites
 
 Participants should have:
 
-- A Microsoft 365 account with a Copilot license (Microsoft 365 Copilot or Copilot for Microsoft 365).
+- A Microsoft 365 account with access to Microsoft Copilot Studio and Microsoft Dataverse.
 
-- Access to Microsoft Teams, Microsoft Excel, SharePoint, Copilot Studio, the Microsoft 365 Copilot portal, and the Microsoft 365 admin center.
+- Access to Microsoft Teams, Microsoft 365 Copilot, Microsoft Foundry, and Microsoft Fabric.
 
-- Basic familiarity with Microsoft 365 applications (Teams, Excel, SharePoint).
+- Basic familiarity with the Power Platform and Microsoft Copilot Studio.
 
-- Understanding of basic business processes such as retail operations, financial analysis, and AI agent governance.
+- Understanding of basic business processes such as recruitment, retail customer support, and student services, along with foundational concepts of AI agents and multi-agent orchestration.
 
 ## Architecture
 
-In this lab, you will use the Microsoft 365 Copilot platform, SharePoint, Copilot Studio, and Agent 365 to build, extend, and govern AI agents that support retail operations at Zava Retail. The workflow begins by creating and grounding purpose-built Microsoft Copilot agents through the Microsoft 365 Copilot portal, SharePoint, and Copilot Studio, and then managing them centrally through the Microsoft 365 admin center.
+In this lab, you will use Microsoft Copilot Studio as the core authoring and orchestration environment to build multi-agent systems across three scenarios. In each, a primary orchestrator agent interprets the incoming request and routes it to the specialized child agent best suited to respond, while grounding every response in trusted organizational data.
 
-Each agent is grounded in organizational data — SOPs, employee handbooks, store checklists, SharePoint document libraries, HR and payroll content, and finance workbooks — and uses AI reasoning to plan, execute, and generate outputs across different functional areas including frontline operations, store management, HR, finance, and governance.
-
-The Copilot Agent Builder lets you configure and deploy knowledge-grounded frontline agents. SharePoint-grounded agents deliver trusted, boundary-aware responses, while Copilot Studio adds advanced instruction authoring, topic-based routing, and multi-agent orchestration. Copilot in Excel, Teams, and Chat accelerates financial analysis, meeting summarization, and acquisition evaluation. Agent 365 provides centralized governance, monitoring, lifecycle management, and compliance across the entire agent ecosystem.
+The agents are grounded in structured data stored in Microsoft Dataverse (candidate records, fee, grade, and exam data) and in knowledge sources such as official prospectuses, policies, and product content. The retail assistant is further extended with Microsoft Foundry models to tailor tone and responses and with Microsoft Fabric to surface real-time operational insights, while the hiring platform adds event-driven automation to detect and process incoming resume emails automatically. Completed agents are surfaced to end users through Microsoft Teams and Microsoft 365 Copilot.
 
 ## Architecture Diagram
 
@@ -47,29 +41,29 @@ The Copilot Agent Builder lets you configure and deploy knowledge-grounded front
 
 The architecture for this lab involves the following key components:
 
-1. **Microsoft 365 Copilot Portal (m365.cloud.microsoft):** The primary interface for accessing and creating Copilot agents, including Copilot Agent Builder and Copilot Chat.
-   - Acts as the entry point for agent creation, testing, and interaction across Microsoft 365.
-   - Provides access to custom agents that can be surfaced and used directly in Microsoft Teams.
+1. **Microsoft Copilot Studio:** The primary authoring and orchestration environment for building agents.
+   - Enables system instruction authoring, topic-based routing, and multi-agent orchestration between a primary orchestrator and specialized child agents.
+   - Supports grounding agents in enterprise data and knowledge sources, and publishing them to Microsoft Teams and Microsoft 365 Copilot.
 
-1. **Copilot Agent Builder:** A no-code tool for building custom frontline agents with defined names, instructions, and knowledge sources.
-   - Supports uploading enterprise documents such as SOPs, employee handbooks, store checklists, FAQs, and shift guides as grounding knowledge.
-   - Allows agents to be published and accessed directly within Microsoft Teams for frontline employees.
+1. **Microsoft Dataverse:** A secure, structured data platform used to store and retrieve trusted organizational records.
+   - Stores candidate information for the hiring platform and fee, grade, and exam data for student services.
+   - Grounds agents so responses draw from authoritative data rather than guesswork.
 
-1. **Microsoft SharePoint:** A trusted content platform used to store and organize verified organizational knowledge.
-   - Hosts team sites and document libraries containing HR documents, product specifications, project updates, shift handover notes, and SOP libraries.
-   - Grounds Copilot agents so responses remain accurate and within approved knowledge boundaries.
+1. **Microsoft Foundry:** A model platform for integrating custom or bring-your-own models into agents.
+   - Tailors agent responses to brand tone, product catalog, and support policies.
+   - Enables enterprise-grade, context-aware generation in the retail assistant scenario.
 
-1. **Microsoft Copilot Studio:** An advanced authoring environment for customizing and orchestrating Copilot agents.
-   - Enables system prompt composition, topic-based conversation routing, and fallback handling for precise control over agent behavior.
-   - Supports multi-agent orchestration, allowing a primary agent to hand off requests to specialized agents such as an HR & Payroll Assistant.
+1. **Microsoft Fabric:** A unified analytics platform for surfacing real-time operational data.
+   - Provides real-time operational insights that inform the retail assistant's recommendations and answers.
+   - Connects analytical data to conversational agent experiences.
 
-1. **Microsoft 365 Copilot in Excel, Teams, and Chat:** AI assistance embedded directly into finance and collaboration workflows.
-   - Analyzes datasets such as Cost of Goods Sold (COGS), summarizes meetings, and generates task lists and follow-up communications.
-   - Evaluates business scenarios such as acquisitions by producing executive summaries and comprehensive reports with visuals.
+1. **Event-Driven Automation:** Trigger-based workflows that automate data intake and notifications.
+   - Detects incoming resume emails, processes candidate data automatically, and stores it in Dataverse.
+   - Notifies recruitment teams in real time through Microsoft Teams.
 
-1. **Agent 365 (Microsoft 365 admin center):** A centralized governance layer for managing the organization's AI agent ecosystem.
-   - Provides tenant-wide dashboards, an Agent Registry, and metrics for active users, pending requests, and ownerless agents.
-   - Supports lifecycle actions such as blocking and unblocking agents, exporting the agent inventory, and reviewing governance gaps.
+1. **Microsoft Teams and Microsoft 365 Copilot:** The end-user channels where the completed agents are surfaced.
+   - Deliver agent experiences directly to recruiters, customers, and students within the tools they already use.
+   - Serve as the publishing and interaction surface for orchestrator agents such as Atlas.
 
 ## Getting Started with Lab
 

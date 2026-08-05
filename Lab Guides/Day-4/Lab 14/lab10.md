@@ -1,5 +1,7 @@
 # Lab 14: Build Autonomous Hiring Operations Platform for Zava Retail using Microsoft Copilot Studio
 
+### Estimated Duration: 60 Minutes
+
 ## Scenario
 
 Zava Retail is undergoing rapid expansion across its digital commerce
