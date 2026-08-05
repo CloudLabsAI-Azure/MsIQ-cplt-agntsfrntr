@@ -36,6 +36,7 @@ The agents are grounded in structured data stored in Microsoft Dataverse (candid
 
 ## Architecture Diagram
 
+![](../Day-4/media/diagram.png)
 
 ## Explanation of Components
 
