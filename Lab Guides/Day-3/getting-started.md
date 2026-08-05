@@ -83,28 +83,30 @@ Feel free to **start, restart, or stop (2)** your virtual machine as needed from
 ## Let's Get Started with Microsoft 365 Copilot
 
 1. On your virtual machine, open a web browser and navigate to the Microsoft 365 Copilot portal.
+
      ```
      https://m365.cloud.microsoft/
      ```
-    ![](/Lab%20Guides/Day-2/media/img0.png)
+
+     ![](../Day-2/media/img0.png)
 
 1. On the **Sign in** page, enter the following email/username and click **Next (2)**.
 
    * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
    
-    ![](/Lab%20Guides/Day-2/media/img1.png)
+     ![](../Day-2/media/img1.png)
      
 1. Now enter the following password and click on **Sign in (2)**.
    
    * **Password**: <inject key="AzureAdUserPassword"></inject> **(1)**
    
-    ![](/Lab%20Guides/Day-2/media/img2.png)
+     ![](../Day-2/media/img2.png)
 
       > **Note:** If prompted to Enter Temporary Access Pass, enter the following **Password**: <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
-    ![](/Lab%20Guides/Day-2/media/img3.png)
+    ![](../Day-2/media/img3.png)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
