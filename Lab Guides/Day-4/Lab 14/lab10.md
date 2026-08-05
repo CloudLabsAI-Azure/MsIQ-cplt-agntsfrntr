@@ -180,6 +180,10 @@ you imported in the previous exercise.
 
     ![](./media/l111.png)
 
+    >**Note:** If you receive a "Dataverse capacity exceeded" pop-up message, simply close the pop-up and continue with the lab. This message does not impact the completion of the lab or any of the subsequent tasks.
+
+    ![](./media/l111a.png)  
+
 2. Select **Job Roles** in the left navigation. Select the **More** icon (three dots below each other) in the command bar and then select the **right arrow** next to **Import from Excel.**
 
     ![](https://raw.githubusercontent.com/technofocus-pte/MsIQ-cplt-agntsfrntr/refs/heads/main/Lab%20Guides/Lab%2010/media/image12.png)
