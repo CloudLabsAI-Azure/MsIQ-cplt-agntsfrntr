@@ -576,7 +576,7 @@ In this exercise, you will learn how to bring the deployed model from Microsoft 
 
     - Model deployment name - **ModelforMCS**
 
-    - Base model name - **Phi-4**
+    - Base model name - **O3**
 
     - Azure model endpoint URL - Enter the target url saved earlier
 
