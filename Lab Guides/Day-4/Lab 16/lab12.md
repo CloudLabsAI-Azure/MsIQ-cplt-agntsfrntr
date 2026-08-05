@@ -459,16 +459,13 @@ In this task, you will create a Fabric workspace and Lakehouse, and load structu
 1. In **Basics** tab, enter the following details: 
 
     - Select your default **Subscription**
-
     - **Resource group** as **Copilot-Studio**
-
     - Enter a **Capacity name** as **fabric<inject key="DeploymentID" enableCopy="false"/>**
-
     - Select the **Region** as <inject key="Region" enableCopy="false"/>
-
-    - Choose the Size as **F4**
-    
+    - Choose the Size as **F4** with the **4** Capacity Unit
     - Keep the Fabric Capacity Administrator as default <inject key="AzureAdUserEmail"></inject>
+
+    >**Note:** IF you are face any issue while selecting the region, then just refresh the page 1-2 times.
 
 1. Click **Review + create** and validate the settings. 
 
